@@ -242,6 +242,7 @@ html body div.slection-container h1 {
   font-size: 18px;
   background: transparent;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
@@ -253,6 +254,11 @@ html body div.slection-container h1 {
   object-fit: cover;
 }
 .swiper-pagination {
+  margin-top: 2%;
   position: relative;
   z-index: 1;
+}
+.swiper-pagination-bullet-active {
+  background-color: #ff3e00 !important;
+  --swiper-pagination-bullet-size: 10px;
 }
