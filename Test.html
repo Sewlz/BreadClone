@@ -1,251 +1,88 @@
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!--<title>Responsive Card Slider</title>-->
-
-    <!-- Swiper CSS -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/gh/freeps2/a7rarpress@main/swiper-bundle.min.css"
-    />
-
-    <!-- CSS -->
-    <link rel="stylesheet" href="css/style.css" />
+    <title>Country Data</title>
+    <style>
+      /* CSS for list styling */
+      #countryData {
+        list-style: none;
+        padding: 0;
+        max-height: 100px; /* Set a fixed height for scrolling */
+        max-width: 200px;
+        overflow-y: auto; /* Enable vertical scrolling */
+        border: 1px solid #ccc;
+        margin: 0;
+        padding: 0;
+      }
+      #countryData li {
+        border-bottom: 1px solid #ccc; /* Add a border between list items */
+        padding: 10px;
+        margin: 0;
+      }
+      #countrySelect {
+        width: 200px;
+        height: 30px;
+        margin-bottom: 10px;
+      }
+    </style>
   </head>
   <body>
-    <div class="slide-container swiper">
-      <div class="slide-content">
-        <div class="card-wrapper swiper-wrapper">
-          <div class="card swiper-slide">
-            <div class="image-content">
-              <span class="overlay"></span>
+    <select id="countrySelect" onchange="changeCountry()">
+      <option value="USA">USA</option>
+      <option value="Canada">Canada</option>
+      <option value="UK">UK</option>
+      <!-- Add more countries as needed -->
+    </select>
 
-              <div class="card-image">
-                <img
-                  src="https://tinypic.host/images/2022/12/19/img_avatar.png"
-                  alt=""
-                  class="card-img"
-                />
-              </div>
-            </div>
+    <ul id="countryData">
+      <!-- Data will be updated here -->
+    </ul>
 
-            <div class="card-content">
-              <h2 class="name">Mohamed Yousef</h2>
-              <p class="description">
-                The lorem text the section that contains header with having open
-                functionality. Lorem dolor sit amet consectetur adipisicing
-                elit.
-              </p>
+    <script>
+      function changeCountry() {
+        var selectElement = document.getElementById("countrySelect");
+        var selectedCountry =
+          selectElement.options[selectElement.selectedIndex].value;
+        var countryDataElement = document.getElementById("countryData");
 
-              <button class="button">View More</button>
-            </div>
-          </div>
-          <div class="card swiper-slide">
-            <div class="image-content">
-              <span class="overlay"></span>
+        // Example data. You can replace this with actual data retrieval logic.
+        var countryData = {
+          USA: [
+            "Population: 328 million",
+            "Capital: Washington, D.C.",
+            "Currency: US Dollar",
+            "Language: English",
+          ],
+          Canada: [
+            "Population: 37 million",
+            "Capital: Ottawa",
+            "Currency: Canadian Dollar",
+            "Language: English, French",
+          ],
+          UK: [
+            "Population: 66 million",
+            "Capital: London",
+            "Currency: Pound Sterling",
+            "Language: English",
+          ],
+          // Add more countries' data as needed
+        };
 
-              <div class="card-image">
-                <img
-                  src="https://tinypic.host/images/2022/12/19/img_avatar.png"
-                  alt=""
-                  class="card-img"
-                />
-              </div>
-            </div>
+        // Clear previous data
+        countryDataElement.innerHTML = "";
 
-            <div class="card-content">
-              <h2 class="name">Mohamed Yousef</h2>
-              <p class="description">
-                The lorem text the section that contains header with having open
-                functionality. Lorem dolor sit amet consectetur adipisicing
-                elit.
-              </p>
+        // Update the country data display
+        countryData[selectedCountry].forEach(function (item) {
+          var listItem = document.createElement("li");
+          listItem.textContent = item;
+          countryDataElement.appendChild(listItem);
+        });
+      }
 
-              <button class="button">View More</button>
-            </div>
-          </div>
-          <div class="card swiper-slide">
-            <div class="image-content">
-              <span class="overlay"></span>
-
-              <div class="card-image">
-                <img
-                  src="https://tinypic.host/images/2022/12/19/img_avatar.png"
-                  alt=""
-                  class="card-img"
-                />
-              </div>
-            </div>
-
-            <div class="card-content">
-              <h2 class="name">Mohamed Yousef</h2>
-              <p class="description">
-                The lorem text the section that contains header with having open
-                functionality. Lorem dolor sit amet consectetur adipisicing
-                elit.
-              </p>
-
-              <button class="button">View More</button>
-            </div>
-          </div>
-          <div class="card swiper-slide">
-            <div class="image-content">
-              <span class="overlay"></span>
-
-              <div class="card-image">
-                <img
-                  src="https://tinypic.host/images/2022/12/19/img_avatar.png"
-                  alt=""
-                  class="card-img"
-                />
-              </div>
-            </div>
-
-            <div class="card-content">
-              <h2 class="name">Mohamed Yousef</h2>
-              <p class="description">
-                The lorem text the section that contains header with having open
-                functionality. Lorem dolor sit amet consectetur adipisicing
-                elit.
-              </p>
-
-              <button class="button">View More</button>
-            </div>
-          </div>
-          <div class="card swiper-slide">
-            <div class="image-content">
-              <span class="overlay"></span>
-
-              <div class="card-image">
-                <img
-                  src="https://tinypic.host/images/2022/12/19/img_avatar.png"
-                  alt=""
-                  class="card-img"
-                />
-              </div>
-            </div>
-
-            <div class="card-content">
-              <h2 class="name">Mohamed Yousef</h2>
-              <p class="description">
-                The lorem text the section that contains header with having open
-                functionality. Lorem dolor sit amet consectetur adipisicing
-                elit.
-              </p>
-
-              <button class="button">View More</button>
-            </div>
-          </div>
-          <div class="card swiper-slide">
-            <div class="image-content">
-              <span class="overlay"></span>
-
-              <div class="card-image">
-                <img
-                  src="https://tinypic.host/images/2022/12/19/img_avatar.png"
-                  alt=""
-                  class="card-img"
-                />
-              </div>
-            </div>
-
-            <div class="card-content">
-              <h2 class="name">Mohamed Yousef</h2>
-              <p class="description">
-                The lorem text the section that contains header with having open
-                functionality. Lorem dolor sit amet consectetur adipisicing
-                elit.
-              </p>
-              <button class="button">View More</button>
-            </div>
-          </div>
-          <div class="card swiper-slide">
-            <div class="image-content">
-              <span class="overlay"></span>
-
-              <div class="card-image">
-                <img
-                  src="https://tinypic.host/images/2022/12/19/img_avatar.png"
-                  alt=""
-                  class="card-img"
-                />
-              </div>
-            </div>
-
-            <div class="card-content">
-              <h2 class="name">Mohamed Yousef</h2>
-              <p class="description">
-                The lorem text the section that contains header with having open
-                functionality. Lorem dolor sit amet consectetur adipisicing
-                elit.
-              </p>
-
-              <button class="button">View More</button>
-            </div>
-          </div>
-          <div class="card swiper-slide">
-            <div class="image-content">
-              <span class="overlay"></span>
-
-              <div class="card-image">
-                <img
-                  src="https://tinypic.host/images/2022/12/19/img_avatar.png"
-                  alt=""
-                  class="card-img"
-                />
-              </div>
-            </div>
-
-            <div class="card-content">
-              <h2 class="name">Mohamed Yousef</h2>
-              <p class="description">
-                The lorem text the section that contains header with having open
-                functionality. Lorem dolor sit amet consectetur adipisicing
-                elit.
-              </p>
-
-              <button class="button">View More</button>
-            </div>
-          </div>
-          <div class="card swiper-slide">
-            <div class="image-content">
-              <span class="overlay"></span>
-
-              <div class="card-image">
-                <img
-                  src="https://tinypic.host/images/2022/12/19/img_avatar.png"
-                  alt=""
-                  class="card-img"
-                />
-              </div>
-            </div>
-
-            <div class="card-content">
-              <h2 class="name">Mohamed Yousef</h2>
-              <p class="description">
-                The lorem text the section that contains header with having open
-                functionality. Lorem dolor sit amet consectetur adipisicing
-                elit.
-              </p>
-
-              <button class="button">View More</button>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="swiper-button-next swiper-navBtn"></div>
-      <div class="swiper-button-prev swiper-navBtn"></div>
-      <div class="swiper-pagination"></div>
-    </div>
+      // Initialize with default country
+      changeCountry();
+    </script>
   </body>
-
-  <!-- Swiper JS -->
-  <script src="//cdn.jsdelivr.net/gh/freeps2/a7rarpress@main/swiper-bundle.min.js"></script>
-
-  <!-- JavaScript -->
-  <!--Uncomment this line-->
-  <script src="//cdn.jsdelivr.net/gh/freeps2/a7rarpress@main/script.js"></script>
 </html>

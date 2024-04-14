@@ -1,0 +1,129 @@
+* {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    "Ubuntu", Arial, sans-serif;
+}
+.banner-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 30vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(./../../public/imgs/Rectangle-825-min.jpeg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.banner-container > h2 {
+  font-size: 2.25rem;
+  color: #fff;
+}
+.link-back {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.link-back > li {
+  font-size: 13px;
+  color: #fff;
+}
+.home-li::after {
+  content: "//";
+  color: #fff;
+  padding: 0 10px;
+}
+.link-back a:link {
+  color: #fff;
+}
+.link-back a:active {
+  color: #fff;
+}
+iframe {
+  width: 100%;
+}
+.info_link:link {
+  color: #000;
+}
+.info_link:visited {
+  color: #000;
+}
+.info_link:hover {
+  color: #f19700;
+}
+.info_link:active {
+  color: #000;
+}
+.container {
+  display: flex;
+  margin: 5% 10%;
+}
+.message {
+  display: flex;
+  flex-direction: column;
+  margin-right: 5%;
+  width: fit-content;
+}
+.about {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 30px;
+}
+.about > div > h1 {
+  font-size: larger;
+  font-weight: bold;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 10px;
+  width: fit-content;
+}
+
+.flex-item {
+  flex: 1;
+  margin-right: 10px;
+}
+.social-link {
+  display: flex;
+}
+.social-link > li {
+  margin-right: 10px;
+  font-size: x-large;
+}
+.about > div:nth-child(1) {
+  margin-right: 10%;
+}
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+input {
+  width: 235px;
+  height: 50px;
+  padding-left: 10px;
+}
+textarea {
+  width: 485px;
+  height: 184px;
+  padding: 5px 10px;
+}
+.submit-btn {
+  font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    "Ubuntu", Arial, sans-serif;
+  font-size: large;
+  background: #f6780a;
+  color: #ffffff;
+  padding: 12px 40px;
+  border: none;
+  outline: none;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 30px;
+}

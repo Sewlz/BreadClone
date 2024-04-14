@@ -1,5 +1,10 @@
 * {
+  list-style: none;
   margin: 0;
+  padding: 0;
+  text-decoration: none;
+  font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    "Ubuntu", Arial, sans-serif;
 }
 .slider-container {
   position: relative;
@@ -32,4 +37,222 @@
 }
 .slider-btn.next {
   right: 10px;
+}
+.story-content > h3 {
+  text-align: left;
+  font-weight: 400;
+  font-size: 85px;
+  color: #f9a747;
+  font-family: "Great Vibes", cursive;
+}
+.story-content > h1 {
+  text-align: left;
+  font-weight: 700;
+  font-size: 50px;
+  color: #f9a747;
+  text-transform: uppercase;
+}
+body > section > div > div.right-cell > figure {
+  width: 452px;
+  height: 550px;
+  margin: 0 auto;
+  position: static;
+  object-fit: contain;
+}
+body > section > div > div.right-cell > figure > img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.background-image {
+  background: url(./../../public/imgs/home/—Pngtree—bakery-sketch_7266369-1-min.png)
+    no-repeat;
+  background-size: auto;
+  width: 494px;
+  height: 385px;
+  background-size: contain;
+  position: absolute;
+  z-index: -1;
+  opacity: 0.5;
+  bottom: -12%;
+  right: 12%;
+}
+.story-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 60px 0;
+}
+
+#scrollAnimation {
+  opacity: 0;
+}
+
+@keyframes scrollAnimation {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+}
+#scrollAnimation2 {
+  opacity: 0;
+  transform: translateY(50%);
+}
+
+@keyframes scrollAnimation2 {
+  from {
+    transform: translateY(50%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
+.section {
+  position: relative;
+  margin: 0 10%;
+}
+html body section.section div.story-container div.story-content p {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 28px;
+  margin-bottom: 1rem;
+  line-height: 1.7;
+  text-rendering: optimizeLegibility;
+}
+.slection-container {
+  text-transform: uppercase;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+html body div.slection-container h1 {
+  font-family: "Work Sans", sans-serif;
+  font-weight: 500;
+  font-size: 40px;
+  margin: 5% 0;
+}
+.background-title {
+  position: relative;
+  top: -100px;
+  font-weight: 700;
+  font-size: 200px;
+  line-height: 115px;
+  letter-spacing: 0.1em;
+  color: #f7f1e5;
+}
+.more-btn {
+  z-index: 1;
+  position: relative;
+  color: white;
+  padding: 8px 16px;
+  outline: none;
+  border: 1px solid white;
+  background-color: transparent;
+  overflow: hidden;
+  transition: color 0.4s ease-in-out;
+  font-size: large;
+}
+
+.more-btn::before {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  bottom: 100%;
+  right: 100%;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: #ff3e00;
+  transform-origin: center;
+  transform: translate3d(50%, 50%, 0) scale3d(0, 0, 0);
+  transition: transform 0.45s ease-in-out;
+}
+
+.more-btn:hover {
+  cursor: pointer;
+  color: #fff;
+}
+
+.more-btn:hover::before {
+  transform: translate3d(50%, 50%, 0) scale3d(16, 16, 16);
+}
+.deco-wrapper {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  position: relative;
+  top: -100px;
+  left: 0;
+}
+.deco {
+  padding: 0 5%;
+}
+.deco > img {
+  width: 187px;
+  height: 98px;
+}
+
+#decoAnimation {
+  opacity: 0;
+}
+
+@keyframes decoAnimation {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+}
+
+#decoAnimation2 {
+  opacity: 0;
+}
+
+@keyframes decoAnimation2 {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+}
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+}
+.swiper-pagination {
+  position: relative;
+  z-index: 1;
 }
