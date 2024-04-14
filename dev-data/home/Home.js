@@ -1,4 +1,3 @@
-//loading slide
 const images = [
   "./../../public/imgs/sliders/BANH-MOI_THANG-11-06-1920x720.jpg",
   "./../../public/imgs/sliders/BUFFET-LAU-BANG-CHUYEN-WEB-DESKTOP-1920x720.jpg",
@@ -7,47 +6,25 @@ const images = [
   "./../../public/imgs/sliders/NEW-BANH_WEB_DESKTOP-copy-1920x720.jpg",
 ];
 
-const slides_Wrapper = document.querySelector(".slides-wrapper");
+const slidesWrapper = document.querySelector(".swiper-wrapper-banner");
 
 images.forEach((imageUrl, index) => {
-  const img = document.createElement("img");
-  img.classList.add("slider-img");
-  img.src = imageUrl;
-  img.alt = `Image ${index + 1}`;
-  slides_Wrapper.appendChild(img);
+  const swiperSlide = document.createElement("div");
+  swiperSlide.classList.add("swiper-slide");
+  swiperSlide.innerHTML = `<img src="${imageUrl}" alt="Image ${index + 1}">`;
+  slidesWrapper.appendChild(swiperSlide);
 });
-// slide scripts
-let slideIndex = 0;
-const slidesWrapper = document.querySelector(".slides-wrapper");
-const slides = document.querySelectorAll(".slider-img");
-const slideWidth = slides[0].offsetWidth + 10;
 
-function showSlide(n) {
-  slideIndex = n;
-  const offset = -(slideIndex * slideWidth);
-  slidesWrapper.style.transform = `translateX(${offset}px)`;
-}
+// Initialize Swiper
+var swiper = new Swiper(".myBannerSwiper", {
+  loop: true,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});
 
-function nextSlide() {
-  if (slideIndex < slides.length - 1) {
-    showSlide(slideIndex + 1);
-  } else {
-    // If on the last slide, smoothly transition to the first slide
-    slidesWrapper.style.transition = "transform 0.5s ease-in-out";
-    showSlide(0);
-    // Reset transition after the animation finishes
-    setTimeout(() => {
-      slidesWrapper.style.transition = "";
-    }, 500); // 0.5s transition duration
-  }
-}
-
-function prevSlide() {
-  if (slideIndex > 0) {
-    showSlide(slideIndex - 1);
-  }
-}
-
+//animation script
 document.addEventListener("DOMContentLoaded", function () {
   var scrollAnimation = document.getElementById("scrollAnimation");
   var scrollAnimation2 = document.getElementById("scrollAnimation2");
@@ -78,6 +55,7 @@ document.addEventListener("DOMContentLoaded", function () {
     );
   }
 });
+//swiper script
 var swiper = new Swiper(".mySwiper", {
   slidesPerView: 4,
   spaceBetween: 30,
