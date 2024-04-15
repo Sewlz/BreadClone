@@ -7,7 +7,6 @@ const dotWrapper = document.querySelector(".dots-wrapper");
 let isDragging = false;
 let startX;
 let startScrollLeft;
-let isMovingSlide = false;
 let autoplayIntervalId;
 const autoPlayTime = 5000;
 
@@ -71,16 +70,22 @@ const dragging = (e) => {
   if (!isDragging) return;
   disableLinks();
   slider.scrollLeft = startScrollLeft - (e.pageX - startX);
+  removeClassActiveDot();
+  const currentScrollLeft = slider.scrollLeft;
+  const slideItemWidth = slideItem[0].offsetWidth;
+  const currentIndex = Math.round(currentScrollLeft / slideItemWidth);
+  dotItem[currentIndex].classList.add("active-dot");
+
+  const dotWidth = dotItem[0].offsetWidth + 15;
+  const posDotX = -currentIndex * dotWidth;
+  dotWrapper.style.left = `${posDotX}px`;
 };
 
 const dragStop = (e) => {
   isDragging = false;
   slider.classList.remove("dragging");
   enableLinks();
-};
 
-function autoScrollToNearestSlide() {
-  if (isMovingSlide) return;
   const currentScrollLeft = slider.scrollLeft;
   const slideItemWidth = slideItem[0].offsetWidth;
   const currentIndex = Math.round(currentScrollLeft / slideItemWidth);
@@ -95,16 +100,11 @@ function autoScrollToNearestSlide() {
   dotItem[currentIndex].classList.add("active-dot");
 
   const dotWidth = dotItem[0].offsetWidth + 15;
-  const translateDotX = -currentIndex * dotWidth;
-  dotWrapper.style.left = `${translateDotX}px`;
-}
-
-slider.addEventListener("scroll", () => {
-  autoScrollToNearestSlide();
-});
+  const posDotX = -currentIndex * dotWidth;
+  dotWrapper.style.left = `${posDotX}px`;
+};
 
 function autoMoveToNextSlide() {
-  isMovingSlide = true;
   const currentScrollLeft = slider.scrollLeft;
   const slideItemWidth = slideItem[0].offsetWidth;
   const currentIndex = Math.round(currentScrollLeft / slideItemWidth);
