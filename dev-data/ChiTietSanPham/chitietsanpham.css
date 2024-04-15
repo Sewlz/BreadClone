@@ -533,3 +533,9 @@
 .btn-slideImg i:active{
     background-color: #000000cc;
 }
+
+@media (max-width: 490px) {
+    .section-header{
+        padding: 50px 0;
+    }
+}

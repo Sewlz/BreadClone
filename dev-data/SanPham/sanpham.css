@@ -307,3 +307,9 @@
     overflow: hidden;
     border-radius: 3px;
 }
+
+@media (max-width: 490px) {
+    .section-header{
+        padding: 50px 0;
+    }
+}
