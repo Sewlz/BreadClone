@@ -187,7 +187,6 @@ const review = [
 // JavaScript
 const reviewContainer = document.querySelector("#reviewWrapper");
 
-// Function to create a review card
 function createReviewCard(review) {
   const card = document.createElement("div");
   card.classList.add("review-card");
@@ -206,7 +205,6 @@ function createReviewCard(review) {
   return card;
 }
 
-// Function to initialize reviews
 function initializeReviews(reviews) {
   reviews.forEach((review) => {
     const card = createReviewCard(review);
