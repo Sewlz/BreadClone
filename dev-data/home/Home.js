@@ -184,33 +184,23 @@ const review = [
       "Ghiền Fire Floss thật sự. Mình không hảo ngọt mấy, nên chưa thử qua bánh ngọt ở đây nhưng mà cái bánh nhân chà bông ở đây phải nói là đỉnh. Mấy loại bánh mặn khác cũng ok, mà siêu recommend cái bánh Fire Floss này nha. Mới đi xem lại, hình như nó còn là Best Seller của tiệm ><",
   },
 ];
-// JavaScript
-const reviewContainer = document.querySelector("#reviewWrapper");
-
-function createReviewCard(review) {
-  const card = document.createElement("div");
-  card.classList.add("review-card");
-
-  const img = document.createElement("img");
-  img.src = review.src;
-  img.alt = review.alt;
-
-  const comment = document.createElement("p");
-  comment.textContent = review.review;
-  comment.classList.add("review-comment");
-
-  card.appendChild(comment);
-  card.appendChild(img);
-
-  return card;
-}
-
-function initializeReviews(reviews) {
-  reviews.forEach((review) => {
-    const card = createReviewCard(review);
-    reviewContainer.appendChild(card);
-  });
-}
-
-// Call the function to initialize reviews
-initializeReviews(review);
+//swiper review script
+var swiper = new Swiper(".myReviewSwiper", {
+  loop: true,
+  navigation: {
+    nextEl: ".swiper-button-next-unique",
+    prevEl: ".swiper-button-prev-unique",
+  },
+});
+const swiperWrapperReview = document.querySelector(".swiper-review-wrapper");
+review.forEach((review) => {
+  const swiperSlide = document.createElement("div");
+  swiperSlide.classList.add("swiper-slide", "swiper-review-slide");
+  swiperSlide.innerHTML = `
+    <div class="text-wrapper"><p>${review.review}</p></div>
+    <div class="profile-container">
+      <div class="profile-wrapper"><img src="${review.src}" alt="${review.alt}" /></div>
+      <h6>${review.alt}</h6>
+    </div>`;
+  swiperWrapperReview.appendChild(swiperSlide);
+});

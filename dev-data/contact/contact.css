@@ -6,6 +6,13 @@
   font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI",
     "Ubuntu", Arial, sans-serif;
 }
+:root {
+  --colorbody: #000000;
+  --color-01: #e6a4b4;
+  --color-02: #f3d7ca;
+  --color-03: #fff8e3;
+  --color-04: #f5eee6;
+}
 .banner-container {
   display: flex;
   flex-direction: column;
@@ -13,7 +20,7 @@
   align-items: center;
   height: 30vh;
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url(./../../public/imgs/Rectangle-825-min.jpeg);
+    url(../../public/imgs/SanPham/Rectangle-825-min.jpeg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -96,6 +103,13 @@ iframe {
 .social-link > li {
   margin-right: 10px;
   font-size: x-large;
+}
+.social-link > li > a > i {
+  color: var(--color-01);
+  cursor: pointer;
+}
+.social-link > li > a > i:hover {
+  color: #e61962;
 }
 .about > div:nth-child(1) {
   margin-right: 10%;

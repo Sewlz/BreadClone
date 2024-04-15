@@ -282,12 +282,15 @@ html body div.slection-container h1 {
 }
 /* user review css */
 .review-container {
-  background: url(../../public/imgs/home/Group-1021-min.jpeg);
+  /* background: url(../../public/imgs/home/Group-1021-min.jpeg);
+  background-repeat: no-repeat; */
+  background-color: #fcf8f0;
 }
 .review-wrapper {
   display: flex;
+  justify-content: center;
   padding-top: 5%;
-  margin: 0;
+  margin: 0 10%;
 }
 .review-wrapper figure {
   max-width: 40%;
@@ -339,6 +342,7 @@ html body div.slection-container h1 {
     opacity: 1;
   }
 }
+/* review css */
 .background-review {
   position: relative;
   width: 600px;
@@ -350,33 +354,46 @@ html body div.slection-container h1 {
   position: absolute;
   bottom: 0;
 }
-/* slide css */
-/* CSS - Customize styles as needed */
-.review-container {
-  width: 100%;
-  overflow: hidden;
-}
-
-.review-wrapper {
+.button-wraper {
   display: flex;
-  transition: transform 0.5s ease;
+  padding-top: 5%;
+  padding-bottom: 5%;
 }
-
-.review-card {
-  flex: 0 0 100%;
-  padding: 20px;
-  display: flex;
-  align-items: center;
+.swiper-button-next-unique,
+.swiper-button-prev-unique {
+  --swiper-navigation-size: 20px;
+  text-align: center;
+  background-color: #ffffff;
+  padding: 8px 16px;
+  margin: 0 2%;
+  border-radius: 100%;
+  border: 1px solid black;
+  color: black;
+  width: 20px;
+  height: 20px;
 }
-
-.review-card img {
+.profile-wrapper img {
   width: 100px;
   height: 100px;
   border-radius: 50%;
-  border: 2px solid #f9a747; /* Dot border */
+  border-style: dotted;
+  border-width: 2px;
+  border-color: #000000;
   margin-right: 20px;
 }
 
-.review-comment {
-  flex: 1;
+.profile-container {
+  display: flex;
+  align-items: center;
+}
+.text-wrapper {
+  padding-top: 5%;
+}
+.text-wrapper p {
+  text-align: left;
+}
+.profile-container {
+  padding-top: 5%;
+  float: left;
+  width: 100%;
 }
