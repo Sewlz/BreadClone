@@ -18,7 +18,8 @@
       <div class="swiper-wrapper swiper-wrapper-banner"></div>
       <div class="swiper-button-next"></div>
       <div class="swiper-button-prev"></div>
-    </div>    
+    </div>
+    <!-- story section     -->
     <section class="section">
       <div class="story-container">
         <div class="story-content" id="scrollAnimation">
@@ -42,19 +43,19 @@
           </figure>
         </div>
         <div class="background-image"></div>
-      </div>
-    
+      </div>    
     </section>
+    <!-- product section -->
     <div class="slection-container" style=" background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
       url(../../public/imgs/home/z4431487419682_ca86e1aae215473c5d55a706fafa4c8f.jpg);">
       <h1>Danh mục sản phẩm</h1>
       <div class="swiper mySwiper"">
         <div class="swiper-wrapper" id="swiper-wrapper"></div>
-      </div>
-      <div class="swiper-pagination"></div>
+        <div class="swiper-pagination"></div>
+      </div>     
       <div style="margin: 2% 0 5% 0;"><button class="more-btn" onclick="document.location=''">Xem tất cả</button></div>
     </div>
-
+    <!-- top product section -->
     <div class="slection-container" style=" background-color: #fcf8f0; color: #f9a747;">
       <h1>Sản phẩm nổi bật</h1>
       <div class="deco-wrapper">
@@ -72,7 +73,7 @@
         </figure>
       </div>
       <div class="background-title"><p>BREAD TALK</p></div>
-      <div class="swiper mySwiper" style="margin-top: -5%;">
+      <div class="swiper mySwiper" style="margin-top: -10%;">
         <div class="swiper-wrapper" id="swiper-wrapper"></div>
         <div class="swiper-pagination"></div>
       </div>
@@ -80,6 +81,27 @@
         <button class="more-btn" onclick="document.location=''" style="border: 1px solid black; color: black;">Xem tất cả</button>
       </div>
     </div>
+    <!-- review section -->
+    <div class="review-container">
+      <div class="review-wrapper">
+        <figure id="hbAnimation">
+          <img src="../../public/imgs/home/Lovepik_com-401635000-female-pastry-chef-hand-bread-1-min-min.png" alt="">
+        </figure>
+        <div class="review-title" style="width: 100%; height: 100%;">
+          <div class="review-title-wrapper">
+            <h4>Cảm nhận khách hàng</h4>
+            <div class="hb_swiper_icon"><img src="../../public/imgs/home/Vector.png" alt=""></div>                               
+          </div>
+          <!-- slide -->
+          <div class="review-container">
+            <div class="review-wrapper" id="reviewWrapper"></div>
+          </div>
+          <!-- /slide -->
+        </div>          
+      </div>
+      
+    </div>
+    <!-- video section -->
     <video src="../../public/imgs/home/y2mate.com - Introducing BreadTalks Song Song 松松to bring you joy through the day everyday_1080p.mp4" autoplay loop muted playsinline style="width: 100%; height: 500px; background-color: black;"></video>
   </body>
   <script src="./Home.js"></script>
