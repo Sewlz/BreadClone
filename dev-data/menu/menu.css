@@ -13,6 +13,23 @@
     --color-02: #F3D7CA;
     --color-03: #FFF8E3;
     --color-04: #F5EEE6;
+    --color-05: #f3547c;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
 }
 
 .color-white {
@@ -29,11 +46,11 @@
 }
 
 /* css top header */
-.top-header{
+.top-header {
     display: block;
 }
 
-.header{
+.header {
     width: 100%;
     display: flex;
     justify-content: center;
@@ -41,18 +58,19 @@
     background-color: rgba(0, 0, 0, 0.89);
 }
 
-.header a{
+.header a {
     text-decoration: underline;
 }
 
 /* css menu */
-.menu-outside{
+.menu-outside {
     position: -webkit-sticky;
     position: sticky;
     top: 0;
     z-index: 10;
 }
-.menu-main{
+
+.menu-main {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -61,46 +79,48 @@
     background-color: var(--color-03);
 }
 
-.menu-logo img{
-    height: 52px;
+.menu-logo img {
+    height: 40px;
 }
 
-.menus{
+.menus {
     display: flex;
     flex-wrap: wrap;
     row-gap: 10px;
     height: 88px;
 }
 
-.menu-item{
+.menu-item {
     display: flex;
     align-items: center;
 }
 
-.menus .menu-item a{
+.menus .menu-item a {
     white-space: nowrap;
-    padding: 0 20px;
+    padding: 0 15px;
     height: 100%;
     display: flex;
     align-items: center;
+    transition: all 0.1s linear;
     color: #000000;
 }
 
-.active-page, .menus .menu-item a:hover{
+.active-page,
+.menus .menu-item a:hover {
     color: rgb(255, 25, 94);
 }
 
-.menu-item a i{
+.menu-item a i {
     margin-left: 5px;
     font-size: 12px;
     margin-top: 2px;
 }
 
-.menu-more{
+.menu-more {
     position: relative;
 }
 
-.menu-sub{
+.menu-sub {
     position: absolute;
     z-index: 10;
     top: 100%;
@@ -110,27 +130,30 @@
     display: none;
 }
 
-.menu-sub_item, .sub-item{
+.menu-sub_item,
+.sub-item {
     position: relative;
     height: 40px;
     width: 250px;
 }
 
-.menu-sub_item a, .sub-item a{
+.menu-sub_item a,
+.sub-item a {
     position: relative;
     height: 100%;
 }
 
-.menu-sub_item a:hover, .sub-item a:hover{
+.menu-sub_item a:hover,
+.sub-item a:hover {
     background-color: rgba(238, 236, 236, 0.534);
 }
 
-.menu-sub_item a i{
+.menu-sub_item a i {
     position: absolute;
     right: 10px;
 }
 
-.menu-sub-sub{
+.menu-sub-sub {
     position: absolute;
     left: 100%;
     top: -1px;
@@ -141,37 +164,39 @@
     display: none;
 }
 
-.menu-more:hover > .menu-sub{
+.menu-more:hover>.menu-sub {
     display: block;
 }
 
-.menu-sub_more:hover > .menu-sub-sub{
+.menu-sub_more:hover>.menu-sub-sub {
     display: block;
 }
 
-.menu-funtion{
+.menu-funtion {
     display: flex;
     align-items: center;
     gap: 20px;
 }
 
-.translate-language ul{
+.translate-language ul {
     display: flex;
     height: 100%;
 }
 
-.translate-language ul a{
+.translate-language ul a {
     font-size: 16px;
     white-space: no-wrap;
 }
 
-.bar-between{
+.bar-between {
     font-size: 18px;
     margin: 0 5px;
     user-select: none;
 }
 
-.cart-container a, .search-container a{
+.cart-container a,
+.search-container a,
+.btn-menu-bar {
     width: 55px;
     height: 55px;
     display: flex;
@@ -181,37 +206,39 @@
     border-radius: 50%;
 }
 
-.menu-main svg{
+.menu-main svg {
     width: 25px;
     height: 25px;
 }
 
 /* css search */
-.search-container{
+.search-container {
     position: relative;
     z-index: 100;
 }
 
-.search-container a svg, .search-container a i{
+.search-container a svg,
+.search-container a i {
     position: absolute;
 }
-.search-container a{
+
+.search-container a {
     cursor: pointer;
     position: relative;
-    z-index: 11;
+    z-index: 20;
 }
 
-.search-container .btn-close{
+.search-container .btn-close {
     display: none;
 }
 
-.search-main{
+.search-main {
     position: fixed;
     top: 0;
     left: 0;
     width: 100vw;
     height: 100vh;
-    background-color: rgba(0, 0, 0, 0.5); /* Màu đen với độ mờ */
+    background-color: rgba(0, 0, 0, 0.5);
     z-index: 10;
     display: none;
 }
@@ -223,7 +250,7 @@
     height: 100%;
 }
 
-.search-main form input{
+.search-main form input {
     width: 30%;
     outline: none;
     font-size: 16px;
@@ -233,7 +260,7 @@
     padding-right: 38px;
 }
 
-.search-main button{
+.search-main button {
     width: 30px;
     height: 30px;
     border-radius: 50%;
@@ -243,11 +270,224 @@
     border: 1px solid var(--color-01);
 }
 
-.search-main button i{
+.search-main button i {
     color: white;
     font-size: 10px;
     display: flex;
     justify-content: center;
     align-content: center;
     cursor: pointer;
+}
+
+/* css btn menu bar */
+.btn-menu-bar{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.btn-menu-bar div{
+    height: 2px;
+    width: 50%;
+    background-color: #000000;
+}
+
+@media (max-width: 1225px) {
+    .menus .menu-item a {
+        font-size: 14px;
+        padding: 0 10px;
+        transition: all 0.1s linear;
+    }
+}
+
+@media (max-width: 1091px) {
+    .menus .menu-item a {
+        display: none;
+    }
+
+    .cart-container a,
+    .search-container a,
+    .btn-menu-bar {
+        width: 50px;
+        height: 50px;
+    }
+
+    .menu-main svg {
+        width: 15px;
+        height: 15px;
+    }
+}
+
+@media (max-width: 490px) {
+    .menu-logo img {
+        height: 30px;
+    }
+
+    .menu-funtion {
+        gap: 10px;
+    }
+
+    .cart-container a,
+    .search-container a,
+    .btn-menu-bar {
+        width: 30px;
+        height: 30px;
+    }
+
+    .menu-main svg {
+        width: 15px;
+        height: 15px;
+    }
+
+    .translate-language ul a {
+        font-size: 14px;
+    }
+
+    .menus {
+        height: 64px;
+    }
+}
+
+/* css menu bar */
+.element-menu-bar{
+    display: flex;
+}
+
+.layout-close-menu-bar{
+    background-color: #00000071;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;right: 0;
+    z-index: 11;
+    display: none;
+    cursor: pointer;
+}
+
+.menu-bar-container {
+    position: fixed;
+    width: 50%;
+    height: 100%;
+    z-index: 14;
+    background-color: var(--color-01);
+    transition: all 0.3s linear;
+    transform: translateX(-100%);
+}
+
+.button-close-menu {
+    position: absolute;
+    z-index: 16;
+    right: 30px;
+    top: 30px;
+    transition: 0.6s 0.5s ease-in-out;
+    width: 40px;
+    height: 40px;
+    align-items: center;
+    display: flex;
+    cursor: pointer;
+}
+
+.close-menu {
+    position: relative;
+    width: 100%;
+    height: 2px;
+}
+
+.menu-bar {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: #ffffff;
+    border: 1px solid black;
+    border-radius: 50%;
+    transition:
+        background-color 0.6s 0.5s ease-in-out,
+        border 0.6s 0.5s ease-in-out,
+        transform 0.6s 0.5s ease-in-out;
+    transform: rotate(0);
+}
+
+.menu-bar:first-child {
+    transform: rotate(135deg);
+}
+
+.menu-bar:last-child {
+    transform: rotate(-135deg);
+}
+
+.menu-bar-wrapper_lv1{
+    padding: 70px 0;
+}
+
+.menu-bar-wrapper_lv3, .menu-bar-wrapper_lv2, .menu-bar-wrapper_lv1{
+    width: 100%;
+}
+
+.menu-bar-wrapper_lv1 a{
+    display: block;
+    padding: 10px 20px;
+    color: white;
+    transition: all 0.1s linear;
+}
+
+.menu-bar-wrapper_lv1 a:hover{
+    color: var(--color-05);
+}
+
+.menu-bar_lv2:first-child > div, .menu-bar_lv1:nth-child(2) > div{
+    display: flex;
+}
+
+.menu-bar_lv2:first-child > div a, .menu-bar_lv1:nth-child(2) > div > a{
+    width: 100%;
+}
+
+.menu-bar-wrapper_lv2 a{
+    display: block;
+    padding: 7px 50px;
+}
+
+.menu-bar_lv1 i{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 40px;
+    color: white;
+    cursor: pointer;
+}
+
+.menu-bar_lv1 i:hover{
+    transition: all 0.1s linear;
+    color: var(--color-05);
+}
+
+.menu-bar-wrapper_lv3 a{
+    display: block;
+    padding: 3px 80px;
+}
+
+.fa-angle-down{
+    transition: all 0.2s 0.1s ease-in-out;
+}
+
+.rotation-icon-down{
+    transform: rotate(180deg);
+}
+
+.menu-bar-wrapper_lv3, .menu-bar-container_lv2{
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-in-out;
+}
+
+.active-menu-bar{
+    max-height: 1000px;
+    transition: max-height 0.5s ease-in-out;
+}
+
+.active-hover-page{
+    color: var(--color-05)!important;
 }
