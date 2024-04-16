@@ -1,0 +1,137 @@
+* {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    "Ubuntu", Arial, sans-serif;
+  color: white;
+}
+.footer-container {
+  padding-top: 70px;
+  padding-bottom: 60px;
+  background: url(../../public/imgs/footer/Group-1015-min.jpeg);
+}
+.footer-logo {
+  width: 209px;
+  margin-bottom: 15px;
+  -webkit-filter: brightness(0) invert(1);
+  filter: brightness(0) invert(1);
+}
+.upper-wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, min-content);
+  grid-column-gap: 5%;
+  grid-row-gap: 5%;
+}
+.footer-social-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.social-icon-wrapper i {
+  margin: 10px 10px;
+  width: 36px;
+  height: 36px;
+  line-height: 36px;
+  text-align: center;
+  font-size: 18px;
+  border: 1px solid #ffffff;
+  background: var(--color2);
+  border-radius: 100%;
+}
+.social-icon-wrapper i:hover {
+  background-color: white;
+  color: #f6780a;
+}
+.subscription-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.policy-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.policy-wrapper > ul {
+  font-weight: 100;
+  font-size: 15px;
+  line-height: 26px;
+}
+.policy-wrapper h1 {
+  text-align: start;
+}
+.contact-info-wrapper > ul {
+  text-align: center;
+  margin-bottom: 5px;
+  font-weight: 100;
+  font-size: 15px;
+  line-height: 26px;
+}
+.label-wrapper {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+.label-wrapper img {
+  width: 200px;
+  height: 70px;
+}
+.copyright-wrapper {
+  border-top: 0.7px solid #ffffff;
+  display: block;
+  justify-self: center;
+  text-align: center;
+  background-color: #f6780a;
+  font-weight: 100;
+  font-size: 15px;
+  line-height: 26px;
+}
+/* button css */
+.input-container {
+  position: relative;
+  width: 100%;
+  align-items: center;
+  margin-top: 10px;
+}
+.email-input {
+  width: 100%;
+  background: transparent;
+  border: 1px solid #ffffff;
+  color: #ffffff;
+  border-radius: 50px;
+  height: 50px;
+  padding-left: 20px;
+}
+.submit-input {
+  position: relative;
+  cursor: pointer;
+  background-color: #f6780a;
+  color: #ffffff;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+  height: 50px;
+  right: 75px;
+  bottom: 50.5px;
+  left: 380px;
+  width: 100px;
+  appearance: none;
+  border: 0;
+}
+.submit-input:hover {
+  background-color: #ffffff;
+  color: #f6780a;
+  border-left: 2px solid black;
+}
+/* responsive */
+@media only screen and (max-width: 768px) {
+  .upper-wrapper {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(3, min-content);
+    grid-column-gap: 5%;
+    grid-row-gap: 5%;
+  }
+}
