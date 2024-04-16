@@ -13,6 +13,7 @@
     --color-02: #F3D7CA;
     --color-03: #FFF8E3;
     --color-04: #F5EEE6;
+    --num-slide: 4;
 }
 
 .color-white {
@@ -147,6 +148,11 @@
 .entry-summary form {
     display: flex;
     margin-bottom: 20px;
+    gap: 20px;
+}
+
+.btn-fun-quanity{
+    display: flex;
 }
 
 .button-number {
@@ -190,7 +196,6 @@
 }
 
 .btn-submit {
-    margin-left: 20px;
     cursor: pointer;
     color: rgb(250, 13, 13);
     background: var(--color-02);
@@ -226,6 +231,8 @@
 .share-actions {
     display: flex;
     column-gap: 20px;
+    row-gap: 10px;
+    flex-wrap: wrap;
 }
 
 .social-icon a {
@@ -244,10 +251,10 @@
     left: 50%;
     transform: translate(-50%, -50%);
     color: var(--color-01);
-    transition: all 0.2 linear;
+    transition: all 0.1s linear;
 }
 
-.social-icon i:hover {
+.social-icon a:hover i{
     color: #d74a70;
 }
 
@@ -336,7 +343,7 @@
 .slides {
     display: grid;
     grid-auto-flow: column;
-    grid-auto-columns: calc((100% / 4) - 1px);
+    grid-auto-columns: calc((100% / var(--num-slide)) - 1px);
     align-items: flex-start;
     scroll-behavior: smooth;
     column-gap: 3px;
@@ -534,8 +541,89 @@
     background-color: #000000cc;
 }
 
-@media (max-width: 490px) {
+@media (max-width: 1225px) {
+    .layout-center{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+
+@media (max-width: 850px) {
+    .section-header{
+        padding: 70px 0;
+    }
+    .btn-submit{
+        font-size: 13px;
+        padding: 0 20px;
+        white-space: nowrap;
+        height: 40px;
+    }
+}
+
+@media (max-width: 690px) {
     .section-header{
         padding: 50px 0;
     }
+    .section-header_title{
+        font-size: 30px;
+    }
+    .product-container{
+        flex-direction: column;
+        row-gap: 30px;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .img-product-detail{
+        width: 70%;
+    }
+    .entry-summary{
+        width: 100%;
+    }
+    .entry-summary form{
+        flex-wrap: wrap;
+    }
+    .name-product-detail{
+        font-size: 25px;
+    }
+
+    :root{
+        --num-slide: 3;
+    }
 }
+
+@media (max-width: 500px) {
+    .section-header{
+        padding: 30px 0;
+    }
+    .section-header_title{
+        font-size: 20px;
+    }
+    .img-product-detail{
+        width: 100%;
+    }
+
+    .des-content{
+        padding-top: 30px;
+    }
+
+    .other-product-heading h1{
+        font-size: 30px;
+    }
+
+    :root{
+        --num-slide: 2;
+    }
+}
+
+@media (max-width: 300px) {
+    .other-product-heading h1, .des-heading h1{
+        font-size: 20px!important;
+    }
+    .des-content{
+        padding-top: 10px;
+    }
+    .button-product a {
+        font-size: 10px;
+    }
+}
+

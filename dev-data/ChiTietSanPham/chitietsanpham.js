@@ -3,6 +3,9 @@ const slides = document.querySelector(".slides");
 const slideItem = document.querySelectorAll(".slide-item");
 const dotsSlide = document.querySelector(".dots-slide");
 const dotWrapper = document.querySelector(".dots-wrapper");
+const root = window.getComputedStyle(document.documentElement);
+var numSlides = root.getPropertyValue('--num-slide');
+
 
 let isDragging = false;
 let startX;
@@ -11,7 +14,7 @@ let autoplayIntervalId;
 const autoPlayTime = 5000;
 
 //Tạo dot-item
-for (let i = 0; i <= slideItem.length - 4; i++) {
+for (let i = 0; i <= slideItem.length - numSlides; i++) {
   const dotItem = document.createElement("li");
   dotItem.className = "dot-item";
   dotItem.setAttribute("data-index", i);
@@ -62,19 +65,21 @@ const enableLinks = () => {
 const dragStart = (e) => {
   isDragging = true;
   slider.classList.add("dragging");
-  startX = e.pageX;
+  startX = e.pageX || e.touches[0].pageX;
   startScrollLeft = slider.scrollLeft;
 };
 
 const dragging = (e) => {
   if (!isDragging) return;
   disableLinks();
-  slider.scrollLeft = startScrollLeft - (e.pageX - startX);
+  slider.scrollLeft = startScrollLeft - ((e.pageX || e.touches[0].pageX) - startX);
   removeClassActiveDot();
   const currentScrollLeft = slider.scrollLeft;
   const slideItemWidth = slideItem[0].offsetWidth;
   const currentIndex = Math.round(currentScrollLeft / slideItemWidth);
-  dotItem[currentIndex].classList.add("active-dot");
+  if(currentIndex < dotItem.length){
+    dotItem[currentIndex].classList.add("active-dot");
+  }
 
   const dotWidth = dotItem[0].offsetWidth + 15;
   const posDotX = -currentIndex * dotWidth;
@@ -96,8 +101,10 @@ const dragStop = (e) => {
     behavior: "smooth",
   });
 
-  removeClassActiveDot();
-  dotItem[currentIndex].classList.add("active-dot");
+  if(currentIndex < dotItem.length){
+    removeClassActiveDot();
+    dotItem[currentIndex].classList.add("active-dot");
+  }
 
   const dotWidth = dotItem[0].offsetWidth + 15;
   const posDotX = -currentIndex * dotWidth;
@@ -135,6 +142,9 @@ function autoPlay() {
 
 autoPlay();
 
+slider.addEventListener("touchstart", dragStart)
+slider.addEventListener("touchmove", dragging)
+slider.addEventListener('touchend', dragStop)
 slider.addEventListener("mousedown", dragStart);
 slider.addEventListener("mousemove", dragging);
 slider.addEventListener("mouseup", dragStop);
