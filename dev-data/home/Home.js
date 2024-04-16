@@ -62,8 +62,9 @@ document.addEventListener("DOMContentLoaded", function () {
 //swiper script
 var swiper = new Swiper(".mySwiper", {
   slidesPerView: 3,
-  slidesPerGroup: 3,
-  loop: true,
+  slidesPerGroup: 1,
+  // slidesPerGroup: 3,
+  // loop: true,
   freeMode: true,
   pagination: {
     el: ".swiper-pagination",
@@ -188,8 +189,8 @@ const review = [
 var swiper = new Swiper(".myReviewSwiper", {
   loop: true,
   navigation: {
-    nextEl: ".swiper-button-next-unique",
-    prevEl: ".swiper-button-prev-unique",
+    nextEl: ".swiper-button-prev-unique",
+    prevEl: ".swiper-button-next-unique",
   },
 });
 const swiperWrapperReview = document.querySelector(".swiper-review-wrapper");
