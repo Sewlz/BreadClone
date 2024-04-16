@@ -18,6 +18,10 @@ images.forEach((imageUrl, index) => {
 // Initialize Swiper
 var swiper = new Swiper(".myBannerSwiper", {
   loop: true,
+  autoplay: {
+    delay: 3000,
+    disableOnInteraction: false,
+  },
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
@@ -60,17 +64,31 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 });
 //swiper script
-var swiper = new Swiper(".mySwiper", {
-  slidesPerView: 3,
-  slidesPerGroup: 1,
-  // slidesPerGroup: 3,
-  // loop: true,
-  freeMode: true,
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  },
-});
+var swiper;
+if (window.innerWidth.valueOf() <= 768) {
+  swiper = new Swiper(".mySwiper", {
+    slidesPerView: 1,
+    slidesPerGroup: 1,
+    // loop: true,
+    freeMode: false,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+  });
+} else {
+  swiper = new Swiper(".mySwiper", {
+    slidesPerView: 3,
+    slidesPerGroup: 1,
+    // loop: true,
+    freeMode: true,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+  });
+}
+console.log(window.innerWidth);
 //product swiper loader
 const product = [
   {

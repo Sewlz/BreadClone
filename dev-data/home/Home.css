@@ -401,3 +401,28 @@ html body div.slection-container h1 {
   position: absolute;
   bottom: 0;
 }
+/* responsive */
+@media only screen and (max-width: 768px) {
+  .right-cell {
+    display: none;
+  }
+  .deco {
+    display: none;
+  }
+  .background-title {
+    display: none;
+  }
+  .background-review {
+    display: none;
+  }
+  .review-container {
+    width: 100% !important;
+  }
+  .swiper-button-prev,
+  .swiper-button-next {
+    display: none;
+  }
+  div.slection-container:nth-child(7) > h1:nth-child(1) {
+    text-align: center;
+  }
+}
