@@ -54,3 +54,8 @@
 .bold-text {
   font-weight: bold;
 }
+@media only screen and (max-width: 768px) {
+  .recruitment-content {
+    margin: 5% 10%;
+  }
+}
