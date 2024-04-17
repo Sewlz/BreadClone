@@ -97,22 +97,29 @@
 }
 /* button css */
 .input-container {
-  position: relative;
+  display: flex;
+  flex-direction: row;
+  /* position: relative; */
   width: 100%;
   align-items: center;
   margin-top: 10px;
-}
-.email-input {
-  width: 100%;
-  background: transparent;
   border: 1px solid #ffffff;
   color: #ffffff;
   border-radius: 50px;
+}
+.email-input {
+  flex-grow: 2;
+  width: 100%;
+  background: transparent;
+  /* border: 1px solid #ffffff;
+  color: #ffffff;
+  border-radius: 50px; */
+  border: none;
   height: 50px;
   padding-left: 20px;
 }
 .submit-input {
-  position: relative;
+  /* position: relative; */
   cursor: pointer;
   background-color: #f6780a;
   color: #ffffff;
@@ -120,8 +127,8 @@
   border-bottom-right-radius: 30px;
   height: 50px;
   width: 100px;
-  bottom: 50.5px;
-  left: 381.5px;
+  /* bottom: 50.5px;
+  left: 381.5px; */
   appearance: none;
   border: 0;
 }
