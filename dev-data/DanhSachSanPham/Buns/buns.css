@@ -1,0 +1,326 @@
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", "Ubuntu", Arial, sans-serif;
+    box-sizing: inherit;
+}
+
+:root {
+    --colorbody: #000000;
+    --color-01: #E6A4B4;
+    --color-02: #F3D7CA;
+    --color-03: #FFF8E3;
+    --color-04: #F5EEE6;
+    --num-slide: 4;
+}
+
+.color-white {
+    color: white;
+}
+
+.layout-center {
+    margin: 0 auto;
+    max-width: 80rem;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+/* css background title */
+.section-header {
+    position: relative;
+    overflow: hidden;
+    padding: 100px 0;
+}
+
+.section-header::before {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: black;
+    opacity: 0.4;
+}
+
+.section-header .section-header_background {
+    background: url(../../../public/imgs/SanPham/Rectangle-825-min.jpeg);
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    top: 0;
+    background-position: right center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.section-header_title {
+    color: white;
+    text-transform: capitalize;
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    font-size: 2.25rem;
+}
+
+.breadcrumb {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+}
+
+.breadcrumb li:nth-child(2):before,
+.number-page::before {
+    content: "/";
+    margin: 0 0.75rem;
+    color: #cacaca;
+}
+
+.breadcrumb_link:hover {
+    text-decoration: underline;
+}
+
+/* css sorting product */
+.sorting-product {
+    display: flex;
+    background-color: #eeeeee;
+    padding: 10px 15px;
+    margin: 30px 0;
+    justify-content: right;
+    align-items: center;
+}
+
+.selection-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.selection-container .title {
+    font-size: 17px;
+    white-space: nowrap;
+}
+
+.orderby {
+    outline: none;
+    font-size: 15px;
+    padding: 5px 10px;
+    border: transparent;
+    width: 150px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.count-product {
+    width: 100%;
+    text-align: right;
+}
+
+/* css list product */
+.product-grid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+    grid-gap: 40px;
+    padding: 0 10px;
+}
+
+.product-grid .cell{
+    display: block;
+}
+
+.product-container .img-product img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    will-change: transform;
+    transition: transform 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94), opacity 0.3s;
+}
+
+.img-product img:hover{
+    transform: scale(1.06);
+    opacity: 0.8;
+}
+
+.name-product{
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 30px;
+    text-align: left;
+    color: var(--colorbody);
+    transition: all 0.1s linear;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.name-product:hover{
+    color: var(--color-01);
+}
+
+.price{
+    font-size: 21px;
+    line-height: 1px;
+    color: var(--color-01);
+    position: relative;
+}
+
+.price::after{
+    content: "đ";
+    font-size: 15px;
+    position: absolute;
+    bottom: 13px;
+    text-decoration: underline;
+}
+
+.product-container .img-product{
+    display: block;
+}
+
+.button-product{
+    margin-top: 20px;
+}
+
+.button-product a{
+    color: #4F4F4F;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    border: 1px solid;
+    border-radius: 3px;
+    padding: 10px 0;
+    line-height: 22px;
+    font-weight: 500;
+    font-size: 15px;
+    text-align: center;
+    transition: all 0.1s linear;
+}
+
+.button-product a:hover{
+    color: var(--colorbody);
+}
+
+/* css pagination */
+.pagination-container{
+    display: flex;
+    justify-content: center;
+    padding: 5px 0;
+    margin: 30px 0;
+    align-items: center;
+    gap: 10px;
+}
+
+.product-pagination{
+    display: flex;
+    gap: 10px;
+}
+
+.product-pagination button{
+    outline: none;
+    border: 1px solid gray;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 15px;
+    background-color: white;
+    font-weight: 500;
+
+}
+
+.btn-pagination i{
+    border: 1px solid gray;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    background-color: white;
+}
+
+.active-pagination, .product-pagination button:hover, .btn-pagination i:hover{
+    border: 1px solid transparent!important;
+    background: linear-gradient(135deg, #f34974 0%, #ff98b2 100%);
+    color: white;
+}
+
+.product-pagination span{
+    font-weight: bold;
+    transform: translateY(30%);
+}
+
+/* css reponsive */
+@media (max-width: 1225px) {
+    .name-product{
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 850px) {
+    .section-header{
+        padding: 70px 0;
+    }
+
+    .section-header_title{
+        font-size: 25px;
+    }
+
+    .product-grid{
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+    }
+    
+    .button-product a{
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 600px) {
+    .section-header{
+        padding: 30px 0;
+    }
+
+    .section-header_title{
+        font-size: 20px;
+    }
+
+    .product-grid{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+
+    .count-product{
+        display: none;
+    }
+
+    .selection-container .title, .orderby, .name-product{
+        font-size: 14px;
+    }
+
+    .button-product a{
+        padding: 5px 0;
+    }
+
+    .price{
+        font-size: 15px;
+    }
+
+    .price::after{
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 300px) {
+
+}
