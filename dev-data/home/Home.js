@@ -80,10 +80,10 @@ function initializeSwiper() {
     });
   } else {
     swiper = new Swiper(".mySwiper", {
-      slidesPerView: 3,
+      slidesPerView: 4,
       slidesPerGroup: 1,
       // loop: true,
-      freeMode: true,
+      freeMode: false,
       pagination: {
         el: ".swiper-pagination",
         clickable: true,
@@ -104,28 +104,24 @@ console.log(window.innerWidth);
 //product swiper loader
 const product = [
   {
-    src: "./../../public/imgs/home/productList/dsc02401_optimized.png",
-    alt: "Buns",
-  },
-  {
     src: "./../../public/imgs/home/productList/PUDDING-min-300x300.png",
-    alt: "Buns",
+    alt: "Pudding",
   },
   {
     src: "./../../public/imgs/home/productList/Seasonal-Specials-min-300x300.png",
-    alt: "Buns",
+    alt: "Seasonal-Specials",
   },
   {
     src: "./../../public/imgs/home/productList/SLICES-CAKE-min-300x300.png",
-    alt: "Buns",
+    alt: "Cake Slides",
   },
   {
     src: "./../../public/imgs/home/productList/SW-min-300x300.png",
-    alt: "Buns",
+    alt: "SandWiches",
   },
   {
     src: "./../../public/imgs/home/productList/TOAST-min-300x300.png",
-    alt: "Buns",
+    alt: "Dry Cake",
   },
 ];
 
@@ -145,33 +141,39 @@ product.forEach((product) => {
 const topProducts = [
   {
     src: "./../../public/imgs/home/topProduct/dsc02401_optimized.png",
-    alt: "Buns",
+    alt: "Tiramisu Cup",
+    price: "490,000",
     href: "",
   },
   {
     src: "./../../public/imgs/home/topProduct/dsc02452_optimized.png",
-    alt: "Buns",
+    alt: "Tieamisu C",
+    price: "490,000",
     href: "",
   },
   {
     src: "./../../public/imgs/home/topProduct/dsc02494_optimized.png",
-    alt: "Buns",
+    alt: "Passion Cheese C",
+    price: "490,000",
     href: "",
   },
   {
     src: "./../../public/imgs/home/topProduct/dsc02621_optimized.png",
-    alt: "Buns",
+    alt: "Tiramisu R",
     href: "",
+    price: "490,000",
   },
   {
     src: "./../../public/imgs/home/topProduct/dsc02641_optimized.png",
-    alt: "Buns",
+    alt: "Passion Cheese C",
     href: "",
+    price: "490,000",
   },
   {
     src: "./../../public/imgs/home/topProduct/dsc02649_optimized.png",
-    alt: "Buns",
+    alt: "Japan Light Chese",
     href: "",
+    price: "490,000",
   },
 ];
 const swiperWrapperTop = document.querySelector(
@@ -182,8 +184,11 @@ topProducts.forEach((topProducts) => {
   swiperSlide.classList.add("swiper-slide");
   swiperSlide.innerHTML = `
   <img src="${topProducts.src}" alt="${topProducts.alt}" onclick="document.location='../ChiTietSanPham/chitietsanpham.html'" />
-  <h4 class="top-product-title" onclick="document.location='../ChiTietSanPham/chitietsanpham.html'">${topProducts.alt}</h4>
-  <button class="more-btn" onclick="document.location=''" style="border: 1px solid black; color: black;">Thêm vào giỏ hàng</button>
+  <div class="top-product-info">
+    <h4 class="top-product-title" onclick="document.location='../ChiTietSanPham/chitietsanpham.html'">${topProducts.alt}</h4>
+    <span class="top-product-price">${topProducts.price}</span>
+  </div>
+  <button class="more-btn" id="more-btn-2" onclick="document.location=''" style="border: 1px solid black; color: black; width: 250px; box-sizing: border-box;">Thêm vào giỏ hàng</button>
 `;
   swiperWrapperTop.appendChild(swiperSlide);
 });
@@ -234,4 +239,84 @@ review.forEach((review) => {
       <h6>${review.alt}</h6>
     </div>`;
   swiperWrapperReview.appendChild(swiperSlide);
+});
+//news-swiper-loader
+const news = [
+  {
+    src: "../../public/imgs/home/news/topic1-sugar/cac-loai-duong-dung-trong-lam-banh.jpg",
+    headline: "Beloved Customer",
+    content:
+      "Hôm nay BreadTalk sẽ hướng dẫn bạn cách phân biệt các loại đường dùng để làm bánh nhé! Đường là nguyên liệu tạo...",
+  },
+  {
+    src: "../../public/imgs/home/news/topic1-sugar/cac-loai-duong-dung-trong-lam-banh.jpg",
+    headline: "Beloved Customer",
+    content:
+      "Hôm nay BreadTalk sẽ hướng dẫn bạn cách phân biệt các loại đường dùng để làm bánh nhé! Đường là nguyên liệu tạo...",
+  },
+  {
+    src: "../../public/imgs/home/news/topic1-sugar/cac-loai-duong-dung-trong-lam-banh.jpg",
+    headline: "Beloved Customer",
+    content:
+      "Hôm nay BreadTalk sẽ hướng dẫn bạn cách phân biệt các loại đường dùng để làm bánh nhé! Đường là nguyên liệu tạo...",
+  },
+  {
+    src: "../../public/imgs/home/news/topic1-sugar/cac-loai-duong-dung-trong-lam-banh.jpg",
+    headline: "Beloved Customer",
+    content:
+      "Hôm nay BreadTalk sẽ hướng dẫn bạn cách phân biệt các loại đường dùng để làm bánh nhé! Đường là nguyên liệu tạo...",
+  },
+];
+//swiper news script
+var swiperNews;
+function initializeNewsSwiper() {
+  if (window.innerWidth.valueOf() <= 768) {
+    swiperNews = new Swiper(".newsSwiper", {
+      slidesPerView: 1,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-prev-unique",
+        prevEl: ".swiper-button-next-unique",
+      },
+    });
+  } else {
+    swiperNews = new Swiper(".newsSwiper", {
+      slidesPerView: 3,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-prev-unique",
+        prevEl: ".swiper-button-next-unique",
+      },
+    });
+  }
+}
+
+// Call initializeSwiper on page load
+initializeNewsSwiper();
+// Call initializeSwiper when window is resized
+window.addEventListener("resize", function () {
+  initializeNewsSwiper();
+});
+const swiperWrapperNews = document.querySelector(".news-swiper-wrapper");
+news.forEach((news) => {
+  const swiperSlide = document.createElement("div");
+  swiperSlide.classList.add("swiper-slide", "swiper-slide-news");
+  swiperSlide.innerHTML = `
+  <article class="news-wrapper">
+      <div class="news-img"><img src="${news.src}" alt=""></div>
+      <div class="news-content">
+          <h6>${news.headline}</h6>
+          <p>${news.content}</p>
+      </div>
+      <div class="view-more"><i class="fa fa-solid fa-chevron-right"></i></div>
+      <div class="outline"></div>                        
+  </article>       
+  `;
+  swiperWrapperNews.appendChild(swiperSlide);
 });

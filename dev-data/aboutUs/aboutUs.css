@@ -125,3 +125,15 @@
     font-size: 14px;
   }
 }
+.home-li > a:link {
+  color: #ffffff;
+}
+.home-li > a:hover {
+  color: #ffffff;
+}
+.home-li > a:visited {
+  color: #ffffff;
+}
+.home-li > a:active {
+  color: #ffffff;
+}
