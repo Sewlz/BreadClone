@@ -517,7 +517,16 @@ html body div.slection-container h1 {
 }
 /* responsive */
 @media only screen and (max-width: 280px) {
+  .news-container {
+    padding: 0 !important;
+  }
+  .title-container {
+    padding: 3% !important;
+  }
   .swiper-slide-news {
+    width: 190px !important;
+  }
+  .news-wrapper {
     width: 190px !important;
   }
   .section {
@@ -553,6 +562,10 @@ html body div.slection-container h1 {
   }
 }
 @media only screen and (max-width: 768px) {
+  #swiper-pagination-top,
+  #swiper-pagination-product {
+    margin-top: 5%;
+  }
   .title-container > p {
     width: 100% !important;
   }
@@ -563,7 +576,7 @@ html body div.slection-container h1 {
     margin-top: 40px;
   }
   .news-container {
-    padding-right: 5%;
+    padding: 10%;
   }
   .swiper-slide-news {
     width: 290px !important;
