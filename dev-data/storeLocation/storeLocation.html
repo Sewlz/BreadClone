@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../../public/imgs/cropped-single-product-14-min-32x32.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=Great Vibes" rel="stylesheet"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="./storeLocation.css">
+    <link rel="stylesheet" href="../menu/menu.css">
+    <link rel="stylesheet" href="../footer/footer.css">
+    <title>Hệ thống cửa hàng</title>
+</head>
+<body>
+    <div class = "banner-container">
+        <h2>Hệ thống cửa hàng</h2>
+        <ul class="link-back">
+            <li class = "home-li">
+                <a class="home" href="../home/Home.html">Trang chủ</a >
+            </li>
+            <li class="current-page">Hệ thống cửa hàng</li>
+        <ul> 
+    </div>
+    <div class="container">
+        <h1 class="heading-title">DANH SÁCH HỆ THỐNG ĐIỂM MUA HÀNG VÀ ĐẢM BẢO CHẤT LƯỢNG BREADTALK VIỆT NAM</h1>
+        <div class="loaction-wrapper">
+            <div class="city-selector">
+                <select id="citySelect" onchange="changeCountry()">
+                    <option value="HCM">Hồ Chí Minh</option>
+                    <option value="HN">Hà Nội</option>
+                    <option value="HP">Hải Phòng</option>
+                    <option value="NT">Nha Trang</option>
+                    <option value="DN">Đà Nẵng</option>
+                </select>
+                <ul id="cityData">
+                    <!-- Data will be updated here -->
+                </ul>
+            </div>
+            <div class="display-map" id="display-map">
+                
+            </div>
+        </div>
+    </div>
+    <div class="location-slide-wrapper">
+        <h1 class="heading-title">Danh sách chi nhánh</h1>
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper" id="swiper-wrapper"></div>
+            <div class="swiper-pagination"></div>
+          </div>
+    </div>
+    <div id="fullpage" onclick="this.style.display='none';"></div>
+    <div class="shipping-container">
+        <div class="shipping-collumn">
+            <span><img src="../../public/imgs/storeLocation/Group-2.png" alt=""></span>
+            <div class="shipping-content">
+                <h3>GIAO HÀNG 30 PHÚT</h3>
+                <p>Cupcake sweet roll sweet dragée dragée.</p>
+            </div>
+        </div>
+        <div class="shipping-collumn">
+            <span><img src="../../public/imgs/storeLocation/Group-3.png" alt=""></span>
+            <div class="shipping-content">
+                <h3>MIỄN PHÍ GIAO HÀNG</h3>
+                <p>Lollipop dessert donut marzipan cookie .</p>
+            </div>
+        </div>
+        <div class="shipping-collumn">
+            <span><img src="../../public/imgs/storeLocation/Group-4.png" alt=""></span>
+            <div class="shipping-content">
+                <h3>UY TÍN - ĐÚNG HẸN</h3>
+                <p>bonbon sesame snaps chocolate cake.</p>
+            </div>
+        </div>
+        <div class="shipping-collumn">
+            <span><img src="../../public/imgs/storeLocation/Group-5.png" alt=""></span>
+            <div class="shipping-content">
+                <h3>ĐỘI NGŨ CHUYÊN NGHIỆP</h3>
+                <p>Đơn hàng từ 5kg đến khi có thông báo mới</p>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="./storeLocation.js"></script>
+</html>

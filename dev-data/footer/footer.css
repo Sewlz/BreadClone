@@ -5,9 +5,9 @@
   text-decoration: none;
   font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI",
     "Ubuntu", Arial, sans-serif;
-  color: white;
 }
 .footer-container {
+  color: white;
   padding-top: 70px;
   padding-bottom: 60px;
   background: url(../../public/imgs/footer/Group-1015-min.jpeg);
@@ -66,6 +66,9 @@
   font-size: 15px;
   line-height: 26px;
 }
+.policy-wrapper > ul > li > a {
+  color: white;
+}
 .policy-wrapper h1 {
   text-align: start;
 }
@@ -86,6 +89,7 @@
   height: 70px;
 }
 .copyright-wrapper {
+  color: white;
   border-top: 0.7px solid #ffffff;
   display: block;
   justify-self: center;
@@ -108,6 +112,7 @@
   border-radius: 50px;
 }
 .email-input {
+  color: white;
   flex-grow: 2;
   width: 100%;
   background: transparent;

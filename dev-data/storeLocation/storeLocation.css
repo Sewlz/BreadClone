@@ -1,0 +1,233 @@
+* {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    "Ubuntu", Arial, sans-serif;
+}
+.banner-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 30vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../../public/imgs/SanPham/Rectangle-825-min.jpeg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.banner-container > h2 {
+  font-size: 2.25rem;
+  color: #fff;
+}
+.link-back {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.link-back > li {
+  font-size: 13px;
+  color: #fff;
+}
+.home-li::after {
+  content: "//";
+  color: #fff;
+  padding: 0 10px;
+}
+.link-back a:link {
+  color: #fff;
+}
+.link-back a:active {
+  color: #fff;
+}
+/* css select */
+#cityData {
+  list-style: none;
+  padding: 0;
+  max-width: 100%;
+  /* height: 30%; */
+  max-height: 380px;
+  border: 1px solid #ccc;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f8f8;
+  overflow-y: auto;
+}
+#citySelect {
+  width: 100%;
+  background-color: #f9a747;
+  border: 0;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+  padding: 20px;
+  color: white;
+  font-size: inherit;
+}
+/* main css */
+.container {
+  display: grid;
+  grid-gap: 20px;
+  padding: 20px;
+}
+.heading-title {
+  text-transform: uppercase;
+  color: #f9a747;
+  text-align: center;
+  margin: 20px 0;
+}
+.loaction-wrapper {
+  /* display: grid;
+  grid-template-columns: repeat(2, 1fr); */
+  display: flex;
+  grid-gap: 20px;
+  margin: 0 10%;
+}
+.city-selector {
+  position: relative;
+  width: 50%;
+}
+.display-map {
+  width: 50%;
+}
+.location-slide-wrapper {
+  margin: 0 10%;
+}
+/* cell css */
+.cell-header {
+  display: grid;
+  grid-template-columns: masonry;
+}
+.cell-content {
+  background-color: #f8f8f8;
+  padding: 20px;
+}
+.cell-content-loc:hover {
+  color: #f8f8f8;
+  background-color: #f9a747;
+}
+.cell-content-loc {
+  background-color: #fff;
+  padding: 20px;
+}
+.cell-row {
+  font-size: 15px;
+  line-height: 24px;
+}
+.header-id {
+  background-color: #f9a747;
+  align-content: center;
+  text-align: center;
+  color: #fff;
+  width: 10%;
+  height: 100%;
+}
+.header-name {
+  background-color: #2e425d;
+  align-content: center;
+  color: #fff;
+  width: 90%;
+  height: 100%;
+}
+.header-name > h2 {
+  font-size: larger;
+  padding: 10px;
+}
+/* swiper css*/
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+.swiper-slide {
+  background-color: #f8f8f8;
+}
+.swiper-wrapper {
+  margin-bottom: 5%;
+  height: 100%;
+}
+/* shipping css */
+.shipping-container {
+  display: flex;
+  justify-content: center;
+  padding: 2% 10%;
+  background-color: #fcf8f0;
+}
+.shipping-collumn {
+  display: flex;
+  align-items: center;
+}
+.shipping-collumn > span {
+  width: 70px;
+  height: 60px;
+  margin-right: 15px;
+}
+.shipping-collumn > span > img {
+  width: 100%;
+  height: 100%;
+}
+.shipping-content {
+  margin-right: 2%;
+}
+@media only screen and (max-width: 768px) {
+  .loaction-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .display-map,
+  .city-selector {
+    width: 100%;
+  }
+  .shipping-container {
+    display: block;
+  }
+  .shipping-collumn {
+    margin: 5% 0;
+    font-size: smaller;
+  }
+  .shipping-collumn > span {
+    width: 50px;
+    height: 40px;
+    margin-right: 15px;
+  }
+  .heading-title {
+    font-size: x-large;
+  }
+  .swiper-wrapper {
+    margin-bottom: 15%;
+  }
+}
+.home-li > a:link {
+  color: #ffffff;
+}
+.home-li > a:hover {
+  color: #ffffff;
+}
+.home-li > a:visited {
+  color: #ffffff;
+}
+.home-li > a:active {
+  color: #ffffff;
+}
+#fullpage {
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat no-repeat;
+  background-position: center center;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+#iframe-container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50%;
+  height: 50%;
+}
