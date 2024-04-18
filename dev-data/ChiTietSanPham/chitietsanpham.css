@@ -172,6 +172,10 @@
     background-color: var(--color-03);
 }
 
+.button-number i {
+    font-size: 14px;
+}
+
 .quantity {
     outline: none;
     text-align: center;
@@ -613,6 +617,31 @@
     :root{
         --num-slide: 2;
     }
+
+    .btn-submit{
+        font-size: 12px;
+        height: 30px;
+    }
+
+    .button-number{
+        height: 30px;
+        width: 30px;
+    }
+
+    .quantity{
+        height: 30px;
+    }
+
+    .price-product-detail, .name-product-detail{
+        font-size: 20px;
+    }
+    .social-icon a{
+        width:35px;
+        height:35px;
+    }
+    .social-icon i{
+        font-size: 18px;
+    }
 }
 
 @media (max-width: 300px) {
@@ -624,6 +653,9 @@
     }
     .button-product a {
         font-size: 10px;
+    }
+    .price-product-detail, .name-product-detail{
+        font-size: 18px;
     }
 }
 

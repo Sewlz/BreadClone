@@ -13,6 +13,8 @@
     --color-02: #F3D7CA;
     --color-03: #FFF8E3;
     --color-04: #F5EEE6;
+    --color-05: #f56c8e;
+    --color-06: rgb(32, 155, 83);
 }
 
 .color-white {
@@ -21,7 +23,7 @@
 
 .layout-center {
     margin: 0 auto;
-    max-width: 80rem;
+    max-width: 900px;
 }
 
 .uppercase {
@@ -88,8 +90,455 @@
     text-decoration: underline;
 }
 
-@media (max-width: 490px) {
+/* css notification cart */
+.section-cart{
+    padding: 50px 0;
+}
+
+.notification-cart{
+    background: #f6f6f6;
+    margin-bottom: 30px;
+    border-top: 3px solid var(--color-05);
+    padding: 14px 0;
+    padding-left: 20px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    color: var(--color-05);
+    display: none;
+}
+
+.notification-cart span{
+    color: #454545;
+    font-size: 15px;
+}
+
+/* css table cart */
+.table-cart {
+    width: 100%;
+    border-collapse: collapse; 
+    text-align: left;
+    margin-bottom: 40px;
+}
+
+.table-cart, thead, tbody{
+    border: 1px solid #f2f2f2; 
+}
+
+.table-cart thead{
+    background-color: #fcfcfc;
+}
+
+.table-cart thead th{
+    color: #666;
+    font-weight: 500;
+}
+
+.table-cart thead th, .table-cart tbody td{
+    padding: 12px;
+}
+
+.table-cart tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.product-remove a{
+    display: inline-flex; 
+    justify-content: center; 
+    align-items: center; 
+    width: 25px;
+    height: 25px; 
+    border-radius: 50%; 
+    color: red;
+    font-size: 16px; 
+    cursor: pointer;
+    font-weight: bolder;
+}
+
+.product-remove a:hover{
+    background-color: red;
+    color: white;
+}
+
+.product-name p{
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.product-price p, .product-subtotal p{
+    font-size: 17px;
+    font-weight: 500;
+    position: relative;
+}
+
+.product-price p::after, .product-subtotal p::after{
+    content: "đ";
+    text-decoration: underline;
+    font-size: 15px;
+    position: absolute;
+}
+
+.product-img{
+    width: 95px;
+}
+
+.product-img img{
+    width: 100%;
+}
+
+.btn-fun-quanity{
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.button-number {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    background: none;
+    border: 1px solid black;
+    font-size: 22px;
+    transition: all 0.2s linear;
+}
+
+.button-number:hover {
+    background-color: var(--color-03);
+}
+
+.button-number i {
+    font-size: 12px;
+}
+
+.quantity {
+    outline: none;
+    text-align: center;
+    width: 60px;
+    border: 1px solid black;
+    border-right: 1px solid transparent;
+    border-left: 1px solid transparent;
+    font-size: 17px;
+    height: 30px;
+}
+
+/* Chrome, Safari, Edge, Opera */
+.quantity::-webkit-outer-spin-button,
+.quantity::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* css code apply */
+.coupon-code{
+    float: left;
+}
+
+.coupon-code input{
+    outline: none;
+    box-sizing: border-box;
+    border: 1px solid #d3ced2;
+    padding: 6px 6px 5px;
+    margin: 0 4px 0 0;
+    height: 40px;
+    width: 120px;
+    font-size: 15px;
+    background-color: transparent;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.5s, border-color 0.25s ease-in-out;
+}
+
+.coupon-code input:focus{
+    background-color: white;
+    box-shadow: 0 0 5px #cacaca;
+    transition: box-shadow 0.5s, border-color 0.25s ease-in-out;
+}
+
+.coupon-code button{
+    outline: none;
+    height: 40px;
+    background-color: #ff2a5f;
+    border: 1px solid #ff2a5f;
+    padding: 0 15px;
+    color: white;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.1s linear;
+}
+
+.coupon-code button:hover{
+    background-color: #c72d54;
+}
+
+.update-cart{
+    float: right;
+}
+
+.update-cart button{
+    outline: none;
+    font-weight: 500;
+    color: white;
+    background-color: #f8698d;
+    border: 1px solid #f8698d;
+    padding: 0 15px;
+    height: 40px;
+    cursor: not-allowed;
+}
+
+/* css payroll */
+.information-bill::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.information-bill{
+    box-sizing: content-box;
+}
+
+.info-container{
+    width: 60%;
+    float: right;
+}
+
+.title-total{
+    font-weight: 600;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.table-total table{
+    width: 100%;
+    border-collapse: collapse; 
+    text-align: left;
+}
+
+.table-total table tr{
+    border: 1px solid #f2f2f2; 
+}
+
+.table-total table th, .table-total table td{
+    padding: 12px;
+}
+
+.table-total table th{
+    color: #666;
+    width: 35%;
+}
+
+.cart-subtotal span, .order-total span{
+    color: var(--color-05);
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.fee-shipping{
+    margin-bottom: 5px;
+}
+
+.fee-shipping span{
+    font-weight: bold;
+}
+
+.cart-subtotal span::after, .fee-shipping span::after, .order-total span::after{
+    content: "đ";
+    text-decoration: underline;
+    font-size: 16px;
+}
+
+.shipping-location td{
+    background-color: #F2F2F2;
+}
+
+.shipping-location td > p{
+    color: var(--color-06);
+    float: left;
+}
+
+.form-location{
+    float: left;
+}
+
+.form-location .change-location{
+    text-decoration: underline;
+    cursor: pointer;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.choose-location{
+    max-height: 0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+    transition: max-height 0.5s ease-in-out;
+}
+
+.active-form-location{
+    max-height: 1000px;
+}
+
+.choose-location select{
+    outline: none;
+    font-weight: 300;
+    color: var(--colorbody);
+    height: 50px;
+    font-size: 16px;
+    padding: 0 5px;
+    text-overflow: ellipsis;
+}
+
+.choose-location button{
+    outline: none;
+    height: 40px;
+    width: 120px;
+    background-color: var(--color-06);
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: 500;
+    transition: background-color 0.25s ease-out, color 0.25s ease-out;
+}
+
+.choose-location button:hover{
+    background-color: var(--color-05);
+}
+
+.process-pay{
+    width: 100%;
+}
+
+.process-pay a{
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    background-color: var(--color-05);
+    margin-top: 20px;
+    color: white;
+    font-size: 17px;
+    font-weight: 600;
+    transition: all 0.2s linear;
+}
+
+.process-pay a:hover{
+    background-color: #cc1845;
+}
+
+.product-img{
+    box-sizing: border-box;
+}
+
+
+/* css reponsive */
+@media (max-width: 1225px) {
+    .layout-center{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+
+@media (max-width: 850px) {
+    .section-header{
+        padding: 70px 0;
+    }
+}
+
+@media (max-width: 720px) {
+    .table-cart thead, .table-total table th{
+        display: none;
+    }
+
     .section-header{
         padding: 50px 0;
+    }
+    .section-header_title{
+        font-size: 30px;
+    }
+
+    .table-cart tbody td{
+        display: flex;
+        border: 1px solid #f2f2f2;
+    }
+
+    .table-cart tbody td::before, .table-total table td:before{
+        content: attr(data-title) "";
+        font-weight: bold;
+        margin-right: 5px;
+        color: #666;
+    }
+
+    .product-img{
+        width: 50%;
+        border-top: 1px solid transparent!important;
+    }
+    
+    .product-remove{
+        padding: 5px!important;
+        border-bottom: 1px solid transparent!important;
+    }
+
+    .action-funtion-cart{
+        flex-direction: column;
+    }
+
+    .coupon-code{
+        width: 100%;
+        display: flex;
+        gap: 10px;
+    }
+
+    .coupon-code input, .coupon-code button{
+        width: 50%;
+    }
+
+    .update-cart{
+        width: 100%;
+        margin-top: 10px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .update-cart button{
+        width: 100%;
+        padding: 0;
+    }
+    
+    .info-container{
+        float: left;
+    }
+}
+
+@media (max-width: 550px) {
+    .product-img{
+        width: 100%;
+    }
+
+    .info-container{
+        width: 100%;
+    }
+
+    .section-header{
+        padding: 30px 0;
+    }
+    .section-header_title{
+        font-size: 20px;
+    }
+
+    .layout-center{
+        padding: 30px 10px;
+    }
+
+    .choose-location select{
+        height: 35px;
+        width: 80%;
+        box-sizing: border-box;
+    }
+
+    .form-location{
+        float: right;
     }
 }

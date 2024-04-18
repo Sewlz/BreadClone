@@ -13,6 +13,7 @@
     --color-02: #F3D7CA;
     --color-03: #FFF8E3;
     --color-04: #F5EEE6;
+    --color-05: #f56c8e;
     --num-slide: 4;
 }
 
@@ -129,7 +130,7 @@
 /* css list product */
 .product-grid{
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(var(--num-slide), 1fr);
     gap: 40px;
     grid-gap: 40px;
     padding: 0 10px;
@@ -202,12 +203,59 @@
     font-weight: 500;
     font-size: 15px;
     text-align: center;
-    transition: all 0.1s linear;
+    transition: color 0.4s ease-in-out;
+    position: relative;
+    overflow: hidden;
 }
 
-.button-product a:hover{
+.button-product a:hover {
+    cursor: pointer;
+    animation: jelly 0.5s;
+  }
+
+  @keyframes jelly {
+    0%,
+    100% {
+      transform: scale(1, 1);
+    }
+    25% {
+      transform: scale(0.9, 1.1);
+    }
+    50% {
+      transform: scale(1.1, 0.9);
+    }
+    75% {
+      transform: scale(0.95, 1.05);
+    }
+  }
+
+.button-product a::before {
+    content: '';
+    z-index: -1;
+    position: absolute;
+    bottom: 100%;
+    right: 100%;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: var(--color-05);
+    transform-origin: center;
+    transform: translate3d(50%, 50%, 0) scale3d(0, 0, 0);
+    transition: transform 0.45s ease-in-out;
+  }
+
+  .button-product a:hover {
+    cursor: pointer;
+    color: #fff;
+  }
+
+  .button-product a:hover::before {
+    transform: translate3d(50%, 50%, 0) scale3d(15, 15, 15);
+  }
+
+/* .button-product a:hover{
     color: var(--colorbody);
-}
+} */
 
 /* css pagination */
 .pagination-container{
@@ -276,9 +324,8 @@
         font-size: 25px;
     }
 
-    .product-grid{
-        grid-template-columns: repeat(3, 1fr);
-        gap: 30px;
+    :root{
+        --num-slide: 3;
     }
     
     .button-product a{
@@ -295,9 +342,12 @@
         font-size: 20px;
     }
 
+    :root{
+        --num-slide: 2;
+    }
+
     .product-grid{
-        grid-template-columns: repeat(2, 1fr);
-        gap: 10px;
+        gap: 30px;
     }
 
     .count-product{
@@ -322,5 +372,7 @@
 }
 
 @media (max-width: 300px) {
-
+    .product-grid{
+        gap: 10px;
+    }
 }

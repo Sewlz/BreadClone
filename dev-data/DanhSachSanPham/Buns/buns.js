@@ -90,9 +90,11 @@ function updatePagination() {
                 paginations[2].style.display = 'block'
             }
             if (endPage < totalPages) {
-                const ellipsisAfter = document.createElement('span');
-                ellipsisAfter.textContent = '...';
-                paginationContainer.insertBefore(ellipsisAfter, paginations[endPage]);
+                if(!(currentPage + 2 == totalPages)){
+                    const ellipsisAfter = document.createElement('span');
+                    ellipsisAfter.textContent = '...';
+                    paginationContainer.insertBefore(ellipsisAfter, paginations[endPage]);
+                }
             }
         }
     }

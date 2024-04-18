@@ -46,6 +46,8 @@
   border: 1px solid #ffffff;
   background: var(--color2);
   border-radius: 100%;
+  cursor: pointer;
+  transition: all 0.1s linear;
 }
 .social-icon-wrapper i:hover {
   background-color: white;
@@ -117,6 +119,7 @@
   border: none;
   height: 50px;
   padding-left: 20px;
+  outline: none;
 }
 .submit-input {
   /* position: relative; */
@@ -131,6 +134,8 @@
   left: 381.5px; */
   appearance: none;
   border: 0;
+  transition: all 0.1s linear;
+  border-left: 2px solid green;
 }
 .submit-input:hover {
   background-color: #ffffff;
