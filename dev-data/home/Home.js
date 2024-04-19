@@ -308,7 +308,7 @@ news.forEach((news) => {
   const swiperSlide = document.createElement("div");
   swiperSlide.classList.add("swiper-slide", "swiper-slide-news");
   swiperSlide.innerHTML = `
-  <article class="news-wrapper">
+  <article class="news-wrapper" onclick="window.location.href = '../news/news.html' ">
       <div class="news-img"><img src="${news.src}" alt=""></div>
       <div class="news-content">
           <h6>${news.headline}</h6>

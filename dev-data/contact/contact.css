@@ -13,6 +13,9 @@
   --color-03: #fff8e3;
   --color-04: #f5eee6;
 }
+i {
+  color: var(--color-01);
+}
 .banner-container {
   display: flex;
   flex-direction: column;
@@ -132,7 +135,7 @@ textarea {
   font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI",
     "Ubuntu", Arial, sans-serif;
   font-size: large;
-  background: #f6780a;
+  background: var(--color-01);
   color: #ffffff;
   padding: 12px 40px;
   border: none;
@@ -144,6 +147,12 @@ textarea {
 @media only screen and (max-width: 768px) {
   .container {
     flex-direction: column;
+  }
+  .message {
+    margin-bottom: 10px;
+  }
+  .submit-btn {
+    background: var(--color-01);
   }
   #email {
     width: 150px;
