@@ -575,11 +575,10 @@ html body div.slection-container h1 {
   #news-pagination {
     margin-top: 40px;
   }
-  .news-container {
-    padding: 12%;
-  }
   .swiper-slide-news {
-    width: 290px !important;
+    margin: 0;
+    width: 100% !important;
+    padding: 0;
   }
   .story-content > h3 {
     font-size: 75px;

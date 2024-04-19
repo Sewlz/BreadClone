@@ -273,6 +273,7 @@ function initializeNewsSwiper() {
   if (window.innerWidth.valueOf() <= 768) {
     swiperNews = new Swiper(".newsSwiper", {
       slidesPerView: 1,
+      slidesPerGroup: 1,
       pagination: {
         el: ".swiper-pagination",
         clickable: true,
