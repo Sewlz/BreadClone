@@ -543,3 +543,7 @@
         float: right;
     }
 }
+
+.cart-container:hover .cart-menu-container{
+    display: none!important;
+}
