@@ -42,7 +42,7 @@ body {
   color: #fff;
 }
 .home-li::after {
-  content: "//";
+  content: "/";
   color: #fff;
   padding: 0 10px;
 }

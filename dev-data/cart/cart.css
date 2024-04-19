@@ -160,7 +160,8 @@
     color: white;
 }
 
-.product-name p{
+.product-name a{
+    color: black;
     font-weight: 500;
     font-size: 18px;
 }
