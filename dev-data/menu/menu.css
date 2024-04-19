@@ -242,6 +242,7 @@
     display: block;
     transform: translateY(0);
     opacity: 1;
+    visibility: visible;
 }
 .cart-menu-wrapper{
     padding: 15px;
@@ -255,7 +256,8 @@
     box-sizing: border-box;
     transform: translateY(5px);
     opacity: 0;
-    transition: all 0.2s ease-in-out;
+    transition: all 0.35s cubic-bezier(0.53, 0.01, 0.18, 1);
+    visibility: hidden;
 }
 
 .item-cart-menu,
