@@ -174,7 +174,14 @@
     display: flex;
     flex-direction: column;
   }
-
+  .cell-header {
+    display: flex;
+    align-items: center;
+  }
+  .header-id,
+  .header-name {
+    height: 100px;
+  }
   .display-map,
   .city-selector {
     width: 100%;
