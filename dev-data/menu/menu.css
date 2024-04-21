@@ -15,6 +15,7 @@
     --color-04: #F5EEE6;
     --color-05: #f3547c;
     --color-07: #2e9969;
+    --color-08: #FFC0CB;
 }
 
 ::-webkit-scrollbar {
@@ -77,7 +78,7 @@
     justify-content: space-between;
     max-width: 100%;
     padding: 0 20px;
-    background-color: var(--color-03);
+    background-color: var(--color-08);
 }
 
 .menu-logo img {
@@ -104,6 +105,10 @@
     align-items: center;
     transition: all 0.1s linear;
     color: #000000;
+}
+
+.menus .menu-item > a{
+    color: white;
 }
 
 .active-page,
@@ -187,7 +192,7 @@
 
 .translate-language ul a {
     font-size: 16px;
-    color: #000000;
+    color: white;
     white-space: nowrap;
 }
 
@@ -195,6 +200,7 @@
     font-size: 18px;
     margin: 0 5px;
     user-select: none;
+    color: white;
 }
 
 .cart-container>a,
