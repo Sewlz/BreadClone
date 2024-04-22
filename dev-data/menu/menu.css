@@ -734,3 +734,33 @@
         font-size: 14px;
     }
 }
+
+/* css scroll to top */
+.scroll-to-top{
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    width: 32px;
+    height: 32px;
+    background-color: #2e9969;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 50;
+    transition: all 0.1s linear;
+}
+
+.scroll-to-top:hover{
+    color: var(--color-05);
+    background-color: white;
+    border: 1px solid var(--color-05);
+}
+
+.scroll-to-top.active-scroll-to-top{
+    opacity: 1;
+    visibility: visible;
+}
