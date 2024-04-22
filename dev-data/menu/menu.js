@@ -22,22 +22,25 @@ const menuBar = document.querySelector(".menu-bar-container");
 const layoutCoating = document.querySelector(".layout-close-menu-bar");
 const btnCloseMenu = document.querySelector(".button-close-menu");
 
-btnCloseMenu.addEventListener("click", () => {
-  menuBar.style = "transform: translateX(-100%)";
-  layoutCoating.style.display = "none";
+function resetMenuBar() {
   menuLv1.classList.remove("active-menu-bar");
   btnShowLv1.classList.remove("rotation-icon-down");
   menuLv2.classList.remove("active-menu-bar");
   btnShowLv2.classList.remove("rotation-icon-down");
+  itemBarClose[0].style = `transform: rotate(0)`
+  itemBarClose[1].style = `transform: rotate(0)`
+}
+
+btnCloseMenu.addEventListener("click", () => {
+  menuBar.style = "transform: translateX(-100%)";
+  layoutCoating.style.display = "none";
+  resetMenuBar()
 });
 
 layoutCoating.addEventListener("click", () => {
   menuBar.style = "transform: translateX(-100%)";
   layoutCoating.style.display = "none";
-  menuLv1.classList.remove("active-menu-bar");
-  btnShowLv1.classList.remove("rotation-icon-down");
-  menuLv2.classList.remove("active-menu-bar");
-  btnShowLv2.classList.remove("rotation-icon-down");
+  resetMenuBar()
 });
 
 const btnShowLv2 = document.querySelector(".menu-bar_lv2 i");
@@ -59,8 +62,13 @@ btnShowLv2.addEventListener("click", () => {
 });
 
 const btnMenuBar = document.querySelector(".btn-menu-bar");
+const itemBarClose = document.querySelectorAll('.menu-bar')
+const degClose = 135
+
 btnMenuBar.addEventListener("click", () => {
   menuBar.style = "transform: translateX(0)";
+  itemBarClose[0].style = `transform: rotate(${degClose}deg)`
+  itemBarClose[1].style = `transform: rotate(${-degClose}deg)`
   layoutCoating.style.display = "block";
 });
 
