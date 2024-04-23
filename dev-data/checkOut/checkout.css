@@ -274,6 +274,9 @@
   color: #ffc0cb;
 }
 @media only screen and (max-width: 768px) {
+  .voucher-wrapper {
+    font-size: small;
+  }
   .input-field {
     flex-direction: column;
   }
