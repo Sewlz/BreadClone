@@ -10,7 +10,7 @@
   color: white;
   padding-top: 70px;
   padding-bottom: 60px;
-  background: url(../../public/imgs/footer/Group-1015-min.jpeg);
+  background: #ffb2c5;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   /* grid-template-rows: repeat(3, min-content); */
@@ -44,14 +44,15 @@
   text-align: center;
   font-size: 18px;
   border: 1px solid #ffffff;
-  background: var(--color2);
+  background: white;
   border-radius: 100%;
+  color: var(--color-07);
   cursor: pointer;
   transition: all 0.1s linear;
 }
 .social-icon-wrapper i:hover {
   background-color: white;
-  color: #f6780a;
+  color: var(--color-01);
 }
 .subscription-wrapper {
   display: flex;
@@ -96,7 +97,7 @@
   display: block;
   justify-self: center;
   text-align: center;
-  background-color: #f6780a;
+  background-color: rgb(255, 144, 162);
   font-weight: 100;
   font-size: 15px;
   line-height: 26px;
@@ -130,7 +131,7 @@
 .submit-input {
   /* position: relative; */
   cursor: pointer;
-  background-color: #f6780a;
+  background-color: var(--color-07);
   color: #ffffff;
   border-top-right-radius: 30px;
   border-bottom-right-radius: 30px;
@@ -145,7 +146,7 @@
 }
 .submit-input:hover {
   background-color: #ffffff;
-  color: #f6780a;
+  color: var(--color-01);
   border-left: 2px solid black;
 }
 /* responsive */
