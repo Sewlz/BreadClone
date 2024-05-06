@@ -1,0 +1,40 @@
+{
+  "topProducts": [
+    {
+      "src": "./../../public/imgs/home/topProduct/dsc02401_optimized.png",
+      "alt": "Tiramisu Cup",
+      "price": "490,000",
+      "href": ""
+    },
+    {
+      "src": "./../../public/imgs/home/topProduct/dsc02452_optimized.png",
+      "alt": "Tieamisu C",
+      "price": "490,000",
+      "href": ""
+    },
+    {
+      "src": "./../../public/imgs/home/topProduct/dsc02494_optimized.png",
+      "alt": "Passion Cheese C",
+      "price": "490,000",
+      "href": ""
+    },
+    {
+      "src": "./../../public/imgs/home/topProduct/dsc02621_optimized.png",
+      "alt": "Tiramisu R",
+      "href": "",
+      "price": "490,000"
+    },
+    {
+      "src": "./../../public/imgs/home/topProduct/dsc02641_optimized.png",
+      "alt": "Passion Cheese C",
+      "href": "",
+      "price": "490,000"
+    },
+    {
+      "src": "./../../public/imgs/home/topProduct/dsc02649_optimized.png",
+      "alt": "Japan Light Chese",
+      "href": "",
+      "price": "490,000"
+    }
+  ]
+}

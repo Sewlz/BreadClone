@@ -1,0 +1,24 @@
+{
+  "review": [
+    {
+      "src": "./../../public/imgs/home/customerProfile/profile-1.jpg",
+      "alt": "Beloved Customer",
+      "review": "Thử vì tiệm gần nhà nhưng dính tới giờ. Nhân viên thân thiện, nhiệt tình, bánh ngon. Tiệm mở rất sớm, sáng ghé mua mang đi làm luôn cũng tiện."
+    },
+    {
+      "src": "./../../public/imgs/home/customerProfile/profile-2.jpg",
+      "alt": "Beloved Customer",
+      "review": "Lâu lâu mấy đứa em lên chơi mà không biết dắt đi đâu là dẫn nó tới tiệm này. Bánh nước giá ok, có chỗ ngồi rộng rãi mà thoải mái nữa."
+    },
+    {
+      "src": "./../../public/imgs/home/customerProfile/profile-3.jpg",
+      "alt": "Beloved Customer",
+      "review": "Cám ơn BreadTalk đã cứu tuiiii. Đợt đó đặt bánh cho công ty mà chỗ đặt đầu tiên xảy ra lỗi, không giao bánh được, cuống cuồng đi kiếm chỗ khác. May có bên này chịu nhận, tui cũng lo quá trời, may người ta ráng tăng ca để xong đơn kịp giao cho tui. Từ đó, tui thành mối đặt bánh ở đây luôn, chỗ lớn người ta làm ăn uy tín, mọi người yên tâm."
+    },
+    {
+      "src": "./../../public/imgs/home/customerProfile/profile-4.jpg",
+      "alt": "Beloved Customer",
+      "review": "Ghiền Fire Floss thật sự. Mình không hảo ngọt mấy, nên chưa thử qua bánh ngọt ở đây nhưng mà cái bánh nhân chà bông ở đây phải nói là đỉnh. Mấy loại bánh mặn khác cũng ok, mà siêu recommend cái bánh Fire Floss này nha. Mới đi xem lại, hình như nó còn là Best Seller của tiệm ><"
+    }
+  ]
+}

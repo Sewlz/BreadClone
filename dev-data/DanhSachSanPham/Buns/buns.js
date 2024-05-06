@@ -1,4 +1,4 @@
-fetch("../../../data/product.json")
+fetch("../../../data/Product-data/product.json")
   .then((response) => response.json())
   .then((productJson) => {
     const title = document
@@ -85,7 +85,7 @@ fetch("../../../data/product.json")
 
         button.addEventListener("click", () => {
           currentPage = i;
-          scrollToSortingProduct()
+          scrollToSortingProduct();
           updateDisplay();
         });
 
@@ -169,7 +169,7 @@ fetch("../../../data/product.json")
       .addEventListener("click", () => {
         if (currentPage > 1) {
           currentPage--;
-          scrollToSortingProduct()
+          scrollToSortingProduct();
           updateDisplay();
         }
       });
@@ -179,7 +179,7 @@ fetch("../../../data/product.json")
       .addEventListener("click", () => {
         if (currentPage < totalPages) {
           currentPage++;
-          scrollToSortingProduct()
+          scrollToSortingProduct();
           updateDisplay();
         }
       });

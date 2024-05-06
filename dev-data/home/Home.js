@@ -1,19 +1,18 @@
-const images = [
-  "./../../public/imgs/sliders/BANH-MOI_THANG-11-06-1920x720.jpg",
-  "./../../public/imgs/sliders/BUFFET-LAU-BANG-CHUYEN-WEB-DESKTOP-1920x720.jpg",
-  "./../../public/imgs/sliders/CUSTARD-COVER_WEB_DESKTOP-1920x720.jpg",
-  "./../../public/imgs/sliders/HAPPY-HOUR_WEB_WEB_DESKTOP-1920x720.jpg",
-  "./../../public/imgs/sliders/NEW-BANH_WEB_DESKTOP-copy-1920x720.jpg",
-];
-
-const slidesWrapper = document.querySelector(".swiper-wrapper-banner");
-
-images.forEach((imageUrl, index) => {
-  const swiperSlide = document.createElement("div");
-  swiperSlide.classList.add("swiper-slide");
-  swiperSlide.innerHTML = `<img src="${imageUrl}" alt="Image ${index + 1}">`;
-  slidesWrapper.appendChild(swiperSlide);
-});
+fetch("../../data/home-data/slide-banner.json")
+  .then((response) => response.json())
+  .then((data) => {
+    const images = data.images;
+    const slidesWrapper = document.querySelector(".swiper-wrapper-banner");
+    images.forEach((imageUrl, index) => {
+      const swiperSlide = document.createElement("div");
+      swiperSlide.classList.add("swiper-slide");
+      swiperSlide.innerHTML = `<img src="${imageUrl}" alt="Image ${
+        index + 1
+      }">`;
+      slidesWrapper.appendChild(swiperSlide);
+    });
+  })
+  .catch((error) => console.error("Error fetching JSON:", error));
 
 // Initialize Swiper
 var swiper = new Swiper(".myBannerSwiper", {
@@ -102,124 +101,45 @@ window.addEventListener("resize", function () {
 
 console.log(window.innerWidth);
 //product swiper loader
-const product = [
-  {
-    src: "./../../public/imgs/home/productList/PUDDING-min-300x300.png",
-    alt: "Pudding",
-  },
-  {
-    src: "./../../public/imgs/home/productList/Seasonal-Specials-min-300x300.png",
-    alt: "Seasonal-Specials",
-  },
-  {
-    src: "./../../public/imgs/home/productList/SLICES-CAKE-min-300x300.png",
-    alt: "Cake Slides",
-  },
-  {
-    src: "./../../public/imgs/home/productList/SW-min-300x300.png",
-    alt: "SandWiches",
-  },
-  {
-    src: "./../../public/imgs/home/productList/TOAST-min-300x300.png",
-    alt: "Dry Cake",
-  },
-];
+fetch("../../data/home-data/homeProduct.json")
+  .then((response) => response.json())
+  .then((data) => {
+    const product = data.product;
+    const swiperWrapper = document.getElementById("swiper-wrapper");
 
-const swiperWrapper = document.getElementById("swiper-wrapper");
-
-product.forEach((product) => {
-  const swiperSlide = document.createElement("div");
-  swiperSlide.classList.add("swiper-slide");
-  swiperSlide.innerHTML = `
+    product.forEach((product) => {
+      const swiperSlide = document.createElement("div");
+      swiperSlide.classList.add("swiper-slide");
+      swiperSlide.innerHTML = `
     <img src="${product.src}" alt="${product.alt}" onclick="document.location='../ChiTietSanPham/chitietsanpham.html'" />
     <h4 onclick="document.location='../ChiTietSanPham/chitietsanpham.html'">${product.alt}</h4>
     `;
-  swiperWrapper.appendChild(swiperSlide);
-});
+      swiperWrapper.appendChild(swiperSlide);
+    });
+  });
 
 //top product swiper loader
-const topProducts = [
-  {
-    src: "./../../public/imgs/home/topProduct/dsc02401_optimized.png",
-    alt: "Tiramisu Cup",
-    price: "490,000",
-    href: "",
-  },
-  {
-    src: "./../../public/imgs/home/topProduct/dsc02452_optimized.png",
-    alt: "Tieamisu C",
-    price: "490,000",
-    href: "",
-  },
-  {
-    src: "./../../public/imgs/home/topProduct/dsc02494_optimized.png",
-    alt: "Passion Cheese C",
-    price: "490,000",
-    href: "",
-  },
-  {
-    src: "./../../public/imgs/home/topProduct/dsc02621_optimized.png",
-    alt: "Tiramisu R",
-    href: "",
-    price: "490,000",
-  },
-  {
-    src: "./../../public/imgs/home/topProduct/dsc02641_optimized.png",
-    alt: "Passion Cheese C",
-    href: "",
-    price: "490,000",
-  },
-  {
-    src: "./../../public/imgs/home/topProduct/dsc02649_optimized.png",
-    alt: "Japan Light Chese",
-    href: "",
-    price: "490,000",
-  },
-];
-const swiperWrapperTop = document.querySelector(
-  "div.swiper:nth-child(4) > div:nth-child(1)"
-);
-topProducts.forEach((topProducts) => {
-  const swiperSlide = document.createElement("div");
-  swiperSlide.classList.add("swiper-slide");
-  swiperSlide.innerHTML = `
-  <img src="${topProducts.src}" alt="${topProducts.alt}" onclick="document.location='../ChiTietSanPham/chitietsanpham.html'" />
-  <div class="top-product-info">
-    <h4 class="top-product-title" onclick="document.location='../ChiTietSanPham/chitietsanpham.html'">${topProducts.alt}</h4>
-    <span class="top-product-price">${topProducts.price}</span>
-  </div>
-  <button class="more-btn" id="more-btn-2" onclick="document.location=''" style="border: 1px solid black; color: black; width: 250px; box-sizing: border-box;">Thêm vào giỏ hàng</button>
-`;
-  swiperWrapperTop.appendChild(swiperSlide);
-});
-
-//review
-const review = [
-  {
-    src: "./../../public/imgs/home/customerProfile/profile-1.jpg",
-    alt: "Beloved Customer",
-    review:
-      "Thử vì tiệm gần nhà nhưng dính tới giờ. Nhân viên thân thiện, nhiệt tình, bánh ngon. Tiệm mở rất sớm, sáng ghé mua mang đi làm luôn cũng tiện.",
-  },
-  {
-    src: "./../../public/imgs/home/customerProfile/profile-2.jpg",
-    alt: "Buns",
-    review:
-      "Lâu lâu mấy đứa em lên chơi mà không biết dắt đi đâu là dẫn nó tới tiệm này. Bánh nước giá ok, có chỗ ngồi rộng rãi mà thoải mái nữa.",
-  },
-  {
-    src: "./../../public/imgs/home/customerProfile/profile-3.jpg",
-    alt: "Buns",
-    review:
-      "Cám ơn BreadTalk đã cứu tuiiii. Đợt đó đặt bánh cho công ty mà chỗ đặt đầu tiên xảy ra lỗi, không giao bánh được, cuống cuồng đi kiếm chỗ khác. May có bên này chịu nhận, tui cũng lo quá trời, may người ta ráng tăng ca để xong đơn kịp giao cho tui. Từ đó, tui thành mối đặt bánh ở đây luôn, chỗ lớn người ta làm ăn uy tín, mọi người yên tâm.",
-  },
-  {
-    src: "./../../public/imgs/home/customerProfile/profile-4.jpg",
-    alt: "Buns",
-    review:
-      "Ghiền Fire Floss thật sự. Mình không hảo ngọt mấy, nên chưa thử qua bánh ngọt ở đây nhưng mà cái bánh nhân chà bông ở đây phải nói là đỉnh. Mấy loại bánh mặn khác cũng ok, mà siêu recommend cái bánh Fire Floss này nha. Mới đi xem lại, hình như nó còn là Best Seller của tiệm ><",
-  },
-];
+fetch("../../data/home-data/topProducts.json")
+  .then((response) => response.json())
+  .then((data) => {
+    const topProducts = data.topProducts;
+    const swiperWrapperTop = document.querySelector(
+      "div.swiper:nth-child(4) > div:nth-child(1)"
+    );
+    topProducts.forEach((topProducts) => {
+      const swiperSlide = document.createElement("div");
+      swiperSlide.classList.add("swiper-slide");
+      swiperSlide.innerHTML = `
+      <img src="${topProducts.src}" alt="${topProducts.alt}" onclick="document.location='../ChiTietSanPham/chitietsanpham.html'" />
+      <div class="top-product-info">
+        <h4 class="top-product-title" onclick="document.location='../ChiTietSanPham/chitietsanpham.html'">${topProducts.alt}</h4>
+        <span class="top-product-price">${topProducts.price}</span>
+      </div>
+      <button class="more-btn" id="more-btn-2" onclick="document.location=''" style="border: 1px solid black; color: black; width: 250px; box-sizing: border-box;">Thêm vào giỏ hàng</button>
+    `;
+      swiperWrapperTop.appendChild(swiperSlide);
+    });
+  });
 //swiper review script
 var swiper = new Swiper(".myReviewSwiper", {
   loop: true,
@@ -228,45 +148,25 @@ var swiper = new Swiper(".myReviewSwiper", {
     prevEl: ".swiper-button-next-unique",
   },
 });
-const swiperWrapperReview = document.querySelector(".swiper-review-wrapper");
-review.forEach((review) => {
-  const swiperSlide = document.createElement("div");
-  swiperSlide.classList.add("swiper-slide", "swiper-review-slide");
-  swiperSlide.innerHTML = `
+fetch("../../data/home-data/review.json")
+  .then((response) => response.json())
+  .then((data) => {
+    const review = data.review;
+    const swiperWrapperReview = document.querySelector(
+      ".swiper-review-wrapper"
+    );
+    review.forEach((review) => {
+      const swiperSlide = document.createElement("div");
+      swiperSlide.classList.add("swiper-slide", "swiper-review-slide");
+      swiperSlide.innerHTML = `
     <div class="text-wrapper"><p>${review.review}</p></div>
     <div class="profile-container">
       <div class="profile-wrapper"><img src="${review.src}" alt="${review.alt}" /></div>
       <h6>${review.alt}</h6>
     </div>`;
-  swiperWrapperReview.appendChild(swiperSlide);
-});
-//news-swiper-loader
-const news = [
-  {
-    src: "../../public/imgs/home/news/topic1-sugar/cac-loai-duong-dung-trong-lam-banh.jpg",
-    headline: "Beloved Customer",
-    content:
-      "Hôm nay BreadTalk sẽ hướng dẫn bạn cách phân biệt các loại đường dùng để làm bánh nhé! Đường là nguyên liệu tạo...",
-  },
-  {
-    src: "../../public/imgs/home/news/topic1-sugar/cac-loai-duong-dung-trong-lam-banh.jpg",
-    headline: "Beloved Customer",
-    content:
-      "Hôm nay BreadTalk sẽ hướng dẫn bạn cách phân biệt các loại đường dùng để làm bánh nhé! Đường là nguyên liệu tạo...",
-  },
-  {
-    src: "../../public/imgs/home/news/topic1-sugar/cac-loai-duong-dung-trong-lam-banh.jpg",
-    headline: "Beloved Customer",
-    content:
-      "Hôm nay BreadTalk sẽ hướng dẫn bạn cách phân biệt các loại đường dùng để làm bánh nhé! Đường là nguyên liệu tạo...",
-  },
-  {
-    src: "../../public/imgs/home/news/topic1-sugar/cac-loai-duong-dung-trong-lam-banh.jpg",
-    headline: "Beloved Customer",
-    content:
-      "Hôm nay BreadTalk sẽ hướng dẫn bạn cách phân biệt các loại đường dùng để làm bánh nhé! Đường là nguyên liệu tạo...",
-  },
-];
+      swiperWrapperReview.appendChild(swiperSlide);
+    });
+  });
 //swiper news script
 var swiperNews;
 function initializeNewsSwiper() {
@@ -297,27 +197,31 @@ function initializeNewsSwiper() {
     });
   }
 }
-
 // Call initializeSwiper on page load
 initializeNewsSwiper();
 // Call initializeSwiper when window is resized
 window.addEventListener("resize", function () {
   initializeNewsSwiper();
 });
-const swiperWrapperNews = document.querySelector(".news-swiper-wrapper");
-news.forEach((news) => {
-  const swiperSlide = document.createElement("div");
-  swiperSlide.classList.add("swiper-slide", "swiper-slide-news");
-  swiperSlide.innerHTML = `
-  <article class="news-wrapper" onclick="window.location.href = '../news/news.html' ">
-      <div class="news-img"><img src="${news.src}" alt=""></div>
-      <div class="news-content">
-          <h6>${news.headline}</h6>
-          <p>${news.content}</p>
-      </div>
-      <div class="view-more"><i class="fa fa-solid fa-chevron-right"></i></div>
-      <div class="outline"></div>                        
-  </article>       
-  `;
-  swiperWrapperNews.appendChild(swiperSlide);
-});
+fetch("../../data/home-data/news.json")
+  .then((response) => response.json())
+  .then((data) => {
+    const news = data.news;
+    const swiperWrapperNews = document.querySelector(".news-swiper-wrapper");
+    news.forEach((news) => {
+      const swiperSlide = document.createElement("div");
+      swiperSlide.classList.add("swiper-slide", "swiper-slide-news");
+      swiperSlide.innerHTML = `
+      <article class="news-wrapper" onclick="window.location.href = '../news/news.html' ">
+          <div class="news-img"><img src="${news.src}" alt=""></div>
+          <div class="news-content">
+              <h6>${news.headline}</h6>
+              <p>${news.content}</p>
+          </div>
+          <div class="view-more"><i class="fa fa-solid fa-chevron-right"></i></div>
+          <div class="outline"></div>                        
+      </article>       
+      `;
+      swiperWrapperNews.appendChild(swiperSlide);
+    });
+  });
