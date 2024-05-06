@@ -216,6 +216,9 @@
   .swiper-wrapper {
     margin-bottom: 0%;
   }
+  .swiper-pagination {
+    display: none;
+  }
   .button-wraper {
     display: flex !important;
     justify-content: center;
