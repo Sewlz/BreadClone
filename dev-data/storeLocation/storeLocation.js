@@ -5,122 +5,265 @@ const storeLoaction = {
       name: "  BreadTalk Vinhomes Grand Origami",
       location:
         "  G27, Tầng trệt, AeonMall Tân Phú, 30 Tân Thắng, Phường Sơn Kỳ, Quận Tân Phú, TP. HCM	",
-      phoneNum: "  Buns",
+      phoneNum: "  028 3620 1737",
       map: "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15675.138791386076!2d106.721326!3d10.827782!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752932c476c6bf%3A0x7ebf5614a357eab0!2sBreadTalk%20Gigamall!5e0!3m2!1svi!2sus!4v1713370769007!5m2!1svi!2sus",
       email: "  ch.vhgrandpark@breadtalkvietnam.com",
       work: "  9h-18h, 7h-12h",
     },
     {
       id: "2",
-      name: "  BreadTalk Vinhomes Grand Origami",
+      name: "  BreadTalk Saigon Centre",
       location:
-        "  G27, Tầng trệt, AeonMall Tân Phú, 30 Tân Thắng, Phường Sơn Kỳ, Quận Tân Phú, TP. HCM	",
-      phoneNum: "  Buns",
-      map: "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15675.138791386076!2d106.721326!3d10.827782!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752932c476c6bf%3A0x7ebf5614a357eab0!2sBreadTalk%20Gigamall!5e0!3m2!1svi!2sus!4v1713370769007!5m2!1svi!2sus",
-      email: "  ch.vhgrandpark@breadtalkvietnam.com",
-      work: "  9h-18h, 7h-12h",
+        "  S10.0101.S02, Vinhomes Grand Park, Phường Long Bình, TP. Thủ Đức, TP.HCM	",
+      phoneNum: "  028 3821 7219",
+      map: "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d31355.958624839328!2d106.700503!3d10.773362!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752f4743648f3d%3A0x16ce95918cb14834!2sTo%C3%A0%20nh%C3%A0%20Saigon%20Centre!5e0!3m2!1svi!2sus!4v1714761389365!5m2!1svi!2sus",
+      email: "  ch.sgcentre@breadtalkvietnam.com",
+      work: "  08h30 - 21h30 (Thứ hai - Thứ sáu), 08h30 - 22h00 (Thứ bảy, Chủ nhật)",
     },
     {
       id: "3",
-      name: "  BreadTalk Vinhomes Grand Origami",
+      name: "  BreadTalk Vincom Đồng Khởi",
       location:
-        "  G27, Tầng trệt, AeonMall Tân Phú, 30 Tân Thắng, Phường Sơn Kỳ, Quận Tân Phú, TP. HCM	",
-      phoneNum: "  Buns",
-      map: "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15675.138791386076!2d106.721326!3d10.827782!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752932c476c6bf%3A0x7ebf5614a357eab0!2sBreadTalk%20Gigamall!5e0!3m2!1svi!2sus!4v1713370769007!5m2!1svi!2sus",
-      email: "  ch.vhgrandpark@breadtalkvietnam.com",
-      work: "  9h-18h, 7h-12h",
+        "  B3-15A, Tầng B3, Vincom, 70-72 Lê Thánh Tôn, Phường Bến Nghé, Quận 1, TP. HCM	",
+      phoneNum: "  028 3993 9025",
+      map: "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15677.736527294703!2d106.70172700000002!3d10.778024!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752f47daa50309%3A0x310c6d5537b05bae!2zQWVvbiBNYWxsIEjDoCDEkMO0bmc!5e0!3m2!1svi!2sus!4v1714908947102!5m2!1svi!2sus",
+      email: "  ch.vincom@breadtalkvietnam.com",
+      work: "  08h00 - 22h00",
     },
     {
       id: "4",
-      name: "  BreadTalk Vinhomes Grand Origami",
+      name: "  BreadTalk Nowzone",
       location:
-        "  G27, Tầng trệt, AeonMall Tân Phú, 30 Tân Thắng, Phường Sơn Kỳ, Quận Tân Phú, TP. HCM	",
-      phoneNum: "  Buns",
-      map: "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15675.138791386076!2d106.721326!3d10.827782!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752932c476c6bf%3A0x7ebf5614a357eab0!2sBreadTalk%20Gigamall!5e0!3m2!1svi!2sus!4v1713370769007!5m2!1svi!2sus",
+        "  Tầng trệt, TTTM Nowzone, 235 Nguyễn Văn Cừ, Phường Nguyễn Cư Trinh, Quận 1, TP. HCM	",
+      phoneNum: "  028 35214205",
+      map: "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7839.229866612876!2d106.68254400000001!3d10.764131!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752f194dae00e5%3A0x4b90c5d0bd96fe63!2sNOWZONE%20Fashion%20Mall!5e0!3m2!1svi!2sus!4v1714908969594!5m2!1svi!2sus",
       email: "  ch.vhgrandpark@breadtalkvietnam.com",
-      work: "  9h-18h, 7h-12h",
+      work: "  07h00 - 22h00",
     },
     {
       id: "5",
-      name: "  BreadTalk Vinhomes Grand Origami",
+      name: "  BreadTalk Cantavil",
       location:
-        "  G27, Tầng trệt, AeonMall Tân Phú, 30 Tân Thắng, Phường Sơn Kỳ, Quận Tân Phú, TP. HCM	",
-      phoneNum: "  Buns",
-      map: "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15675.138791386076!2d106.721326!3d10.827782!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752932c476c6bf%3A0x7ebf5614a357eab0!2sBreadTalk%20Gigamall!5e0!3m2!1svi!2sus!4v1713370769007!5m2!1svi!2sus",
-      email: "  ch.vhgrandpark@breadtalkvietnam.com",
-      work: "  9h-18h, 7h-12h",
+        "   Tầng trệt, Tòa nhà Cantavil, số 1 Song Hành (Xa lộ Hà Nội), P. An Phú, Tp. Thủ Đức, TP. HCM	",
+      phoneNum: "  028 3740 4380",
+      map: "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15676.511961898004!2d106.746573!3d10.801508!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3175266a12e6ebf7%3A0x20ab1843aac1090e!2sBreadtalk%20Cantavil!5e0!3m2!1svi!2sus!4v1714908986629!5m2!1svi!2sus",
+      email: "  ch.cantavil@breadtalkvietnam.com",
+      work: "  06h00 - 22h00",
     },
     {
       id: "6",
-      name: "  BreadTalk Vinhomes Grand Origami",
+      name: "  BreadTalk Nguyễn Tri Phương",
+      location: "  143-145 Nguyễn Tri Phương, Phường 8, Quận 5, TP. HCM	",
+      phoneNum: "  028 3855 2430",
+      map: "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d31357.838326687983!2d106.669335!3d10.755296000000001!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752efb82ccb6a1%3A0xe4df92d3fb640f21!2zQnJlYWRUYWxrIE5ndXnhu4VuIFRyaSBQaMawxqFuZw!5e0!3m2!1svi!2sus!4v1714909025910!5m2!1svi!2sus",
+      email: "  ch.nguyentriphuong@breadtalkvietnam.com",
+      work: "  06h00 - 22h00",
+    },
+    {
+      id: "7",
+      name: "BreadTalk SC Vivo City",
       location:
-        "  G27, Tầng trệt, AeonMall Tân Phú, 30 Tân Thắng, Phường Sơn Kỳ, Quận Tân Phú, TP. HCM	",
-      phoneNum: "  Buns",
-      map: "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15675.138791386076!2d106.721326!3d10.827782!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752932c476c6bf%3A0x7ebf5614a357eab0!2sBreadTalk%20Gigamall!5e0!3m2!1svi!2sus!4v1713370769007!5m2!1svi!2sus",
-      email: "  ch.vhgrandpark@breadtalkvietnam.com",
-      work: "  9h-18h, 7h-12h",
+        "Gian 3-12, Tầng 3, SC Vivo City, 1058 Nguyễn Văn Linh, Phường Tân Phong, Quận 7, TP. HCM",
+      phoneNum: "028 3771 0520",
+      email: "ch.scvivocity@breadtalkvietnam.com",
+      work: "10h00 – 22h00 (Thứ hai – Thứ sáu), 09h00 – 22h00 (Thứ bảy, Chủ nhật)",
+      map: "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7840.110245515174!2d106.703398!3d10.730232000000003!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752f80c3947d97%3A0x11f8c4c9b629e2cf!2sSC%20VivoCity!5e0!3m2!1svi!2sus!4v1714967557393!5m2!1svi!2sus",
+    },
+    {
+      id: "8",
+      name: "BreadTalk Hưng Gia",
+      location:
+        "Lô R2-24 Khu Hưng Gia 4, 95 Phan Khiêm Ích, Phường Tân Phong, Quận 7, TP. HCM",
+      phoneNum: "028 54108152",
+      email: "ch.hunggia@breadtalkvietnam.com",
+      work: "06h00 - 21h30",
+      map: "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1960.011534711123!2d106.70681!3d10.732704!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752fbd401e7025%3A0x4f596ed345e1ccce!2sBreadTalk%20H%C6%B0ng%20Gia!5e0!3m2!1svi!2sus!4v1714909101000!5m2!1svi!2sus",
+    },
+    {
+      id: "9",
+      name: "BreadTalk Vạn Hạnh Mall",
+      location:
+        "F17-F18, Tầng B1, Vạn Hạnh Mall, số 11 Sư Vạn Hạnh, Phường 12, Quận 10, TP. HCM",
+      phoneNum: "028 3636 6685",
+      email: "ch.vanhanh@breadtalkvietnam.com",
+      work: "08h00 - 22h00",
+      map: "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d62718.187973772634!2d106.612386!3d10.743211!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752dcec4321281%3A0xaedede3c5fc969cd!2sBreadTalk!5e0!3m2!1svi!2sus!4v1714909128898!5m2!1svi!2sus",
+    },
+    {
+      id: "10",
+      name: "BreadTalk Aeon Mall Bình Tân",
+      location:
+        "G2, Tầng trệt, Aeon Bình Tân, số 1 đường số 17A, KP 11, Phường Bình Trị Đông B, Quận Bình Tân, TP. HCM",
+      phoneNum: "028 3620 6061",
+      email: "ch.ambinhtan@breadtalkvietnam.com",
+      work: "08h00 - 22h00",
+      map: "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d62718.187973772634!2d106.612386!3d10.743211!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752dcec4321281%3A0xaedede3c5fc969cd!2sBreadTalk!5e0!3m2!1svi!2sus!4v1714967621826!5m2!1svi!2sus",
+    },
+    {
+      id: "11",
+      name: "BreadTalk Vincom Quang Trung",
+      location:
+        "L1-11, Tầng trệt, Vincom Quang Trung, 190 Quang Trung, Phường 10, Quận Gò Vấp, TP. HCM",
+      phoneNum: "028 3894 6595",
+      email: "ch.vcquangtrung@breadtalkvietnam.com",
+      work: "08h00 - 22h00",
+      map: "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15675.05045795136!2d106.67221!3d10.82947!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752974f671fb5f%3A0x6e865cdc62d4372e!2sBreadTalk%20Quang%20Trung!5e0!3m2!1svi!2sus!4v1714909138919!5m2!1svi!2sus",
+    },
+    {
+      id: "12",
+      name: "BreadTalk Phan Văn Trị",
+      location: "366A22 Phan Văn Trị, Phường 5, Quận Gò Vấp, TP. HCM",
+      phoneNum: "028 62734155",
+      email: "ch.phanvantri@breadtalkvietnam.com",
+      work: "06h00 - 22h30",
+      map: "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15675.05045795136!2d106.67221!3d10.82947!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752974f671fb5f%3A0x6e865cdc62d4372e!2sBreadTalk%20Quang%20Trung!5e0!3m2!1svi!2sus!4v1714967375119!5m2!1svi!2sus",
+    },
+    {
+      id: "13",
+      name: "BreadTalk Sun Avenue",
+      location:
+        "SAV.1-00.05, Tháp 1, The Sun Avenue, 28 Đại lộ Mai Chí Thọ, Phường An Phú, TP. Thủ Đức, TP. Hồ Chí Minh",
+      phoneNum: "028 3535 4136",
+      email: "ch.sunavenue@breadtalkvietnam.com",
+      work: "06h00 - 22h00",
+      map: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.339433696852!2d106.74556137463134!3d10.785293659030973!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752558424eb341%3A0xa24d5c46d9d1418f!2sThe%20Sun%20Avenue%2C%20Office%20S4!5e0!3m2!1svi!2sus!4v1714967713637!5m2!1svi!2sus",
+    },
+    {
+      id: "14",
+      name: "BreadTalk Âu Cơ",
+      location: "36-36A Âu Cơ, Phường 9, Quận Tân Bình, Tp. HCM",
+      phoneNum: "028 35358936",
+      email: "ch.auco@breadtalkvietnam.com",
+      work: "06h00 - 22h00",
+      map: "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d979.886773267784!2d106.651797!3d10.769346!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752e95452acd53%3A0x180f92605e2f33bc!2zMzYgxJAuIMOCdSBDxqEsIFBoxrDhu51uZyA5LCBUw6JuIELDrG5oLCBUaMOgbmggcGjhu5EgSOG7kyBDaMOtIE1pbmgsIFZp4buHdCBOYW0!5e0!3m2!1svi!2sus!4v1714967218113!5m2!1svi!2sus",
+    },
+    {
+      id: "15",
+      name: "BreadTalk Aeon Mall Tân Phú",
+      location:
+        "G27, Tầng trệt, AeonMall Tân Phú, 30 Tân Thắng, Phường Sơn Kỳ, Quận Tân Phú, TP. HCM",
+      phoneNum: "028 3847 2085",
+      email: "ch.amtanphu@breadtalkvietnam.com",
+      work: "08h00 - 22h00",
+      map: "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7838.260417977576!2d106.617959!3d10.801338!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752b9535b60699%3A0x4737f3be8bd41d5b!2zw4ZPTiBNQUxMIFTDom4gUGjDug!5e0!3m2!1svi!2sus!4v1714966938333!5m2!1svi!2sus",
+    },
+    {
+      id: "16",
+      name: "BreadTalk Gigamall",
+      location:
+        "L2-02, Tầng 2, Gigamall, 240-242 Phạm Văn Đồng, Phường Hiệp Bình Chánh, Tp. Thủ Đức, TP. HCM",
+      phoneNum: "028 3636 3267",
+      email: "ch.gigamall@breadtalkvietnam.com",
+      work: "09h30 – 22h00 (Thứ hai – Thứ sáu), 09h00 – 22h00 (Thứ bảy, Chủ nhật)",
+      map: "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7837.573032341139!2d106.721471!3d10.827643!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3175291a71519df7%3A0xcbeec0265c71c79f!2zVHJ1bmcgVMOibSBUaMawxqFuZyBN4bqhaSBHaWdhbWFsbC9TZW5zZSBDaXR5!5e0!3m2!1svi!2sus!4v1714966914689!5m2!1svi!2sus",
+    },
+    {
+      id: "17",
+      name: "BreadTalk Vinhomes Grand Park",
+      location:
+        "01S13 Tòa S3.01, Vinhomes Grand Park, Phường Long Thạnh Mỹ, TP. Thủ Đức, TP. HCM",
+      phoneNum: "028 36201623",
+      email: "ch.vhgrandpark@breadtalkvietnam.com",
+      work: "06h00 - 21h30",
+      map: "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15675.138791386076!2d106.721326!3d10.827782!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752932c476c6bf%3A0x7ebf5614a357eab0!2sBreadTalk%20Gigamall!5e0!3m2!1svi!2sus!4v1714966895126!5m2!1svi!2sus",
+    },
+    {
+      id: "18",
+      name: "BreadTalk Sunrise Riverside",
+      location:
+        "B-01.11 và B-01.12, Block B, Khu căn hộ Sunrise Riverside, Ấp 5, Xã Phước Kiển, Huyện Nhà Bè, Tp. Hồ Chí Minh",
+      phoneNum: "028 36201607",
+      email: "ch.sunriseriverside@breadtalkvietnam.com",
+      work: "06h30 - 22h00",
+      map: "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d62722.60576380043!2d106.70395!3d10.721919!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752f6fd2eadc87%3A0x2e1394afb5d90acd!2sSunrise%20Riverside%20Block%20B!5e0!3m2!1svi!2sus!4v1714966865206!5m2!1svi!2sus",
     },
   ],
   HN: [
     {
       id: "1",
-      name: "  BreadTalk Vinhomes Grand Origami",
+      name: "BreadTalk Aeon Mall Hà Đông",
       location:
-        "  Tầng trệt, AeonMall Tân Phú, 30 Tân Thắng, Phường Sơn Kỳ, Quận Tân Phú, TP. HCM	",
-      phoneNum: "  Buns",
-      map: "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15675.138791386076!2d106.721326!3d10.827782!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752932c476c6bf%3A0x7ebf5614a357eab0!2sBreadTalk%20Gigamall!5e0!3m2!1svi!2sus!4v1713370769007!5m2!1svi!2sus",
-      email: "  ch.vhgrandpark@breadtalkvietnam.com",
-      work: "  9h-18h, 7h-12h",
+        "T168-2, Aeon Mall Hà Đông, Tổ dân phố Hoàng Văn Thụ, Phường Dương Nội, Quận Hà Đông, Hà Nội",
+      phoneNum: "024 3202 2086",
+      email: "ch.amhadong@breadtalkvietnam.com",
+      work: "10h00 – 22h00 (Thứ hai – Thứ sáu), 09h00 – 22h00 (Thứ bảy, Chủ nhật)",
+      map: "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d238404.6826827723!2d105.751717!3d20.989704000000003!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ab7bee9f7757%3A0x4ebf8ccfc24ec4ae!2zQWVvbiBNYWxsIEjDoCDEkMO0bmc!5e0!3m2!1svi!2sus!4v1714908379985!5m2!1svi!2sus",
     },
     {
       id: "2",
-      name: "  BreadTalk Vinhomes Grand Origami",
+      name: "BreadTalk Aeon Mall Long Biên",
       location:
-        "  G27, Tầng trệt, AeonMall Tân Phú, 30 Tân Thắng, Phường Sơn Kỳ, Quận Tân Phú, TP. HCM	",
-      phoneNum: "  Buns",
-      map: "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15675.138791386076!2d106.721326!3d10.827782!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752932c476c6bf%3A0x7ebf5614a357eab0!2sBreadTalk%20Gigamall!5e0!3m2!1svi!2sus!4v1713370769007!5m2!1svi!2sus",
-      email: "  ch.vhgrandpark@breadtalkvietnam.com",
-      work: "  9h-18h, 7h-12h",
+        "T104, Tầng trệt, Aeon Long Biên, 27 Cổ Linh, Phường Long Biên, Quận Long Biên, Hà Nội",
+      phoneNum: "024 3201 2279",
+      email: "ch.amlongbien@breadtalkvietnam.com",
+      work: "10h00 – 22h00 (Thứ hai – Thứ sáu), 09h00 – 22h00 (Thứ bảy, Chủ nhật)",
+      map: "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7448.267334233749!2d105.899613!3d21.027337!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135a96a85453f37%3A0x39ce34aaf20a939!2sAeon%20Mall%20Long%20Bi%C3%AAn!5e0!3m2!1svi!2sus!4v1714908415093!5m2!1svi!2sus",
     },
     {
       id: "3",
-      name: "  BreadTalk Vinhomes Grand Origami",
+      name: "BreadTalk Vinhomes Gardenia",
       location:
-        "  G27, Tầng trệt, AeonMall Tân Phú, 30 Tân Thắng, Phường Sơn Kỳ, Quận Tân Phú, TP. HCM	",
-      phoneNum: "  Buns",
-      map: "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15675.138791386076!2d106.721326!3d10.827782!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752932c476c6bf%3A0x7ebf5614a357eab0!2sBreadTalk%20Gigamall!5e0!3m2!1svi!2sus!4v1713370769007!5m2!1svi!2sus",
-      email: "  ch.vhgrandpark@breadtalkvietnam.com",
-      work: "  9h-18h, 7h-12h",
+        "B2-03 Vinhomes Gardenia, Đường Hàm Nghi, Quận Nam Từ Liêm, Hà Nội",
+      phoneNum: "024 3200 0585",
+      email: "ch.vhgardenia@breadtalkvietnam.com",
+      work: "07h00 - 22h00",
+      map: "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7449.927807563638!2d105.959875!3d20.994084!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ad60e1b65fa7%3A0xca825ac326d4ba54!2sVincom%20Mega%20Mall%20Ocean%20Park!5e0!3m2!1svi!2sus!4v1714908546814!5m2!1svi!2sus",
     },
     {
       id: "4",
-      name: "  BreadTalk Vinhomes Grand Origami",
+      name: "BreadTalk Vincom Royal City",
       location:
-        "  G27, Tầng trệt, AeonMall Tân Phú, 30 Tân Thắng, Phường Sơn Kỳ, Quận Tân Phú, TP. HCM	",
-      phoneNum: "  Buns",
-      map: "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15675.138791386076!2d106.721326!3d10.827782!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752932c476c6bf%3A0x7ebf5614a357eab0!2sBreadTalk%20Gigamall!5e0!3m2!1svi!2sus!4v1713370769007!5m2!1svi!2sus",
-      email: "  ch.vhgrandpark@breadtalkvietnam.com",
-      work: "  9h-18h, 7h-12h",
+        "B2-R3-K4, Vincom Mega Mall Royal City, 72A Đường Nguyễn Trãi, Phường Thượng Đình, Quận Thanh Xuân, Hà Nội",
+      phoneNum: "024 6666 3657",
+      email: "ch.vcroyalcity@breadtalkvietnam.com",
+      work: "10h00 – 22h00 (Thứ hai – Thứ sáu), 09h30 – 22h00 (Thứ bảy, Chủ nhật)",
+      map: "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14898.980150650435!2d105.815291!3d21.002855!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ad04d2fdcf5d%3A0x29d4db5ea41077e9!2sBreadtalk!5e0!3m2!1svi!2sus!4v1714908504838!5m2!1svi!2sus",
     },
     {
       id: "5",
-      name: "  BreadTalk Vinhomes Grand Origami",
+      name: "BreadTalk Vincom Ocean Park",
       location:
-        "  G27, Tầng trệt, AeonMall Tân Phú, 30 Tân Thắng, Phường Sơn Kỳ, Quận Tân Phú, TP. HCM	",
-      phoneNum: "  Buns",
-      map: "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15675.138791386076!2d106.721326!3d10.827782!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752932c476c6bf%3A0x7ebf5614a357eab0!2sBreadTalk%20Gigamall!5e0!3m2!1svi!2sus!4v1713370769007!5m2!1svi!2sus",
-      email: "  ch.vhgrandpark@breadtalkvietnam.com",
-      work: "  9h-18h, 7h-12h",
+        "L1-24-25, Tầng L1, Vincom Mega Mall Ocean Park, Đa Tốn, Gia Lâm, Hà Nội",
+      phoneNum: "024 3206 6126",
+      email: "ch.vcoceanpark@breadtalkvietnam.com",
+      work: "10h00 – 22h00 (Thứ hai – Thứ sáu), 09h30 – 22h00 (Thứ bảy, Chủ nhật)",
+      map: "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7449.927807563638!2d105.959875!3d20.994084!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ad60e1b65fa7%3A0xca825ac326d4ba54!2sVincom%20Mega%20Mall%20Ocean%20Park!5e0!3m2!1svi!2sus!4v1714908546814!5m2!1svi!2sus",
     },
+  ],
+  HP: [
     {
-      id: "6",
-      name: "  BreadTalk Vinhomes Grand Origami",
+      id: "1",
+      name: "  BreadTalk AeonMall Hải Phòng",
       location:
-        "  G27, Tầng trệt, AeonMall Tân Phú, 30 Tân Thắng, Phường Sơn Kỳ, Quận Tân Phú, TP. HCM	",
-      phoneNum: "  Buns",
-      map: "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15675.138791386076!2d106.721326!3d10.827782!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752932c476c6bf%3A0x7ebf5614a357eab0!2sBreadTalk%20Gigamall!5e0!3m2!1svi!2sus!4v1713370769007!5m2!1svi!2sus",
-      email: "  ch.vhgrandpark@breadtalkvietnam.com",
-      work: "  9h-18h, 7h-12h",
+        "  Lô T135-136-141-142, AeonMall Hải Phòng Lê Chân, Số 10 Võ Nguyên Giáp, P. Kênh Dương, Q. Lê Chân, TP. Hải Phòng	",
+      phoneNum: "  0225 3888665",
+      map: "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7457.938210698012!2d106.682395!3d20.832954!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x314a7115f37d12fb%3A0xad7a0c64ee9d474c!2zQUVPTiBI4bqjaSBQaMOybmc!5e0!3m2!1svi!2sus!4v1714906564983!5m2!1svi!2sus",
+      email: "  ch.amhaiphong@breadtalkvietnam.com",
+      work: "  10h00 – 22h00 (Thứ hai – Thứ sáu), 09h00 – 22h00 (Thứ bảy, Chủ nhật)",
+    },
+  ],
+  NT: [
+    {
+      id: "1",
+      name: "  BreadTalk Trần Viễn Đông",
+      location:
+        "   121 Đ. Lê Thánh Tôn, Lộc Thọ, Nha Trang, Khánh Hòa, Việt Nam	",
+      phoneNum: "  0258 3522 523",
+      map: "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7798.179237861149!2d109.195165!3d12.242211!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3170677940509287%3A0xc840768c0d529bbe!2zMTIxIMSQLiBMw6ogVGjDoW5oIFTDtG4sIEzhu5ljIFRo4buNLCBOaGEgVHJhbmcsIEtow6FuaCBIw7JhIDY1MDAwMCwgVmnhu4d0IE5hbQ!5e0!3m2!1svi!2sus!4v1714906669535!5m2!1svi!2sus",
+      email: "  ch.tranviendong@breadtalkvietnam.com",
+      work: "  07h00 - 22h00",
+    },
+  ],
+  DN: [
+    {
+      id: "1",
+      name: "  BreadTalk Đà Nẵng Hùng Vương",
+      location:
+        "   438 Hùng Vương, Phường Vĩnh Trung, Quận Thanh Khê, Thành phố Đà Nẵng	",
+      phoneNum: "  023 63 528 529",
+      map: "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7667.954319084478!2d108.21042!3d16.066675!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3142184b19d5cc65%3A0x4c698c8ce81fdb4f!2zNDM4IEjDuW5nIFbGsMahbmcsIFbEqW5oIFRydW5nLCBUaGFuaCBLaMOqLCDEkMOgIE7hurVuZyA1NTAwMDAsIFZp4buHdCBOYW0!5e0!3m2!1svi!2sus!4v1714906761057!5m2!1svi!2sus",
+      email: "  ch.dnghungvuong@breadtalkvietnam.com",
+      work: "  06h00 - 22h00",
     },
   ],
 };
@@ -136,11 +279,12 @@ function changeCountry() {
     var listItem = document.createElement("li");
     listItem.classList.add("cell-content-list");
     listItem.innerHTML = `
-        <div class="cell-content-loc" style ="margin-bottom: 10px;">
+        <div class="cell-content-loc" style ="margin-bottom: 10px;" onclick="showMap('${item.map}')">
+            <div class="cell-name"><b>${item.name}</b></div>
             <div class="location-row">
                 <i class="fa fa-solid fa-location-dot"></i>${item.location}
             </div>
-            <div class="cell-row" onclick="showMap('${item.map}')">
+            <div class="cell-row">
                 <i class="fa fa-solid fa-crosshairs"></i>Xem bản đồ
             </div>
             <div class="cell-row">
@@ -165,6 +309,20 @@ function showMap(mapUrl) {
   var mapDisplay = document.getElementById("display-map");
   mapDisplay.innerHTML = `<iframe src="${mapUrl}" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>`;
 }
+//list backcolor
+const listItems = document.querySelectorAll(".cell-content-loc");
+listItems.forEach((item) => {
+  item.addEventListener("click", function () {
+    // Reset background color of all list items
+    listItems.forEach((li) => {
+      li.style.backgroundColor = "";
+      li.style.color = "";
+    });
+    // Change background color of clicked list item
+    this.style.backgroundColor = "#ffc0cb";
+    this.style.color = "white";
+  });
+});
 // swiper - script;
 
 function initializeSwiper() {
@@ -207,60 +365,177 @@ const loaction = [
     name: "  BreadTalk Vinhomes Grand Origami",
     location:
       "  G27, Tầng trệt, AeonMall Tân Phú, 30 Tân Thắng, Phường Sơn Kỳ, Quận Tân Phú, TP. HCM	",
-    phoneNum: "  Buns",
+    phoneNum: "  028 3620 1737",
     map: "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15675.138791386076!2d106.721326!3d10.827782!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752932c476c6bf%3A0x7ebf5614a357eab0!2sBreadTalk%20Gigamall!5e0!3m2!1svi!2sus!4v1713370769007!5m2!1svi!2sus",
     email: "  ch.vhgrandpark@breadtalkvietnam.com",
     work: "  9h-18h, 7h-12h",
   },
   {
     id: "2",
-    name: "  BreadTalk Vinhomes Grand Origami",
+    name: "  BreadTalk Saigon Centre",
     location:
-      "  G27, Tầng trệt, AeonMall Tân Phú, 30 Tân Thắng, Phường Sơn Kỳ, Quận Tân Phú, TP. HCM	",
-    phoneNum: "  Buns",
-    map: "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15675.138791386076!2d106.721326!3d10.827782!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752932c476c6bf%3A0x7ebf5614a357eab0!2sBreadTalk%20Gigamall!5e0!3m2!1svi!2sus!4v1713370769007!5m2!1svi!2sus",
-    email: "  ch.vhgrandpark@breadtalkvietnam.com",
-    work: "  9h-18h, 7h-12h",
+      "  S10.0101.S02, Vinhomes Grand Park, Phường Long Bình, TP. Thủ Đức, TP.HCM	",
+    phoneNum: "  028 3821 7219",
+    map: "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d31355.958624839328!2d106.700503!3d10.773362!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752f4743648f3d%3A0x16ce95918cb14834!2sTo%C3%A0%20nh%C3%A0%20Saigon%20Centre!5e0!3m2!1svi!2sus!4v1714761389365!5m2!1svi!2sus",
+    email: "  ch.sgcentre@breadtalkvietnam.com",
+    work: "  08h30 - 21h30 (Thứ hai - Thứ sáu), 08h30 - 22h00 (Thứ bảy, Chủ nhật)",
   },
   {
     id: "3",
-    name: "  BreadTalk Vinhomes Grand Origami",
+    name: "  BreadTalk Vincom Đồng Khởi",
     location:
-      "  G27, Tầng trệt, AeonMall Tân Phú, 30 Tân Thắng, Phường Sơn Kỳ, Quận Tân Phú, TP. HCM	",
-    phoneNum: "  Buns",
-    map: "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15675.138791386076!2d106.721326!3d10.827782!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752932c476c6bf%3A0x7ebf5614a357eab0!2sBreadTalk%20Gigamall!5e0!3m2!1svi!2sus!4v1713370769007!5m2!1svi!2sus",
-    email: "  ch.vhgrandpark@breadtalkvietnam.com",
-    work: "  9h-18h, 7h-12h",
+      "  B3-15A, Tầng B3, Vincom, 70-72 Lê Thánh Tôn, Phường Bến Nghé, Quận 1, TP. HCM	",
+    phoneNum: "  028 3993 9025",
+    map: "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15677.736527294703!2d106.70172700000002!3d10.778024!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752f47daa50309%3A0x310c6d5537b05bae!2zQWVvbiBNYWxsIEjDoCDEkMO0bmc!5e0!3m2!1svi!2sus!4v1714908947102!5m2!1svi!2sus",
+    email: "  ch.vincom@breadtalkvietnam.com",
+    work: "  08h00 - 22h00",
   },
   {
     id: "4",
-    name: "  BreadTalk Vinhomes Grand Origami",
+    name: "  BreadTalk Nowzone",
     location:
-      "  G27, Tầng trệt, AeonMall Tân Phú, 30 Tân Thắng, Phường Sơn Kỳ, Quận Tân Phú, TP. HCM	",
-    phoneNum: "  Buns",
-    map: "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15675.138791386076!2d106.721326!3d10.827782!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752932c476c6bf%3A0x7ebf5614a357eab0!2sBreadTalk%20Gigamall!5e0!3m2!1svi!2sus!4v1713370769007!5m2!1svi!2sus",
+      "  Tầng trệt, TTTM Nowzone, 235 Nguyễn Văn Cừ, Phường Nguyễn Cư Trinh, Quận 1, TP. HCM	",
+    phoneNum: "  028 35214205",
+    map: "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7839.229866612876!2d106.68254400000001!3d10.764131!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752f194dae00e5%3A0x4b90c5d0bd96fe63!2sNOWZONE%20Fashion%20Mall!5e0!3m2!1svi!2sus!4v1714908969594!5m2!1svi!2sus",
     email: "  ch.vhgrandpark@breadtalkvietnam.com",
-    work: "  9h-18h, 7h-12h",
+    work: "  07h00 - 22h00",
   },
   {
     id: "5",
-    name: "  BreadTalk Vinhomes Grand Origami",
+    name: "  BreadTalk Cantavil",
     location:
-      "  G27, Tầng trệt, AeonMall Tân Phú, 30 Tân Thắng, Phường Sơn Kỳ, Quận Tân Phú, TP. HCM	",
-    phoneNum: "  Buns",
-    map: "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15675.138791386076!2d106.721326!3d10.827782!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752932c476c6bf%3A0x7ebf5614a357eab0!2sBreadTalk%20Gigamall!5e0!3m2!1svi!2sus!4v1713370769007!5m2!1svi!2sus",
-    email: "  ch.vhgrandpark@breadtalkvietnam.com",
-    work: "  9h-18h, 7h-12h",
+      "   Tầng trệt, Tòa nhà Cantavil, số 1 Song Hành (Xa lộ Hà Nội), P. An Phú, Tp. Thủ Đức, TP. HCM	",
+    phoneNum: "  028 3740 4380",
+    map: "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15676.511961898004!2d106.746573!3d10.801508!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3175266a12e6ebf7%3A0x20ab1843aac1090e!2sBreadtalk%20Cantavil!5e0!3m2!1svi!2sus!4v1714908986629!5m2!1svi!2sus",
+    email: "  ch.cantavil@breadtalkvietnam.com",
+    work: "  06h00 - 22h00",
   },
   {
     id: "6",
-    name: "  BreadTalk Vinhomes Grand Origami",
+    name: "  BreadTalk Nguyễn Tri Phương",
+    location: "  143-145 Nguyễn Tri Phương, Phường 8, Quận 5, TP. HCM	",
+    phoneNum: "  028 3855 2430",
+    map: "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d31357.838326687983!2d106.669335!3d10.755296000000001!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752efb82ccb6a1%3A0xe4df92d3fb640f21!2zQnJlYWRUYWxrIE5ndXnhu4VuIFRyaSBQaMawxqFuZw!5e0!3m2!1svi!2sus!4v1714909025910!5m2!1svi!2sus",
+    email: "  ch.nguyentriphuong@breadtalkvietnam.com",
+    work: "  06h00 - 22h00",
+  },
+  {
+    id: "7",
+    name: "BreadTalk SC Vivo City",
     location:
-      "  G27, Tầng trệt, AeonMall Tân Phú, 30 Tân Thắng, Phường Sơn Kỳ, Quận Tân Phú, TP. HCM	",
-    phoneNum: "  Buns",
-    map: "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15675.138791386076!2d106.721326!3d10.827782!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752932c476c6bf%3A0x7ebf5614a357eab0!2sBreadTalk%20Gigamall!5e0!3m2!1svi!2sus!4v1713370769007!5m2!1svi!2sus",
-    email: "  ch.vhgrandpark@breadtalkvietnam.com",
-    work: "  9h-18h, 7h-12h",
+      "Gian 3-12, Tầng 3, SC Vivo City, 1058 Nguyễn Văn Linh, Phường Tân Phong, Quận 7, TP. HCM",
+    phoneNum: "028 3771 0520",
+    email: "ch.scvivocity@breadtalkvietnam.com",
+    work: "10h00 – 22h00 (Thứ hai – Thứ sáu), 09h00 – 22h00 (Thứ bảy, Chủ nhật)",
+    map: "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7840.110245515174!2d106.703398!3d10.730232000000003!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752f80c3947d97%3A0x11f8c4c9b629e2cf!2sSC%20VivoCity!5e0!3m2!1svi!2sus!4v1714967557393!5m2!1svi!2sus",
+  },
+  {
+    id: "8",
+    name: "BreadTalk Hưng Gia",
+    location:
+      "Lô R2-24 Khu Hưng Gia 4, 95 Phan Khiêm Ích, Phường Tân Phong, Quận 7, TP. HCM",
+    phoneNum: "028 54108152",
+    email: "ch.hunggia@breadtalkvietnam.com",
+    work: "06h00 - 21h30",
+    map: "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1960.011534711123!2d106.70681!3d10.732704!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752fbd401e7025%3A0x4f596ed345e1ccce!2sBreadTalk%20H%C6%B0ng%20Gia!5e0!3m2!1svi!2sus!4v1714909101000!5m2!1svi!2sus",
+  },
+  {
+    id: "9",
+    name: "BreadTalk Vạn Hạnh Mall",
+    location:
+      "F17-F18, Tầng B1, Vạn Hạnh Mall, số 11 Sư Vạn Hạnh, Phường 12, Quận 10, TP. HCM",
+    phoneNum: "028 3636 6685",
+    email: "ch.vanhanh@breadtalkvietnam.com",
+    work: "08h00 - 22h00",
+    map: "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d62718.187973772634!2d106.612386!3d10.743211!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752dcec4321281%3A0xaedede3c5fc969cd!2sBreadTalk!5e0!3m2!1svi!2sus!4v1714909128898!5m2!1svi!2sus",
+  },
+  {
+    id: "10",
+    name: "BreadTalk Aeon Mall Bình Tân",
+    location:
+      "G2, Tầng trệt, Aeon Bình Tân, số 1 đường số 17A, KP 11, Phường Bình Trị Đông B, Quận Bình Tân, TP. HCM",
+    phoneNum: "028 3620 6061",
+    email: "ch.ambinhtan@breadtalkvietnam.com",
+    work: "08h00 - 22h00",
+    map: "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d62718.187973772634!2d106.612386!3d10.743211!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752dcec4321281%3A0xaedede3c5fc969cd!2sBreadTalk!5e0!3m2!1svi!2sus!4v1714967621826!5m2!1svi!2sus",
+  },
+  {
+    id: "11",
+    name: "BreadTalk Vincom Quang Trung",
+    location:
+      "L1-11, Tầng trệt, Vincom Quang Trung, 190 Quang Trung, Phường 10, Quận Gò Vấp, TP. HCM",
+    phoneNum: "028 3894 6595",
+    email: "ch.vcquangtrung@breadtalkvietnam.com",
+    work: "08h00 - 22h00",
+    map: "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15675.05045795136!2d106.67221!3d10.82947!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752974f671fb5f%3A0x6e865cdc62d4372e!2sBreadTalk%20Quang%20Trung!5e0!3m2!1svi!2sus!4v1714909138919!5m2!1svi!2sus",
+  },
+  {
+    id: "12",
+    name: "BreadTalk Phan Văn Trị",
+    location: "366A22 Phan Văn Trị, Phường 5, Quận Gò Vấp, TP. HCM",
+    phoneNum: "028 62734155",
+    email: "ch.phanvantri@breadtalkvietnam.com",
+    work: "06h00 - 22h30",
+    map: "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15675.05045795136!2d106.67221!3d10.82947!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752974f671fb5f%3A0x6e865cdc62d4372e!2sBreadTalk%20Quang%20Trung!5e0!3m2!1svi!2sus!4v1714967375119!5m2!1svi!2sus",
+  },
+  {
+    id: "13",
+    name: "BreadTalk Sun Avenue",
+    location:
+      "SAV.1-00.05, Tháp 1, The Sun Avenue, 28 Đại lộ Mai Chí Thọ, Phường An Phú, TP. Thủ Đức, TP. Hồ Chí Minh",
+    phoneNum: "028 3535 4136",
+    email: "ch.sunavenue@breadtalkvietnam.com",
+    work: "06h00 - 22h00",
+    map: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.339433696852!2d106.74556137463134!3d10.785293659030973!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752558424eb341%3A0xa24d5c46d9d1418f!2sThe%20Sun%20Avenue%2C%20Office%20S4!5e0!3m2!1svi!2sus!4v1714967713637!5m2!1svi!2sus",
+  },
+  {
+    id: "14",
+    name: "BreadTalk Âu Cơ",
+    location: "36-36A Âu Cơ, Phường 9, Quận Tân Bình, Tp. HCM",
+    phoneNum: "028 35358936",
+    email: "ch.auco@breadtalkvietnam.com",
+    work: "06h00 - 22h00",
+    map: "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d979.886773267784!2d106.651797!3d10.769346!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752e95452acd53%3A0x180f92605e2f33bc!2zMzYgxJAuIMOCdSBDxqEsIFBoxrDhu51uZyA5LCBUw6JuIELDrG5oLCBUaMOgbmggcGjhu5EgSOG7kyBDaMOtIE1pbmgsIFZp4buHdCBOYW0!5e0!3m2!1svi!2sus!4v1714967218113!5m2!1svi!2sus",
+  },
+  {
+    id: "15",
+    name: "BreadTalk Aeon Mall Tân Phú",
+    location:
+      "G27, Tầng trệt, AeonMall Tân Phú, 30 Tân Thắng, Phường Sơn Kỳ, Quận Tân Phú, TP. HCM",
+    phoneNum: "028 3847 2085",
+    email: "ch.amtanphu@breadtalkvietnam.com",
+    work: "08h00 - 22h00",
+    map: "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7838.260417977576!2d106.617959!3d10.801338!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752b9535b60699%3A0x4737f3be8bd41d5b!2zw4ZPTiBNQUxMIFTDom4gUGjDug!5e0!3m2!1svi!2sus!4v1714966938333!5m2!1svi!2sus",
+  },
+  {
+    id: "16",
+    name: "BreadTalk Gigamall",
+    location:
+      "L2-02, Tầng 2, Gigamall, 240-242 Phạm Văn Đồng, Phường Hiệp Bình Chánh, Tp. Thủ Đức, TP. HCM",
+    phoneNum: "028 3636 3267",
+    email: "ch.gigamall@breadtalkvietnam.com",
+    work: "09h30 – 22h00 (Thứ hai – Thứ sáu), 09h00 – 22h00 (Thứ bảy, Chủ nhật)",
+    map: "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7837.573032341139!2d106.721471!3d10.827643!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3175291a71519df7%3A0xcbeec0265c71c79f!2zVHJ1bmcgVMOibSBUaMawxqFuZyBN4bqhaSBHaWdhbWFsbC9TZW5zZSBDaXR5!5e0!3m2!1svi!2sus!4v1714966914689!5m2!1svi!2sus",
+  },
+  {
+    id: "17",
+    name: "BreadTalk Vinhomes Grand Park",
+    location:
+      "01S13 Tòa S3.01, Vinhomes Grand Park, Phường Long Thạnh Mỹ, TP. Thủ Đức, TP. HCM",
+    phoneNum: "028 36201623",
+    email: "ch.vhgrandpark@breadtalkvietnam.com",
+    work: "06h00 - 21h30",
+    map: "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15675.138791386076!2d106.721326!3d10.827782!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752932c476c6bf%3A0x7ebf5614a357eab0!2sBreadTalk%20Gigamall!5e0!3m2!1svi!2sus!4v1714966895126!5m2!1svi!2sus",
+  },
+  {
+    id: "18",
+    name: "BreadTalk Sunrise Riverside",
+    location:
+      "B-01.11 và B-01.12, Block B, Khu căn hộ Sunrise Riverside, Ấp 5, Xã Phước Kiển, Huyện Nhà Bè, Tp. Hồ Chí Minh",
+    phoneNum: "028 36201607",
+    email: "ch.sunriseriverside@breadtalkvietnam.com",
+    work: "06h30 - 22h00",
+    map: "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d62722.60576380043!2d106.70395!3d10.721919!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752f6fd2eadc87%3A0x2e1394afb5d90acd!2sSunrise%20Riverside%20Block%20B!5e0!3m2!1svi!2sus!4v1714966865206!5m2!1svi!2sus",
   },
 ];
 //location loader
