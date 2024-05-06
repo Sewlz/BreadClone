@@ -113,6 +113,7 @@
 .cell-content {
   background-color: #f8f8f8;
   padding: 20px;
+  height: 200px;
 }
 .cell-content-loc:hover {
   color: #f8f8f8;
@@ -183,6 +184,7 @@
   .loaction-wrapper {
     display: flex;
     flex-direction: column;
+    margin: 0;
   }
   .cell-header {
     display: flex;
@@ -212,8 +214,29 @@
     font-size: x-large;
   }
   .swiper-wrapper {
-    margin-bottom: 15%;
+    margin-bottom: 0%;
   }
+  .button-wraper {
+    display: flex !important;
+    justify-content: center;
+  }
+  .swiper-button-prev,
+  .swiper-button-next {
+    --swiper-navigation-size: 20px;
+    text-align: center;
+    background-color: #ffffff;
+    padding: 12px 16px;
+    margin: 10px 5%;
+    border-radius: 100%;
+    border: 1px solid black;
+    color: black;
+    width: 20px;
+    height: 20px;
+    position: relative;
+  }
+}
+.button-wraper {
+  display: none;
 }
 .home-li > a:link {
   color: #ffffff;
