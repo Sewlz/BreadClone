@@ -16,42 +16,66 @@
 i {
   color: var(--color-01);
 }
-.banner-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 30vh;
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url(../../public/imgs/SanPham/Rectangle-825-min.jpeg);
-  background-position: center;
-  background-size: cover;
+/* css background title */
+.section-header {
+  position: relative;
+  overflow: hidden;
+  padding: 100px 0;
+}
+
+.section-header::before {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: black;
+  opacity: 0.4;
+}
+
+.section-header .section-header_background {
+  background: url(../../public/imgs/SanPham/Rectangle-825-min.jpeg);
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  top: 0;
+  background-position: right center;
   background-repeat: no-repeat;
+  background-size: cover;
 }
-.banner-container > h2 {
+
+.section-header_title {
+  color: white;
+  text-transform: capitalize;
+  position: relative;
+  z-index: 2;
+  text-align: center;
   font-size: 2.25rem;
-  color: #fff;
 }
-.link-back {
+
+.breadcrumb {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 2;
 }
-.link-back > li {
-  font-size: 13px;
-  color: #fff;
-}
-.home-li::after {
+
+.breadcrumb li:last-child::before {
   content: "/";
-  color: #fff;
-  padding: 0 10px;
+  margin: 0 0.75rem;
+  color: #cacaca;
 }
-.link-back a:link {
-  color: #fff;
+
+.breadcrumb_link:hover {
+  text-decoration: underline;
 }
-.link-back a:active {
-  color: #fff;
-}
+
 iframe {
   width: 100%;
 }
@@ -62,7 +86,7 @@ iframe {
   color: #000;
 }
 .info_link:hover {
-  color: #f19700;
+  color: #ffc0cb;
 }
 .info_link:active {
   color: #000;
@@ -189,4 +213,112 @@ textarea {
 }
 .home-li > a:active {
   color: #ffffff;
+}
+/* modal css */
+/*credit: https://codepen.io/designfenix*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+:root {
+  --vs-primary: 29 92 255;
+}
+.custom-dialog {
+  padding: 1rem 3rem;
+  background: white;
+  max-width: 400px;
+  padding-top: 2rem;
+  border-radius: 20px;
+  border: 0;
+  box-shadow: 0 5px 30px 0 rgb(0 0 0 / 10%);
+  animation: fadeIn 1s ease both;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.custom-dialog::backdrop {
+  animation: fadeIn 1s ease both;
+  background: rgb(255 255 255 / 40%);
+  z-index: 2;
+  backdrop-filter: blur(20px);
+}
+
+.custom-dialog .x {
+  filter: grayscale(1);
+  border: none;
+  background: none;
+  position: absolute;
+  top: 15px;
+  right: 10px;
+  transition: ease filter, transform 0.3s;
+  cursor: pointer;
+  transform-origin: center;
+}
+
+.custom-dialog .x:hover {
+  filter: grayscale(0);
+  transform: scale(1.1);
+}
+
+.custom-dialog h2 {
+  font-weight: 600;
+  font-size: 2rem;
+  padding-bottom: 1rem;
+}
+
+.custom-dialog p {
+  font-size: 1rem;
+  line-height: 1.3rem;
+  padding: 0.5rem 0;
+}
+
+.custom-dialog p a:visited {
+  color: rgb(var(--vs-primary));
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/*tick animation*/
+svg {
+  width: 100%;
+}
+
+.tick {
+  transform-origin: center;
+  animation: grow 0.8s ease-in-out forwards;
+}
+
+@keyframes grow {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  60% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.circle {
+  transform-origin: center;
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 0;
+  animation: dash 1s linear;
+}
+
+@keyframes dash {
+  from {
+    stroke-dashoffset: 1000;
+    opacity: 0;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
 }

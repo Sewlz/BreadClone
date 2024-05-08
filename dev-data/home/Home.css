@@ -139,14 +139,14 @@ html body section.section div.story-container div.story-content p {
 html body div.slection-container h1 {
   font-family: "Work Sans", sans-serif;
   font-weight: 500;
-  font-size: 40px;
+  font-size: 50px;
   margin: 5% 0;
 }
 .background-title {
   position: relative;
   top: -200px; /*100px*/
   font-weight: 700;
-  font-size: 200px;
+  font-size: 180px;
   line-height: 115px;
   letter-spacing: 0.1em;
   color: #f7f1e5;
@@ -317,7 +317,7 @@ html body div.slection-container h1 {
 .swiper-button-prev {
   --swiper-navigation-size: 20px;
   background-color: rgba(255, 255, 255, 0.789);
-  padding: 8px 16px;
+  padding: 16px 17px;
   border-radius: 100%;
   border: 1px solid black;
   color: black;
@@ -598,6 +598,13 @@ html body div.slection-container h1 {
   }
 }
 @media only screen and (max-width: 768px) {
+  html body div.slection-container h1 {
+    font-size: 40px;
+  }
+  .review-wrapper h4 {
+    margin-top: 15px;
+    font-size: 30px;
+  }
   #swiper-pagination-top,
   #swiper-pagination-product {
     margin-top: 5%;

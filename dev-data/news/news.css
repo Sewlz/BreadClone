@@ -12,46 +12,66 @@ body {
 .bold-text {
   font-weight: bold;
 }
-.banner-container {
-  display: flex;
-  text-align: center;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 30vh;
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url(../../public/imgs/SanPham/Rectangle-825-min.jpeg);
-  background-position: center;
-  background-size: cover;
+/* css background title */
+.section-header {
+  position: relative;
+  overflow: hidden;
+  padding: 100px 0;
+}
+
+.section-header::before {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: black;
+  opacity: 0.4;
+}
+
+.section-header .section-header_background {
+  background: url(../../public/imgs/SanPham/Rectangle-825-min.jpeg);
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  top: 0;
+  background-position: right center;
   background-repeat: no-repeat;
+  background-size: cover;
 }
-.banner-container > h2 {
+
+.section-header_title {
+  color: white;
+  text-transform: capitalize;
+  position: relative;
+  z-index: 2;
+  text-align: center;
   font-size: 2.25rem;
-  color: #fff;
 }
-.banner-container > ul {
-  list-style: none;
-}
-.link-back {
+
+.breadcrumb {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 2;
 }
-.link-back > li {
-  font-size: 13px;
-  color: #fff;
-}
-.home-li::after {
+
+.breadcrumb li:last-child::before {
   content: "/";
-  color: #fff;
-  padding: 0 10px;
+  margin: 0 0.75rem;
+  color: #cacaca;
 }
-.link-back a:link {
-  color: #fff;
+
+.breadcrumb_link:hover {
+  text-decoration: underline;
 }
-.link-back a:active {
-  color: #fff;
-}
+
 .news-content {
   margin: 2% 20%;
   display: grid;
