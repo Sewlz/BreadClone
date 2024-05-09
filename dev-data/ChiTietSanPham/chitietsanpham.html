@@ -1,1041 +1,776 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mushroom Cheese Sausage - Dough Re Mi</title>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link
-      rel="shortcut icon"
-      href="../../public/imgs/cropped-single-product-14-min-32x32.png"
-      type="image/x-icon"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css"
-    />
-    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script>
-    <link rel="stylesheet" href="../footer/footer.css" />
-    <link rel="stylesheet" href="../menu/menu.css" />
-    <link rel="stylesheet" href="./chitietsanpham.css" />
-  </head>
-  <body>
-    <div class="container">
-      <head class="header-container">
-        <div class="menu-bar-container">
-          <div class="button-close-menu">
-            <div class="close-menu">
-              <div class="menu-bar"></div>
-              <div class="menu-bar"></div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mushroom Cheese Sausage - Dough Re Mi</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="shortcut icon" href="../../public/imgs/cropped-single-product-14-min-32x32.png" type="image/x-icon" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" />
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script>
+  <link rel="stylesheet" href="../footer/footer.css" />
+  <link rel="stylesheet" href="../menu/menu.css" />
+  <link rel="stylesheet" href="./chitietsanpham.css" />
+</head>
+
+<body>
+  <div class="container">
+
+    <head class="header-container">
+      <div class="menu-bar-container">
+        <div class="button-close-menu">
+          <div class="close-menu">
+            <div class="menu-bar"></div>
+            <div class="menu-bar"></div>
+          </div>
+        </div>
+        <ul class="menu-bar-wrapper_lv1">
+          <li class="menu-bar_lv1">
+            <div>
+              <a href="../home/Home.html" class="menu-bar-item_lv1">
+                Trang chủ
+              </a>
             </div>
-          </div>
-          <ul class="menu-bar-wrapper_lv1">
-            <li class="menu-bar_lv1">
-              <div>
-                <a href="../home/Home.html" class="menu-bar-item_lv1">
-                  Trang chủ
-                </a>
-              </div>
-            </li>
-            <li class="menu-bar_lv1">
-              <div>
-                <a
-                  href="../SanPham/sanpham.html"
-                  class="menu-bar-item_lv1 active-hover-page"
-                >
-                  Sản phẩm
-                </a>
-                <i class="fas fa-angle-down"></i>
-              </div>
-              <div class="menu-bar-container_lv2">
-                <ul class="menu-bar-wrapper_lv2">
-                  <li class="menu-bar_lv2">
-                    <div>
-                      <a
-                        href="../DanhSachSanPham/Buns/buns.html"
-                        class="menu-bar-item_lv2"
-                      >
-                        Buns
-                      </a>
-                      <i class="fas fa-angle-down"></i>
-                    </div>
-                    <ul class="menu-bar-wrapper_lv3">
-                      <li class="menu-bar_lv3">
-                        <div>
-                          <a
-                            href="../DanhSachSanPham/Buns/buns.html"
-                            class="menu-bar-item_lv3"
-                          >
-                            Sweet
-                          </a>
-                        </div>
-                      </li>
-                      <li class="menu-bar_lv3">
-                        <div>
-                          <a
-                            href="../DanhSachSanPham/Buns/buns.html"
-                            class="menu-bar-item_lv3"
-                          >
-                            Savory
-                          </a>
-                        </div>
-                      </li>
-                    </ul>
-                  </li>
-                  <li class="menu-bar_lv2">
-                    <div>
-                      <a
-                        href="../DanhSachSanPham/Buns/buns.html"
-                        class="menu-bar-item_lv2"
-                      >
-                        Toast
-                      </a>
-                    </div>
-                  </li>
-                  <li class="menu-bar_lv2">
-                    <div>
-                      <a
-                        href="../DanhSachSanPham/Buns/buns.html"
-                        class="menu-bar-item_lv2"
-                      >
-                        Sandwiches
-                      </a>
-                    </div>
-                  </li>
-                  <li class="menu-bar_lv2">
-                    <div>
-                      <a
-                        href="../DanhSachSanPham/Buns/buns.html"
-                        class="menu-bar-item_lv2"
-                      >
-                        Dry Cakes
-                      </a>
-                    </div>
-                  </li>
-                  <li class="menu-bar_lv2">
-                    <div>
-                      <a
-                        href="../DanhSachSanPham/Buns/buns.html"
-                        class="menu-bar-item_lv2"
-                      >
-                        Cakes
-                      </a>
-                    </div>
-                  </li>
-                  <li class="menu-bar_lv2">
-                    <div>
-                      <a
-                        href="../DanhSachSanPham/Buns/buns.html"
-                        class="menu-bar-item_lv2"
-                      >
-                        Cake Slices
-                      </a>
-                    </div>
-                  </li>
-                  <li class="menu-bar_lv2">
-                    <div>
-                      <a
-                        href="../DanhSachSanPham/Buns/buns.html"
-                        class="menu-bar-item_lv2"
-                      >
-                        Seasonal Specials
-                      </a>
-                    </div>
-                  </li>
-                  <li class="menu-bar_lv2">
-                    <div>
-                      <a
-                        href="../DanhSachSanPham/Buns/buns.html"
-                        class="menu-bar-item_lv2"
-                      >
-                        Pudding
-                      </a>
-                    </div>
-                  </li>
-                  <li class="menu-bar_lv2">
-                    <div>
-                      <a
-                        href="../DanhSachSanPham/Buns/buns.html"
-                        class="menu-bar-item_lv2"
-                      >
-                        Drinks
-                      </a>
-                    </div>
-                  </li>
-                  <li class="menu-bar_lv2">
-                    <div>
-                      <a
-                        href="../DanhSachSanPham/Buns/buns.html"
-                        class="menu-bar-item_lv2"
-                      >
-                        Cookies
-                      </a>
-                    </div>
-                  </li>
-                  <li class="menu-bar_lv2">
-                    <div>
-                      <a
-                        href="../DanhSachSanPham/Buns/buns.html"
-                        class="menu-bar-item_lv2"
-                      >
-                        Floss Specials
-                      </a>
-                    </div>
-                  </li>
-                </ul>
-              </div>
-            </li>
-            <li class="menu-bar_lv1">
-              <div>
-                <a
-                  href="../storeLocation/storeLocation.html"
-                  class="menu-bar-item_lv1"
-                >
-                  Hệ thống cửa hàng
-                </a>
-              </div>
-            </li>
-            <li class="menu-bar_lv1">
-              <div>
-                <a href="../aboutUs/aboutUs.html" class="menu-bar-item_lv1">
-                  Giới thiệu
-                </a>
-              </div>
-            </li>
-            <li class="menu-bar_lv1">
-              <div>
-                <a
-                  href="../recruitment/recruitment.html"
-                  class="menu-bar-item_lv1"
-                >
-                  Tuyển dụng
-                </a>
-              </div>
-            </li>
-            <li class="menu-bar_lv1">
-              <div>
-                <a href="../contact/contact.html" class="menu-bar-item_lv1">
-                  Liên hệ
-                </a>
-              </div>
-            </li>
-          </ul>
-        </div>
-        <div class="layout-close-menu-bar"></div>
-        <div class="top-header">
-          <div class="header">
-            <a href="../SanPham/sanpham.html" class="uppercase color-white"
-              >Xem Ngay</a
-            >
-          </div>
-        </div>
-        <header class="menu-outside">
-          <menu class="menu-container">
-            <header class="menu-main">
-              <div class="menu-logo">
-                <a href="../home/Home.html">
-                  <img
-                    src="../../public/imgs/PT-Talkindo-Selaksa-Anugrah-2.png"
-                    alt=""
-                  />
-                </a>
-              </div>
-              <div class="menu-content">
-                <ul class="menus">
-                  <li class="menu-item">
-                    <a class="uppercase active-page" href="../home/Home.html"
-                      >Trang chủ</a
-                    >
-                  </li>
-                  <li class="menu-item menu-more">
-                    <a class="uppercase" href="../SanPham/sanpham.html">
-                      Sản phẩm
-                      <i class="fas fa-angle-down"></i>
+          </li>
+          <li class="menu-bar_lv1">
+            <div>
+              <a href="../SanPham/sanpham.html" class="menu-bar-item_lv1 active-hover-page">
+                Sản phẩm
+              </a>
+              <i class="fas fa-angle-down"></i>
+            </div>
+            <div class="menu-bar-container_lv2">
+              <ul class="menu-bar-wrapper_lv2">
+                <li class="menu-bar_lv2">
+                  <div>
+                    <a href="../DanhSachSanPham/Buns/buns.html" class="menu-bar-item_lv2">
+                      Buns
                     </a>
-                    <ul class="menu-sub">
-                      <li class="menu-sub_item menu-sub_more">
-                        <a href="../DanhSachSanPham/Buns/buns.html">
-                          Buns
-                          <i class="fas fa-angle-right"></i>
+                    <i class="fas fa-angle-down"></i>
+                  </div>
+                  <ul class="menu-bar-wrapper_lv3">
+                    <li class="menu-bar_lv3">
+                      <div>
+                        <a href="../DanhSachSanPham/Buns/buns.html" class="menu-bar-item_lv3">
+                          Sweet
                         </a>
-                        <ul class="menu-sub-sub">
-                          <li class="sub-item">
-                            <a href="../DanhSachSanPham/Buns/buns.html"
-                              >Sweet</a
-                            >
-                          </li>
-                          <li class="sub-item">
-                            <a href="../DanhSachSanPham/Buns/buns.html"
-                              >Savory</a
-                            >
-                          </li>
-                        </ul>
-                      </li>
-                      <li class="menu-sub_item">
-                        <a href="../DanhSachSanPham/Buns/buns.html">Toasts</a>
-                      </li>
-                      <li class="menu-sub_item">
-                        <a href="../DanhSachSanPham/Buns/buns.html"
-                          >Sandwiches</a
-                        >
-                      </li>
-                      <li class="menu-sub_item">
-                        <a href="../DanhSachSanPham/Buns/buns.html"
-                          >Dry Cakes</a
-                        >
-                      </li>
-                      <li class="menu-sub_item">
-                        <a href="../DanhSachSanPham/Buns/buns.html">Cakes</a>
-                      </li>
-                      <li class="menu-sub_item">
-                        <a href="../DanhSachSanPham/Buns/buns.html"
-                          >Cake Slices</a
-                        >
-                      </li>
-                      <li class="menu-sub_item">
-                        <a href="../DanhSachSanPham/Buns/buns.html"
-                          >Seasonal Specials</a
-                        >
-                      </li>
-                      <li class="menu-sub_item">
-                        <a href="../DanhSachSanPham/Buns/buns.html">Pudding</a>
-                      </li>
-                      <li class="menu-sub_item">
-                        <a href="../DanhSachSanPham/Buns/buns.html">Drinks</a>
-                      </li>
-                      <li class="menu-sub_item">
-                        <a href="../DanhSachSanPham/Buns/buns.html">Cookies</a>
-                      </li>
-                      <li class="menu-sub_item">
-                        <a href="../DanhSachSanPham/Buns/buns.html"
-                          >Floss Specials</a
-                        >
-                      </li>
-                    </ul>
-                  </li>
-                  <li class="menu-item">
-                    <a
-                      class="uppercase"
-                      href="../storeLocation/storeLocation.html"
-                      >Hệ thống cửa hàng</a
-                    >
-                  </li>
-                  <li class="menu-item">
-                    <a class="uppercase" href="../aboutUs/aboutUs.html"
-                      >Giới thiệu</a
-                    >
-                  </li>
-                  <li class="menu-item">
-                    <a class="uppercase" href="../recruitment/recruitment.html"
-                      >Tuyển dụng</a
-                    >
-                  </li>
-                  <li class="menu-item">
-                    <a class="uppercase" href="../contact/contact.html"
-                      >Liên hệ</a
-                    >
-                  </li>
-                </ul>
-              </div>
-              <div class="menu-funtion">
-                <div class="translate-language">
-                  <ul>
-                    <li>
-                      <a class="uppercase" href="">vi</a>
+                      </div>
                     </li>
-                    <li class="bar-between">|</li>
-                    <li>
-                      <a class="uppercase" href="">en</a>
+                    <li class="menu-bar_lv3">
+                      <div>
+                        <a href="../DanhSachSanPham/Buns/buns.html" class="menu-bar-item_lv3">
+                          Savory
+                        </a>
+                      </div>
                     </li>
                   </ul>
-                </div>
-                <div class="cart-container">
-                  <a href="../cart/cart.html">
-                    <svg
-                      width="38"
-                      height="32"
-                      viewBox="0 0 38 32"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M37.0283 12.317C36.9799 11.8329 37.0283 11.3488 37.0283 10.8647C37.0041 9.26718 36.7137 8.97672 35.0919 9.00092C32.1631 9.07354 29.2101 9.12195 26.2813 9.24297C25.3131 9.29138 24.7079 8.92831 24.1996 8.12954C22.8199 5.95108 21.3676 3.82103 19.9395 1.66678C19.165 0.480732 18.8745 0.456527 18.0515 1.61837C16.6234 3.62739 15.2437 5.66062 13.9125 7.71805C13.3315 8.61364 12.6296 9.00092 11.5404 9.02513C8.22427 9.02513 4.93238 9.14615 1.61628 9.24297C1.27741 9.24297 0.744895 9.02513 0.81751 9.75128C0.938536 10.8647 1.05956 12.0024 1.15638 13.1158C1.20479 13.5757 1.44684 13.9388 1.88253 13.963C2.99597 14.0598 3.04438 14.8343 3.11699 15.6573C3.57689 20.1111 4.03679 24.5406 4.52089 28.9943C4.71453 30.8097 4.81135 30.9791 6.67514 30.8581C12.2423 30.4708 17.7853 31.2938 23.3282 31.2454C25.9424 31.2454 28.5565 31.2212 31.1707 31.2696C32.2841 31.2938 32.7682 30.9065 32.8166 29.7447C33.0345 24.7342 34.2447 19.869 34.9225 14.9312C34.9709 14.5439 35.0193 14.084 35.6002 14.1082C36.9073 14.1566 37.1251 13.382 37.0283 12.317ZM25.8698 11.252C25.9666 11.494 25.7972 11.7603 25.5551 11.8087C24.9258 11.9539 24.9258 11.3972 24.6595 11.0342C25.192 10.9131 25.6277 10.6711 25.8698 11.252ZM14.566 8.34739C15.8973 6.43518 17.2286 4.52298 18.5356 2.58657C19.0197 1.88463 19.2376 2.44134 19.4796 2.75601C20.9077 4.69242 21.9486 6.89508 23.7155 8.97672C20.5931 8.97672 17.7611 8.97672 14.9291 8.97672C14.3966 9.00092 14.2271 8.80728 14.566 8.34739ZM13.0895 10.5016C13.4768 10.4048 13.4284 10.8163 13.5252 11.0584C13.4768 11.4698 13.2831 11.7603 12.8716 11.7361C12.436 11.7361 12.2181 11.3246 12.2181 11.0099C12.1939 10.4774 12.7748 10.5743 13.0895 10.5016ZM33.8817 15.0764C33.3976 19.9416 32.4052 24.71 31.7274 29.5268C31.6548 30.1078 31.3401 30.132 30.9044 30.132C25.7003 30.132 20.5205 30.1562 15.3164 29.9141C12.557 29.7931 9.77339 29.8899 7.06242 29.8899C6.84458 29.188 7.49812 29.2606 7.4255 29.0427C6.89299 28.244 5.58591 29.7931 5.44068 28.2198C5.97319 27.9535 6.57832 28.244 7.20765 27.8325C6.43309 27.3968 5.00499 28.0019 5.27125 26.5496C5.44068 25.654 6.43309 26.1865 6.98981 25.7508C6.21525 25.3636 4.81135 25.7508 4.93238 24.2743C5.00499 23.2577 6.11842 23.8386 6.62673 23.2335C5.70694 23.0399 4.47248 23.0883 4.71453 21.757C4.90817 20.6436 6.28786 21.4181 6.98981 20.5952C6.43309 20.5952 5.97319 20.571 5.5375 20.5952C4.81135 20.6436 4.52089 20.2805 4.44827 19.6028C4.37566 18.8766 5.00499 19.046 5.36807 18.9492C5.77955 18.8282 6.23945 18.8766 6.65094 18.6103C6.31207 18.2473 5.90058 18.4651 5.56171 18.4167C5.10181 18.3683 4.44827 18.5619 4.37566 17.9084C4.30304 17.2307 4.98079 17.3275 5.41648 17.2064C6.07001 17.037 6.82037 17.0854 7.76437 16.5771C6.4573 16.5771 5.48909 16.5771 4.42407 16.5771C4.95658 15.5847 6.0216 15.9962 6.86878 15.3911C5.90058 15.3911 5.15022 15.3911 4.37566 15.3911C4.35145 15.27 4.35145 15.149 4.32725 15.0038C5.97319 14.4471 7.74017 14.4713 9.45873 14.3018C8.68416 13.8177 7.83699 14.1566 7.03822 14.084C6.60253 14.0356 6.16683 14.084 5.73114 13.963C9.3377 13.9146 12.9201 13.6967 16.5266 14.0598C21.997 14.0598 27.4915 14.1082 32.9619 14.0598C33.8333 14.0356 33.9543 14.3502 33.8817 15.0764ZM36.1811 10.8889C36.0601 12.7285 36.1085 12.7769 34.4626 12.8979C28.605 13.3094 22.7231 13.2852 16.8413 13.1642C16.0667 13.14 15.3164 13.1158 14.5418 13.0916C13.7188 13.0916 12.8959 13.2126 12.1213 12.8737C9.19247 12.8737 6.28786 12.8737 3.35904 12.8737C3.35904 12.8011 3.33484 12.7527 3.33484 12.6801C4.23043 12.5591 5.12602 12.438 6.0216 12.3412C4.78715 11.8329 3.45586 12.196 1.88253 11.9297C2.82653 11.2036 3.74633 11.3004 4.5935 11.1794C3.91576 10.7437 3.1654 11.131 2.43925 11.0099C2.14879 10.9615 1.66469 11.1068 1.97935 10.5016C2.173 10.2596 2.43925 10.2354 2.72971 10.2354C5.24704 10.2354 7.76437 10.2596 10.3059 10.2354C10.8384 10.2354 11.1047 10.3564 11.0805 10.9615C11.0563 11.7119 11.2983 12.3896 12.0971 12.7043C12.5086 12.7043 12.9201 12.7043 13.3315 12.7043C14.4208 12.4865 14.3724 11.5425 14.445 10.7921C14.4934 10.0659 14.7596 9.94492 15.389 9.99333C17.8821 10.1144 20.3752 10.187 22.8683 10.2838C23.2314 10.308 23.5219 10.2596 23.6429 10.7921C24.0302 12.5833 24.3691 12.8979 25.4583 12.7285C26.5717 12.5591 26.8138 12.075 26.717 10.2354C29.67 10.2354 32.5988 10.2354 35.5518 10.2354C36.1085 10.187 36.2054 10.3564 36.1811 10.8889Z"
-                        fill="#232323"
-                      ></path>
-                      <path
-                        d="M2.07617 10.7437C1.95514 10.7437 1.93094 10.5743 2.00355 10.4532C1.68889 11.0584 2.17299 10.9131 2.46345 10.9615C3.1654 11.0826 3.93996 10.6953 4.6177 11.131C4.85975 10.8889 5.22283 10.9373 5.39227 10.8647C4.37565 10.8163 3.21381 10.8405 2.07617 10.7437Z"
-                        fill="#5F5E5D"
-                      ></path>
-                      <path
-                        d="M4.25466 10.6711C3.50431 10.6469 2.70554 11.0099 2.00359 10.4532C1.93098 10.5743 1.97939 10.7195 2.07621 10.7437C3.21385 10.8405 4.35148 10.8163 5.3923 10.8647C5.22287 10.9373 4.85979 10.8889 4.61774 11.131C5.17446 11.0584 5.75538 10.9615 6.3121 10.8889C5.58594 10.6711 4.9082 10.6953 4.25466 10.6711Z"
-                        fill="#5F5E5D"
-                      ></path>
-                      <path
-                        d="M9.94273 24.8068C9.72488 21.878 9.65227 18.9492 9.04714 16.0688C8.95032 15.6331 8.8535 15.4153 8.3694 15.4879C7.95791 15.5363 7.95791 15.7783 8.07894 16.3109C8.12735 16.6981 8.22417 17.3517 8.29678 17.981C8.58724 20.6436 8.8535 23.3303 9.16817 25.9929C9.21658 26.4044 9.11976 27.1547 9.7975 27.0579C10.451 26.9611 10.1848 26.3318 10.088 25.8719C9.96693 25.533 9.96693 25.1699 9.94273 24.8068Z"
-                        fill="#292929"
-                      ></path>
-                      <path
-                        d="M29.3069 16.3593C28.726 19.7964 28.1451 23.2577 27.5884 26.6948C27.54 27.0095 27.3705 27.4936 27.8788 27.5904C28.4113 27.6873 28.5324 27.2274 28.5808 26.8159C28.7744 25.5814 28.9681 24.347 29.1617 23.1367C29.549 20.571 29.9121 17.981 30.3235 15.27C29.5974 15.5363 29.3795 15.8994 29.3069 16.3593Z"
-                        fill="#292929"
-                      ></path>
-                      <path
-                        d="M14.0819 15.149C13.6463 15.1006 13.4284 15.3911 13.38 15.8026C13.3558 16.0688 13.3558 16.3593 13.3558 16.6497C13.3558 18.2473 13.3558 19.869 13.3558 21.4665C13.3558 23.2335 13.3558 25.0005 13.3558 26.7675C13.3558 26.9853 13.2348 27.2758 13.5978 27.3484C13.8641 27.3968 14.0577 27.2031 14.203 27.0095C14.4208 26.6464 14.3966 26.2349 14.3966 25.8477C14.3966 23.6692 14.3966 21.515 14.3966 19.3365C14.3966 18.1747 14.3966 17.0128 14.3966 15.851C14.3724 15.5847 14.4934 15.1974 14.0819 15.149Z"
-                        fill="#2A2A2A"
-                      ></path>
-                      <path
-                        d="M24.248 15.5847C23.425 15.4879 23.6671 16.3109 23.6429 16.7465C23.4977 18.4167 23.3766 20.1111 23.2556 21.7812C23.1588 23.3787 23.0136 24.9763 22.9651 26.598C22.9409 26.9369 22.7473 27.5178 23.3282 27.5662C23.7881 27.5904 23.9333 27.1305 23.9576 26.6948C24.1512 23.3787 24.3448 20.0384 24.5143 16.7223C24.5385 16.3351 24.8047 15.6331 24.248 15.5847Z"
-                        fill="#282828"
-                      ></path>
-                      <path
-                        d="M18.342 16.5529C18.2694 19.9416 18.2452 23.3061 18.1968 26.6948C18.1968 26.9853 18.0515 27.3968 18.6082 27.3726C19.0439 27.3726 19.1166 27.0579 19.1166 26.719C19.1166 22.9915 19.1166 19.2397 19.1166 15.4153C18.463 15.5847 18.3662 16.0688 18.342 16.5529Z"
-                        fill="#2C2C2B"
-                      ></path>
-                    </svg>
-                    <span class="num-item-cart">2</span>
-                  </a>
-                  <div class="cart-menu-container">
-                    <div class="cart-menu-wrapper">
-                      <ul class="list-cart-menu">
-                        <li class="item-cart-menu">
-                          <div class="img-cart-menu">
-                            <a href="../ChiTietSanPham/chitietsanpham.html">
-                              <img
-                                src="../../public/imgs/SanPham/buns/MUSHROOM-CHEESE-SAUSAGE-1024x1024.jpg"
-                                alt="MUSHROOM CHEESE SAUSAGE"
-                              />
-                            </a>
-                          </div>
-                          <div class="info-cart-menu">
-                            <h6 class="name-item-cart-menu">
-                              <a
-                                href="../ChiTietSanPham/chitietsanpham.html"
-                                class="uppercase"
-                              >
-                                MUSHROOM CHEESE SAUSAGE
-                              </a>
-                            </h6>
-                            <div class="price-quantity">
-                              <span class="price-item-cart-menu">1</span>
-                              x
-                              <span class="quantity-item-cart-menu"
-                                >34,000</span
-                              >
-                            </div>
-                            <a
-                              href="#remove-item-001"
-                              class="delete-item-cart-menu"
-                            >
-                              <i class="fa-sharp fa-solid fa-xmark"></i>
-                            </a>
-                          </div>
-                        </li>
-                        <li class="item-cart-menu">
-                          <div class="img-cart-menu">
-                            <a href="../ChiTietSanPham/chitietsanpham.html">
-                              <img
-                                src="../../public/imgs/SanPham/buns/PHOENIX-1024x1024.jpg"
-                                alt="PHOENIX"
-                              />
-                            </a>
-                          </div>
-                          <div class="info-cart-menu">
-                            <h6 class="name-item-cart-menu">
-                              <a
-                                href="../ChiTietSanPham/chitietsanpham.html"
-                                class="up"
-                              >
-                                PHOENIX
-                              </a>
-                            </h6>
-                            <div class="price-quantity">
-                              <span class="price-item-cart-menu">1</span>
-                              x
-                              <span class="quantity-item-cart-menu"
-                                >20,000</span
-                              >
-                            </div>
-                            <a
-                              href="#remove-item-002"
-                              class="delete-item-cart-menu"
-                            >
-                              <i class="fa-sharp fa-solid fa-xmark"></i>
-                            </a>
-                          </div>
-                        </li>
-                      </ul>
-                      <div class="subtotal-cart-menu">
-                        <strong>Tổng phụ:</strong>
-                        <span>54,000</span>
-                      </div>
-                      <div class="link-cart-pay">
-                        <a href="../cart/cart.html" class="link-page-cart"
-                          >Xem giỏ hàng</a
-                        >
-                        <a href="../checkOut/checkout.html">Thanh toán</a>
-                      </div>
-                    </div>
+                </li>
+                <li class="menu-bar_lv2">
+                  <div>
+                    <a href="../DanhSachSanPham/Buns/buns.html" class="menu-bar-item_lv2">
+                      Toast
+                    </a>
                   </div>
-                </div>
-                <div class="search-container">
-                  <a>
-                    <svg
-                      width="30"
-                      height="34"
-                      viewBox="0 0 30 34"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M19.7528 19.6911C18.1853 19.7851 16.7119 19.3149 15.3012 18.6565C14.5174 18.2804 14.0158 18.3431 14.2666 19.3776C14.4547 20.0673 14.2353 20.6316 13.7964 21.1018C10.5988 24.5502 8.1849 28.6256 5.36347 32.3562C4.1095 34.0177 3.01228 34.2371 1.28807 33.0145C-0.279392 31.9173 -0.404789 30.8514 0.84918 29.1899C3.57656 25.5534 6.46069 22.0423 8.96863 18.2804C9.37617 17.6847 9.87775 17.2458 10.6301 17.3712C11.8841 17.5907 11.7901 16.9637 11.4452 16.1173C10.8809 14.7692 10.0972 13.5466 9.75236 12.1046C8.71783 7.84107 10.2539 3.98512 13.9845 1.57123C17.5583 -0.748613 22.0726 -0.46647 25.3956 2.19821C28.7186 4.8629 30.1293 8.37401 29.377 12.4494C28.6246 16.3054 25.3956 19.9732 19.7528 19.6911ZM20.4111 16.274C23.8282 16.274 27.3706 13.2018 27.4647 10.1609C27.5901 6.86925 23.0758 2.85655 19.2825 2.8252C16.7432 2.8252 12.95 5.33313 12.8873 10.2236C12.8559 13.3272 16.4924 16.2427 20.4111 16.274ZM28.1543 12.0105C24.2043 17.4653 20.7873 18.97 16.4611 16.7129C12.2289 14.4871 11.1631 11.9478 12.2603 7.43353C13.1694 3.64028 16.8686 1.57123 21.7591 1.97877C21.4456 1.38313 20.9754 1.28909 20.4738 1.22639C14.0472 0.442658 9.31347 6.21091 10.9123 11.7911C11.2885 13.1077 11.7901 14.3617 12.4797 15.5216C12.8246 16.1173 13.1067 16.7129 12.8873 17.4339C12.7932 17.6847 12.4484 17.9982 12.95 18.1863C13.3262 18.3117 13.4829 17.9669 13.6397 17.6847C13.9845 17.0891 14.2353 16.4308 15.1131 17.0891C17.7151 19.0014 20.5992 18.7506 23.5147 18.0923C25.7405 17.5907 28.3424 14.1736 28.1543 12.0105ZM1.50751 31.0708C2.22854 32.8577 3.13767 33.0145 4.29759 31.5411C7.02497 28.0613 9.72101 24.5189 12.3857 21.0077C12.7305 20.5689 13.3889 19.9419 12.5738 19.4403C11.8841 19.0327 11.1944 18.249 10.2226 18.8133C9.09402 19.4716 10.4734 19.9105 10.3793 20.6316C9.72101 20.6316 9.06267 20.0359 8.49839 20.9137C7.9341 21.7601 9.28212 21.6034 8.99998 22.199C7.33847 22.2304 5.67696 24.2681 6.20989 25.6474C5.67696 25.8042 4.89323 25.428 4.61108 26.2431C4.42299 26.8073 5.23807 26.7133 5.23807 27.1522C4.79918 27.403 4.1722 26.9327 3.82735 27.4343C3.35712 28.0927 4.79918 28.03 4.39164 28.7196C3.38847 28.5316 3.38847 28.5316 2.54204 28.9391C2.94958 29.2526 3.35712 29.5661 3.76466 29.8796C3.13767 30.3185 2.32259 29.2839 1.78966 30.1931C2.0718 30.5066 2.60474 30.4439 2.79283 30.9141C2.32259 30.9768 1.91505 31.0081 1.50751 31.0708Z"
-                        fill="#303030"
-                      ></path>
-                      <path
-                        d="M20.7246 14.3931C23.3266 13.7034 24.8627 11.9792 25.7718 9.34584C26.5556 11.9792 23.5147 14.926 20.7246 14.3931Z"
-                        fill="#303030"
-                      ></path>
-                    </svg>
-                    <i class="fa-solid fa-x btn-close"></i>
-                  </a>
-                  <div class="search-main">
-                    <form action="" class="search" method="">
-                      <input
-                        type="search"
-                        name="search"
-                        id="search"
-                        placeholder="Tìm kiếm..."
-                      />
-                      <button type="submit">
-                        <i class="fa-solid fa-magnifying-glass"></i>
-                      </button>
-                    </form>
+                </li>
+                <li class="menu-bar_lv2">
+                  <div>
+                    <a href="../DanhSachSanPham/Buns/buns.html" class="menu-bar-item_lv2">
+                      Sandwiches
+                    </a>
                   </div>
-                </div>
-                <div class="btn-menu-bar">
-                  <div></div>
-                  <div></div>
-                  <div></div>
-                </div>
-              </div>
-            </header>
-          </menu>
-        </header>
-      </head>
-
-      <section class="section-header">
-        <div class="section-header_background"></div>
-        <h2 class="section-header_title uppercase">Mushroom Cheese Sausage</h2>
-        <ol class="breadcrumb color-white">
-          <li class="breadcrumb_item">
-            <a href="#" class="breadcrumb_link color-white">Trang chủ</a>
+                </li>
+                <li class="menu-bar_lv2">
+                  <div>
+                    <a href="../DanhSachSanPham/Buns/buns.html" class="menu-bar-item_lv2">
+                      Dry Cakes
+                    </a>
+                  </div>
+                </li>
+                <li class="menu-bar_lv2">
+                  <div>
+                    <a href="../DanhSachSanPham/Buns/buns.html" class="menu-bar-item_lv2">
+                      Cakes
+                    </a>
+                  </div>
+                </li>
+                <li class="menu-bar_lv2">
+                  <div>
+                    <a href="../DanhSachSanPham/Buns/buns.html" class="menu-bar-item_lv2">
+                      Cake Slices
+                    </a>
+                  </div>
+                </li>
+                <li class="menu-bar_lv2">
+                  <div>
+                    <a href="../DanhSachSanPham/Buns/buns.html" class="menu-bar-item_lv2">
+                      Seasonal Specials
+                    </a>
+                  </div>
+                </li>
+                <li class="menu-bar_lv2">
+                  <div>
+                    <a href="../DanhSachSanPham/Buns/buns.html" class="menu-bar-item_lv2">
+                      Pudding
+                    </a>
+                  </div>
+                </li>
+                <li class="menu-bar_lv2">
+                  <div>
+                    <a href="../DanhSachSanPham/Buns/buns.html" class="menu-bar-item_lv2">
+                      Drinks
+                    </a>
+                  </div>
+                </li>
+                <li class="menu-bar_lv2">
+                  <div>
+                    <a href="../DanhSachSanPham/Buns/buns.html" class="menu-bar-item_lv2">
+                      Cookies
+                    </a>
+                  </div>
+                </li>
+                <li class="menu-bar_lv2">
+                  <div>
+                    <a href="../DanhSachSanPham/Buns/buns.html" class="menu-bar-item_lv2">
+                      Floss Specials
+                    </a>
+                  </div>
+                </li>
+              </ul>
+            </div>
           </li>
-          <li class="breadcrumb_item">
-            <a
-              class="breadcrumb_link color-white"
-              href="../SanPham/sanpham.html"
-              >Sản phẩm</a
-            >
+          <li class="menu-bar_lv1">
+            <div>
+              <a href="../storeLocation/storeLocation.html" class="menu-bar-item_lv1">
+                Hệ thống cửa hàng
+              </a>
+            </div>
           </li>
-        </ol>
-      </section>
-
-      <section class="section-product layout-center">
-        <div class="product-container">
-          <div class="img-product-detail">
-            <div class="btn-prev btn-slideImg">
-              <i class="fas fa-angle-left"></i>
+          <li class="menu-bar_lv1">
+            <div>
+              <a href="../aboutUs/aboutUs.html" class="menu-bar-item_lv1">
+                Giới thiệu
+              </a>
             </div>
-            <div class="btn-next btn-slideImg">
-              <i class="fas fa-angle-right"></i>
+          </li>
+          <li class="menu-bar_lv1">
+            <div>
+              <a href="../recruitment/recruitment.html" class="menu-bar-item_lv1">
+                Tuyển dụng
+              </a>
             </div>
-            <div class="img-container">
-              <img
-                src="../../public/imgs/SanPham/buns/MUSHROOM-CHEESE-SAUSAGE-1024x1024.jpg"
-                data-fancybox="gallery"
-                title="MUSHROOM CHEESE SAUSAGE"
-              />
-              <img
-                src="../../public/imgs/SanPham/buns/HAM-CHEESE-1024x1024.jpg"
-                data-fancybox="gallery"
-                title="MUSHROOM CHEESE SAUSAGE"
-              />
-              <img
-                src="../../public/imgs/SanPham/buns/MUSHROOM-CHEESE-SAUSAGE-1024x1024.jpg"
-                data-fancybox="gallery"
-                title="MUSHROOM CHEESE SAUSAGE"
-              />
-              <img
-                src="../../public/imgs/SanPham/buns/MUSHROOM-CHEESE-SAUSAGE-1024x1024.jpg"
-                data-fancybox="gallery"
-                title="MUSHROOM CHEESE SAUSAGE"
-              />
-              <img
-                src="../../public/imgs/SanPham/buns/MUSHROOM-CHEESE-SAUSAGE-1024x1024.jpg"
-                data-fancybox="gallery"
-                title="MUSHROOM CHEESE SAUSAGE"
-              />
-              <img
-                src="../../public/imgs/SanPham/buns/MUSHROOM-CHEESE-SAUSAGE-1024x1024.jpg"
-                data-fancybox="gallery"
-                title="MUSHROOM CHEESE SAUSAGE"
-              />
-              <img
-                src="../../public/imgs/SanPham/buns/MUSHROOM-CHEESE-SAUSAGE-1024x1024.jpg"
-                data-fancybox="gallery"
-                title="MUSHROOM CHEESE SAUSAGE"
-              />
-              <img
-                src="../../public/imgs/SanPham/buns/MUSHROOM-CHEESE-SAUSAGE-1024x1024.jpg"
-                data-fancybox="gallery"
-                title="MUSHROOM CHEESE SAUSAGE"
-              />
-              <img
-                src="../../public/imgs/SanPham/buns/MUSHROOM-CHEESE-SAUSAGE-1024x1024.jpg"
-                data-fancybox="gallery"
-                title="MUSHROOM CHEESE SAUSAGE"
-              />
+          </li>
+          <li class="menu-bar_lv1">
+            <div>
+              <a href="../contact/contact.html" class="menu-bar-item_lv1">
+                Liên hệ
+              </a>
             </div>
-            <div class="thumbnail-container"></div>
-          </div>
-          <div class="entry-summary">
-            <h1 class="name-product-detail">Mushroom Cheese Sausage</h1>
-            <p class="price-product-detail">34,000</p>
-            <form action="" method="">
-              <div class="btn-fun-quanity">
-                <button class="btn-minus button-number" type="button">
-                  <i class="fa-solid fa-minus"></i>
-                </button>
-                <input
-                  class="quantity"
-                  type="number"
-                  value="1"
-                  step="1"
-                  min="1"
-                  name="quantity"
-                  title="SL"
-                  pattern="[0-9]*"
-                  inputmode="numeric"
-                />
-                <button class="btn-plus button-number" type="button">
-                  <i class="fa-solid fa-plus"></i>
-                </button>
-              </div>
-              <button class="btn-submit uppercase" type="submit">
-                Thêm vào giỏ hàng
-              </button>
-            </form>
-            <div class="category-product">
-              Danh mục:
-              <a href="#">Buns</a>
-            </div>
-            <div class="social-share">
-              <ul class="share-actions">
-                <li class="social-icon">
-                  <a href="#facebook">
-                    <i class="fa-brands fa-facebook-f"></i>
-                  </a>
-                </li>
-                <li class="social-icon">
-                  <a href="#twiter">
-                    <i class="fa-brands fa-twitter"></i>
-                  </a>
-                </li>
-                <li class="social-icon">
-                  <a href="#telegram">
-                    <i class="fa-brands fa-telegram"></i>
-                  </a>
-                </li>
-                <li class="social-icon">
-                  <a href="#email">
-                    <i class="fa-regular fa-envelope"></i>
-                  </a>
-                </li>
-                <li class="social-icon">
-                  <a href="#share">
-                    <i class="fa-solid fa-share-nodes"></i>
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="product-description">
-          <div class="des-heading">
-            <h1>Mô tả</h1>
-          </div>
-          <div class="des-content">
-            <p>Bánh mì nhân xúc xích phô mai,nấm và phô mai</p>
-          </div>
-        </div>
-      </section>
-
-      <section class="section-other-product layout-center">
-        <div class="other-product-container">
-          <div class="other-product-heading uppercase">
-            <h1>Các sản phẩm khác</h1>
-          </div>
-          <div class="slide-product">
-            <div class="slide-container">
-              <div class="slider">
-                <ul class="slides">
-                  <li class="slide-item">
-                    <a
-                      href="../ChiTietSanPham/chitietsanpham.html"
-                      class="img-product"
-                    >
-                      <img
-                        draggable="false"
-                        src="../../public/imgs/SanPham/flossspecials/dsc03428_optimized.png"
-                        alt=""
-                      />
-                    </a>
-                    <div class="content-product">
-                      <a
-                        href="../ChiTietSanPham/chitietsanpham.html"
-                        class="name-product uppercase"
-                        >FLOSS</a
-                      >
-                      <span class="price">169,000</span>
-                      <div class="button-product">
-                        <a href="?#">Thêm vào giỏ hàng</a>
-                      </div>
-                    </div>
-                  </li>
-                  <li class="slide-item">
-                    <a
-                      href="../ChiTietSanPham/chitietsanpham.html"
-                      class="img-product"
-                    >
-                      <img
-                        draggable="false"
-                        src="../../public/imgs/SanPham/flossspecials/dsc03429_optimized.png"
-                        alt=""
-                      />
-                    </a>
-                    <div class="content-product">
-                      <a
-                        href="../ChiTietSanPham/chitietsanpham.html"
-                        class="name-product uppercase"
-                        >FLOSS</a
-                      >
-                      <span class="price">169,000</span>
-                      <div class="button-product">
-                        <a href="?#">Thêm vào giỏ hàng</a>
-                      </div>
-                    </div>
-                  </li>
-                  <li class="slide-item">
-                    <a
-                      href="../ChiTietSanPham/chitietsanpham.html"
-                      class="img-product"
-                    >
-                      <img
-                        draggable="false"
-                        src="../../public/imgs/SanPham/buns/CINNAMON-KROISSANT-1024x1024.jpg"
-                        alt=""
-                      />
-                    </a>
-                    <div class="content-product">
-                      <a
-                        href="../ChiTietSanPham/chitietsanpham.html"
-                        class="name-product uppercase"
-                        >FLOSS</a
-                      >
-                      <span class="price">169,000</span>
-                      <div class="button-product">
-                        <a href="?#">Thêm vào giỏ hàng</a>
-                      </div>
-                    </div>
-                  </li>
-                  <li class="slide-item">
-                    <a
-                      href="../ChiTietSanPham/chitietsanpham.html"
-                      class="img-product"
-                    >
-                      <img
-                        draggable="false"
-                        src="../../public/imgs/SanPham/flossspecials/dsc03428_optimized.png"
-                        alt=""
-                      />
-                    </a>
-                    <div class="content-product">
-                      <a
-                        href="../ChiTietSanPham/chitietsanpham.html"
-                        class="name-product uppercase"
-                        >FLOSS</a
-                      >
-                      <span class="price">169,000</span>
-                      <div class="button-product">
-                        <a href="?#">Thêm vào giỏ hàng</a>
-                      </div>
-                    </div>
-                  </li>
-                  <li class="slide-item">
-                    <a
-                      href="../ChiTietSanPham/chitietsanpham.html"
-                      class="img-product"
-                    >
-                      <img
-                        draggable="false"
-                        src="../../public/imgs/SanPham/flossspecials/dsc03428_optimized.png"
-                        alt=""
-                      />
-                    </a>
-                    <div class="content-product">
-                      <a
-                        href="../ChiTietSanPham/chitietsanpham.html"
-                        class="name-product uppercase"
-                        >FLOSS</a
-                      >
-                      <span class="price">169,000</span>
-                      <div class="button-product">
-                        <a href="?#">Thêm vào giỏ hàng</a>
-                      </div>
-                    </div>
-                  </li>
-                  <li class="slide-item">
-                    <a
-                      href="../ChiTietSanPham/chitietsanpham.html"
-                      class="img-product"
-                    >
-                      <img
-                        draggable="false"
-                        src="../../public/imgs/SanPham/flossspecials/dsc03428_optimized.png"
-                        alt=""
-                      />
-                    </a>
-                    <div class="content-product">
-                      <a
-                        href="../ChiTietSanPham/chitietsanpham.html"
-                        class="name-product uppercase"
-                        >FLOSS</a
-                      >
-                      <span class="price">169,000</span>
-                      <div class="button-product">
-                        <a href="?#">Thêm vào giỏ hàng</a>
-                      </div>
-                    </div>
-                  </li>
-                  <li class="slide-item">
-                    <a
-                      href="../ChiTietSanPham/chitietsanpham.html"
-                      class="img-product"
-                    >
-                      <img
-                        draggable="false"
-                        src="../../public/imgs/SanPham/flossspecials/dsc03428_optimized.png"
-                        alt=""
-                      />
-                    </a>
-                    <div class="content-product">
-                      <a
-                        href="../ChiTietSanPham/chitietsanpham.html"
-                        class="name-product uppercase"
-                        >FLOSS</a
-                      >
-                      <span class="price">169,000</span>
-                      <div class="button-product">
-                        <a href="?#">Thêm vào giỏ hàng</a>
-                      </div>
-                    </div>
-                  </li>
-                  <li class="slide-item">
-                    <a
-                      href="../ChiTietSanPham/chitietsanpham.html"
-                      class="img-product"
-                    >
-                      <img
-                        draggable="false"
-                        src="../../public/imgs/SanPham/flossspecials/dsc03428_optimized.png"
-                        alt=""
-                      />
-                    </a>
-                    <div class="content-product">
-                      <a
-                        href="../ChiTietSanPham/chitietsanpham.html"
-                        class="name-product uppercase"
-                        >FLOSS</a
-                      >
-                      <span class="price">169,000</span>
-                      <div class="button-product">
-                        <a href="?#">Thêm vào giỏ hàng</a>
-                      </div>
-                    </div>
-                  </li>
-                  <li class="slide-item">
-                    <a
-                      href="../ChiTietSanPham/chitietsanpham.html"
-                      class="img-product"
-                    >
-                      <img
-                        draggable="false"
-                        src="../../public/imgs/SanPham/flossspecials/dsc03428_optimized.png"
-                        alt=""
-                      />
-                    </a>
-                    <div class="content-product">
-                      <a
-                        href="../ChiTietSanPham/chitietsanpham.html"
-                        class="name-product uppercase"
-                        >FLOSS</a
-                      >
-                      <span class="price">169,000</span>
-                      <div class="button-product">
-                        <a href="?#">Thêm vào giỏ hàng</a>
-                      </div>
-                    </div>
-                  </li>
-                  <li class="slide-item">
-                    <a
-                      href="../ChiTietSanPham/chitietsanpham.html"
-                      class="img-product"
-                    >
-                      <img
-                        draggable="false"
-                        src="../../public/imgs/SanPham/flossspecials/dsc03428_optimized.png"
-                        alt=""
-                      />
-                    </a>
-                    <div class="content-product">
-                      <a
-                        href="../ChiTietSanPham/chitietsanpham.html"
-                        class="name-product uppercase"
-                        >FLOSS</a
-                      >
-                      <span class="price">169,000</span>
-                      <div class="button-product">
-                        <a href="?#">Thêm vào giỏ hàng</a>
-                      </div>
-                    </div>
-                  </li>
-                  <li class="slide-item">
-                    <a
-                      href="../ChiTietSanPham/chitietsanpham.html"
-                      class="img-product"
-                    >
-                      <img
-                        draggable="false"
-                        src="../../public/imgs/SanPham/flossspecials/dsc03428_optimized.png"
-                        alt=""
-                      />
-                    </a>
-                    <div class="content-product">
-                      <a
-                        href="../ChiTietSanPham/chitietsanpham.html"
-                        class="name-product uppercase"
-                        >FLOSS</a
-                      >
-                      <span class="price">169,000</span>
-                      <div class="button-product">
-                        <a href="?#">Thêm vào giỏ hàng</a>
-                      </div>
-                    </div>
-                  </li>
-                </ul>
-              </div>
-            </div>
-
-            <div class="dots-container">
-              <div class="dots-wrapper">
-                <ul class="dots-slide"></ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <footer>
-        <div class="footer-container">
-          <div class="first-wrapper">
-            <div class="footer-social-wrapper">
-              <div>
-                <a href=""
-                  ><img
-                    src="../../public/imgs/Logo.png"
-                    alt=""
-                    class="footer-logo"
-                /></a>
-              </div>
-              <p>Bánh tươi ngon mỗi ngày</p>
-              <div class="social-icon-wrapper">
-                <i class="fa fab fa-facebook-f"></i>
-                <i class="fa fab fa-twitter"></i>
-                <i class="fa fab fa-instagram"></i>
-              </div>
-            </div>
-            <div class="footer-social-wrapper-clone" style="visibility: hidden">
-              <h1>Bread Talk</h1>
-              <p>Bánh tươi ngon mỗi ngày</p>
-              <div class="social-icon-wrapper">
-                <i class="fa fab fa-facebook-f"></i>
-                <i class="fa fab fa-twitter"></i>
-                <i class="fa fab fa-instagram"></i>
-              </div>
-            </div>
-          </div>
-          <div class="second-wrapper">
-            <div class="subscription-wrapper">
-              <div><h1 style="font-size: 25px">ĐĂNG KÍ NHẬN TIN</h1></div>
-              <form class="input-container">
-                <input
-                  type="text"
-                  placeholder="Địa chỉ email"
-                  class="email-input"
-                /><input type="submit" class="submit-input" value="Đăng ký" />
-              </form>
-            </div>
-            <div class="contact-info-wrapper">
-              <div style="text-align: center">
-                <h1 style="font-size: 25px">THÔNG TIN LIÊN HỆ</h1>
-              </div>
-              <ul>
-                <li>
-                  Địa chỉ VPĐD: 36-36A Âu Cơ, Phường 9, Quận Tân Bình, TP. HCM
-                </li>
-                <li>
-                  Số điện thoại: 0283 7751727 (08h00 – 17h00); 0283 5358936
-                </li>
-                <li>(07h00 – 22h00)</li>
-                <li>Email: contact@doughremi.com</li>
-                <li>Thời gian làm việc: 08h00 – 22h00</li>
-              </ul>
-            </div>
-          </div>
-          <div class="third-wrapper">
-            <div class="policy-wrapper">
-              <h1 style="font-size: 25px">CHÍNH SÁCH</h1>
-              <ul>
-                <li><a href="">Chính sách đặt hàng online</a></li>
-                <li><a href="">Điều khoản chung</a></li>
-                <li><a href="">Chính sách bảo mật</a></li>
-                <li><a href="">Câu hỏi thường gặp</a></li>
-              </ul>
-            </div>
-            <div class="label-wrapper" style="height: 100%">
-              <div class="content">
-                <img src="../../public/imgs/footer/bocongthuong-1.png" alt="" />
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="copyright-wrapper">
-          <!-- credit: © 2024 BreadTalk, All rights reserved. Thiết kế web bởi HD Agency -->
-          <p>© 2024 Dough Re Mi, Bản Giao Hưởng Ngọt Ngào</p>
-        </div>
-      </footer>
-      <div class="scroll-to-top">
-        <div class="scroll">
-          <i class="fa-solid fa-arrow-up"></i>
+          </li>
+        </ul>
+      </div>
+      <div class="layout-close-menu-bar"></div>
+      <div class="top-header">
+        <div class="header">
+          <a href="../SanPham/sanpham.html" class="uppercase color-white">Xem Ngay</a>
         </div>
       </div>
-    </div>
+      <header class="menu-outside">
+        <menu class="menu-container">
+          <header class="menu-main">
+            <div class="menu-logo">
+              <a href="../home/Home.html">
+                <img src="../../public/imgs/PT-Talkindo-Selaksa-Anugrah-2.png" alt="" />
+              </a>
+            </div>
+            <div class="menu-content">
+              <ul class="menus">
+                <li class="menu-item">
+                  <a class="uppercase active-page" href="../home/Home.html">Trang chủ</a>
+                </li>
+                <li class="menu-item menu-more">
+                  <a class="uppercase" href="../SanPham/sanpham.html">
+                    Sản phẩm
+                    <i class="fas fa-angle-down"></i>
+                  </a>
+                  <ul class="menu-sub">
+                    <li class="menu-sub_item menu-sub_more">
+                      <a href="../DanhSachSanPham/Buns/buns.html">
+                        Buns
+                        <i class="fas fa-angle-right"></i>
+                      </a>
+                      <ul class="menu-sub-sub">
+                        <li class="sub-item">
+                          <a href="../DanhSachSanPham/Buns/buns.html">Sweet</a>
+                        </li>
+                        <li class="sub-item">
+                          <a href="../DanhSachSanPham/Buns/buns.html">Savory</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="menu-sub_item">
+                      <a href="../DanhSachSanPham/Buns/buns.html">Toasts</a>
+                    </li>
+                    <li class="menu-sub_item">
+                      <a href="../DanhSachSanPham/Buns/buns.html">Sandwiches</a>
+                    </li>
+                    <li class="menu-sub_item">
+                      <a href="../DanhSachSanPham/Buns/buns.html">Dry Cakes</a>
+                    </li>
+                    <li class="menu-sub_item">
+                      <a href="../DanhSachSanPham/Buns/buns.html">Cakes</a>
+                    </li>
+                    <li class="menu-sub_item">
+                      <a href="../DanhSachSanPham/Buns/buns.html">Cake Slices</a>
+                    </li>
+                    <li class="menu-sub_item">
+                      <a href="../DanhSachSanPham/Buns/buns.html">Seasonal Specials</a>
+                    </li>
+                    <li class="menu-sub_item">
+                      <a href="../DanhSachSanPham/Buns/buns.html">Pudding</a>
+                    </li>
+                    <li class="menu-sub_item">
+                      <a href="../DanhSachSanPham/Buns/buns.html">Drinks</a>
+                    </li>
+                    <li class="menu-sub_item">
+                      <a href="../DanhSachSanPham/Buns/buns.html">Cookies</a>
+                    </li>
+                    <li class="menu-sub_item">
+                      <a href="../DanhSachSanPham/Buns/buns.html">Floss Specials</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="menu-item">
+                  <a class="uppercase" href="../storeLocation/storeLocation.html">Hệ thống cửa hàng</a>
+                </li>
+                <li class="menu-item">
+                  <a class="uppercase" href="../aboutUs/aboutUs.html">Giới thiệu</a>
+                </li>
+                <li class="menu-item">
+                  <a class="uppercase" href="../recruitment/recruitment.html">Tuyển dụng</a>
+                </li>
+                <li class="menu-item">
+                  <a class="uppercase" href="../contact/contact.html">Liên hệ</a>
+                </li>
+              </ul>
+            </div>
+            <div class="menu-funtion">
+              <!-- <div class="translate-language">
+                <ul>
+                  <li>
+                    <a class="uppercase" href="">vi</a>
+                  </li>
+                  <li class="bar-between">|</li>
+                  <li>
+                    <a class="uppercase" href="">en</a>
+                  </li>
+                </ul>
+              </div> -->
+              <div class="account-container">
+                <a href="#login">
+                  <i class="fa-solid fa-user"></i>
+                </a>
+                <!-- <div class="account-detail">
+                  Tài khoản của
+                  <p>Doe John</p>
+                </div> -->
+                <div class="menu-account">
+                  <div class="account-wrapper">
+                    <ul class="list-account">
+                      <li class="item-account">
+                        <a href="">Tài khoản</a>
+                      </li>
+                      <li class="item-account icon-cart">
+                        <a href="../cart/cart.html">Giỏ hàng</a>
+                      </li>
+                      <li class="item-account">
+                        <a href="#logout">
+                          Đăng xuất
+                          <i class="fa-solid fa-right-from-bracket"></i>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="cart-container">
+                <a href="../cart/cart.html">
+                  <svg width="38" height="32" viewBox="0 0 38 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M37.0283 12.317C36.9799 11.8329 37.0283 11.3488 37.0283 10.8647C37.0041 9.26718 36.7137 8.97672 35.0919 9.00092C32.1631 9.07354 29.2101 9.12195 26.2813 9.24297C25.3131 9.29138 24.7079 8.92831 24.1996 8.12954C22.8199 5.95108 21.3676 3.82103 19.9395 1.66678C19.165 0.480732 18.8745 0.456527 18.0515 1.61837C16.6234 3.62739 15.2437 5.66062 13.9125 7.71805C13.3315 8.61364 12.6296 9.00092 11.5404 9.02513C8.22427 9.02513 4.93238 9.14615 1.61628 9.24297C1.27741 9.24297 0.744895 9.02513 0.81751 9.75128C0.938536 10.8647 1.05956 12.0024 1.15638 13.1158C1.20479 13.5757 1.44684 13.9388 1.88253 13.963C2.99597 14.0598 3.04438 14.8343 3.11699 15.6573C3.57689 20.1111 4.03679 24.5406 4.52089 28.9943C4.71453 30.8097 4.81135 30.9791 6.67514 30.8581C12.2423 30.4708 17.7853 31.2938 23.3282 31.2454C25.9424 31.2454 28.5565 31.2212 31.1707 31.2696C32.2841 31.2938 32.7682 30.9065 32.8166 29.7447C33.0345 24.7342 34.2447 19.869 34.9225 14.9312C34.9709 14.5439 35.0193 14.084 35.6002 14.1082C36.9073 14.1566 37.1251 13.382 37.0283 12.317ZM25.8698 11.252C25.9666 11.494 25.7972 11.7603 25.5551 11.8087C24.9258 11.9539 24.9258 11.3972 24.6595 11.0342C25.192 10.9131 25.6277 10.6711 25.8698 11.252ZM14.566 8.34739C15.8973 6.43518 17.2286 4.52298 18.5356 2.58657C19.0197 1.88463 19.2376 2.44134 19.4796 2.75601C20.9077 4.69242 21.9486 6.89508 23.7155 8.97672C20.5931 8.97672 17.7611 8.97672 14.9291 8.97672C14.3966 9.00092 14.2271 8.80728 14.566 8.34739ZM13.0895 10.5016C13.4768 10.4048 13.4284 10.8163 13.5252 11.0584C13.4768 11.4698 13.2831 11.7603 12.8716 11.7361C12.436 11.7361 12.2181 11.3246 12.2181 11.0099C12.1939 10.4774 12.7748 10.5743 13.0895 10.5016ZM33.8817 15.0764C33.3976 19.9416 32.4052 24.71 31.7274 29.5268C31.6548 30.1078 31.3401 30.132 30.9044 30.132C25.7003 30.132 20.5205 30.1562 15.3164 29.9141C12.557 29.7931 9.77339 29.8899 7.06242 29.8899C6.84458 29.188 7.49812 29.2606 7.4255 29.0427C6.89299 28.244 5.58591 29.7931 5.44068 28.2198C5.97319 27.9535 6.57832 28.244 7.20765 27.8325C6.43309 27.3968 5.00499 28.0019 5.27125 26.5496C5.44068 25.654 6.43309 26.1865 6.98981 25.7508C6.21525 25.3636 4.81135 25.7508 4.93238 24.2743C5.00499 23.2577 6.11842 23.8386 6.62673 23.2335C5.70694 23.0399 4.47248 23.0883 4.71453 21.757C4.90817 20.6436 6.28786 21.4181 6.98981 20.5952C6.43309 20.5952 5.97319 20.571 5.5375 20.5952C4.81135 20.6436 4.52089 20.2805 4.44827 19.6028C4.37566 18.8766 5.00499 19.046 5.36807 18.9492C5.77955 18.8282 6.23945 18.8766 6.65094 18.6103C6.31207 18.2473 5.90058 18.4651 5.56171 18.4167C5.10181 18.3683 4.44827 18.5619 4.37566 17.9084C4.30304 17.2307 4.98079 17.3275 5.41648 17.2064C6.07001 17.037 6.82037 17.0854 7.76437 16.5771C6.4573 16.5771 5.48909 16.5771 4.42407 16.5771C4.95658 15.5847 6.0216 15.9962 6.86878 15.3911C5.90058 15.3911 5.15022 15.3911 4.37566 15.3911C4.35145 15.27 4.35145 15.149 4.32725 15.0038C5.97319 14.4471 7.74017 14.4713 9.45873 14.3018C8.68416 13.8177 7.83699 14.1566 7.03822 14.084C6.60253 14.0356 6.16683 14.084 5.73114 13.963C9.3377 13.9146 12.9201 13.6967 16.5266 14.0598C21.997 14.0598 27.4915 14.1082 32.9619 14.0598C33.8333 14.0356 33.9543 14.3502 33.8817 15.0764ZM36.1811 10.8889C36.0601 12.7285 36.1085 12.7769 34.4626 12.8979C28.605 13.3094 22.7231 13.2852 16.8413 13.1642C16.0667 13.14 15.3164 13.1158 14.5418 13.0916C13.7188 13.0916 12.8959 13.2126 12.1213 12.8737C9.19247 12.8737 6.28786 12.8737 3.35904 12.8737C3.35904 12.8011 3.33484 12.7527 3.33484 12.6801C4.23043 12.5591 5.12602 12.438 6.0216 12.3412C4.78715 11.8329 3.45586 12.196 1.88253 11.9297C2.82653 11.2036 3.74633 11.3004 4.5935 11.1794C3.91576 10.7437 3.1654 11.131 2.43925 11.0099C2.14879 10.9615 1.66469 11.1068 1.97935 10.5016C2.173 10.2596 2.43925 10.2354 2.72971 10.2354C5.24704 10.2354 7.76437 10.2596 10.3059 10.2354C10.8384 10.2354 11.1047 10.3564 11.0805 10.9615C11.0563 11.7119 11.2983 12.3896 12.0971 12.7043C12.5086 12.7043 12.9201 12.7043 13.3315 12.7043C14.4208 12.4865 14.3724 11.5425 14.445 10.7921C14.4934 10.0659 14.7596 9.94492 15.389 9.99333C17.8821 10.1144 20.3752 10.187 22.8683 10.2838C23.2314 10.308 23.5219 10.2596 23.6429 10.7921C24.0302 12.5833 24.3691 12.8979 25.4583 12.7285C26.5717 12.5591 26.8138 12.075 26.717 10.2354C29.67 10.2354 32.5988 10.2354 35.5518 10.2354C36.1085 10.187 36.2054 10.3564 36.1811 10.8889Z"
+                      fill="#232323"></path>
+                    <path
+                      d="M2.07617 10.7437C1.95514 10.7437 1.93094 10.5743 2.00355 10.4532C1.68889 11.0584 2.17299 10.9131 2.46345 10.9615C3.1654 11.0826 3.93996 10.6953 4.6177 11.131C4.85975 10.8889 5.22283 10.9373 5.39227 10.8647C4.37565 10.8163 3.21381 10.8405 2.07617 10.7437Z"
+                      fill="#5F5E5D"></path>
+                    <path
+                      d="M4.25466 10.6711C3.50431 10.6469 2.70554 11.0099 2.00359 10.4532C1.93098 10.5743 1.97939 10.7195 2.07621 10.7437C3.21385 10.8405 4.35148 10.8163 5.3923 10.8647C5.22287 10.9373 4.85979 10.8889 4.61774 11.131C5.17446 11.0584 5.75538 10.9615 6.3121 10.8889C5.58594 10.6711 4.9082 10.6953 4.25466 10.6711Z"
+                      fill="#5F5E5D"></path>
+                    <path
+                      d="M9.94273 24.8068C9.72488 21.878 9.65227 18.9492 9.04714 16.0688C8.95032 15.6331 8.8535 15.4153 8.3694 15.4879C7.95791 15.5363 7.95791 15.7783 8.07894 16.3109C8.12735 16.6981 8.22417 17.3517 8.29678 17.981C8.58724 20.6436 8.8535 23.3303 9.16817 25.9929C9.21658 26.4044 9.11976 27.1547 9.7975 27.0579C10.451 26.9611 10.1848 26.3318 10.088 25.8719C9.96693 25.533 9.96693 25.1699 9.94273 24.8068Z"
+                      fill="#292929"></path>
+                    <path
+                      d="M29.3069 16.3593C28.726 19.7964 28.1451 23.2577 27.5884 26.6948C27.54 27.0095 27.3705 27.4936 27.8788 27.5904C28.4113 27.6873 28.5324 27.2274 28.5808 26.8159C28.7744 25.5814 28.9681 24.347 29.1617 23.1367C29.549 20.571 29.9121 17.981 30.3235 15.27C29.5974 15.5363 29.3795 15.8994 29.3069 16.3593Z"
+                      fill="#292929"></path>
+                    <path
+                      d="M14.0819 15.149C13.6463 15.1006 13.4284 15.3911 13.38 15.8026C13.3558 16.0688 13.3558 16.3593 13.3558 16.6497C13.3558 18.2473 13.3558 19.869 13.3558 21.4665C13.3558 23.2335 13.3558 25.0005 13.3558 26.7675C13.3558 26.9853 13.2348 27.2758 13.5978 27.3484C13.8641 27.3968 14.0577 27.2031 14.203 27.0095C14.4208 26.6464 14.3966 26.2349 14.3966 25.8477C14.3966 23.6692 14.3966 21.515 14.3966 19.3365C14.3966 18.1747 14.3966 17.0128 14.3966 15.851C14.3724 15.5847 14.4934 15.1974 14.0819 15.149Z"
+                      fill="#2A2A2A"></path>
+                    <path
+                      d="M24.248 15.5847C23.425 15.4879 23.6671 16.3109 23.6429 16.7465C23.4977 18.4167 23.3766 20.1111 23.2556 21.7812C23.1588 23.3787 23.0136 24.9763 22.9651 26.598C22.9409 26.9369 22.7473 27.5178 23.3282 27.5662C23.7881 27.5904 23.9333 27.1305 23.9576 26.6948C24.1512 23.3787 24.3448 20.0384 24.5143 16.7223C24.5385 16.3351 24.8047 15.6331 24.248 15.5847Z"
+                      fill="#282828"></path>
+                    <path
+                      d="M18.342 16.5529C18.2694 19.9416 18.2452 23.3061 18.1968 26.6948C18.1968 26.9853 18.0515 27.3968 18.6082 27.3726C19.0439 27.3726 19.1166 27.0579 19.1166 26.719C19.1166 22.9915 19.1166 19.2397 19.1166 15.4153C18.463 15.5847 18.3662 16.0688 18.342 16.5529Z"
+                      fill="#2C2C2B"></path>
+                  </svg>
+                  <span class="num-item-cart">2</span>
+                </a>
+                <div class="cart-menu-container">
+                  <div class="cart-menu-wrapper">
+                    <ul class="list-cart-menu">
+                      <li class="item-cart-menu">
+                        <div class="img-cart-menu">
+                          <a href="../ChiTietSanPham/chitietsanpham.html">
+                            <img src="../../public/imgs/SanPham/buns/MUSHROOM-CHEESE-SAUSAGE-1024x1024.jpg"
+                              alt="MUSHROOM CHEESE SAUSAGE" />
+                          </a>
+                        </div>
+                        <div class="info-cart-menu">
+                          <h6 class="name-item-cart-menu">
+                            <a href="../ChiTietSanPham/chitietsanpham.html" class="uppercase">
+                              MUSHROOM CHEESE SAUSAGE
+                            </a>
+                          </h6>
+                          <div class="price-quantity">
+                            <span class="price-item-cart-menu">1</span>
+                            x
+                            <span class="quantity-item-cart-menu">34,000</span>
+                          </div>
+                          <a href="#remove-item-001" class="delete-item-cart-menu">
+                            <i class="fa-sharp fa-solid fa-xmark"></i>
+                          </a>
+                        </div>
+                      </li>
+                      <li class="item-cart-menu">
+                        <div class="img-cart-menu">
+                          <a href="../ChiTietSanPham/chitietsanpham.html">
+                            <img src="../../public/imgs/SanPham/buns/PHOENIX-1024x1024.jpg" alt="PHOENIX" />
+                          </a>
+                        </div>
+                        <div class="info-cart-menu">
+                          <h6 class="name-item-cart-menu">
+                            <a href="../ChiTietSanPham/chitietsanpham.html" class="up">
+                              PHOENIX
+                            </a>
+                          </h6>
+                          <div class="price-quantity">
+                            <span class="price-item-cart-menu">1</span>
+                            x
+                            <span class="quantity-item-cart-menu">20,000</span>
+                          </div>
+                          <a href="#remove-item-002" class="delete-item-cart-menu">
+                            <i class="fa-sharp fa-solid fa-xmark"></i>
+                          </a>
+                        </div>
+                      </li>
+                    </ul>
+                    <div class="subtotal-cart-menu">
+                      <strong>Tổng phụ:</strong>
+                      <span>54,000</span>
+                    </div>
+                    <div class="link-cart-pay">
+                      <a href="../cart/cart.html" class="link-page-cart">Xem giỏ hàng</a>
+                      <a href="../checkOut/checkout.html">Thanh toán</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="search-container">
+                <a>
+                  <svg width="30" height="34" viewBox="0 0 30 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M19.7528 19.6911C18.1853 19.7851 16.7119 19.3149 15.3012 18.6565C14.5174 18.2804 14.0158 18.3431 14.2666 19.3776C14.4547 20.0673 14.2353 20.6316 13.7964 21.1018C10.5988 24.5502 8.1849 28.6256 5.36347 32.3562C4.1095 34.0177 3.01228 34.2371 1.28807 33.0145C-0.279392 31.9173 -0.404789 30.8514 0.84918 29.1899C3.57656 25.5534 6.46069 22.0423 8.96863 18.2804C9.37617 17.6847 9.87775 17.2458 10.6301 17.3712C11.8841 17.5907 11.7901 16.9637 11.4452 16.1173C10.8809 14.7692 10.0972 13.5466 9.75236 12.1046C8.71783 7.84107 10.2539 3.98512 13.9845 1.57123C17.5583 -0.748613 22.0726 -0.46647 25.3956 2.19821C28.7186 4.8629 30.1293 8.37401 29.377 12.4494C28.6246 16.3054 25.3956 19.9732 19.7528 19.6911ZM20.4111 16.274C23.8282 16.274 27.3706 13.2018 27.4647 10.1609C27.5901 6.86925 23.0758 2.85655 19.2825 2.8252C16.7432 2.8252 12.95 5.33313 12.8873 10.2236C12.8559 13.3272 16.4924 16.2427 20.4111 16.274ZM28.1543 12.0105C24.2043 17.4653 20.7873 18.97 16.4611 16.7129C12.2289 14.4871 11.1631 11.9478 12.2603 7.43353C13.1694 3.64028 16.8686 1.57123 21.7591 1.97877C21.4456 1.38313 20.9754 1.28909 20.4738 1.22639C14.0472 0.442658 9.31347 6.21091 10.9123 11.7911C11.2885 13.1077 11.7901 14.3617 12.4797 15.5216C12.8246 16.1173 13.1067 16.7129 12.8873 17.4339C12.7932 17.6847 12.4484 17.9982 12.95 18.1863C13.3262 18.3117 13.4829 17.9669 13.6397 17.6847C13.9845 17.0891 14.2353 16.4308 15.1131 17.0891C17.7151 19.0014 20.5992 18.7506 23.5147 18.0923C25.7405 17.5907 28.3424 14.1736 28.1543 12.0105ZM1.50751 31.0708C2.22854 32.8577 3.13767 33.0145 4.29759 31.5411C7.02497 28.0613 9.72101 24.5189 12.3857 21.0077C12.7305 20.5689 13.3889 19.9419 12.5738 19.4403C11.8841 19.0327 11.1944 18.249 10.2226 18.8133C9.09402 19.4716 10.4734 19.9105 10.3793 20.6316C9.72101 20.6316 9.06267 20.0359 8.49839 20.9137C7.9341 21.7601 9.28212 21.6034 8.99998 22.199C7.33847 22.2304 5.67696 24.2681 6.20989 25.6474C5.67696 25.8042 4.89323 25.428 4.61108 26.2431C4.42299 26.8073 5.23807 26.7133 5.23807 27.1522C4.79918 27.403 4.1722 26.9327 3.82735 27.4343C3.35712 28.0927 4.79918 28.03 4.39164 28.7196C3.38847 28.5316 3.38847 28.5316 2.54204 28.9391C2.94958 29.2526 3.35712 29.5661 3.76466 29.8796C3.13767 30.3185 2.32259 29.2839 1.78966 30.1931C2.0718 30.5066 2.60474 30.4439 2.79283 30.9141C2.32259 30.9768 1.91505 31.0081 1.50751 31.0708Z"
+                      fill="#303030"></path>
+                    <path
+                      d="M20.7246 14.3931C23.3266 13.7034 24.8627 11.9792 25.7718 9.34584C26.5556 11.9792 23.5147 14.926 20.7246 14.3931Z"
+                      fill="#303030"></path>
+                  </svg>
+                  <i class="fa-solid fa-x btn-close"></i>
+                </a>
+                <div class="search-main">
+                  <form action="" class="search" method="">
+                    <input type="search" name="search" id="search" placeholder="Tìm kiếm..." />
+                    <button type="submit">
+                      <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                  </form>
+                </div>
+              </div>
+              <div class="btn-menu-bar">
+                <div></div>
+                <div></div>
+                <div></div>
+              </div>
+            </div>
+          </header>
+        </menu>
+      </header>
+    </head>
 
-    <script src="./chitietsanpham.js"></script>
-    <script src="../menu/menu.js"></script>
-  </body>
+    <section class="section-header">
+      <div class="section-header_background"></div>
+      <h2 class="section-header_title uppercase">Mushroom Cheese Sausage</h2>
+      <ol class="breadcrumb color-white">
+        <li class="breadcrumb_item">
+          <a href="#" class="breadcrumb_link color-white">Trang chủ</a>
+        </li>
+        <li class="breadcrumb_item">
+          <a class="breadcrumb_link color-white" href="../SanPham/sanpham.html">Sản phẩm</a>
+        </li>
+      </ol>
+    </section>
+
+    <section class="section-product layout-center">
+      <div class="product-container">
+        <div class="img-product-detail">
+          <div class="btn-prev btn-slideImg">
+            <i class="fas fa-angle-left"></i>
+          </div>
+          <div class="btn-next btn-slideImg">
+            <i class="fas fa-angle-right"></i>
+          </div>
+          <div class="img-container">
+            <img src="../../public/imgs/SanPham/buns/MUSHROOM-CHEESE-SAUSAGE-1024x1024.jpg" data-fancybox="gallery"
+              title="MUSHROOM CHEESE SAUSAGE" />
+            <img src="../../public/imgs/SanPham/buns/HAM-CHEESE-1024x1024.jpg" data-fancybox="gallery"
+              title="MUSHROOM CHEESE SAUSAGE" />
+            <img src="../../public/imgs/SanPham/buns/MUSHROOM-CHEESE-SAUSAGE-1024x1024.jpg" data-fancybox="gallery"
+              title="MUSHROOM CHEESE SAUSAGE" />
+            <img src="../../public/imgs/SanPham/buns/MUSHROOM-CHEESE-SAUSAGE-1024x1024.jpg" data-fancybox="gallery"
+              title="MUSHROOM CHEESE SAUSAGE" />
+            <img src="../../public/imgs/SanPham/buns/MUSHROOM-CHEESE-SAUSAGE-1024x1024.jpg" data-fancybox="gallery"
+              title="MUSHROOM CHEESE SAUSAGE" />
+            <img src="../../public/imgs/SanPham/buns/MUSHROOM-CHEESE-SAUSAGE-1024x1024.jpg" data-fancybox="gallery"
+              title="MUSHROOM CHEESE SAUSAGE" />
+            <img src="../../public/imgs/SanPham/buns/MUSHROOM-CHEESE-SAUSAGE-1024x1024.jpg" data-fancybox="gallery"
+              title="MUSHROOM CHEESE SAUSAGE" />
+            <img src="../../public/imgs/SanPham/buns/MUSHROOM-CHEESE-SAUSAGE-1024x1024.jpg" data-fancybox="gallery"
+              title="MUSHROOM CHEESE SAUSAGE" />
+            <img src="../../public/imgs/SanPham/buns/MUSHROOM-CHEESE-SAUSAGE-1024x1024.jpg" data-fancybox="gallery"
+              title="MUSHROOM CHEESE SAUSAGE" />
+          </div>
+          <div class="thumbnail-container"></div>
+        </div>
+        <div class="entry-summary">
+          <h1 class="name-product-detail">Mushroom Cheese Sausage</h1>
+          <p class="price-product-detail">34,000</p>
+          <form action="" method="">
+            <div class="btn-fun-quanity">
+              <button class="btn-minus button-number" type="button">
+                <i class="fa-solid fa-minus"></i>
+              </button>
+              <input class="quantity" type="number" value="1" step="1" min="1" name="quantity" title="SL"
+                pattern="[0-9]*" inputmode="numeric" />
+              <button class="btn-plus button-number" type="button">
+                <i class="fa-solid fa-plus"></i>
+              </button>
+            </div>
+            <button class="btn-submit uppercase" type="submit">
+              Thêm vào giỏ hàng
+            </button>
+          </form>
+          <div class="category-product">
+            Danh mục:
+            <a href="#">Buns</a>
+          </div>
+          <div class="social-share">
+            <ul class="share-actions">
+              <li class="social-icon">
+                <a href="#facebook">
+                  <i class="fa-brands fa-facebook-f"></i>
+                </a>
+              </li>
+              <li class="social-icon">
+                <a href="#twiter">
+                  <i class="fa-brands fa-twitter"></i>
+                </a>
+              </li>
+              <li class="social-icon">
+                <a href="#telegram">
+                  <i class="fa-brands fa-telegram"></i>
+                </a>
+              </li>
+              <li class="social-icon">
+                <a href="#email">
+                  <i class="fa-regular fa-envelope"></i>
+                </a>
+              </li>
+              <li class="social-icon">
+                <a href="#share">
+                  <i class="fa-solid fa-share-nodes"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="product-description">
+        <div class="des-heading">
+          <h1>Mô tả</h1>
+        </div>
+        <div class="des-content">
+          <p>Bánh mì nhân xúc xích phô mai,nấm và phô mai</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-other-product layout-center">
+      <div class="other-product-container">
+        <div class="other-product-heading uppercase">
+          <h1>Các sản phẩm khác</h1>
+        </div>
+        <div class="slide-product">
+          <div class="slide-container">
+            <div class="slider">
+              <ul class="slides">
+                <li class="slide-item">
+                  <a href="../ChiTietSanPham/chitietsanpham.html" class="img-product">
+                    <img draggable="false" src="../../public/imgs/SanPham/flossspecials/dsc03428_optimized.png"
+                      alt="" />
+                  </a>
+                  <div class="content-product">
+                    <a href="../ChiTietSanPham/chitietsanpham.html" class="name-product uppercase">FLOSS</a>
+                    <span class="price">169,000</span>
+                    <div class="button-product">
+                      <a href="?#">Thêm vào giỏ hàng</a>
+                    </div>
+                  </div>
+                </li>
+                <li class="slide-item">
+                  <a href="../ChiTietSanPham/chitietsanpham.html" class="img-product">
+                    <img draggable="false" src="../../public/imgs/SanPham/flossspecials/dsc03429_optimized.png"
+                      alt="" />
+                  </a>
+                  <div class="content-product">
+                    <a href="../ChiTietSanPham/chitietsanpham.html" class="name-product uppercase">FLOSS</a>
+                    <span class="price">169,000</span>
+                    <div class="button-product">
+                      <a href="?#">Thêm vào giỏ hàng</a>
+                    </div>
+                  </div>
+                </li>
+                <li class="slide-item">
+                  <a href="../ChiTietSanPham/chitietsanpham.html" class="img-product">
+                    <img draggable="false" src="../../public/imgs/SanPham/buns/CINNAMON-KROISSANT-1024x1024.jpg"
+                      alt="" />
+                  </a>
+                  <div class="content-product">
+                    <a href="../ChiTietSanPham/chitietsanpham.html" class="name-product uppercase">FLOSS</a>
+                    <span class="price">169,000</span>
+                    <div class="button-product">
+                      <a href="?#">Thêm vào giỏ hàng</a>
+                    </div>
+                  </div>
+                </li>
+                <li class="slide-item">
+                  <a href="../ChiTietSanPham/chitietsanpham.html" class="img-product">
+                    <img draggable="false" src="../../public/imgs/SanPham/flossspecials/dsc03428_optimized.png"
+                      alt="" />
+                  </a>
+                  <div class="content-product">
+                    <a href="../ChiTietSanPham/chitietsanpham.html" class="name-product uppercase">FLOSS</a>
+                    <span class="price">169,000</span>
+                    <div class="button-product">
+                      <a href="?#">Thêm vào giỏ hàng</a>
+                    </div>
+                  </div>
+                </li>
+                <li class="slide-item">
+                  <a href="../ChiTietSanPham/chitietsanpham.html" class="img-product">
+                    <img draggable="false" src="../../public/imgs/SanPham/flossspecials/dsc03428_optimized.png"
+                      alt="" />
+                  </a>
+                  <div class="content-product">
+                    <a href="../ChiTietSanPham/chitietsanpham.html" class="name-product uppercase">FLOSS</a>
+                    <span class="price">169,000</span>
+                    <div class="button-product">
+                      <a href="?#">Thêm vào giỏ hàng</a>
+                    </div>
+                  </div>
+                </li>
+                <li class="slide-item">
+                  <a href="../ChiTietSanPham/chitietsanpham.html" class="img-product">
+                    <img draggable="false" src="../../public/imgs/SanPham/flossspecials/dsc03428_optimized.png"
+                      alt="" />
+                  </a>
+                  <div class="content-product">
+                    <a href="../ChiTietSanPham/chitietsanpham.html" class="name-product uppercase">FLOSS</a>
+                    <span class="price">169,000</span>
+                    <div class="button-product">
+                      <a href="?#">Thêm vào giỏ hàng</a>
+                    </div>
+                  </div>
+                </li>
+                <li class="slide-item">
+                  <a href="../ChiTietSanPham/chitietsanpham.html" class="img-product">
+                    <img draggable="false" src="../../public/imgs/SanPham/flossspecials/dsc03428_optimized.png"
+                      alt="" />
+                  </a>
+                  <div class="content-product">
+                    <a href="../ChiTietSanPham/chitietsanpham.html" class="name-product uppercase">FLOSS</a>
+                    <span class="price">169,000</span>
+                    <div class="button-product">
+                      <a href="?#">Thêm vào giỏ hàng</a>
+                    </div>
+                  </div>
+                </li>
+                <li class="slide-item">
+                  <a href="../ChiTietSanPham/chitietsanpham.html" class="img-product">
+                    <img draggable="false" src="../../public/imgs/SanPham/flossspecials/dsc03428_optimized.png"
+                      alt="" />
+                  </a>
+                  <div class="content-product">
+                    <a href="../ChiTietSanPham/chitietsanpham.html" class="name-product uppercase">FLOSS</a>
+                    <span class="price">169,000</span>
+                    <div class="button-product">
+                      <a href="?#">Thêm vào giỏ hàng</a>
+                    </div>
+                  </div>
+                </li>
+                <li class="slide-item">
+                  <a href="../ChiTietSanPham/chitietsanpham.html" class="img-product">
+                    <img draggable="false" src="../../public/imgs/SanPham/flossspecials/dsc03428_optimized.png"
+                      alt="" />
+                  </a>
+                  <div class="content-product">
+                    <a href="../ChiTietSanPham/chitietsanpham.html" class="name-product uppercase">FLOSS</a>
+                    <span class="price">169,000</span>
+                    <div class="button-product">
+                      <a href="?#">Thêm vào giỏ hàng</a>
+                    </div>
+                  </div>
+                </li>
+                <li class="slide-item">
+                  <a href="../ChiTietSanPham/chitietsanpham.html" class="img-product">
+                    <img draggable="false" src="../../public/imgs/SanPham/flossspecials/dsc03428_optimized.png"
+                      alt="" />
+                  </a>
+                  <div class="content-product">
+                    <a href="../ChiTietSanPham/chitietsanpham.html" class="name-product uppercase">FLOSS</a>
+                    <span class="price">169,000</span>
+                    <div class="button-product">
+                      <a href="?#">Thêm vào giỏ hàng</a>
+                    </div>
+                  </div>
+                </li>
+                <li class="slide-item">
+                  <a href="../ChiTietSanPham/chitietsanpham.html" class="img-product">
+                    <img draggable="false" src="../../public/imgs/SanPham/flossspecials/dsc03428_optimized.png"
+                      alt="" />
+                  </a>
+                  <div class="content-product">
+                    <a href="../ChiTietSanPham/chitietsanpham.html" class="name-product uppercase">FLOSS</a>
+                    <span class="price">169,000</span>
+                    <div class="button-product">
+                      <a href="?#">Thêm vào giỏ hàng</a>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="dots-container">
+            <div class="dots-wrapper">
+              <ul class="dots-slide"></ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer-container">
+        <div class="first-wrapper">
+          <div class="footer-social-wrapper">
+            <div>
+              <a href=""><img src="../../public/imgs/Logo.png" alt="" class="footer-logo" /></a>
+            </div>
+            <p>Bánh tươi ngon mỗi ngày</p>
+            <div class="social-icon-wrapper">
+              <i class="fa fab fa-facebook-f"></i>
+              <i class="fa fab fa-twitter"></i>
+              <i class="fa fab fa-instagram"></i>
+            </div>
+          </div>
+          <div class="footer-social-wrapper-clone" style="visibility: hidden">
+            <h1>Bread Talk</h1>
+            <p>Bánh tươi ngon mỗi ngày</p>
+            <div class="social-icon-wrapper">
+              <i class="fa fab fa-facebook-f"></i>
+              <i class="fa fab fa-twitter"></i>
+              <i class="fa fab fa-instagram"></i>
+            </div>
+          </div>
+        </div>
+        <div class="second-wrapper">
+          <div class="subscription-wrapper">
+            <div>
+              <h1 style="font-size: 25px">ĐĂNG KÍ NHẬN TIN</h1>
+            </div>
+            <form class="input-container">
+              <input type="text" placeholder="Địa chỉ email" class="email-input" /><input type="submit"
+                class="submit-input" value="Đăng ký" />
+            </form>
+          </div>
+          <div class="contact-info-wrapper">
+            <div style="text-align: center">
+              <h1 style="font-size: 25px">THÔNG TIN LIÊN HỆ</h1>
+            </div>
+            <ul>
+              <li>
+                Địa chỉ VPĐD: 36-36A Âu Cơ, Phường 9, Quận Tân Bình, TP. HCM
+              </li>
+              <li>
+                Số điện thoại: 0283 7751727 (08h00 – 17h00); 0283 5358936
+              </li>
+              <li>(07h00 – 22h00)</li>
+              <li>Email: contact@doughremi.com</li>
+              <li>Thời gian làm việc: 08h00 – 22h00</li>
+            </ul>
+          </div>
+        </div>
+        <div class="third-wrapper">
+          <div class="policy-wrapper">
+            <h1 style="font-size: 25px">CHÍNH SÁCH</h1>
+            <ul>
+              <li><a href="">Chính sách đặt hàng online</a></li>
+              <li><a href="">Điều khoản chung</a></li>
+              <li><a href="">Chính sách bảo mật</a></li>
+              <li><a href="">Câu hỏi thường gặp</a></li>
+            </ul>
+          </div>
+          <div class="label-wrapper" style="height: 100%">
+            <div class="content">
+              <img src="../../public/imgs/footer/bocongthuong-1.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="copyright-wrapper">
+        <!-- credit: © 2024 BreadTalk, All rights reserved. Thiết kế web bởi HD Agency -->
+        <p>© 2024 Dough Re Mi, Bản Giao Hưởng Ngọt Ngào</p>
+      </div>
+    </footer>
+    <div class="scroll-to-top">
+      <div class="scroll">
+        <i class="fa-solid fa-arrow-up"></i>
+      </div>
+    </div>
+  </div>
+
+  <script src="./chitietsanpham.js"></script>
+  <script src="../menu/menu.js"></script>
+</body>
+
 </html>
