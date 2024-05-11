@@ -10,10 +10,10 @@ body {
   background: rgba(0, 0, 0, 0.6);
   background-image: url(../../public/imgs/SanPham/Rectangle-825-min.jpeg);
   background-blend-mode: multiply;
-  font-size: small;
 }
 .container {
   padding: 14px 18px;
+  font-size: small;
 }
 .wrapper {
   background-color: white;
