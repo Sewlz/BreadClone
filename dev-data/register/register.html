@@ -512,49 +512,88 @@
     </head>
     <div class="container">
       <div class="wrapper">
-        <h1>Create account</h1>
+        <h1 class="bottom-spacing-base-large">Create account</h1>
+
         <div class="form-row bottom-spacing-base">
           <label for="">Your name </label>
-          <input class="input" type="text" placeholder="Họ và tên" />
+          <input
+            id="name"
+            class="input"
+            type="text"
+            placeholder="Họ và tên"
+            onclick="showMoreCharacterMessage('name', 'name-alert')"
+            oninput="inputChecker('name', 'name-alert')"
+          />
+
           <div class="name-alert"></div>
         </div>
 
         <div class="form-row bottom-spacing-base">
           <label for="">Mobile number or email </label>
-          <input class="input" type="text" placeholder="Email" />
+          <input
+            id="email"
+            class="input"
+            type="text"
+            placeholder="Email"
+            onclick="showMoreCharacterMessage('email', 'email-alert')"
+            oninput="inputChecker('email', 'email-alert')"
+          />
           <div class="email-alert"></div>
         </div>
 
         <div class="form-row bottom-spacing-base">
           <label for="">Password </label>
-          <input class="input" type="password" placeholder="Mật khẩu" />
-          <div class="password-alert"></div>
+          <input
+            id="password"
+            class="input"
+            type="password"
+            placeholder="Mật khẩu"
+            onclick="showMoreCharacterMessage('password', 'password-alert')"
+            oninput="inputChecker('password', 'password-alert')"
+          />
+          <div class="password-alert">
+            <i
+              class="fa-solid fa-exclamation"
+              style="color: #2d80cb; padding: 5px"
+            ></i>
+            <span> Passwords must be at least 6 characters. </span>
+          </div>
         </div>
-        
-        <div class="form-row">
+
+        <div class="form-row bottom-spacing-base">
           <label for="re-enter">Re-enter password</label>
           <input
             id="re-enter"
             class="input"
             type="password"
             placeholder="Nhập lại mật khẩu"
+            onclick="showMoreCharacterMessage('re-enter', 're-enter-alert')"
+            oninput="inputChecker('re-enter', 're-enter-alert')"
           />
-          <div class="re-enter-alert">
-            <i class="fa-solid fa-exclamation"></i>
-            <span> Passwords must be at least 6 characters. </span>
-          </div>
+          <div class="re-enter-alert"></div>
         </div>
-        <input type="submit" value="Continue" />
 
-        <p>
-          By creating an account, you agree to Amazon's
-          <a href="">Conditions of Use</a> and <a href="">Privacy Notice.</a>
-        </p>
-        <div></div>
-        <p>Buying for work?</p>
-        <a href="">Create a free business account"</a>
-        <!-- <hr> -->
-        <div></div>
+        <input
+          class="submit-btn bottom-spacing-base-large"
+          type="submit"
+          value="Continue"
+        />
+
+        <div class="bottom-spacing-base-large">
+          <p>
+            By creating an account, you agree to Amazon's<br />
+            <a href="">Conditions of Use</a> and <a href="">Privacy Notice.</a>
+          </p>
+        </div>
+
+        <hr class="row-divider" />
+
+        <div class="bottom-spacing-base-large">
+          <p>Buying for work?</p>
+          <a href="">Create a free business account"</a>
+        </div>
+
+        <div class="row-divider-shadow"></div>
         <p>Already have an account? <a href="">Sign-In</a></p>
       </div>
     </div>
@@ -637,4 +676,5 @@
     </footer>
   </body>
   <script src="../menu/menu.js"></script>
+  <script src="./register.js"></script>
 </html>

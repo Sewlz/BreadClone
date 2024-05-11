@@ -10,6 +10,7 @@ body {
   background: rgba(0, 0, 0, 0.6);
   background-image: url(../../public/imgs/SanPham/Rectangle-825-min.jpeg);
   background-blend-mode: multiply;
+  font-size: small;
 }
 .container {
   padding: 14px 18px;
@@ -29,8 +30,84 @@ body {
 .bottom-spacing-base {
   margin-bottom: 14px !important;
 }
+.bottom-spacing-base-large {
+  margin-bottom: 20px !important;
+}
 .form-row {
   width: 100%;
   display: flex;
   flex-direction: column;
+}
+.submit-btn {
+  width: 100%;
+  background-color: #ffc0cb;
+  color: white;
+  height: 31px;
+  padding: 3px 7px;
+  border-radius: 4px;
+  box-sizing: border-box;
+  border: none;
+}
+.submit-btn:hover {
+  background-color: #deaab3;
+}
+.wrapper h1 {
+  font-weight: 600;
+}
+label {
+  font-size: 13px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+.input {
+  box-sizing: border-box;
+  background-color: #fff;
+  height: 31px;
+  padding: 3px 7px;
+  line-height: normal;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+.row-divider {
+  background-color: transparent;
+  display: block;
+  height: 1px;
+  border-width: 0;
+  border-top-width: 0px;
+  border-top: 1px solid #e7e7e7;
+  line-height: 19px;
+  margin-top: 0;
+  margin-bottom: 14px;
+}
+.row-divider-shadow {
+  height: 44px;
+  margin-bottom: -18px;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.14),
+    rgba(0, 0, 0, 0.03) 3px,
+    transparent
+  );
+}
+.row-divider-shadow::after {
+  display: block;
+  width: 100%;
+  height: 44px;
+  background: linear-gradient(to right, #fff, rgba(255, 255, 255, 0), #fff);
+  z-index: 1;
+  content: "";
+}
+@media only screen and (max-width: 768px) {
+  .wrapper {
+    width: 100% !important;
+    box-sizing: border-box;
+  }
+}
+a {
+  color: #2d80cb;
+}
+a:hover {
+  text-decoration: underline;
+  cursor: pointer;
+  color: #c45500;
 }
