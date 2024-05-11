@@ -1,0 +1,36 @@
+* {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    "Ubuntu", Arial, sans-serif;
+}
+body {
+  background: rgba(0, 0, 0, 0.6);
+  background-image: url(../../public/imgs/SanPham/Rectangle-825-min.jpeg);
+  background-blend-mode: multiply;
+}
+.container {
+  padding: 14px 18px;
+}
+.wrapper {
+  background-color: white;
+  width: 350px;
+  margin: auto;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 20px;
+}
+.login-form {
+  display: flex;
+  flex-direction: column;
+}
+.bottom-spacing-base {
+  margin-bottom: 14px !important;
+}
+.form-row {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
