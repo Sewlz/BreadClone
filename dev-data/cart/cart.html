@@ -538,202 +538,221 @@
           <i class="fa-solid fa-circle-exclamation"></i>
           <span> Vui lòng nhập mã ưu đãi </span>
         </div>
-        <div class="table-cart-container">
-          <form method="" class="form-cart">
-            <table class="table-cart">
-              <thead>
-                <tr>
-                  <th class="product-remove"></th>
-                  <th class="product-img"></th>
-                  <th class="product-name"></th>
-                  <th class="product-price">Giá</th>
-                  <th class="product-quantity">Số lượng</th>
-                  <th class="product-subtotal">Tổng phụ</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr class="cart-item">
-                  <td class="product-remove">
-                    <a href="#remove-item-001" class="remove-item-cart">
-                      <i class="fa-sharp fa-solid fa-xmark"></i>
-                    </a>
-                  </td>
-                  <td class="product-img">
-                    <a href="../ChiTietSanPham/chitietsanpham.html">
-                      <img
-                        src="../../public/imgs/SanPham/buns/MUSHROOM-CHEESE-SAUSAGE-1024x1024.jpg"
-                        alssst=""
-                      />
-                    </a>
-                  </td>
-                  <td class="product-name" data-title="Sản phẩm:">
-                    <a href="../ChiTietSanPham/chitietsanpham.html"
-                      >Mushroom Cheese Sausage</a
-                    >
-                  </td>
-                  <td class="product-price" data-title="Giá:">
-                    <p>34,000</p>
-                  </td>
-                  <td class="product-quantity" data-title="Số lượng:">
-                    <div class="btn-fun-quanity">
-                      <button class="btn-minus button-number" type="button">
-                        <i class="fa-solid fa-minus"></i>
-                      </button>
-                      <input
-                        class="quantity"
-                        type="number"
-                        value="1"
-                        step="1"
-                        min="1"
-                        name="quantity-001"
-                        title="SL"
-                        pattern="[0-9]*"
-                        inputmode="numeric"
-                      />
-                      <button class="btn-plus button-number" type="button">
-                        <i class="fa-solid fa-plus"></i>
-                      </button>
-                    </div>
-                  </td>
-                  <td class="product-subtotal" data-title="Tổng phụ:">
-                    <p>34,000</p>
-                  </td>
-                </tr>
-                <tr class="cart-item">
-                  <td class="product-remove">
-                    <a href="#remove-item-002" class="remove-item-cart">
-                      <i class="fa-sharp fa-solid fa-xmark"></i>
-                    </a>
-                  </td>
-                  <td class="product-img">
-                    <a href="../ChiTietSanPham/chitietsanpham.html">
-                      <img
-                        src="../../public/imgs/SanPham/buns/PHOENIX-1024x1024.jpg"
-                        alssst=""
-                      />
-                    </a>
-                  </td>
-                  <td class="product-name" data-title="Sản phẩm:">
-                    <a href="../ChiTietSanPham/chitietsanpham.html">
-                      Phoenix
-                    </a>
-                  </td>
-                  <td class="product-price" data-title="Giá:">
-                    <p>20,000</p>
-                  </td>
-                  <td class="product-quantity" data-title="Số lượng:">
-                    <div class="btn-fun-quanity">
-                      <button class="btn-minus button-number" type="button">
-                        <i class="fa-solid fa-minus"></i>
-                      </button>
-                      <input
-                        class="quantity"
-                        type="number"
-                        value="1"
-                        step="1"
-                        min="1"
-                        name="quantity-002"
-                        title="SL"
-                        pattern="[0-9]*"
-                        inputmode="numeric"
-                      />
-                      <button class="btn-plus button-number" type="button">
-                        <i class="fa-solid fa-plus"></i>
-                      </button>
-                    </div>
-                  </td>
-                  <td class="product-subtotal" data-title="Tổng phụ:">
-                    <p>20,000</p>
-                  </td>
-                </tr>
-                <tr>
-                  <td colspan="6" class="action-funtion-cart">
-                    <div class="coupon-code">
-                      <input
-                        type="text"
-                        name="coupon_code"
-                        placeholder="Mã ưu đãi"
-                        id="coupon"
-                      />
-                      <button type="submit" name="action" value="apply_coupon">
-                        Áp dụng
-                      </button>
-                    </div>
-                    <div class="update-cart">
-                      <button
-                        type="submit"
-                        disabled
-                        name="action"
-                        value="update_cart"
-                      >
-                        Cập nhật giỏ hàng
-                      </button>
-                    </div>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-          </form>
-        </div>
-        <div class="information-bill">
-          <div class="info-container">
-            <div class="title-total">
-              <p>Tổng</p>
-            </div>
-            <div class="table-total">
-              <table>
+        <div class="table-element-wrapper">
+          <div class="table-cart-container">
+            <form method="" class="form-cart">
+              <table class="table-cart">
+                <thead>
+                  <tr>
+                    <th class="product-img"></th>
+                    <th class="product-name"></th>
+                    <th class="product-price">Giá</th>
+                    <th class="product-quantity">Số lượng</th>
+                    <th class="product-subtotal">Tạm tính</th>
+                    <th class="product-remove"></th>
+                  </tr>
+                </thead>
                 <tbody>
-                  <tr class="cart-subtotal">
-                    <th>Tổng phụ</th>
-                    <td data-title="Tổng phụ:">
-                      <span>54,000</span>
+                  <tr class="cart-item">
+                    <td class="product-img">
+                      <a href="../ChiTietSanPham/chitietsanpham.html">
+                        <img
+                          src="../../public/imgs/SanPham/buns/MUSHROOM-CHEESE-SAUSAGE-1024x1024.jpg"
+                          alssst=""
+                        />
+                      </a>
                     </td>
-                  </tr>
-                  <tr class="shipping-location">
-                    <th>Giao hàng</th>
-                    <td data-title="Giao hàng:">
-                      <div class="fee-shipping">
-                        Chi phí: <span>36,000</span>
+                    <td class="product-name" data-title="Sản phẩm:">
+                      <a href="../ChiTietSanPham/chitietsanpham.html"
+                        >Mushroom Cheese Sausage</a
+                      >
+                    </td>
+                    <td class="product-price" data-title="Giá:">
+                      <p>34,000</p>
+                    </td>
+                    <td class="product-quantity" data-title="Số lượng:">
+                      <div class="btn-fun-quanity">
+                        <button class="btn-minus button-number" type="button">
+                          <i class="fa-solid fa-minus"></i>
+                        </button>
+                        <input
+                          class="quantity"
+                          type="number"
+                          value="1"
+                          step="1"
+                          min="1"
+                          name="quantity-001"
+                          title="SL"
+                          pattern="[0-9]*"
+                          inputmode="numeric"
+                        />
+                        <button class="btn-plus button-number" type="button">
+                          <i class="fa-solid fa-plus"></i>
+                        </button>
                       </div>
-                      <p>
-                        Vận chuyển đến
-                        <strong>Hồ Chí Minh</strong>
-                      </p>
-                      <form action="" class="form-location">
-                        <div class="change-location">
-                          Đổi địa chỉ
-                          <i class="fa-solid fa-truck"></i>
-                        </div>
-                        <div class="choose-location">
-                          <select name="country" id="country" class="country">
-                            <option value="vietnam">Vietnam</option>
-                          </select>
-                          <select name="city" id="city" class="city">
-                            <option value="hochiminh">Hồ Chí Minh</option>
-                          </select>
-                          <select
-                            name="district"
-                            id="district"
-                            class="district"
-                          >
-                            <option value="binhchanh">Huyện Bình chánh</option>
-                          </select>
-                          <button type="submit">Cập nhật</button>
-                        </div>
-                      </form>
+                    </td>
+                    <td class="product-subtotal" data-title="Tạm tính:">
+                      <p>34,000</p>
+                    </td>
+                    <td class="product-remove">
+                      <a href="#remove-item-001" class="remove-item-cart">
+                        <i class="fa-solid fa-trash"></i>
+                      </a>
                     </td>
                   </tr>
-                  <tr class="order-total">
-                    <th>Tổng</th>
-                    <td data-title="Tổng:">
-                      <span>90,000</span>
+                  <tr class="cart-item">
+                    <td class="product-img">
+                      <a href="../ChiTietSanPham/chitietsanpham.html">
+                        <img
+                          src="../../public/imgs/SanPham/buns/PHOENIX-1024x1024.jpg"
+                          alssst=""
+                        />
+                      </a>
+                    </td>
+                    <td class="product-name" data-title="Sản phẩm:">
+                      <a href="../ChiTietSanPham/chitietsanpham.html">
+                        Phoenix
+                      </a>
+                    </td>
+                    <td class="product-price" data-title="Giá:">
+                      <p>20,000</p>
+                    </td>
+                    <td class="product-quantity" data-title="Số lượng:">
+                      <div class="btn-fun-quanity">
+                        <button class="btn-minus button-number" type="button">
+                          <i class="fa-solid fa-minus"></i>
+                        </button>
+                        <input
+                          class="quantity"
+                          type="number"
+                          value="1"
+                          step="1"
+                          min="1"
+                          name="quantity-002"
+                          title="SL"
+                          pattern="[0-9]*"
+                          inputmode="numeric"
+                        />
+                        <button class="btn-plus button-number" type="button">
+                          <i class="fa-solid fa-plus"></i>
+                        </button>
+                      </div>
+                    </td>
+                    <td class="product-subtotal" data-title="Tạm tính:">
+                      <p>20,000</p>
+                    </td>
+                    <td class="product-remove">
+                      <a href="#remove-item-002" class="remove-item-cart">
+                        <i class="fa-solid fa-trash"></i>
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td colspan="6" class="action-funtion-cart">
+                      <div class="radios-pos">
+                        <div class="pos-shop">
+                          <input id="radio-shop" type="radio" value="Nhantaicuahang" name="delivery_option">
+                          <label for="radio-shop">Nhận tại cửa hàng</label>
+                        </div>
+                        <div class="pos-ship">
+                          <input id="radio-ship" type="radio" value="Giaohang" name="delivery_option" checked>
+                          <label for="radio-ship">Giao hàng</label>
+                        </div>                        
+                      </div>
+                      <div class="coupon-code">
+                        <input
+                          type="text"
+                          name="coupon_code"
+                          placeholder="Nhập mã khuyến mãi"
+                          id="coupon"
+                        />
+                        <button type="submit" name="action" value="apply_coupon">
+                          Gửi
+                        </button>
+                      </div>
+                      <div class="update-cart">
+                        <button
+                          type="submit"
+                          disabled
+                          name="action"
+                          value="update_cart"
+                        >
+                          Cập nhật
+                        </button>
+                      </div>
                     </td>
                   </tr>
                 </tbody>
               </table>
-            </div>
-            <div class="process-pay">
-              <a href="../checkOut/checkout.html">Tiến hành thanh toán</a>
+            </form>
+          </div>
+          <div class="information-bill">
+            <div class="info-container">
+              <div class="title-total">
+                <p>Tổng</p>
+              </div>
+              <div class="table-total">
+                <table>
+                  <tbody>
+                    <tr class="cart-subtotal">
+                      <th>Tạm tính</th>
+                      <td data-title="Tạm tính:">
+                        <span>54,000</span>
+                      </td>
+                    </tr>
+                    <tr class="infor-subtotal">
+                      <td colspan="2">
+                        <p>
+                          Chi phí vận chuyển sẽ được tính trong quá trình thanh toán
+                        </p>
+                      </td>
+                    </tr>
+                    <!-- <tr class="shipping-location">
+                      <th>Giao hàng</th>
+                      <td data-title="Giao hàng:">
+                        <div class="fee-shipping">
+                          Chi phí: <span>36,000</span>
+                        </div>
+                        <p>
+                          Vận chuyển đến
+                          <strong>Hồ Chí Minh</strong>
+                        </p>
+                        <form action="" class="form-location">
+                          <div class="change-location">
+                            Đổi địa chỉ
+                            <i class="fa-solid fa-truck"></i>
+                          </div>
+                          <div class="choose-location">
+                            <select name="country" id="country" class="country">
+                              <option value="vietnam">Vietnam</option>
+                            </select>
+                            <select name="city" id="city" class="city">
+                              <option value="hochiminh">Hồ Chí Minh</option>
+                            </select>
+                            <select
+                              name="district"
+                              id="district"
+                              class="district"
+                            >
+                              <option value="binhchanh">Huyện Bình chánh</option>
+                            </select>
+                            <button type="submit">Cập nhật</button>
+                          </div>
+                        </form>
+                      </td>
+                    </tr> -->
+                    <tr class="order-total">
+                      <th>Tổng</th>
+                      <td data-title="Tổng:">
+                        <span>90,000</span>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="process-pay">
+                <a href="../checkOut/checkout.html">Tiến hành thanh toán</a>
+              </div>
             </div>
           </div>
         </div>
