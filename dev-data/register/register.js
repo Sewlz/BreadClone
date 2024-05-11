@@ -48,6 +48,17 @@ function inputChecker(inputId, alertClassName) {
               <span> Enter your email or mobile phone number  </span>`;
       alertElement.style.display = "block";
     }
+  } else if (inputValue.length > 0) {
+    if (inputId === "re-enter") {
+      if (inputValue !== document.getElementById("password").value) {
+        alertElement.innerHTML = `<i class="fa-solid fa-exclamation" style="color: #2d80cb; padding: 5px"></i>
+          <span> Password does not match </span>`;
+        alertElement.style.display = "block";
+      } else if (inputValue === document.getElementById("password").value) {
+        alertElement.innerHTML = "";
+        alertElement.style.display = "none";
+      }
+    }
   } else {
     alertElement.innerHTML = "";
     alertElement.style.display = "none";
