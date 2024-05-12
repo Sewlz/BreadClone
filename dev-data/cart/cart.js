@@ -31,10 +31,10 @@ btnPlus.forEach((item, index) => {
   });
 });
 
-const chooseLocation = document.querySelector('.choose-location')
-const changeLocation = document.querySelector('.change-location')
-changeLocation.addEventListener('click', ()=>{
-    chooseLocation.classList.toggle('active-form-location')
-})
+// const chooseLocation = document.querySelector('.choose-location')
+// const changeLocation = document.querySelector('.change-location')
+// changeLocation.addEventListener('click', ()=>{
+//     chooseLocation.classList.toggle('active-form-location')
+// })
 
 
