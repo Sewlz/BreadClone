@@ -168,6 +168,10 @@
 .header-name > h2 {
   font-size: larger;
   padding: 10px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 300px;
+  white-space: nowrap;
 }
 /* swiper css*/
 .swiper {
