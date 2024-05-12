@@ -208,7 +208,7 @@
 
 .cart-container > a,
 .search-container a,
-.btn-menu-bar, .menu-main .account-container > a{
+.btn-menu-bar, .menu-main .element-login a{
   width: 55px;
   height: 55px;
   display: flex;
@@ -656,7 +656,7 @@
 
   .cart-container > a,
   .search-container a,
-  .btn-menu-bar, .menu-main .account-container > a {
+  .btn-menu-bar, .menu-main .element-login a {
     width: 40px;
     height: 40px;
   }
@@ -710,12 +710,12 @@
 
   .cart-container > a,
   .search-container a,
-  .btn-menu-bar, .menu-main .account-container > a  {
+  .btn-menu-bar, .menu-main .element-login a  {
     width: 30px;
     height: 30px;
   }
 
-  .menu-main .account-container > a i{
+  .menu-main .element-login a i{
     font-size: 14px;
   }
 
@@ -740,6 +740,9 @@
   .item-account.icon-cart{
     display: block!important;
   } */
+  .element-login p{
+    display: none;
+  }
 }
 
 /* css scroll to top */
@@ -773,7 +776,13 @@
 }
 
 /* css icon login account */
-.account-container > a i{
+.element-login{
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.element-login a i{
   font-size: 20px;
   color: #333333;
 }
@@ -794,7 +803,7 @@
   visibility: hidden;
 }
 
-.account-container:hover .menu-account{
+.account-container:hover .show-menu-account{
   display: block;
   transform: translateY(0);
   opacity: 1;

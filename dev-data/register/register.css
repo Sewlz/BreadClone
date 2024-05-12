@@ -103,10 +103,10 @@ label {
     box-sizing: border-box;
   }
 }
-a {
+.container a {
   color: #2d80cb;
 }
-a:hover {
+.container a:hover {
   text-decoration: underline;
   cursor: pointer;
   color: #c45500;

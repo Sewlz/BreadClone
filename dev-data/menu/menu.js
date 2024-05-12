@@ -27,20 +27,20 @@ function resetMenuBar() {
   btnShowLv1.classList.remove("rotation-icon-down");
   menuLv2.classList.remove("active-menu-bar");
   btnShowLv2.classList.remove("rotation-icon-down");
-  itemBarClose[0].style = `transform: rotate(0)`
-  itemBarClose[1].style = `transform: rotate(0)`
+  itemBarClose[0].style = `transform: rotate(0)`;
+  itemBarClose[1].style = `transform: rotate(0)`;
 }
 
 btnCloseMenu.addEventListener("click", () => {
   menuBar.style = "transform: translateX(-100%)";
   layoutCoating.style.display = "none";
-  resetMenuBar()
+  resetMenuBar();
 });
 
 layoutCoating.addEventListener("click", () => {
   menuBar.style = "transform: translateX(-100%)";
   layoutCoating.style.display = "none";
-  resetMenuBar()
+  resetMenuBar();
 });
 
 const btnShowLv2 = document.querySelector(".menu-bar_lv2 i");
@@ -62,13 +62,13 @@ btnShowLv2.addEventListener("click", () => {
 });
 
 const btnMenuBar = document.querySelector(".btn-menu-bar");
-const itemBarClose = document.querySelectorAll('.menu-bar')
-const degClose = 135
+const itemBarClose = document.querySelectorAll(".menu-bar");
+const degClose = 135;
 
 btnMenuBar.addEventListener("click", () => {
   menuBar.style = "transform: translateX(0)";
-  itemBarClose[0].style = `transform: rotate(${degClose}deg)`
-  itemBarClose[1].style = `transform: rotate(${-degClose}deg)`
+  itemBarClose[0].style = `transform: rotate(${degClose}deg)`;
+  itemBarClose[1].style = `transform: rotate(${-degClose}deg)`;
   layoutCoating.style.display = "block";
 });
 
@@ -109,4 +109,58 @@ function scrollToTop(duration) {
 
 elementScroll.addEventListener("click", (e) => {
   scrollToTop(1000);
+});
+
+
+document.addEventListener("DOMContentLoaded", () => {
+  const iconLogin = document.querySelector(".element-login a");
+  const logout = document.querySelectorAll(".item-account");
+  const iconLogout = logout[logout.length - 1];
+  const menuAccount = document.querySelector(
+    ".account-container .menu-account"
+  );
+  const elementUsername = document.querySelector(".element-login p");
+
+  let isLoggedIn = sessionStorage.getItem("isLoggedIn") === "true";
+
+  function handleLogin() {
+    const username = "User";
+    isLoggedIn = true;
+
+    sessionStorage.setItem("isLoggedIn", "true");
+    sessionStorage.setItem("username", username);
+
+    updateNavigation();
+  }
+
+  function updateNavigation() {
+    if (isLoggedIn) {
+      iconLogin.innerHTML = '<i class="fa-solid fa-user"></i>';
+      elementUsername.innerText = sessionStorage.getItem("username");
+      menuAccount.classList.add("show-menu-account");
+    } else {
+      iconLogin.innerHTML = '<i class="fa-solid fa-right-to-bracket"></i>';
+      elementUsername.innerText = "";
+      menuAccount.classList.remove("show-menu-account");
+    }
+  }
+
+  iconLogin.addEventListener("click", () => {
+    if (!isLoggedIn) {
+      handleLogin();
+    }
+  });
+
+  iconLogout.addEventListener("click", () => {
+    if (isLoggedIn) {
+      isLoggedIn = false;
+
+      sessionStorage.removeItem("isLoggedIn");
+      sessionStorage.removeItem("username");
+
+      updateNavigation();
+    }
+  });
+
+  updateNavigation();
 });
