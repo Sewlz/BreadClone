@@ -3,8 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Liên Hệ - Dough Re Mi</title>
-    <link rel="stylesheet" href="./contact.css" />
+    <title>Blog - Dough Re Mi</title>
     <link
       rel="shortcut icon"
       href="../../public/imgs/cropped-single-product-14-min-32x32.png"
@@ -19,6 +18,7 @@
     />
     <link rel="stylesheet" href="../menu/menu.css" />
     <link rel="stylesheet" href="../footer/footer.css" />
+    <link rel="stylesheet" href="./blog.css" />
   </head>
   <body>
     <head class="header-container">
@@ -32,7 +32,10 @@
         <ul class="menu-bar-wrapper_lv1">
           <li class="menu-bar_lv1">
             <div>
-              <a href="../home/Home.html" class="menu-bar-item_lv1">
+              <a
+                href="../home/Home.html"
+                class="menu-bar-item_lv1 active-hover-page"
+              >
                 Trang chủ
               </a>
             </div>
@@ -211,10 +214,7 @@
           </li>
           <li class="menu-bar_lv1">
             <div>
-              <a
-                href="../contact/contact.html"
-                class="menu-bar-item_lv1 active-hover-page"
-              >
+              <a href="../contact/contact.html" class="menu-bar-item_lv1">
                 Liên hệ
               </a>
             </div>
@@ -243,7 +243,9 @@
             <div class="menu-content">
               <ul class="menus">
                 <li class="menu-item">
-                  <a class="uppercase active-page" href="../home/Home.html"
+                  <a
+                    class="uppercase active-page active-hover-page"
+                    href="../home/Home.html"
                     >Trang chủ</a
                   >
                 </li>
@@ -323,9 +325,7 @@
                   >
                 </li>
                 <li class="menu-item">
-                  <a
-                    class="uppercase active-hover-page"
-                    href="../contact/contact.html"
+                  <a class="uppercase" href="../contact/contact.html"
                     >Liên hệ</a
                   >
                 </li>
@@ -510,10 +510,9 @@
         </menu>
       </header>
     </head>
-
     <section class="section-header">
       <div class="section-header_background"></div>
-      <h2 class="section-header_title uppercase">Liên hệ</h2>
+      <h2 class="section-header_title uppercase">Tin tức & Khuyến mại</h2>
       <ol class="breadcrumb color-white">
         <li class="breadcrumb_item">
           <a href="../home/Home.html" class="breadcrumb_link color-white"
@@ -521,139 +520,81 @@
           >
         </li>
         <li class="breadcrumb_item">
-          <a class="breadcrumb_link color-white" href="#">Liên hệ</a>
+          <a class="breadcrumb_link color-white">Tin tức & Khuyến mại</a>
         </li>
       </ol>
     </section>
     <div class="container">
-      <div class="message">
-        <div class="flex-container">
-          <div class="flex-item">
-            <label for="hoTen">Họ Tên</label>
-            <input type="text" id="hoTen" />
-          </div>
-          <div class="flex-item">
-            <label for="email">Email</label>
-            <input type="text" id="email" />
-          </div>
-        </div>
-        <div style="margin-bottom: 5%">
-          <label for="noiDung">Nội dung</label>
-          <textarea id="noiDung"></textarea>
-        </div>
-        <input
-          class="submit-btn"
-          type="submit"
-          value="Gửi tin nhắn"
-          onclick="window.dialog.showModal();"
-        />
-        <dialog id="dialog" class="custom-dialog">
-          <svg
-            version="1.1"
-            id="Layer_1"
-            xmlns="http://www.w3.org/2000/svg"
-            xmlns:xlink="http://www.w3.org/1999/xlink"
-            xml:space="preserve"
-            width="200"
-            height="200"
-            viewBox="0 0 300 300"
-          >
-            <path
-              class="circle"
-              stroke="#1C9943"
-              stroke-width="10"
-              fill="#fff"
-              fill-opacity="0"
-              stroke-miterlimit="10"
-              d="M150,47.9c18.4,0,35.4,4.6,51,13.8s28,21.6,37.2,37.2s13.8,32.6,13.8,51s-4.6,35.4-13.8,51s-21.6,28-37.2,37.2
-              s-32.6,13.8-51,13.8s-35.4-4.6-51-13.8s-28-21.6-37.2-37.2s-13.8-32.6-13.8-51s4.6-35.4,13.8-51s21.6-28,37.2-37.2
-              S131.7,47.9,150,47.9z M150,238.7c16.2,0,31-4,"
-            />
-
-            <path
-              class="tick"
-              cx="0"
-              cy="0"
-              r="1"
-              opacity="1"
-              fill="#1C9943"
-              stroke=""
-              stroke-width="10"
-              d="M208.4,118.6c0.8-0.8,1.2-1.9,1.2-3.3c0-1.4-0.4-2.6-1.2-3.7l-3.7-3.3c-0.8-1.1-1.9-1.6-3.3-1.6
-            s-2.6,0.4-3.7,1.2l-67,67l-28.4-28.8c-1.1-0.8-2.3-1.2-3.7-1.2c-1.4,0-2.5,0.4-3.3,1.2l-3.7,3.3c-0.8,1.1-1.2,2.3-1.2,3.7
-            s0.4,2.5,1.2,3.3l35.4,35.8c1.1,1.1,2.3,1.6,3.7,1.6c1.4,0,2.5-0.5,3.3-1.6L208.4,118.6z"
-            />
-          </svg>
-          <h2>Cảm ơn sự quan tâm của bạn.</h2>
-          <p>Những hản hồi của bạn giúp Dough Re Mi ngày càng phát triển hơn</p>
-          <p>
-            Mọi thắc mắc vui lòng liên hệ:
-            <a href="#" target="_blank">contact@doughremi.com</a>
-          </p>
-          <button onclick="window.dialog.close();" aria-label="close" class="x">
-            ❌
-          </button>
-        </dialog>
-      </div>
-      <div class="about">
-        <div>
-          <h1>CÔNG TY CỔ PHẦN BÌNH MINH TOÀN CẦU</h1>
-          <li>
-            <p>
-              <i class="fa fa-solid fa-location-dot"></i> 36-36A Âu Cơ, Phường
-              9, Quận Tân Bình, TP. HCM
-            </p>
-          </li>
-          <li>
-            <a class="info_link" href="">
-              <i class="fa fa-solid fa-envelope"></i>
-              contact@doughremi.com</a
+      <div class="wrapper">
+        <div class="sidebar-wrapper">
+          <div class="latest-news">
+            <div
+              class="menu-blog-title bottom-spacing uppercase"
+              onclick="hideMenu('news-list')"
             >
-          </li>
-          <li>
-            <a class="info_link" href=""
-              ><i class="fa fa-solid fa-phone"></i> 0283 7751727 (08h00 –
-              17h00);<br />0283 5358936 (07h00 – 22h00)</a
+              <span>Bài viết mới nhất</span>
+            </div>
+            <div class="news-list"></div>
+          </div>
+          <div class="menu-blog">
+            <div
+              class="menu-blog-title uppercase"
+              onclick="showMenu('menu-blog-list')"
             >
-          </li>
+              <span>Danh mục blog</span>
+            </div>
+            <ul class="menu-blog-list">
+              <li><a href="">Trang chủ</a></li>
+              <li>
+                <span><a href="">Bánh ngọt và Bánh mỳ</a></span>
+                <i
+                  class="fa-solid fa-minus"
+                  onclick="showMenu('cake-menu')"
+                ></i>
+                <ul class="cake-menu">
+                  <li><a href="">Bánh sinh nhật</a></li>
+                  <li><a href="">Bánh mỳ</a></li>
+                  <li><a href="">Bánh tươi</a></li>
+                  <li><a href="">Bánh ngọt</a></li>
+                  <li><a href="">Bánh quy khô</a></li>
+                  <li><a href="">Chocolate</a></li>
+                  <li><a href="">Bánh miếng nhỏ</a></li>
+                  <li><a href="">Bánh trung thu</a></li>
+                  <li><a href="">Phụ kiện sinh nhật</a></li>
+                  <li><a href="">Bánh truyền thống</a></li>
+                  <li><a href="">Bánh mỳ đông lạnh</a></li>
+                  <li><a href="">Bánh Giáng sinh</a></li>
+                </ul>
+              </li>
+              <li><a href="">Bánh mỳ</a></li>
+              <li><a href="">Gallery</a></li>
+              <li><a href="">Tin tức & Khuyến mại</a></li>
+              <li>
+                <span><a href="">Liên hệ</a></span>
+                <i
+                  class="fa-solid fa-minus"
+                  onclick="showMenu('contact-menu')"
+                ></i>
+                <ul class="contact-menu">
+                  <li><a href="">Nguyễn Sơn Bakery Hà Nội</a></li>
+                  <li><a href="">Nguyễn Sơn Bakery Bắc Ninh</a></li>
+                  <li><a href="">Nguyễn Sơn Bakery Hải Phòng</a></li>
+                  <li><a href="">Nguyễn Sơn Bakery Ecopark - Hưng Yên</a></li>
+                </ul>
+              </li>
+              <li>Tuyển dụng</li>
+            </ul>
+          </div>
         </div>
-        <div>
-          <h1>Theo dõi chúng tôi</h1>
-          <ul class="social-link">
-            <li>
-              <a class="info_link" href="https://www.facebook.com/"
-                ><i class="fa fa-brands fa-facebook"></i
-              ></a>
-            </li>
-            <li>
-              <a class="info_link" href="https://twitter.com/"
-                ><i class="fa fa-brands fa-twitter"></i
-              ></a>
-            </li>
-            <li>
-              <a class="info_link" href="https://www.youtube.com/"
-                ><i class="fa fa-brands fa-youtube"></i
-              ></a>
-            </li>
-            <li>
-              <a class="info_link" href="https://www.instagram.com/"
-                ><i class="fa-brands fa-instagram"></i
-              ></a>
-            </li>
-          </ul>
+        <div class="blog-wrapper">
+          <div class="blog-title">
+            <h3>Tin tức & Khuyến mại</h3>
+          </div>
+          <div class="blog-list"></div>
+          <div class="pagination"></div>
         </div>
       </div>
     </div>
-    <iframe
-      src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d979.8863406232144!2d106.651836!3d10.769479!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752f85e0d564f7%3A0x528c5f3389f7c113!2zQnJlYWRUYWxrIMOCdSBDxqE!5e0!3m2!1svi!2sus!4v1712939656114!5m2!1svi!2sus"
-      width="600"
-      height="450"
-      style="border: 0"
-      allowfullscreen=""
-      loading="lazy"
-      referrerpolicy="no-referrer-when-downgrade"
-    ></iframe>
-
     <footer>
       <div class="footer-container">
         <div class="first-wrapper">
@@ -731,24 +672,7 @@
         <p>© 2024 Dough Re Mi, Bản Giao Hưởng Ngọt Ngào</p>
       </div>
     </footer>
-
-    <div class="scroll-to-top">
-      <div class="scroll">
-        <i class="fa-solid fa-arrow-up"></i>
-      </div>
-    </div>
-
-    <script src="../menu/menu.js"></script>
-    <script>
-      const dialog = document.getElementById("dialog");
-      function closeDialog() {
-        dialog.close();
-      }
-      dialog.addEventListener("click", function (event) {
-        if (event.target === dialog) {
-          closeDialog();
-        }
-      });
-    </script>
   </body>
+  <script src="../menu/menu.js"></script>
+  <script src="./blog.js"></script>
 </html>
