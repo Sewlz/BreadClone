@@ -27,7 +27,7 @@ Feel free to use and modify the code for learning and educational purposes.
 ## ProjectTree
 
 ```
-BreadTalk
+DoughReMi
 ├─ .vscode
 │  └─ settings.json
 ├─ data
