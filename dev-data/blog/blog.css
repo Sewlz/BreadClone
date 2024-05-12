@@ -119,6 +119,7 @@
 .news-wrapper {
   display: flex;
   gap: 10px;
+  cursor: pointer;
 }
 .news-image {
   width: 100px;
@@ -195,6 +196,7 @@
 /**/
 .blog-container {
   display: flex;
+  cursor: pointer;
 }
 .blog-image {
   width: 30%;

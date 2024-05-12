@@ -15,6 +15,9 @@ document.addEventListener("DOMContentLoaded", function () {
       blog.forEach((blogItem) => {
         const blogContent = document.createElement("div");
         blogContent.classList.add("blog-container");
+        blogContent.onclick = function () {
+          window.location.href = "../news/news.html";
+        };
         blogContent.innerHTML = `
           <div class="blog-image">
             <img src="${blogItem.src}" alt="Blog Image">
@@ -83,7 +86,7 @@ document.addEventListener("DOMContentLoaded", function () {
       // Add "Next" arrow and functionality
       const nextLink = document.createElement("a");
       nextLink.href = "#";
-      nextLink.textContent = "Next";
+      nextLink.innerHTML = `<i class="fa-solid fa-arrow-right"></i>`;
 
       nextLink.addEventListener("click", function (event) {
         event.preventDefault();
@@ -120,6 +123,9 @@ document.addEventListener("DOMContentLoaded", function () {
       blog.forEach((blogItem) => {
         const blogContent = document.createElement("div");
         blogContent.classList.add("news-container");
+        blogContent.onclick = function () {
+          window.location.href = "../news/news.html";
+        };
         blogContent.innerHTML = `
         <div class="news-wrapper">
         <div class="news-image">
