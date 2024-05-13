@@ -136,21 +136,20 @@ document.addEventListener("DOMContentLoaded", () => {
   function updateNavigation() {
     if (isLoggedIn) {
       iconLogin.innerHTML = '<i class="fa-solid fa-user"></i>';
+      iconLogin.href = "../profile/profile.html";
       elementUsername.innerText = sessionStorage.getItem("username");
       menuAccount.classList.add("show-menu-account");
     } else {
       iconLogin.innerHTML = '<i class="fa-solid fa-right-to-bracket"></i>';
-      elementUsername.innerText = "";
+      elementUsername.innerText = "Login";
       menuAccount.classList.remove("show-menu-account");
     }
   }
-
-  btnLogin.addEventListener("click", () => {
-    if (!isLoggedIn) {
+  if (btnLogin != null) {
+    btnLogin.addEventListener("click", () => {
       handleLogin();
-    }
-  });
-
+    });
+  }
   iconLogout.addEventListener("click", () => {
     if (isLoggedIn) {
       isLoggedIn = false;
