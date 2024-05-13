@@ -141,6 +141,7 @@ document.addEventListener("DOMContentLoaded", () => {
       menuAccount.classList.add("show-menu-account");
     } else {
       iconLogin.innerHTML = '<i class="fa-solid fa-right-to-bracket"></i>';
+      iconLogin.href = "../login/login.html";
       elementUsername.innerText = "Login";
       menuAccount.classList.remove("show-menu-account");
     }
