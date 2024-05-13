@@ -157,6 +157,7 @@ document.addEventListener("DOMContentLoaded", () => {
       });
     });
   }
+
   iconLogout.addEventListener("click", () => {
     if (isLoggedIn) {
       isLoggedIn = false;
@@ -165,6 +166,7 @@ document.addEventListener("DOMContentLoaded", () => {
       sessionStorage.removeItem("username");
 
       updateNavigation();
+      window.location.href = "../home/Home.html";
     }
   });
 
