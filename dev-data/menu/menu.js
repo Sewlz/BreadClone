@@ -111,7 +111,6 @@ elementScroll.addEventListener("click", (e) => {
   scrollToTop(1000);
 });
 
-
 document.addEventListener("DOMContentLoaded", () => {
   const iconLogin = document.querySelector(".element-login a");
   const logout = document.querySelectorAll(".item-account");
@@ -161,6 +160,20 @@ document.addEventListener("DOMContentLoaded", () => {
       updateNavigation();
     }
   });
+
+  const itemLogout = document.querySelector(".profile-item:last-child");
+  if (itemLogout) {
+    itemLogout.addEventListener("click", () => {
+      if (isLoggedIn) {
+        isLoggedIn = false;
+
+        sessionStorage.removeItem("isLoggedIn");
+        sessionStorage.removeItem("username");
+
+        updateNavigation();
+      }
+    });
+  }
 
   updateNavigation();
 });

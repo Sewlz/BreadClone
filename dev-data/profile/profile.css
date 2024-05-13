@@ -1,0 +1,188 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+.profile-container{
+    display: flex;
+    gap: 20px;
+    padding: 20px 0;
+    background-color: #F5F5F5;
+}
+
+.menu-profile{
+    padding: 10px;
+    background-color: #F5F5F5;
+}
+
+.overview{
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.336);
+}
+
+.overview img{
+    width: 50px;
+    border-radius: 50%;
+}
+
+.panel-show{
+    width: 80%;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, .13);
+}
+
+.user-functionality{
+    font-size: 18px;
+    user-select: none;
+    white-space: nowrap;
+}
+
+.user-functionality i{
+    color: #2d80cb;
+    padding-right: 10px;
+    margin-top: 40px;
+}
+
+.lst-profile{
+    margin-top: 20px;
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.lst-profile li{
+    cursor: pointer;
+}
+
+.lst-profile li a{
+    color: black;
+}
+
+.lst-profile li a:hover{
+    color: #2d80cb;
+}
+
+/* css profile-detail-account */
+.panel-show{
+    background-color: white;
+}
+
+.profile-detail-container{
+    padding: 0 20px 100px;
+}
+
+.header-profile{
+    width: 100%;
+    padding: 15px 0;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.253);
+}
+
+.header-profile h3{
+    margin-bottom: 5px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.header-profile p{
+    font-size: 15px;
+    color: rgb(88, 88, 88);
+}
+
+.content-profile-detail{
+    display: flex;
+    padding-top: 30px;
+}
+
+.profile-detail-wrapper{
+    flex: 1;
+}
+
+.form-profile-detail{
+    display: flex;
+    flex-direction: column;
+    white-space: nowrap;
+    gap: 20px;
+    padding-right: 50px;
+}
+
+.form-profile-detail > div{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.form-profile-detail label{
+    width: 100px;
+    text-align: right;
+    display: block;
+    color: gray;
+}
+
+.form-profile-detail input{
+    padding: 5px 10px;
+    flex: 2;
+}
+
+.form-profile-detail >input{
+    width: 70px;
+    outline: none;
+    border: none;
+    background-color: var(--color-07);
+    padding: 10px 0;
+    border-radius: 3px;
+    margin-left: 110px;
+    cursor: pointer;
+}
+
+.form-profile-detail > div p{
+    color: #2d80cb;
+    text-decoration: underline;
+    cursor: pointer;
+    font-size: 13px;
+    width: 50px;
+    text-align: right;
+}
+
+.img-profile{
+    display: flex;
+    flex-direction: column;
+    border-left: 1px solid #efefef;
+    padding: 0 40px;
+    gap: 10px;
+}
+
+.content-profile-detail .img{
+    background-image: url(../../public/imgs/Logo.png);
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+    border-radius: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.img-profile button{
+    padding: 10px 20px;
+    width: 70px;
+    margin: 0 auto;
+    background-color: transparent;
+    outline: none;
+    border: 1px solid rgba(128, 128, 128, 0.377);
+    cursor: pointer;
+    transition: background-color 0.1s linear;
+}
+
+.img-profile button:hover{
+    background-color: rgba(128, 128, 128, 0.137);
+}
+
+
+.img-profile input{
+    display: none;
+}
