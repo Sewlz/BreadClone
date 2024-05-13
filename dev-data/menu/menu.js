@@ -112,6 +112,7 @@ elementScroll.addEventListener("click", (e) => {
 });
 
 document.addEventListener("DOMContentLoaded", () => {
+  const btnLogin = document.querySelector(".btn-Login");
   const iconLogin = document.querySelector(".element-login a");
   const logout = document.querySelectorAll(".item-account");
   const iconLogout = logout[logout.length - 1];
@@ -144,7 +145,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   }
 
-  iconLogin.addEventListener("click", () => {
+  btnLogin.addEventListener("click", () => {
     if (!isLoggedIn) {
       handleLogin();
     }
