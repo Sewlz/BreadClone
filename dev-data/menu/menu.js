@@ -149,6 +149,12 @@ document.addEventListener("DOMContentLoaded", () => {
   if (btnLogin != null) {
     btnLogin.addEventListener("click", () => {
       handleLogin();
+      const loginForm = document.querySelector(".login-form");
+
+      loginForm.addEventListener("submit", function (event) {
+        event.preventDefault();
+        window.location.href = "../home/Home.html";
+      });
     });
   }
   iconLogout.addEventListener("click", () => {
