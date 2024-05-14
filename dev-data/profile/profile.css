@@ -254,7 +254,8 @@ li.profile-item:nth-child(1) {
   .img-profile{
     border: none;
     border-top: 1px solid #efefef;
-    margin-top: 20px;
+    padding-top: 20px;
+    margin-top: 10px;
   }
 
   .note-img{
@@ -277,7 +278,8 @@ li.profile-item:nth-child(1) {
     padding-bottom: 70px;
   }
   .img-profile{
-    padding: 0;
+    padding-right: 0;
+    padding-left: 0;
   }
   .form-profile-detail{
     padding-right: 0;
