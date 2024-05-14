@@ -123,6 +123,7 @@
 }
 .news-image {
   width: 100px;
+  align-content: center;
 }
 .news-image img {
   width: 100%;

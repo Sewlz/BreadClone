@@ -90,6 +90,12 @@
   text-decoration: underline;
 }
 /* main css */
+.top-spacing {
+  margin-top: 10px;
+}
+.bottom-spacing {
+  margin-bottom: 10px;
+}
 .section-checkout {
   margin: 2% auto;
   margin-left: auto;
@@ -101,14 +107,12 @@
 .input-field {
   display: flex;
   justify-content: space-between;
-  margin: 2% 0;
 }
 .input-wrapper {
   display: flex;
   flex-direction: column;
 }
 .name-field {
-  margin: 2% 0;
 }
 .name-field input {
   width: 100%;
@@ -279,8 +283,24 @@
   color: #ffc0cb;
 }
 @media only screen and (max-width: 768px) {
+  .voucher-slider.show {
+    padding: 3%;
+  }
+  .voucher-slider.show > p {
+    font-size: smaller;
+  }
+  #input-voucher {
+    height: 30px;
+    width: 70%;
+    padding: 10px;
+  }
+  #submit-voucher {
+    height: 50px;
+    width: 30%;
+    padding: 3%;
+  }
   .voucher-wrapper {
-    font-size: small;
+    font-size: x-small;
   }
   .input-field {
     flex-direction: column;
