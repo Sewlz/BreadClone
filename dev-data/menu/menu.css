@@ -846,6 +846,10 @@
 .menu-logo {
   padding: 0 10px;
 }
+
+.element-login p{
+  color: white;
+}
 /* .account-detail{
   float: right;
 }

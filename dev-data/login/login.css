@@ -139,3 +139,24 @@
 .link-create-account a{
     color: #2d80cb;
 }
+
+@media (max-width: 315px) {
+    .remember-forgot{
+        display: block;
+    }
+
+    .remember-forgot > div, .remember-forgot a{
+        width: 100%;
+    }
+    
+    .remember-forgot a{
+        text-align: right;
+        margin-top: 5px;
+        display: block;
+    }
+
+    .remember-me{
+        display: flex;
+        align-items: center;
+    }
+}
