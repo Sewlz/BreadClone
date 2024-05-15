@@ -204,10 +204,10 @@ initializeNewsSwiper();
 window.addEventListener("resize", function () {
   initializeNewsSwiper();
 });
-fetch("../../data/home-data/news.json")
+fetch("../../data/blog-data/blog.json")
   .then((response) => response.json())
   .then((data) => {
-    const news = data.news;
+    const news = data.blog;
     const swiperWrapperNews = document.querySelector(".news-swiper-wrapper");
     news.forEach((news) => {
       const swiperSlide = document.createElement("div");
