@@ -80,7 +80,7 @@ function initializeSwiper() {
   } else {
     swiper = new Swiper(".mySwiper", {
       slidesPerView: 4,
-      slidesPerGroup: 1,
+      slidesPerGroup: 4,
       // loop: true,
       freeMode: false,
       pagination: {
@@ -186,6 +186,7 @@ function initializeNewsSwiper() {
   } else {
     swiperNews = new Swiper(".newsSwiper", {
       slidesPerView: 3,
+      slidesPerGroup: 3,
       pagination: {
         el: ".swiper-pagination",
         clickable: true,
