@@ -56,10 +56,10 @@ btnShowLv1.addEventListener("click", () => {
   menuBar.style.overflow = "auto";
 });
 
-btnShowLv2.addEventListener("click", () => {
-  menuLv2.classList.toggle("active-menu-bar");
-  btnShowLv2.classList.toggle("rotation-icon-down");
-});
+// btnShowLv2.addEventListener("click", () => {
+//   menuLv2.classList.toggle("active-menu-bar");
+//   btnShowLv2.classList.toggle("rotation-icon-down");
+// });
 
 const btnMenuBar = document.querySelector(".btn-menu-bar");
 const itemBarClose = document.querySelectorAll(".menu-bar");

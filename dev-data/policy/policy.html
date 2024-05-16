@@ -3,7 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Register - Dough Re Mi</title>
+    <title>Điều khoản chung - DoughReMi</title>
+    <link rel="stylesheet" href="../menu/menu.css" />
+    <link rel="stylesheet" href="../footer/footer.css" />
+    <link rel="stylesheet" href="./policy.css" />
     <link
       rel="shortcut icon"
       href="../../public/imgs/cropped-single-product-14-min-32x32.png"
@@ -16,9 +19,6 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="../menu/menu.css" />
-    <link rel="stylesheet" href="../footer/footer.css" />
-    <link rel="stylesheet" href="./register.css" />
   </head>
   <body>
     <head class="header-container">
@@ -493,181 +493,79 @@
         </menu>
       </header>
     </head>
-    <div class="container">
-      <div class="wrapper">
-        <h1 class="bottom-spacing-base-large">Đăng ký</h1>
-
-        <div class="form-row bottom-spacing-base">
-          <label for="name">Tên của bạn </label>
-          <input
-            id="name"
-            class="input"
-            type="text"
-            placeholder="Họ và tên"
-            onclick="showMoreCharacterMessage('name', 'name-alert')"
-            oninput="inputChecker('name', 'name-alert')"
-          />
-
-          <div class="name-alert"></div>
-        </div>
-
-        <div class="form-row bottom-spacing-base">
-          <label for="">Số điện thoại hoặc email </label>
-          <input
-            id="email"
-            class="input"
-            type="text"
-            placeholder="Email"
-            onclick="showMoreCharacterMessage('email', 'email-alert')"
-            oninput="inputChecker('email', 'email-alert')"
-          />
-          <div class="email-alert"></div>
-        </div>
-
-        <div class="form-row bottom-spacing-base">
-          <label for="">Mật khẩu </label>
-          <input
-            id="password"
-            class="input"
-            type="password"
-            placeholder="Mật khẩu"
-            onclick="showMoreCharacterMessage('password', 'password-alert')"
-            oninput="inputChecker('password', 'password-alert')"
-          />
-          <div class="password-alert">
-            <i
-              class="fa-solid fa-exclamation"
-              style="color: #2d80cb; padding: 5px"
-            ></i>
-            <span> Mật khẩu phải có ít nhất 6 ký tự </span>
-          </div>
-        </div>
-
-        <div class="form-row bottom-spacing-base">
-          <label for="re-enter">Nhập lại mật khẩu </label>
-          <input
-            id="re-enter"
-            class="input"
-            type="password"
-            placeholder="Nhập lại mật khẩu"
-            onclick="showMoreCharacterMessage('re-enter', 're-enter-alert')"
-            oninput="inputChecker('re-enter', 're-enter-alert')"
-          />
-          <div class="re-enter-alert"></div>
-        </div>
-
-        <input
-          class="submit-btn bottom-spacing-base-large"
-          type="submit"
-          value="Đăng ký"
-        />
-
-        <div class="bottom-spacing-base-large">
+    <section class="section-header">
+      <div class="section-header_background"></div>
+      <h2 class="section-header_title uppercase">Điều khoản chung</h2>
+      <ol class="breadcrumb color-white">
+        <li class="breadcrumb_item">
+          <a href="../home/Home.html" class="breadcrumb_link color-white"
+            >Trang chủ</a
+          >
+        </li>
+        <li class="breadcrumb_item">
+          <a class="breadcrumb_link color-white" href="#">Điều khoản chung</a>
+        </li>
+      </ol>
+    </section>
+    <section id="purchase-policy">
+      <ul>
+        <p>
+          Trang này cho bạn biết các điều khoản và điều kiện để chúng tôi cung
+          cấp bất kỳ sản phẩm nào được liệt kê trên trang web Trực tuyến của
+          chúng tôi: www.breadtalkvietnam.com cho bạn. Vui lòng đọc kỹ các điều
+          khoản và điều kiện này một cách cẩn thận trước khi đặt bất kỳ sản phẩm
+          nào từ trang của chúng tôi. Bạn nên hiểu rằng bằng cách yêu cầu bất kỳ
+          Sản phẩm của chúng tôi, bạn đồng ý chịu ràng buộc bởi các điều khoản
+          và điều kiện này.
+        </p>
+        <li id="bullet">
+          <h2>QUYỀN CỦA CÔNG TY CỔ PHẦN BÌNH MINH TOÀN CẦU</h2>
+        </li>
+        <div id="policyContent">
           <p>
-            Bằng cách tạo một tài khoản, bạn đồng ý với DoughReMi<br />
-            <a href="">Conditions of Use</a> and <a href="">Privacy Notice.</a>
+            Công ty sẽ tiến hành thực hiện các dịch vụ cho những khách hàng sau
+            khi hoàn thành các thủ tục và các điều kiện công ty nêu ra. Trừ
+            trường hợp, khách hàng không cung cấp đúng thông tin hoặc vi phạm
+            pháp luật thì công ty có quyền từ chối hoặc chấm dứt cung cấp dịch
+            vụ.
+          </p>
+          <p>
+            Theo luật bản quyền và luật bảo hộ sở hữu trí tuệ tại Việt Nam, công
+            ty chúng tôi sẽ giữ bản quyền sử dụng dịch vụ và các nội dung trên
+            website.
+          </p>
+          <p>
+            Công ty có quyền thay đổi biểu giá dịch vụ và phương thức thanh toán
+            theo nhu cầu và điều kiện của cửa hàng.
           </p>
         </div>
-
-        <hr class="row-divider" />
-
-        <div class="bottom-spacing-base-large">
-          <p>Bạn muốn mua để kinh doanh?</p>
-          <a href=""> Tạo tài khoản doanh nghiệp miễn phí </a>
+        <li id="bullet">
+          <h2>TRÁCH NHIỆM CỦA CÔNG TY CỔ PHẦN BÌNH MINH TOÀN CẦU</h2>
+        </li>
+        <div id="policyContent">
+          <p>
+            Công ty cổ phần Bình Minh Toàn Cầu chịu trách nhiệm xây dựng trong
+            điều kiện và phạm vi cho phép.
+          </p>
+          <p>
+            Công ty cổ phần Bình Minh Toàn Cầu sẽ hợp tác với các đối tác trong
+            việc tiến hành, thực thi xây dựng hệ thống các dịch vụ để phục vụ
+            cho khách hàng.
+          </p>
+          <p>
+            Công ty cổ phần Bình Minh Toàn Cầu chịu trách nhiệm xây dựng, phổ
+            cập kiến thức và mọi thông tin liên quan đến hoạt động của công ty
+            cho các phòng ban.
+          </p>
+          <p>
+            Công ty cổ phần Bình Minh Toàn Cầu sẽ cố gắng đến mức cao nhất trong
+            phạm vi và điều kiện có thể để duy trì hoạt động bình thường. Tuy
+            nhiên, trong trường hợp nếu những sự cố ngoài ý muốn xảy ra và nằm
+            ngoài khả năng kiểm soát gây thiệt hại tới khách hàng thì Công ty cổ
+            phần Bình Minh Toàn Cầu không phải chịu trách nhiệm liên đới.
+          </p>
         </div>
-
-        <div class="row-divider-shadow"></div>
-        <p>
-          Bạn đã có tài khoản
-          <a href="../login/login.html"
-            >Đăng nhập <i class="fa fa-solid fa-caret-right"></i
-          ></a>
-        </p>
-      </div>
-      <div class="scroll-to-top">
-        <div class="scroll">
-          <i class="fa-solid fa-arrow-up"></i>
-        </div>
-      </div>
-    </div>
-    <footer>
-      <div class="footer-container">
-        <div class="first-wrapper">
-          <div class="footer-social-wrapper">
-            <div>
-              <a href=""
-                ><img
-                  src="../../public/imgs/Logo.png"
-                  alt=""
-                  class="footer-logo"
-              /></a>
-            </div>
-            <p>Bánh tươi ngon mỗi ngày</p>
-            <div class="social-icon-wrapper">
-              <i class="fa fab fa-facebook-f"></i>
-              <i class="fa fab fa-twitter"></i>
-              <i class="fa fab fa-instagram"></i>
-            </div>
-          </div>
-          <div class="footer-social-wrapper-clone" style="visibility: hidden">
-            <h1>Bread Talk</h1>
-            <p>Bánh tươi ngon mỗi ngày</p>
-            <div class="social-icon-wrapper">
-              <i class="fa fab fa-facebook-f"></i>
-              <i class="fa fab fa-twitter"></i>
-              <i class="fa fab fa-instagram"></i>
-            </div>
-          </div>
-        </div>
-        <div class="second-wrapper">
-          <div class="subscription-wrapper">
-            <div><h1 style="font-size: 25px">ĐĂNG KÍ NHẬN TIN</h1></div>
-            <form class="input-container">
-              <input
-                type="text"
-                placeholder="Địa chỉ email"
-                class="email-input"
-              /><input type="submit" class="submit-input" value="Đăng ký" />
-            </form>
-          </div>
-          <div class="contact-info-wrapper">
-            <div style="text-align: center">
-              <h1 style="font-size: 25px">THÔNG TIN LIÊN HỆ</h1>
-            </div>
-            <ul>
-              <li>
-                Địa chỉ VPĐD: 36-36A Âu Cơ, Phường 9, Quận Tân Bình, TP. HCM
-              </li>
-              <li>Số điện thoại: 0283 7751727 (08h00 – 17h00); 0283 5358936</li>
-              <li>(07h00 – 22h00)</li>
-              <li>Email: contact@doughremi.com</li>
-              <li>Thời gian làm việc: 08h00 – 22h00</li>
-            </ul>
-          </div>
-        </div>
-        <div class="third-wrapper">
-          <div class="policy-wrapper">
-            <h1 style="font-size: 25px">CHÍNH SÁCH</h1>
-            <ul>
-              <li><a href="">Chính sách đặt hàng online</a></li>
-              <li><a href="">Điều khoản chung</a></li>
-              <li><a href="">Chính sách bảo mật</a></li>
-              <li><a href="">Câu hỏi thường gặp</a></li>
-            </ul>
-          </div>
-          <div class="label-wrapper" style="height: 100%">
-            <div class="content">
-              <img src="../../public/imgs/footer/bocongthuong-1.png" alt="" />
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="copyright-wrapper">
-        <!-- credit: © 2024 BreadTalk, All rights reserved. Thiết kế web bởi HD Agency -->
-        <p>© 2024 Dough Re Mi, Bản Giao Hưởng Ngọt Ngào</p>
-      </div>
-    </footer>
+      </ul>
+    </section>
   </body>
-  <script src="../menu/menu.js"></script>
-  <script src="./register.js"></script>
 </html>

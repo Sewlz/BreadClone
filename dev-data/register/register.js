@@ -5,22 +5,22 @@ function showMoreCharacterMessage(inputId, alertClassName) {
   if (inputValue.length === 0) {
     if (inputId === "password") {
       alertElement.innerHTML = `<i class="fa fa-solid fa-check" style="color: #2d80cb; padding: 5px"></i>
-        <span> Enter at least 1 character </span>`;
+        <span> Nhập ít nhất 1 ký tự </span>`;
       alertElement.style.display = "block";
     } else if (inputId === "name") {
       alertElement.innerHTML = `<i class="fa fa-solid fa-check" style="color: #2d80cb; padding: 5px"></i>
-            <span> Enter at least 1 character </span>`;
+            <span> Nhập ít nhất 1 ký tự </span>`;
       alertElement.style.display = "block";
     } else if (inputId === "email") {
       alertElement.innerHTML = `<i class="fa fa-solid fa-check" style="color: #2d80cb; padding: 5px"></i>
-        <span>  Enter your email or mobile phone number  </span>`;
+        <span>  Nhập email hoặc số điện thoại của bạn  </span>`;
       alertElement.style.display = "block";
     }
   } else if (inputValue.length > 0) {
     if (inputId === "re-enter") {
       if (inputValue !== document.getElementById("password").value) {
         alertElement.innerHTML = `<i class="fa-solid fa-exclamation" style="color: #2d80cb; padding: 5px"></i>
-          <span> Password does not match </span>`;
+          <span> Mật khẩu không trùng khớp </span>`;
         alertElement.style.display = "block";
       } else if (inputValue === document.getElementById("password").value) {
         alertElement.innerHTML = "";
@@ -37,22 +37,22 @@ function inputChecker(inputId, alertClassName) {
     document.getElementById(inputId).style.border = "2px solid #ff0000";
     if (inputId === "password") {
       alertElement.innerHTML = `<i class="fa-solid fa-exclamation" style="color: #2d80cb; padding: 5px"></i>
-        <span> Enter a password  </span>`;
+        <span> Nhập mật khẩu  </span>`;
       alertElement.style.display = "block";
     } else if (inputId === "name") {
       alertElement.innerHTML = `<i class="fa-solid fa-exclamation" style="color: #2d80cb; padding: 5px"></i>
-          <span> Enter your name  </span>`;
+          <span> Nhập tên của bạn  </span>`;
       alertElement.style.display = "block";
     } else if (inputId === "email") {
       alertElement.innerHTML = `<i class="fa-solid fa-exclamation" style="color: #2d80cb; padding: 5px"></i>
-              <span> Enter your email or mobile phone number  </span>`;
+              <span> Nhập email hoặc số điện thoại của bạn  </span>`;
       alertElement.style.display = "block";
     }
   } else if (inputValue.length > 0) {
     if (inputId === "re-enter") {
       if (inputValue !== document.getElementById("password").value) {
         alertElement.innerHTML = `<i class="fa-solid fa-exclamation" style="color: #2d80cb; padding: 5px"></i>
-          <span> Password does not match </span>`;
+          <span> Mật khẩu không trùng khớp </span>`;
         alertElement.style.display = "block";
       } else if (inputValue === document.getElementById("password").value) {
         alertElement.innerHTML = "";

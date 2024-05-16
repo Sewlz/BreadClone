@@ -18,7 +18,7 @@ hidePass.addEventListener("click", () => {
 
 inputUser.addEventListener("focus", () => {
   alertUser.innerHTML =
-    '<i style="color:#2d80cb; padding:5px; font-size:small;" class="fa-solid fa-check"></i> <span>Enter mobile number or email</span>';
+    '<i style="color:#2d80cb; padding:5px; font-size:small;" class="fa-solid fa-check"></i> <span>Nhập số điện thoại hoặc email</span>';
 });
 
 inputUser.addEventListener("blur", function () {
@@ -28,26 +28,28 @@ inputUser.addEventListener("blur", function () {
 
   if (regexEmail.test(value) || regexPhoneNumber.test(value)) {
     alertUser.innerHTML =
-      '<i style="color:green; padding:5px; font-size:small;" class="fa-solid fa-check"></i> <span>Enter mobile number or email</span>';
+      '<i style="color:green; padding:5px; font-size:small;" class="fa-solid fa-check"></i> <span>Nhập số điện thoại hoặc email</span>';
     inputUser.style = "border: 2px solid green;";
   } else {
     alertUser.innerHTML =
-      '<i style="color:#2d80cb; padding:5px; font-size:small;" class="fa-solid fa-exclamation"></i> <span>Enter mobile number or email</span>';
+      '<i style="color:#2d80cb; padding:5px; font-size:small;" class="fa-solid fa-exclamation"></i> <span>Nhập số điện thoại hoặc email</span>';
     inputUser.style = "border: 2px solid red;";
   }
 });
 
-
-inputPass.addEventListener('focus', ()=>{
-    alertPass.innerHTML = '<i style="color:#2d80cb; padding:5px; font-size:small;" class="fa-solid fa-check"></i> <span>Enter password</span>'
-})
-inputPass.addEventListener('blur', ()=>{
-    const value = inputPass.value.trim()
-    if(value === ''){
-        alertPass.innerHTML = '<i style="color:#2d80cb; padding:5px; font-size:small;" class="fa-solid fa-exclamation"></i> <span>Enter password</span>'
-        inputPass.style = "border: 2px solid red;";
-    }else{
-        alertPass.innerHTML = '<i style="color:green; padding:5px; font-size:small;" class="fa-solid fa-check"></i> <span>Enter password</span>'
-        inputPass.style = "border: 2px solid green;";
-    }
-})
+inputPass.addEventListener("focus", () => {
+  alertPass.innerHTML =
+    '<i style="color:#2d80cb; padding:5px; font-size:small;" class="fa-solid fa-check"></i> <span>Hãy nhập mật khẩu</span>';
+});
+inputPass.addEventListener("blur", () => {
+  const value = inputPass.value.trim();
+  if (value === "") {
+    alertPass.innerHTML =
+      '<i style="color:#2d80cb; padding:5px; font-size:small;" class="fa-solid fa-exclamation"></i> <span>Hãy nhập mật khẩu</span>';
+    inputPass.style = "border: 2px solid red;";
+  } else {
+    alertPass.innerHTML =
+      '<i style="color:green; padding:5px; font-size:small;" class="fa-solid fa-check"></i> <span>Hãy nhập mật khẩu</span>';
+    inputPass.style = "border: 2px solid green;";
+  }
+});
