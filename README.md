@@ -24,7 +24,7 @@ This project is created solely for educational purposes. It is not associated wi
 
 Feel free to use and modify the code for learning and educational purposes.
 
-## ProjectTree
+## Project Tree
 
 ```
 DoughReMi
@@ -35,7 +35,6 @@ DoughReMi
 │  │  └─ blog.json
 │  ├─ home-data
 │  │  ├─ homeProduct.json
-│  │  ├─ news.json
 │  │  ├─ review.json
 │  │  ├─ slide-banner.json
 │  │  └─ topProducts.json
@@ -51,6 +50,10 @@ DoughReMi
 │  │  ├─ blog.css
 │  │  ├─ blog.html
 │  │  └─ blog.js
+│  ├─ Buns
+│  │  ├─ buns.css
+│  │  ├─ buns.html
+│  │  └─ buns.js
 │  ├─ cart
 │  │  ├─ cart.css
 │  │  ├─ cart.html
@@ -59,6 +62,9 @@ DoughReMi
 │  │  ├─ checkout.css
 │  │  ├─ checkout.html
 │  │  └─ checkout.js
+│  ├─ chinhsachbaomat
+│  │  ├─ baomat.css
+│  │  └─ baomat.html
 │  ├─ ChiTietSanPham
 │  │  ├─ chitietsanpham.css
 │  │  ├─ chitietsanpham.html
@@ -66,11 +72,6 @@ DoughReMi
 │  ├─ contact
 │  │  ├─ contact.css
 │  │  └─ contact.html
-│  ├─ DanhSachSanPham
-│  │  └─ Buns
-│  │     ├─ buns.css
-│  │     ├─ buns.html
-│  │     └─ buns.js
 │  ├─ footer
 │  │  ├─ footer.css
 │  │  └─ footer.html
@@ -80,12 +81,29 @@ DoughReMi
 │  │  ├─ Home.css
 │  │  ├─ Home.html
 │  │  └─ Home.js
+│  ├─ login
+│  │  ├─ login.css
+│  │  ├─ login.html
+│  │  └─ login.js
 │  ├─ menu
 │  │  ├─ menu.css
 │  │  └─ menu.js
 │  ├─ news
 │  │  ├─ news.css
 │  │  └─ news.html
+│  ├─ policy
+│  │  ├─ policy.css
+│  │  └─ policy.html
+│  ├─ profile
+│  │  ├─ profile.css
+│  │  ├─ profile.html
+│  │  └─ profile.js
+│  ├─ purchasePolicy
+│  │  ├─ purchasePolicy.css
+│  │  └─ purchasePolicy.html
+│  ├─ question
+│  │  ├─ question.css
+│  │  └─ question.html
 │  ├─ recruitment
 │  │  ├─ recruitment.css
 │  │  └─ recruitment.html

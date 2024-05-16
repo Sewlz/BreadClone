@@ -1,4 +1,4 @@
-fetch("../../../data/Product-data/product.json")
+fetch("../../data/Product-data/product.json")
   .then((response) => response.json())
   .then((productJson) => {
     const title = document
