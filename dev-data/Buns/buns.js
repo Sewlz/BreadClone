@@ -56,6 +56,9 @@ fetch("../../data/Product-data/product.json")
       if (currentPage > 1 && currentPage <= totalPages) {
         titlePage.classList.add("number-page");
         titlePage.innerText = `(trang ${currentPage})`;
+      } else if (currentPage == 1) {
+        titlePage.classList.remove("number-page");
+        titlePage.innerText = "";
       }
 
       renderProduct(start, end);
