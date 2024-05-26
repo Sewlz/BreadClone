@@ -6,6 +6,11 @@
     <title>Footer</title>
     <link rel="stylesheet" href="./footer.css" />
     <link
+      rel="shortcut icon"
+      href="../../../public/imgs/logo.png"
+      type="image/x-icon"
+    />
+    <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
       integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
@@ -28,9 +33,18 @@
             </div>
             <p>Bánh tươi ngon mỗi ngày</p>
             <div class="social-icon-wrapper">
-              <i class="fa fab fa-facebook-f"></i>
-              <i class="fa fab fa-twitter"></i>
-              <i class="fa fab fa-instagram"></i>
+              <i
+                class="fa fab fa-facebook-f"
+                onclick="window.open('https://www.facebook.com/notamazingm8?mibextid=ZbWKwL')"
+              ></i>
+              <i
+                class="fa fab fa-twitter"
+                onclick="window.open('https://www.instagram.com/emdix_xx/')"
+              ></i>
+              <i
+                class="fa fab fa-instagram"
+                onclick="window.open('https://x.com')"
+              ></i>
             </div>
           </div>
           <div class="footer-social-wrapper-clone" style="visibility: hidden">
@@ -46,13 +60,72 @@
         <div class="second-wrapper">
           <div class="subscription-wrapper">
             <div><h1 style="font-size: 25px">ĐĂNG KÍ NHẬN TIN</h1></div>
-            <form class="input-container">
+            <form id="subscriptionForm" class="input-container">
               <input
                 type="text"
                 placeholder="Địa chỉ email"
                 class="email-input"
-              /><input type="submit" class="submit-input" value="Đăng ký" />
+              /><input
+                type="submit"
+                class="submit-input"
+                value="Đăng ký"
+                onclick="window.dialog.showModal();"
+              />
             </form>
+            <dialog id="dialog" class="custom-dialog">
+              <svg
+                version="1.1"
+                id="Layer_1"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                xml:space="preserve"
+                width="200"
+                height="200"
+                viewBox="0 0 300 300"
+              >
+                <path
+                  class="circle"
+                  stroke="#1C9943"
+                  stroke-width="10"
+                  fill="#fff"
+                  fill-opacity="0"
+                  stroke-miterlimit="10"
+                  d="M150,47.9c18.4,0,35.4,4.6,51,13.8s28,21.6,37.2,37.2s13.8,32.6,13.8,51s-4.6,35.4-13.8,51s-21.6,28-37.2,37.2
+                  s-32.6,13.8-51,13.8s-35.4-4.6-51-13.8s-28-21.6-37.2-37.2s-13.8-32.6-13.8-51s4.6-35.4,13.8-51s21.6-28,37.2-37.2
+                  S131.7,47.9,150,47.9z M150,238.7c16.2,0,31-4,"
+                />
+
+                <path
+                  class="tick"
+                  cx="0"
+                  cy="0"
+                  r="1"
+                  opacity="1"
+                  fill="#1C9943"
+                  stroke=""
+                  stroke-width="10"
+                  d="M208.4,118.6c0.8-0.8,1.2-1.9,1.2-3.3c0-1.4-0.4-2.6-1.2-3.7l-3.7-3.3c-0.8-1.1-1.9-1.6-3.3-1.6
+                s-2.6,0.4-3.7,1.2l-67,67l-28.4-28.8c-1.1-0.8-2.3-1.2-3.7-1.2c-1.4,0-2.5,0.4-3.3,1.2l-3.7,3.3c-0.8,1.1-1.2,2.3-1.2,3.7
+                s0.4,2.5,1.2,3.3l35.4,35.8c1.1,1.1,2.3,1.6,3.7,1.6c1.4,0,2.5-0.5,3.3-1.6L208.4,118.6z"
+                />
+              </svg>
+              <h2 style="text-align: center">Đăng ký thành công</h2>
+              <p>
+                Những thông tin mới nhất của chúng tôi sẽ được gửi đến email của
+                bạn.
+              </p>
+              <p>
+                Mọi thắc mắc vui lòng liên hệ:
+                <a href="#" target="_blank">contact@doughremi.com</a>
+              </p>
+              <button
+                onclick="window.dialog.close();"
+                aria-label="close"
+                class="x"
+              >
+                ❌
+              </button>
+            </dialog>
           </div>
           <div class="contact-info-wrapper">
             <div style="text-align: center">
@@ -82,9 +155,6 @@
               <li>
                 <a href="../chinhsachbaomat/baomat.html">Chính sách bảo mật</a>
               </li>
-              <li>
-                <a href="../question/question.html">Câu hỏi thường gặp</a>
-              </li>
             </ul>
           </div>
           <div class="label-wrapper" style="height: 100%">
@@ -100,4 +170,5 @@
       </div>
     </footer>
   </body>
+  <script src="./footer.js"></script>
 </html>

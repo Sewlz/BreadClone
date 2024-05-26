@@ -40,10 +40,7 @@
           </li>
           <li class="menu-bar_lv1">
             <div>
-              <a
-                href="../SanPham/sanpham.html"
-                class="menu-bar-item_lv1 "
-              >
+              <a href="../SanPham/sanpham.html" class="menu-bar-item_lv1">
                 Sản phẩm
               </a>
               <i class="fas fa-angle-down"></i>
@@ -214,10 +211,7 @@
                   >
                 </li>
                 <li class="menu-item menu-more">
-                  <a
-                    class="uppercase"
-                    href="../SanPham/sanpham.html"
-                  >
+                  <a class="uppercase" href="../SanPham/sanpham.html">
                     Sản phẩm
                     <i class="fas fa-angle-down"></i>
                   </a>
@@ -782,96 +776,68 @@
                 sách riêng tư.</span
               >
             </div>
-            <input type="submit" id="order-input" value="Đặt hàng" />
+            <input
+              type="submit"
+              id="order-input"
+              value="Đặt hàng"
+              onclick="window.dialog.showModal();"
+            />
+            <dialog id="dialog" class="custom-dialog">
+              <svg
+                version="1.1"
+                id="Layer_1"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                xml:space="preserve"
+                width="200"
+                height="200"
+                viewBox="0 0 300 300"
+              >
+                <path
+                  class="circle"
+                  stroke="#1C9943"
+                  stroke-width="10"
+                  fill="#fff"
+                  fill-opacity="0"
+                  stroke-miterlimit="10"
+                  d="M150,47.9c18.4,0,35.4,4.6,51,13.8s28,21.6,37.2,37.2s13.8,32.6,13.8,51s-4.6,35.4-13.8,51s-21.6,28-37.2,37.2
+                  s-32.6,13.8-51,13.8s-35.4-4.6-51-13.8s-28-21.6-37.2-37.2s-13.8-32.6-13.8-51s4.6-35.4,13.8-51s21.6-28,37.2-37.2
+                  S131.7,47.9,150,47.9z M150,238.7c16.2,0,31-4,"
+                />
+
+                <path
+                  class="tick"
+                  cx="0"
+                  cy="0"
+                  r="1"
+                  opacity="1"
+                  fill="#1C9943"
+                  stroke=""
+                  stroke-width="10"
+                  d="M208.4,118.6c0.8-0.8,1.2-1.9,1.2-3.3c0-1.4-0.4-2.6-1.2-3.7l-3.7-3.3c-0.8-1.1-1.9-1.6-3.3-1.6
+                s-2.6,0.4-3.7,1.2l-67,67l-28.4-28.8c-1.1-0.8-2.3-1.2-3.7-1.2c-1.4,0-2.5,0.4-3.3,1.2l-3.7,3.3c-0.8,1.1-1.2,2.3-1.2,3.7
+                s0.4,2.5,1.2,3.3l35.4,35.8c1.1,1.1,2.3,1.6,3.7,1.6c1.4,0,2.5-0.5,3.3-1.6L208.4,118.6z"
+                />
+              </svg>
+              <h2 style="text-align: center">Đặt hàng thành công</h2>
+              <p>Thông tin đơn hàng đã được gửi đến email của bạn.</p>
+              <p>
+                Mọi thắc mắc vui lòng liên hệ:
+                <a href="#" target="_blank">contact@doughremi.com</a>
+              </p>
+              <button
+                onclick="window.dialog.close();"
+                aria-label="close"
+                class="x"
+              >
+                ❌
+              </button>
+            </dialog>
           </div>
         </div>
       </div>
     </section>
-    <footer>
-      <div class="footer-container">
-        <div class="first-wrapper">
-          <div class="footer-social-wrapper">
-            <div>
-              <a href=""
-                ><img
-                  src="../../public/imgs/Logo.png"
-                  alt=""
-                  class="footer-logo"
-              /></a>
-            </div>
-            <p>Bánh tươi ngon mỗi ngày</p>
-            <div class="social-icon-wrapper">
-              <i class="fa fab fa-facebook-f"></i>
-              <i class="fa fab fa-twitter"></i>
-              <i class="fa fab fa-instagram"></i>
-            </div>
-          </div>
-          <div class="footer-social-wrapper-clone" style="visibility: hidden">
-            <h1>Bread Talk</h1>
-            <p>Bánh tươi ngon mỗi ngày</p>
-            <div class="social-icon-wrapper">
-              <i class="fa fab fa-facebook-f"></i>
-              <i class="fa fab fa-twitter"></i>
-              <i class="fa fab fa-instagram"></i>
-            </div>
-          </div>
-        </div>
-        <div class="second-wrapper">
-          <div class="subscription-wrapper">
-            <div><h1 style="font-size: 25px">ĐĂNG KÍ NHẬN TIN</h1></div>
-            <form class="input-container">
-              <input
-                type="text"
-                placeholder="Địa chỉ email"
-                class="email-input"
-              /><input type="submit" class="submit-input" value="Đăng ký" />
-            </form>
-          </div>
-          <div class="contact-info-wrapper">
-            <div style="text-align: center">
-              <h1 style="font-size: 25px">THÔNG TIN LIÊN HỆ</h1>
-            </div>
-            <ul>
-              <li>
-                Địa chỉ VPĐD: 36-36A Âu Cơ, Phường 9, Quận Tân Bình, TP. HCM
-              </li>
-              <li>Số điện thoại: 0283 7751727 (08h00 – 17h00); 0283 5358936</li>
-              <li>(07h00 – 22h00)</li>
-              <li>Email: contact@doughremi.com</li>
-              <li>Thời gian làm việc: 08h00 – 22h00</li>
-            </ul>
-          </div>
-        </div>
-        <div class="third-wrapper">
-          <div class="policy-wrapper">
-            <h1 style="font-size: 25px">CHÍNH SÁCH</h1>
-            <ul>
-              <li>
-                <a href="../purchasePolicy/purchasePolicy.html"
-                  >Chính sách đặt hàng online</a
-                >
-              </li>
-              <li><a href="../policy/policy.html">Điều khoản chung</a></li>
-              <li>
-                <a href="../chinhsachbaomat/baomat.html">Chính sách bảo mật</a>
-              </li>
-              <li>
-                <a href="../question/question.html">Câu hỏi thường gặp</a>
-              </li>
-            </ul>
-          </div>
-          <div class="label-wrapper" style="height: 100%">
-            <div class="content">
-              <img src="../../public/imgs/footer/bocongthuong-1.png" alt="" />
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="copyright-wrapper">
-        <!-- credit: © 2024 BreadTalk, All rights reserved. Thiết kế web bởi HD Agency -->
-        <p>© 2024 Dough Re Mi, Bản Giao Hưởng Ngọt Ngào</p>
-      </div>
-    </footer>
+    <footer id="footer"></footer>
 
     <div class="scroll-to-top">
       <div class="scroll">
@@ -881,4 +847,5 @@
   </body>
   <script src="./checkout.js"></script>
   <script src="../menu/menu.js"></script>
+  <script src="../footer/footer.js"></script>
 </html>

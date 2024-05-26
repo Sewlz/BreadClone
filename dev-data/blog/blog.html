@@ -39,10 +39,7 @@
           </li>
           <li class="menu-bar_lv1">
             <div>
-              <a
-                href="../SanPham/sanpham.html"
-                class="menu-bar-item_lv1 "
-              >
+              <a href="../SanPham/sanpham.html" class="menu-bar-item_lv1">
                 Sản phẩm
               </a>
               <i class="fas fa-angle-down"></i>
@@ -158,7 +155,10 @@
           </li>
           <li class="menu-bar_lv1">
             <div>
-              <a href="../blog/blog.html" class="menu-bar-item_lv1 active-hover-page">
+              <a
+                href="../blog/blog.html"
+                class="menu-bar-item_lv1 active-hover-page"
+              >
                 Tin Tức
               </a>
             </div>
@@ -213,10 +213,7 @@
                   >
                 </li>
                 <li class="menu-item menu-more">
-                  <a
-                    class="uppercase "
-                    href="../SanPham/sanpham.html"
-                  >
+                  <a class="uppercase" href="../SanPham/sanpham.html">
                     Sản phẩm
                     <i class="fas fa-angle-down"></i>
                   </a>
@@ -275,7 +272,11 @@
                   >
                 </li>
                 <li class="menu-item">
-                  <a class="uppercase active-hover-page" href="../blog/blog.html">Tin Tức</a>
+                  <a
+                    class="uppercase active-hover-page"
+                    href="../blog/blog.html"
+                    >Tin Tức</a
+                  >
                 </li>
                 <li class="menu-item">
                   <a class="uppercase" href="../aboutUs/aboutUs.html"
@@ -527,7 +528,7 @@
               <span>Danh mục blog</span>
             </div>
             <ul class="menu-blog-list">
-              <li><a href="">Trang chủ</a></li>
+              <!-- <li><a href="">Trang chủ</a></li>
               <li>
                 <span><a href="">Bánh ngọt và Bánh mỳ</a></span>
                 <i
@@ -565,7 +566,11 @@
                   <li><a href="">DoughReMi Bakery Ecopark - Hưng Yên</a></li>
                 </ul>
               </li>
-              <li>Tuyển dụng</li>
+              <li>Tuyển dụng</li> -->
+              <li onclick="blogTitle(`Tin tức`)"><a href="">Tin tức</a></li>
+              <li onclick="blogTitle(`Khuyến mại`)">
+                <a href="">Khuyến mại</a>
+              </li>
             </ul>
           </div>
         </div>
@@ -583,92 +588,9 @@
         </div>
       </div>
     </div>
-    <footer>
-      <div class="footer-container">
-        <div class="first-wrapper">
-          <div class="footer-social-wrapper">
-            <div>
-              <a href=""
-                ><img
-                  src="../../public/imgs/Logo.png"
-                  alt=""
-                  class="footer-logo"
-              /></a>
-            </div>
-            <p>Bánh tươi ngon mỗi ngày</p>
-            <div class="social-icon-wrapper">
-              <i class="fa fab fa-facebook-f"></i>
-              <i class="fa fab fa-twitter"></i>
-              <i class="fa fab fa-instagram"></i>
-            </div>
-          </div>
-          <div class="footer-social-wrapper-clone" style="visibility: hidden">
-            <h1>Bread Talk</h1>
-            <p>Bánh tươi ngon mỗi ngày</p>
-            <div class="social-icon-wrapper">
-              <i class="fa fab fa-facebook-f"></i>
-              <i class="fa fab fa-twitter"></i>
-              <i class="fa fab fa-instagram"></i>
-            </div>
-          </div>
-        </div>
-        <div class="second-wrapper">
-          <div class="subscription-wrapper">
-            <div><h1 style="font-size: 25px">ĐĂNG KÍ NHẬN TIN</h1></div>
-            <form class="input-container">
-              <input
-                type="text"
-                placeholder="Địa chỉ email"
-                class="email-input"
-              /><input type="submit" class="submit-input" value="Đăng ký" />
-            </form>
-          </div>
-          <div class="contact-info-wrapper">
-            <div style="text-align: center">
-              <h1 style="font-size: 25px">THÔNG TIN LIÊN HỆ</h1>
-            </div>
-            <ul>
-              <li>
-                Địa chỉ VPĐD: 36-36A Âu Cơ, Phường 9, Quận Tân Bình, TP. HCM
-              </li>
-              <li>Số điện thoại: 0283 7751727 (08h00 – 17h00); 0283 5358936</li>
-              <li>(07h00 – 22h00)</li>
-              <li>Email: contact@doughremi.com</li>
-              <li>Thời gian làm việc: 08h00 – 22h00</li>
-            </ul>
-          </div>
-        </div>
-        <div class="third-wrapper">
-          <div class="policy-wrapper">
-            <h1 style="font-size: 25px">CHÍNH SÁCH</h1>
-            <ul>
-              <li>
-                <a href="../purchasePolicy/purchasePolicy.html"
-                  >Chính sách đặt hàng online</a
-                >
-              </li>
-              <li><a href="../policy/policy.html">Điều khoản chung</a></li>
-              <li>
-                <a href="../chinhsachbaomat/baomat.html">Chính sách bảo mật</a>
-              </li>
-              <li>
-                <a href="../question/question.html">Câu hỏi thường gặp</a>
-              </li>
-            </ul>
-          </div>
-          <div class="label-wrapper" style="height: 100%">
-            <div class="content">
-              <img src="../../public/imgs/footer/bocongthuong-1.png" alt="" />
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="copyright-wrapper">
-        <!-- credit: © 2024 BreadTalk, All rights reserved. Thiết kế web bởi HD Agency -->
-        <p>© 2024 Dough Re Mi, Bản Giao Hưởng Ngọt Ngào</p>
-      </div>
-    </footer>
+    <footer id="footer"></footer>
   </body>
   <script src="../menu/menu.js"></script>
+  <script src="../footer/footer.js"></script>
   <script src="./blog.js"></script>
 </html>

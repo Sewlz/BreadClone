@@ -6,6 +6,11 @@ function hideMenu(elementClass) {
   const menu = document.querySelector(`.${elementClass}`);
   menu.classList.toggle("hide");
 }
+function blogTitle(title) {
+  event.preventDefault();
+  const blog = document.querySelector(`.blog-title h3`);
+  blog.innerHTML = title;
+}
 document.addEventListener("DOMContentLoaded", function () {
   fetch("../../data/blog-data/blog.json")
     .then((response) => response.json())

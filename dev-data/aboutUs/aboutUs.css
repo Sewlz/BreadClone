@@ -164,3 +164,40 @@
 .desc {
   text-align: center;
 }
+#left-animation,
+#left-animation-dup {
+  opacity: 0;
+}
+@keyframes left-animation {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes left-animation-dup {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+#right-animation {
+  opacity: 0;
+}
+@keyframes right-animation {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}

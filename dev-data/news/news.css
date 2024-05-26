@@ -9,6 +9,10 @@ body {
   font-weight: 300;
   line-height: 1.7;
 }
+.wrapper {
+  min-height: 100%;
+  position: relative;
+}
 .bold-text {
   font-weight: bold;
 }
