@@ -4,8 +4,7 @@ const slideItem = document.querySelectorAll(".slide-item");
 const dotsSlide = document.querySelector(".dots-slide");
 const dotWrapper = document.querySelector(".dots-wrapper");
 const root = window.getComputedStyle(document.documentElement);
-var numSlides = root.getPropertyValue('--num-slide');
-
+var numSlides = root.getPropertyValue("--num-slide");
 
 let isDragging = false;
 let startX;
@@ -72,12 +71,13 @@ const dragStart = (e) => {
 const dragging = (e) => {
   if (!isDragging) return;
   disableLinks();
-  slider.scrollLeft = startScrollLeft - ((e.pageX || e.touches[0].pageX) - startX);
+  slider.scrollLeft =
+    startScrollLeft - ((e.pageX || e.touches[0].pageX) - startX);
   removeClassActiveDot();
   const currentScrollLeft = slider.scrollLeft;
   const slideItemWidth = slideItem[0].offsetWidth;
   const currentIndex = Math.round(currentScrollLeft / slideItemWidth);
-  if(currentIndex < dotItem.length){
+  if (currentIndex < dotItem.length) {
     dotItem[currentIndex].classList.add("active-dot");
   }
 
@@ -101,7 +101,7 @@ const dragStop = (e) => {
     behavior: "smooth",
   });
 
-  if(currentIndex < dotItem.length){
+  if (currentIndex < dotItem.length) {
     removeClassActiveDot();
     dotItem[currentIndex].classList.add("active-dot");
   }
@@ -142,9 +142,9 @@ function autoPlay() {
 
 autoPlay();
 
-slider.addEventListener("touchstart", dragStart)
-slider.addEventListener("touchmove", dragging)
-slider.addEventListener('touchend', dragStop)
+slider.addEventListener("touchstart", dragStart);
+slider.addEventListener("touchmove", dragging);
+slider.addEventListener("touchend", dragStop);
 slider.addEventListener("mousedown", dragStart);
 slider.addEventListener("mousemove", dragging);
 slider.addEventListener("mouseup", dragStop);
@@ -172,77 +172,112 @@ btnMinus.addEventListener("click", () => {
   }
 });
 
-const imgMain = document.querySelectorAll(".img-container img");
-const imgContainer = document.querySelector(".img-container");
-const imgClone = document.querySelector(".thumbnail-container");
-const clonedImages = [];
+// render detail information of product
+fetch("../../data/Product-data/product.json")
+  .then((res) => res.json())
+  .then((productJson) => {
+    const imgContainer = document.querySelector(".img-container");
+    imgContainer.innerHTML = "";
 
-for (let i = 0; i <= imgMain.length; i++) {
-  if (imgMain[i]) {
-    const clonedImg = imgMain[i].cloneNode(true);
-    clonedImg.removeAttribute("data-fancybox");
-    clonedImg.setAttribute("data-index", i);
-    imgClone.appendChild(clonedImg);
-    clonedImages.push(clonedImg);
-  }
-}
+    const dataProduct = productJson.data;
+    const productCategories = Object.keys(dataProduct);
+    var dataDetail;
 
-clonedImages[0].classList.add("active-img");
-
-clonedImages.forEach((item) => {
-  item.addEventListener("click", () => {
-    removeClassImg();
-    item.classList.add("active-img");
-
-    var index = parseInt(item.getAttribute("data-index"));
-    numImg = index
-
-    imgClone.scrollLeft = (index - 3) * (item.offsetWidth + 10);
-    imgContainer.scrollLeft = index * imgMain[0].offsetWidth;
-  });
-});
-
-function removeClassImg() {
-  clonedImages.forEach((item) => {
-    item.classList.remove("active-img");
-  });
-}
-
-const btnNext = document.querySelector(".btn-next");
-const btnPrev = document.querySelector(".btn-prev");
-
-var numImg = 0;
-
-btnNext.addEventListener("click", () => {
-  if (numImg < clonedImages.length - 1) {
-    numImg++;
-    removeClassImg();
-
-    if (clonedImages[numImg]) {
-      clonedImages[numImg].classList.add("active-img");
-      if(numImg > 3){
-        imgClone.scrollLeft = (numImg - 3) * (clonedImages[0].offsetWidth + 10);
+    productCategories.forEach((item, index) => {
+      if (index == 0) {
+        const dataIndex = Object.values(dataProduct);
+        dataDetail = dataIndex[index];
       }
-      imgContainer.scrollLeft = numImg * imgMain[0].offsetWidth;
-    } else {
-      console.error("Element at numImg", numImg, "is undefined");
-    }
-  }
-});
+    });
 
-btnPrev.addEventListener("click", () => {
-  if (numImg >= 1) {
-    numImg--;
-    removeClassImg();
+    const posItem = sessionStorage.getItem("pos-index");
 
-    if (clonedImages[numImg]) {
-      clonedImages[numImg].classList.add("active-img");
-      if(numImg < 4){
-        imgClone.scrollLeft = numImg * (clonedImages[0].offsetWidth + 10);
+    const arrayImg = dataDetail[posItem].img;
+    var lstPic = "";
+    arrayImg.forEach((item) => {
+      var pic = `<img src="${item}" data-fancybox="gallery" title="${dataDetail[posItem].name}">`;
+      lstPic += pic;
+    });
+    imgContainer.innerHTML = lstPic;
+
+    const nameProduct = document.querySelector('.name-product-detail')
+    const priceProduct = document.querySelector('.price-product-detail')
+
+    nameProduct.innerText = dataDetail[posItem].name
+    priceProduct.innerText = dataDetail[posItem].price
+
+    const imgMain = document.querySelectorAll(".img-container img");
+    const imgClone = document.querySelector(".thumbnail-container");
+    const clonedImages = [];
+
+    for (let i = 0; i <= imgMain.length; i++) {
+      if (imgMain[i]) {
+        const clonedImg = imgMain[i].cloneNode(true);
+        clonedImg.removeAttribute("data-fancybox");
+        clonedImg.setAttribute("data-index", i);
+        imgClone.appendChild(clonedImg);
+        clonedImages.push(clonedImg);
       }
-      imgContainer.scrollLeft = numImg * imgMain[0].offsetWidth;
-    } else {
-      console.error("Element at numImg", numImg, "is undefined");
     }
-  }
-});
+
+    clonedImages[0].classList.add("active-img");
+
+    clonedImages.forEach((item) => {
+      item.addEventListener("click", () => {
+        removeClassImg();
+        item.classList.add("active-img");
+
+        var index = parseInt(item.getAttribute("data-index"));
+        numImg = index;
+
+        imgClone.scrollLeft = (index - 3) * (item.offsetWidth + 10);
+        imgContainer.scrollLeft = index * imgMain[0].offsetWidth;
+      });
+    });
+
+    function removeClassImg() {
+      clonedImages.forEach((item) => {
+        item.classList.remove("active-img");
+      });
+    }
+
+    const btnNext = document.querySelector(".btn-next");
+    const btnPrev = document.querySelector(".btn-prev");
+
+    var numImg = 0;
+
+    btnNext.addEventListener("click", () => {
+      if (numImg < clonedImages.length - 1) {
+        numImg++;
+        removeClassImg();
+
+        if (clonedImages[numImg]) {
+          clonedImages[numImg].classList.add("active-img");
+          if (numImg > 3) {
+            imgClone.scrollLeft =
+              (numImg - 3) * (clonedImages[0].offsetWidth + 10);
+          }
+          imgContainer.scrollLeft = numImg * imgMain[0].offsetWidth;
+        } else {
+          console.error("Element at numImg", numImg, "is undefined");
+        }
+      }
+    });
+
+    btnPrev.addEventListener("click", () => {
+      if (numImg >= 1) {
+        numImg--;
+        removeClassImg();
+
+        if (clonedImages[numImg]) {
+          clonedImages[numImg].classList.add("active-img");
+          if (numImg < 4) {
+            imgClone.scrollLeft = numImg * (clonedImages[0].offsetWidth + 10);
+          }
+          imgContainer.scrollLeft = numImg * imgMain[0].offsetWidth;
+        } else {
+          console.error("Element at numImg", numImg, "is undefined");
+        }
+      }
+    });
+  });
