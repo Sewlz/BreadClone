@@ -37,18 +37,18 @@ fetch("../../data/Product-data/product.json")
           productGrid.appendChild(newItem);
         }
       });
-      clickItemProduct()
+      clickItemProduct();
     }
 
     //set event click for item product
     function clickItemProduct() {
       const itemCell = document.querySelectorAll(".cell");
-      itemCell.forEach(item => {
-        item.addEventListener('click', ()=>{
+      itemCell.forEach((item) => {
+        item.addEventListener("click", () => {
           let posIndex = item.getAttribute("pos-index");
           sessionStorage.setItem("pos-index", posIndex);
-        })
-      })
+        });
+      });
     }
 
     const productPerPage = 16; // so san pham xuat hien tren 1 trang

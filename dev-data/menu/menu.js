@@ -186,3 +186,36 @@ document.addEventListener("DOMContentLoaded", () => {
 
   updateNavigation();
 });
+
+function addToCart() {
+  event.preventDefault();
+  const itemCell = document.querySelectorAll(".cell");
+  let indexArr = sessionStorage.getItem("numCart")
+    ? sessionStorage.getItem("numCart").split(",")
+    : [];
+
+  itemCell.forEach((item) => {
+    item.addEventListener("click", () => {
+      let posIndex = item.getAttribute("pos-index");
+      indexArr.push(posIndex);
+      sessionStorage.setItem("numCart", indexArr.join(","));
+      updateCart();
+    });
+  });
+}
+document.addEventListener("DOMContentLoaded", function () {
+  updateCart();
+});
+function updateCart() {
+  const numCart = document.querySelector(".num-item-cart");
+  const numCartValue = sessionStorage.getItem("numCart");
+
+  if (numCartValue !== null) {
+    const cartArray = numCartValue.split(",");
+    let cartSize = cartArray.length;
+    numCart.innerText = cartSize;
+  } else if (numCartValue === null) {
+    numCart.innerText = 0;
+  }
+  console.log(sessionStorage.getItem("numCart"));
+}
