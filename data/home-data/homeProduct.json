@@ -1,16 +1,8 @@
 {
   "product": [
     {
-      "src": "./../../public/imgs/home/productList/PUDDING-min-300x300.png",
-      "alt": "Pudding"
-    },
-    {
-      "src": "./../../public/imgs/home/productList/Seasonal-Specials-min-300x300.png",
-      "alt": "Seasonal-Specials"
-    },
-    {
-      "src": "./../../public/imgs/home/productList/SLICES-CAKE-min-300x300.png",
-      "alt": "Cake Slides"
+      "src": "./../../public/imgs/SanPham/toasts/dsc02263_optimized.png",
+      "alt": "Toasts"
     },
     {
       "src": "./../../public/imgs/home/productList/SW-min-300x300.png",
@@ -19,6 +11,30 @@
     {
       "src": "./../../public/imgs/home/productList/TOAST-min-300x300.png",
       "alt": "Dry Cake"
+    },
+    {
+      "src": "./../../public/imgs/SanPham/cakes/dsc05150_optimized-1024x1024.png",
+      "alt": "Cakes"
+    },
+    {
+      "src": "./../../public/imgs/home/productList/SLICES-CAKE-min-300x300.png",
+      "alt": "Cake Slides"
+    },
+    {
+      "src": "./../../public/imgs/home/productList/Seasonal-Specials-min-300x300.png",
+      "alt": "Seasonal-Specials"
+    },
+    {
+      "src": "./../../public/imgs/home/productList/PUDDING-min-300x300.png",
+      "alt": "Pudding"
+    },
+    {
+      "src": "./../../public/imgs/SanPham/cookies/dsc03142_optimized.png",
+      "alt": "Cookies"
+    },
+    {
+      "src": "./../../public/imgs/SanPham/flossspecials/dsc03428_optimized.png",
+      "alt": "Floss Specials"
     }
   ]
 }

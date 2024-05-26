@@ -316,7 +316,7 @@ html body div.slection-container h1 {
 .swiper-button-next,
 .swiper-button-prev {
   --swiper-navigation-size: 20px;
-  background-color: rgba(255, 255, 255, 0.789);
+  background-color: rgb(255, 255, 255);
   padding: 16px 17px;
   border-radius: 100%;
   border: 1px solid black;
