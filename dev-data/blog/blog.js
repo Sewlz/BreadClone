@@ -10,9 +10,72 @@ function blogTitle(title) {
   event.preventDefault();
   const blog = document.querySelector(`.blog-title h3`);
   blog.innerHTML = title;
+  if (title === "Tin tức") {
+    parameter = "news";
+  } else if (title === "Khuyến mại") {
+    parameter = "promotion";
+  }
+  const newUrl = window.location.pathname + "?" + parameter;
+  window.history.pushState({ path: newUrl }, "", newUrl);
+  location.reload();
 }
 document.addEventListener("DOMContentLoaded", function () {
-  fetch("../../data/blog-data/blog.json")
+  const urlParams = new URLSearchParams(window.location.search);
+  if (urlParams.has("news")) {
+    console.log("Loading news...");
+    latestLoader("../../data/blog-data/news.json");
+    blogLoader("../../data/blog-data/news.json");
+  } else if (urlParams.has("promotion")) {
+    console.log("Loading promotion...");
+    latestLoader("../../data/blog-data/promotion.json");
+    blogLoader("../../data/blog-data/promotion.json");
+  } else {
+    console.log("Loading default...");
+    latestLoader("../../data/blog-data/blog.json");
+    blogLoader("../../data/blog-data/blog.json");
+  }
+});
+
+function latestLoader(fileName) {
+  fetch(fileName)
+    .then((response) => response.json())
+    .then((data) => {
+      const blog = data.blog.slice(0, 5);
+      const blogWrapper = document.querySelector(".news-list");
+      blog.forEach((blogItem) => {
+        const blogContent = document.createElement("div");
+        blogContent.classList.add("news-container");
+        blogContent.onclick = function () {
+          window.location.href = "../news/news.html";
+        };
+        blogContent.innerHTML = `
+      <div class="news-wrapper">
+      <div class="news-image">
+        <img
+          src="${blogItem.src}"
+          alt="News Image"
+        />
+      </div>
+      <div class="news-content-wrapper">
+        <div class="news-headline">
+          <span style="color: #5ba9e6"
+            > ${blogItem.headline}</span
+          >
+        </div>
+        <div class="news-author">
+          <span>Người viết: ${blogItem.author}</span>
+          <span>${blogItem.date}</span>
+        </div>
+      </div>
+    </div>
+      `;
+        blogWrapper.appendChild(blogContent);
+      });
+    })
+    .catch((error) => console.error("Error fetching blog data:", error));
+}
+function blogLoader(fileName) {
+  fetch(fileName)
     .then((response) => response.json())
     .then((data) => {
       const blog = data.blog;
@@ -24,23 +87,23 @@ document.addEventListener("DOMContentLoaded", function () {
           window.location.href = "../news/news.html";
         };
         blogContent.innerHTML = `
-          <div class="blog-image">
-            <img src="${blogItem.src}" alt="Blog Image">
+        <div class="blog-image">
+          <img src="${blogItem.src}" alt="Blog Image">
+        </div>
+        <div class="blog-content-wrapper">
+          <div class="a-row"></div>
+          <div class="blog-headline">
+            <span style="color: #5ba9e6">${blogItem.headline}</span>
           </div>
-          <div class="blog-content-wrapper">
-            <div class="a-row"></div>
-            <div class="blog-headline">
-              <span style="color: #5ba9e6">${blogItem.headline}</span>
-            </div>
-            <div class="blog-author">
-              <span class="author">Người viết: ${blogItem.author}</span>
-              <span class="date">${blogItem.date}</span>
-            </div>
-            <div class="blog-content">
-              <span>${blogItem.content}</span>
-            </div>
+          <div class="blog-author">
+            <span class="author">Người viết: ${blogItem.author}</span>
+            <span class="date">${blogItem.date}</span>
           </div>
-        `;
+          <div class="blog-content">
+            <span>${blogItem.content}</span>
+          </div>
+        </div>
+      `;
         blogWrapper.appendChild(blogContent);
       });
 
@@ -117,43 +180,4 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     })
     .catch((error) => console.error("Error fetching blog data:", error));
-});
-
-document.addEventListener("DOMContentLoaded", function () {
-  fetch("../../data/blog-data/blog.json")
-    .then((response) => response.json())
-    .then((data) => {
-      const blog = data.blog.slice(0, 5);
-      const blogWrapper = document.querySelector(".news-list");
-      blog.forEach((blogItem) => {
-        const blogContent = document.createElement("div");
-        blogContent.classList.add("news-container");
-        blogContent.onclick = function () {
-          window.location.href = "../news/news.html";
-        };
-        blogContent.innerHTML = `
-        <div class="news-wrapper">
-        <div class="news-image">
-          <img
-            src="${blogItem.src}"
-            alt="News Image"
-          />
-        </div>
-        <div class="news-content-wrapper">
-          <div class="news-headline">
-            <span style="color: #5ba9e6"
-              > ${blogItem.headline}</span
-            >
-          </div>
-          <div class="news-author">
-            <span>Người viết: ${blogItem.author}</span>
-            <span>${blogItem.date}</span>
-          </div>
-        </div>
-      </div>
-        `;
-        blogWrapper.appendChild(blogContent);
-      });
-    })
-    .catch((error) => console.error("Error fetching blog data:", error));
-});
+}
