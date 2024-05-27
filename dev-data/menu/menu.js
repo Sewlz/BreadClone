@@ -9,7 +9,7 @@ button.addEventListener("click", () => {
   if (statusBtn === "block") {
     btnClose.style.display = "block";
     btnSearch.style.display = "none";
-    layoutSearch.style.display = "block";
+    layoutSearch.style.display = "flex";
   } else {
     btnClose.style.display = "none";
     btnSearch.style.display = "block";
@@ -185,6 +185,68 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   updateNavigation();
+
+  const searchMain = document.querySelector(".search-main form");
+  const divUnderSearch = document.createElement("div");
+  divUnderSearch.className = 'result-search'
+  searchMain.appendChild(divUnderSearch);
+
+  // Function to search and display products
+  function searchProducts() {
+    const searchTerm = document.getElementById("search").value.toLowerCase();
+    divUnderSearch.innerHTML = ''
+    
+    // Load the product data
+    fetch("../../data/Product-data/product.json")
+      .then((response) => response.json())
+      .then((data) => {
+        const products = [];
+        // Flatten the product data
+        for (const category in data.data) {
+          products.push(...data.data[category]);
+        }
+
+        // Filter products based on the search term
+        const filteredProducts = products.filter((product) =>
+          product.name.toLowerCase().includes(searchTerm)
+        );
+        sessionStorage.setItem("pos-index", 1);
+
+        // Use a Set to track displayed products
+        const displayedProducts = new Set();
+
+        // Display the filtered products
+        filteredProducts.forEach((product) => {
+          if (!displayedProducts.has(product.name)) {
+            displayedProducts.add(product.name);
+
+            const productDiv = document.createElement("a");
+            productDiv.href = '../ChiTietSanPham/chitietsanpham.html'
+            productDiv.classList.add("product");
+
+            const productName = document.createElement("h2");
+            productName.textContent = product.name;
+            productDiv.appendChild(productName);
+
+            const productPrice = document.createElement("p");
+            productPrice.textContent = product.price;
+            productDiv.appendChild(productPrice);
+
+            divUnderSearch.style = 'display: block;'
+            divUnderSearch.appendChild(productDiv);
+          }
+        });
+        
+        if(searchTerm === '' || filteredProducts.length < 1) {
+          divUnderSearch.innerHTML = ''
+          divUnderSearch.style = 'display: none;'
+        }
+      })
+      .catch((error) => console.error("Error loading product data:", error));
+  }
+
+  // Attach the search function to the input event
+  document.getElementById("search").addEventListener("input", searchProducts);
 });
 
 function addToCart() {

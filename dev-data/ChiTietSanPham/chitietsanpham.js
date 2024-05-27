@@ -193,6 +193,13 @@ fetch("../../data/Product-data/product.json")
     const posItem = sessionStorage.getItem("pos-index");
 
     const arrayImg = dataDetail[posItem].img;
+    
+    const btnNext = document.querySelector(".btn-next");
+    const btnPrev = document.querySelector(".btn-prev");
+    if(arrayImg.length < 2){
+      btnNext.style = 'display: none;'
+      btnPrev.style = 'display: none;'
+    }
     var lstPic = "";
     arrayImg.forEach((item) => {
       var pic = `<img src="${item}" data-fancybox="gallery" title="${dataDetail[posItem].name}">`;
@@ -240,9 +247,6 @@ fetch("../../data/Product-data/product.json")
         item.classList.remove("active-img");
       });
     }
-
-    const btnNext = document.querySelector(".btn-next");
-    const btnPrev = document.querySelector(".btn-prev");
 
     var numImg = 0;
 
