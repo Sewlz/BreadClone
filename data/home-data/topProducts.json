@@ -4,37 +4,57 @@
       "src": "./../../public/imgs/home/topProduct/dsc02401_optimized.png",
       "alt": "Tiramisu Cup",
       "price": "490,000",
-      "href": ""
-    },
-    {
-      "src": "./../../public/imgs/home/topProduct/dsc02452_optimized.png",
-      "alt": "Tieamisu C",
-      "price": "490,000",
-      "href": ""
+      "href": "",
+      "posIndex": 2,
+      "category": "cakeslices"
     },
     {
       "src": "./../../public/imgs/home/topProduct/dsc02494_optimized.png",
       "alt": "Passion Cheese C",
       "price": "490,000",
-      "href": ""
+      "href": "",
+      "posIndex": 4,
+      "category": "cakes"
     },
     {
-      "src": "./../../public/imgs/home/topProduct/dsc02621_optimized.png",
-      "alt": "Tiramisu R",
+      "src": "../../public/imgs/SanPham/sandwiches/dsc03110_optimized.png",
+      "alt": "TUNA SandWiches",
+      "price": "45,000",
       "href": "",
-      "price": "490,000"
+      "posIndex": 0,
+      "category": "sandwiches"
     },
     {
-      "src": "./../../public/imgs/home/topProduct/dsc02641_optimized.png",
-      "alt": "Passion Cheese C",
+      "src": "../../public/imgs/SanPham/flossspecials/dsc03428_optimized.png",
+      "alt": "FLOSS",
+      "price": "169,000",
       "href": "",
-      "price": "490,000"
+      "posIndex": 1,
+      "category": "flossspecials"
     },
     {
-      "src": "./../../public/imgs/home/topProduct/dsc02649_optimized.png",
-      "alt": "Japan Light Chese",
+      "src": "../../public/imgs/SanPham/cookies/dsc03146_optimized.png",
+      "alt": "ALMOND COOKIES",
+      "price": "129,000",
       "href": "",
-      "price": "490,000"
+      "posIndex": 0,
+      "category": "cookies"
+    },
+    {
+      "src": "../../public/imgs/SanPham/flossspecials/dsc03429_optimized.png",
+      "alt": "FIRE FLOSS",
+      "price": "169,000",
+      "href": "",
+      "posIndex": 0,
+      "category": "flossspecials"
+    },
+    {
+      "src": "../../public/imgs/SanPham/cookies/dsc03142_optimized.png",
+      "alt": "CHOCOLATE COOKIES",
+      "price": "129,000",
+      "href": "",
+      "posIndex": 1,
+      "category": "cookies"
     }
   ]
 }

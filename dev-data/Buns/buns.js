@@ -45,7 +45,6 @@ fetch("../../data/Product-data/product.json")
     // Thêm sự kiện beforeunload để xóa mục từ sessionStorage khi thoát trang
     window.addEventListener("beforeunload", () => {
       sessionStorage.removeItem("lstSearch");
-      sessionStorage.setItem("titlePageWebsite", 'Buns');
     });
 
     function renderProduct(start, end) {
