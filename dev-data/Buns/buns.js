@@ -1,38 +1,49 @@
 fetch("../../data/Product-data/product.json")
   .then((response) => response.json())
   .then((productJson) => {
-    var titleHeaderPage = document
-      .querySelectorAll(".breadcrumb_item")[1]
-    var title = titleHeaderPage.innerText = sessionStorage.getItem('titlePageWebsite').trim()
-    title = title.toLowerCase().trim().replace(/\s/g, '')
+    var titleHeaderPage = document.querySelectorAll(".breadcrumb_item")[1];
+    var title = (titleHeaderPage.innerText = sessionStorage
+      .getItem("titlePageWebsite")
+      .trim());
+    title = title.toLowerCase().trim().replace(/\s/g, "");
 
-    const pageInProduct = document.querySelectorAll('.menu-sub_item a')
-    const pageMobileInProduct = document.querySelectorAll('.menu-bar_lv2 a')
-    pageInProduct.forEach(item => {
-      addAnRemoveClassActivePage(item)
-    })
-    pageMobileInProduct.forEach(item=>{
-      addAnRemoveClassActivePage(item)
-    })
+    const pageInProduct = document.querySelectorAll(".menu-sub_item a");
+    const pageMobileInProduct = document.querySelectorAll(".menu-bar_lv2 a");
+    pageInProduct.forEach((item) => {
+      addAnRemoveClassActivePage(item);
+    });
+    pageMobileInProduct.forEach((item) => {
+      addAnRemoveClassActivePage(item);
+    });
 
-    function addAnRemoveClassActivePage(item){
-      item.classList.remove('active-hover-page')
-      if(item.textContent.toLowerCase().trim().replace(/\s/g, '') == title){
-        item.classList.add('active-hover-page')
+    function addAnRemoveClassActivePage(item) {
+      item.classList.remove("active-hover-page");
+      if (item.textContent.toLowerCase().trim().replace(/\s/g, "") == title) {
+        item.classList.add("active-hover-page");
       }
     }
 
     const dataProduct = productJson.data;
     const productCategories = Object.keys(dataProduct);
-    var dataDetail;
-    var categoryProduct;
+    let dataDetail;
+    let categoryProduct;
 
     productCategories.forEach((item, index) => {
       if (item.includes(title)) {
-        categoryProduct = item
+        categoryProduct = item;
         const dataIndex = Object.values(dataProduct);
         dataDetail = dataIndex[index];
       }
+    });
+
+    const objSearch = sessionStorage.getItem("lstSearch");
+    if (objSearch) {
+      dataDetail = JSON.parse(objSearch);
+    }
+
+    // Thêm sự kiện beforeunload để xóa mục từ sessionStorage khi thoát trang
+    window.addEventListener("beforeunload", () => {
+      sessionStorage.removeItem("lstSearch");
     });
 
     function renderProduct(start, end) {
@@ -223,5 +234,3 @@ fetch("../../data/Product-data/product.json")
     updateDisplay();
   })
   .catch((error) => console.error("Error importing JSON file:", error));
-  
-

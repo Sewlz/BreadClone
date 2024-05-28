@@ -54,7 +54,6 @@ fetch("../../data/Product-data/product.json")
       if (category) {
         item.innerHTML = "";
         category.items.forEach((product, index) => {
-          console.log(product.img[0]);
           item.innerHTML += `<div class="cell">
             <a href="../ChiTietSanPham/chitietsanpham.html" pos-index="${index}" category-product="${category.category}" class="img-product">
               <img src="${product.img[0]}" alt="${product.name}" />

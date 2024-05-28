@@ -1,6 +1,5 @@
-const countItemInCart = document.querySelector('.num-item-cart')
-countItemInCart.textContent = '0'
-
+const countItemInCart = document.querySelector(".num-item-cart");
+countItemInCart.textContent = "0";
 
 const btnSearch = document.querySelector(".search-container a svg");
 const btnClose = document.querySelector(".btn-close");
@@ -226,9 +225,9 @@ document.addEventListener("DOMContentLoaded", () => {
             displayedProducts.add(product.name);
 
             const productDiv = document.createElement("a");
-            productDiv.href = '../ChiTietSanPham/chitietsanpham.html'
-            productDiv.setAttribute('pos-index', product.posIndex)
-            productDiv.setAttribute('category-product', product.category)
+            productDiv.href = "../ChiTietSanPham/chitietsanpham.html";
+            productDiv.setAttribute("pos-index", product.posIndex);
+            productDiv.setAttribute("category-product", product.category);
             productDiv.classList.add("product");
 
             const productName = document.createElement("h2");
@@ -243,28 +242,71 @@ document.addEventListener("DOMContentLoaded", () => {
             divUnderSearch.appendChild(productDiv);
           }
         });
-        
-        if(searchTerm === '' || filteredProducts.length < 1) {
-          divUnderSearch.innerHTML = ''
-          divUnderSearch.style = 'display: none;'
+
+        if (searchTerm === "" || filteredProducts.length < 1) {
+          divUnderSearch.innerHTML = "";
+          divUnderSearch.style = "display: none;";
         }
 
-        const productSearch = document.querySelectorAll('.result-search .product')
-        console.log("🚀 ~ .then ~ productSearch:", productSearch)
-        productSearch.forEach(item=>{
-          item.addEventListener('click', ()=>{
-            let posIndex = item.getAttribute('pos-index')
-            let categoryProduct = item.getAttribute('category-product')
-            sessionStorage.setItem('pos-index', posIndex)
-            sessionStorage.setItem('category-product', categoryProduct)
-          })
-        })
+        const productSearch = document.querySelectorAll(
+          ".result-search .product"
+        );
+        productSearch.forEach((item) => {
+          item.addEventListener("click", () => {
+            let posIndex = item.getAttribute("pos-index");
+            let categoryProduct = item.getAttribute("category-product");
+            sessionStorage.setItem("pos-index", posIndex);
+            sessionStorage.setItem("category-product", categoryProduct);
+          });
+        });
       })
       .catch((error) => console.error("Error loading product data:", error));
   }
 
   // Attach the search function to the input event
   document.getElementById("search").addEventListener("input", searchProducts);
+
+  // Xử lý khi click vào nút tìm kiếm
+  const btnSearchInput = document.querySelector(".search-main button");
+  btnSearchInput.addEventListener("click", (e) => {
+    e.preventDefault()
+    const searchTerm = document.getElementById("search").value.toLowerCase();
+    divUnderSearch.innerHTML = "";
+
+    // Load the product data
+    fetch("../../data/Product-data/product.json")
+      .then((response) => response.json())
+      .then((data) => {
+        const products = [];
+
+        for (const category in data.data) {
+          data.data[category].forEach((product, index) => {
+            products.push({ ...product, category, posIndex: index });
+          });
+        }
+
+        // Filter products based on the search term
+        const filteredProducts = products.filter((product) =>
+          product.name.toLowerCase().includes(searchTerm)
+        );
+
+        // Loại bỏ các sản phẩm trùng lặp
+        const uniqueFilteredProducts = Array.from(
+          new Set(filteredProducts.map((a) => a.name))
+        ).map((name) => {
+          return filteredProducts.find((a) => a.name === name);
+        });
+
+        // Chuyển đổi mảng uniqueFilteredProducts thành chuỗi JSON trước khi lưu vào sessionStorage
+        const uniqueFilteredProductsJSON = JSON.stringify(
+          uniqueFilteredProducts
+        );
+        sessionStorage.setItem("lstSearch", uniqueFilteredProductsJSON);
+      })
+      .catch((error) => console.error("Error loading product data:", error));
+
+      window.location.href = '../Buns/buns.html';
+  });
 });
 
 function addToCart() {
@@ -405,25 +447,25 @@ document.addEventListener("DOMContentLoaded", function () {
   updateCart();
   cartHover();
   HovertotalCalc();
-  const liItemCart = document.querySelector('.item-cart-menu')
-  if(!liItemCart) {
-    const ulListCart = document.querySelector('.cart-menu-container')
-    ulListCart.style = 'display:none!important;'
+  const liItemCart = document.querySelector(".item-cart-menu");
+  if (!liItemCart) {
+    const ulListCart = document.querySelector(".cart-menu-container");
+    ulListCart.style = "display:none!important;";
   }
 });
 
-const pageInProduct = document.querySelectorAll('.menu-sub_item a')
-const pageMobileInProduct = document.querySelectorAll('.menu-bar_lv2 a')
-pageInProduct.forEach(item=>{
-  clickInMenuProduct(item)
-})
+const pageInProduct = document.querySelectorAll(".menu-sub_item a");
+const pageMobileInProduct = document.querySelectorAll(".menu-bar_lv2 a");
+pageInProduct.forEach((item) => {
+  clickInMenuProduct(item);
+});
 
-pageMobileInProduct.forEach(item=>{
-  clickInMenuProduct(item)
-})
+pageMobileInProduct.forEach((item) => {
+  clickInMenuProduct(item);
+});
 
-function clickInMenuProduct(item){
-  item.addEventListener('click', ()=>{
-    sessionStorage.setItem('titlePageWebsite', item.textContent)
-  })
+function clickInMenuProduct(item) {
+  item.addEventListener("click", () => {
+    sessionStorage.setItem("titlePageWebsite", item.textContent);
+  });
 }
