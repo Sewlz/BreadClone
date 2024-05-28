@@ -60,18 +60,34 @@ function getCartItems() {
   });
 }
 function totalOrderCalc() {
-  const subtotal = document.querySelector(".sub-total-price > b:nth-child(1)");
-  const total = document.querySelector(".total-price > b:nth-child(1)");
-  const shipping = document.querySelector(".shipping-price > b:nth-child(1)");
-  var cartItems = sessionStorage.getItem("totalCartItems");
-  shipping.innerHTML = 35 + ",000₫";
+  const subtotalElement = document.querySelector(
+    ".sub-total-price > b:nth-child(1)"
+  );
+  const totalElement = document.querySelector(".total-price > b:nth-child(1)");
+  const shippingElement = document.querySelector(
+    ".shipping-price > b:nth-child(1)"
+  );
+
+  // Initialize the values
+  let subtotal = 0;
+  const shippingCost = 35000; // Assuming the shipping cost is 35,000₫
+
+  // Set the shipping cost
+  shippingElement.innerHTML = shippingCost.toLocaleString() + "₫";
+
+  // Retrieve and parse the cart items from session storage
+  let cartItems = sessionStorage.getItem("totalCartItems");
   cartItems = JSON.parse(cartItems);
-  cartItems.forEach((items) => {
-    subtotal.innerHTML =
-      parseInt(subtotal.innerHTML) +
-      parseInt(items.price) * items.quantity +
-      ",000₫";
+
+  // Calculate the subtotal
+  cartItems.forEach((item) => {
+    const itemPrice = parseInt(item.price.replace(/,/g, ""));
+    const itemQuantity = parseInt(item.quantity);
+    subtotal += itemPrice * itemQuantity;
   });
-  total.innerHTML =
-    parseInt(subtotal.innerHTML) + parseInt(shipping.innerHTML) + ",000₫";
+
+  // Update the subtotal and total elements
+  subtotalElement.innerHTML = subtotal.toLocaleString() + "₫";
+  const total = subtotal + shippingCost;
+  totalElement.innerHTML = total.toLocaleString() + "₫";
 }
