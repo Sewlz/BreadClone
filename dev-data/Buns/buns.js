@@ -8,9 +8,11 @@ fetch("../../data/Product-data/product.json")
     const dataProduct = productJson.data;
     const productCategories = Object.keys(dataProduct);
     var dataDetail;
+    var categoryProduct;
 
     productCategories.forEach((item, index) => {
       if (item.includes(title)) {
+        categoryProduct = item
         const dataIndex = Object.values(dataProduct);
         dataDetail = dataIndex[index];
       }
@@ -47,6 +49,7 @@ fetch("../../data/Product-data/product.json")
         item.addEventListener("click", () => {
           let posIndex = item.getAttribute("pos-index");
           sessionStorage.setItem("pos-index", posIndex);
+          sessionStorage.setItem("category-product", categoryProduct);
         });
       });
     }

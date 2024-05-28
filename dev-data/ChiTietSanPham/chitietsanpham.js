@@ -183,8 +183,10 @@ fetch("../../data/Product-data/product.json")
     const productCategories = Object.keys(dataProduct);
     var dataDetail;
 
+    const categoryProduct = sessionStorage.getItem('category-product')
+
     productCategories.forEach((item, index) => {
-      if (index == 0) {
+      if (item.includes(categoryProduct)) {
         const dataIndex = Object.values(dataProduct);
         dataDetail = dataIndex[index];
       }

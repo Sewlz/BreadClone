@@ -1,3 +1,7 @@
+const countItemInCart = document.querySelector('.num-item-cart')
+countItemInCart.textContent = '0'
+
+
 const btnSearch = document.querySelector(".search-container a svg");
 const btnClose = document.querySelector(".btn-close");
 const button = document.querySelector(".search-container a");
@@ -227,6 +231,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
             const productDiv = document.createElement("a");
             productDiv.href = '../ChiTietSanPham/chitietsanpham.html'
+            productDiv.setAttribute('pos-index', product.posIndex)
+            productDiv.setAttribute('category-product', product.category)
             productDiv.classList.add("product");
 
             const productName = document.createElement("h2");
@@ -246,6 +252,17 @@ document.addEventListener("DOMContentLoaded", () => {
           divUnderSearch.innerHTML = ''
           divUnderSearch.style = 'display: none;'
         }
+
+        const productSearch = document.querySelectorAll('.result-search .product')
+        console.log("🚀 ~ .then ~ productSearch:", productSearch)
+        productSearch.forEach(item=>{
+          item.addEventListener('click', ()=>{
+            let posIndex = item.getAttribute('pos-index')
+            let categoryProduct = item.getAttribute('category-product')
+            sessionStorage.setItem('pos-index', posIndex)
+            sessionStorage.setItem('category-product', categoryProduct)
+          })
+        })
       })
       .catch((error) => console.error("Error loading product data:", error));
   }
@@ -392,4 +409,9 @@ document.addEventListener("DOMContentLoaded", function () {
   updateCart();
   cartHover();
   HovertotalCalc();
+  const liItemCart = document.querySelector('.item-cart-menu')
+  if(!liItemCart) {
+    const ulListCart = document.querySelector('.cart-menu-container')
+    ulListCart.style = 'display:none!important;'
+  }
 });

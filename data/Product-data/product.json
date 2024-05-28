@@ -148,321 +148,321 @@
     ],
     "sweet": [
       {
-        "img": "../../public/imgs/SanPham/sweet/dsc02924_optimized.png",
+        "img": ["../../public/imgs/SanPham/sweet/dsc02924_optimized.png"],
         "name": "CRANBERRY CREAM CHEESE",
         "price": "24,000"
       },
       {
-        "img": "../../public/imgs/SanPham/sweet/dsc02677_optimized.png",
+        "img": ["../../public/imgs/SanPham/sweet/dsc02677_optimized.png"],
         "name": "COCKTAIL BUN 3PCS",
         "price": "27,000"
       },
       {
-        "img": "../../public/imgs/SanPham/sweet/dsc02692_optimized.png",
+        "img": ["../../public/imgs/SanPham/sweet/dsc02692_optimized.png"],
         "name": "DONUT BALLS",
         "price": "39,000"
       },
       {
-        "img": "../../public/imgs/SanPham/sweet/dsc03593_optimized.png",
+        "img": ["../../public/imgs/SanPham/sweet/dsc03593_optimized.png"],
         "name": "SUGAR DONUT",
         "price": "28,000"
       },
       {
-        "img": "../../public/imgs/SanPham/sweet/dsc03558_optimized.png",
+        "img": ["../../public/imgs/SanPham/sweet/dsc03558_optimized.png"],
         "name": "RAISIN CREAM CHEESE",
         "price": "24,000"
       },
       {
-        "img": "../../public/imgs/SanPham/sweet/dsc03556_optimized.png",
+        "img": ["../../public/imgs/SanPham/sweet/dsc03556_optimized.png"],
         "name": "COCOA TEDDY",
         "price": "22,000"
       },
       {
-        "img": "../../public/imgs/SanPham/sweet/dsc03507_optimized.png",
+        "img": ["../../public/imgs/SanPham/sweet/dsc03507_optimized.png"],
         "name": "SET TART CHEESE MINI 4PCS",
         "price": "95,000"
       },
       {
-        "img": "../../public/imgs/SanPham/sweet/dsc03509_optimized.png",
+        "img": ["../../public/imgs/SanPham/sweet/dsc03509_optimized.png"],
         "name": "DOUBLE CHEESE",
         "price": "24,000"
       }
     ],
     "savory": [
       {
-        "img": "../../public/imgs/SanPham/savory/dsc02790_optimized.png",
+        "img": ["../../public/imgs/SanPham/savory/dsc02790_optimized.png"],
         "name": "YA YA EGG TART",
         "price": "30,000"
       },
       {
-        "img": "../../public/imgs/SanPham/savory/dsc03576_optimized.png",
+        "img": ["../../public/imgs/SanPham/savory/dsc03576_optimized.png"],
         "name": "CHEESE FLOSS",
         "price": "27,000"
       },
       {
-        "img": "../../public/imgs/SanPham/savory/dsc03584_optimized.png",
+        "img": ["../../public/imgs/SanPham/savory/dsc03584_optimized.png"],
         "name": "PORK RIBS",
         "price": "28,000"
       },
       {
-        "img": "../../public/imgs/SanPham/savory/dsc03534_optimized.png",
+        "img": ["../../public/imgs/SanPham/savory/dsc03534_optimized.png"],
         "name": "SPRING IN THE CITY",
         "price": "39,000"
       },
       {
-        "img": "../../public/imgs/SanPham/savory/dsc03528_optimized.png",
+        "img": ["../../public/imgs/SanPham/savory/dsc03528_optimized.png"],
         "name": "GOLDEN LAVA BUN",
         "price": "22,000"
       },
       {
-        "img": "../../public/imgs/SanPham/savory/dsc03399_optimized.png",
+        "img": ["../../public/imgs/SanPham/savory/dsc03399_optimized.png"],
         "name": "GOLDEN LAVA CROISSANT",
         "price": "18,000"
       },
       {
-        "img": "../../public/imgs/SanPham/savory/dsc03454_optimized.png",
+        "img": ["../../public/imgs/SanPham/savory/dsc03454_optimized.png"],
         "name": "GOLDEN LAVA CROISSANT 5PCS",
         "price": "72,000"
       },
       {
-        "img": "../../public/imgs/SanPham/savory/dsc03349_optimized.png",
+        "img": ["../../public/imgs/SanPham/savory/dsc03349_optimized.png"],
         "name": "FLOSS",
         "price": "34,000"
       }
     ],
     "toast": [
       {
-        "img": "../../public/imgs/SanPham/toasts/dsc04839_optimized.png",
+        "img": ["../../public/imgs/SanPham/toasts/dsc04839_optimized.png"],
         "name": "ALMOND COFFEE MILKY WAY",
         "price": "108,000"
       },
       {
-        "img": "../../public/imgs/SanPham/toasts/dsc02263_optimized.png",
+        "img": ["../../public/imgs/SanPham/toasts/dsc02263_optimized.png"],
         "name": "GOURMET FRUIT LOAF",
         "price": "105,000"
       },
       {
-        "img": "../../public/imgs/SanPham/toasts/dsc02364_optimized.png",
+        "img": ["../../public/imgs/SanPham/toasts/dsc02364_optimized.png"],
         "name": "BRIOCHE",
         "price": "90,000"
       },
       {
-        "img": "../../public/imgs/SanPham/toasts/dsc02313_optimized-1.png",
+        "img": ["../../public/imgs/SanPham/toasts/dsc02313_optimized-1.png"],
         "name": "PREMIUM TOAST",
         "price": "55,000"
       },
       {
-        "img": "../../public/imgs/SanPham/toasts/dsc02342_optimized.png",
+        "img": ["../../public/imgs/SanPham/toasts/dsc02342_optimized.png"],
         "name": "PUMPKIN TOAST",
         "price": "40,000"
       },
       {
-        "img": "../../public/imgs/SanPham/toasts/dsc02270_optimized.png",
+        "img": ["../../public/imgs/SanPham/toasts/dsc02270_optimized.png"],
         "name": "CALIFORNIA TOAST",
         "price": "49,000"
       },
       {
-        "img": "../../public/imgs/SanPham/toasts/dsc02351_optimized.png",
+        "img": ["../../public/imgs/SanPham/toasts/dsc02351_optimized.png"],
         "name": "CRANBERRY TOAST",
         "price": "55,000"
       },
       {
-        "img": "../../public/imgs/SanPham/toasts/dsc02307_optimized-1.png",
+        "img": ["../../public/imgs/SanPham/toasts/dsc02307_optimized-1.png"],
         "name": "WHOLEMEAL TOAST",
         "price": "40,000"
       }
     ],
     "sandwiches": [
       {
-        "img": "../../public/imgs/SanPham/sandwiches/dsc03110_optimized.png",
+        "img": ["../../public/imgs/SanPham/sandwiches/dsc03110_optimized.png"],
         "name": "TUNA SW",
         "price": "45,000"
       },
       {
-        "img": "../../public/imgs/SanPham/sandwiches/dsc03094_optimized.png",
+        "img": ["../../public/imgs/SanPham/sandwiches/dsc03094_optimized.png"],
         "name": "CHICKEN SW",
         "price": "45,000"
       },
       {
-        "img": "../../public/imgs/SanPham/sandwiches/dsc02869_optimized.png",
+        "img": ["../../public/imgs/SanPham/sandwiches/dsc02869_optimized.png"],
         "name": "HAM&EGG BREAKFAST SW",
         "price": "45,000"
       },
       {
-        "img": "../../public/imgs/SanPham/sandwiches/dsc02915_optimized.png",
+        "img": ["../../public/imgs/SanPham/sandwiches/dsc02915_optimized.png"],
         "name": "BAKED HAM&CHEESE SW",
         "price": "45,000"
       },
       {
-        "img": "../../public/imgs/SanPham/sandwiches/dsc02900_optimized.png",
+        "img": ["../../public/imgs/SanPham/sandwiches/dsc02900_optimized.png"],
         "name": "BACON&EGG BREAKFAST SW",
         "price": "45,000"
       }
     ],
     "drycakes": [
       {
-        "img": "../../public/imgs/SanPham/drycakes/HOKKAIDO-ROLL-169K_SP-ROLL-1.jpg",
+        "img": ["../../public/imgs/SanPham/drycakes/HOKKAIDO-ROLL-169K_SP-ROLL-1.jpg"],
         "name": "HOKKAIDO ROLL",
         "price": "169,000"
       },
       {
-        "img": "../../public/imgs/SanPham/drycakes/HOKKAIDO-SLICE-69K_SP-copy.jpg",
+        "img": ["../../public/imgs/SanPham/drycakes/HOKKAIDO-SLICE-69K_SP-copy.jpg"],
         "name": "HOKKAIDO SLICED",
         "price": "69,000"
       },
       {
-        "img": "../../public/imgs/SanPham/drycakes/2-1024x1024.jpg",
+        "img": ["../../public/imgs/SanPham/drycakes/2-1024x1024.jpg"],
         "name": "PANDAN CHIFFON",
         "price": "115,000"
       },
       {
-        "img": "../../public/imgs/SanPham/drycakes/dsc02721_optimized.png",
+        "img": ["../../public/imgs/SanPham/drycakes/dsc02721_optimized.png"],
         "name": "SR RAISIN SLICED",
         "price": "30,000"
       },
       {
-        "img": "../../public/imgs/SanPham/drycakes/dsc02662_optimized.png",
+        "img": ["../../public/imgs/SanPham/drycakes/dsc02662_optimized.png"],
         "name": "BANANA CAKE",
         "price": "108,000"
       },
       {
-        "img": "../../public/imgs/SanPham/drycakes/dsc02774_optimized.png",
+        "img": ["../../public/imgs/SanPham/drycakes/dsc02774_optimized.png"],
         "name": "COMBO DRYCAKE 5PCS",
         "price": "130,000"
       },
       {
-        "img": "../../public/imgs/SanPham/drycakes/dsc02720_optimized.png",
+        "img": ["../../public/imgs/SanPham/drycakes/dsc02720_optimized.png"],
         "name": "SR CHOCOLATE SLICED",
         "price": "30,000"
       },
       {
-        "img": "../../public/imgs/SanPham/drycakes/dsc05157_optimized-1024x1024.png",
+        "img": ["../../public/imgs/SanPham/drycakes/dsc05157_optimized-1024x1024.png"],
         "name": "SR COFFEE SLICED",
         "price": "30,000"
       }
     ],
     "cakes": [
       {
-        "img": "../../public/imgs/SanPham/cakes/dsc05141_optimized-1024x1024.png",
+        "img": ["../../public/imgs/SanPham/cakes/dsc05141_optimized-1024x1024.png"],
         "name": "LES OPERA C",
         "price": "550,000"
       },
       {
-        "img": "../../public/imgs/SanPham/cakes/dsc05138_optimized-1024x1024.png",
+        "img": ["../../public/imgs/SanPham/cakes/dsc05138_optimized-1024x1024.png"],
         "name": "LES OPERA R",
         "price": "390,000"
       },
       {
-        "img": "../../public/imgs/SanPham/cakes/dsc05150_optimized-1024x1024.png",
+        "img": ["../../public/imgs/SanPham/cakes/dsc05150_optimized-1024x1024.png"],
         "name": "MACHA MACHA",
         "price": "490,000"
       },
       {
-        "img": "../../public/imgs/SanPham/cakes/dsc02466_optimized.png",
+        "img": ["../../public/imgs/SanPham/cakes/dsc02466_optimized.png"],
         "name": "BLACK FOREST C",
         "price": "490,000"
       },
       {
-        "img": "../../public/imgs/SanPham/cakes/dsc02494_optimized.png",
+        "img": ["../../public/imgs/SanPham/cakes/dsc02494_optimized.png"],
         "name": "PASSION CHEESE C",
         "price": "490,000"
       },
       {
-        "img": "../../public/imgs/SanPham/cakes/z5288998211586_514a791940410fba4916634adfcb1fbf-1024x1024.jpg",
+        "img": ["../../public/imgs/SanPham/cakes/z5288998211586_514a791940410fba4916634adfcb1fbf-1024x1024.jpg"],
         "name": "FRESH CREAM (SN01)",
         "price": "390,000"
       },
       {
-        "img": "../../public/imgs/SanPham/cakes/z5288998208377_c2f8a465014cbb7a4e9794550a6b97c6-1024x1024.jpg",
+        "img": ["../../public/imgs/SanPham/cakes/z5288998208377_c2f8a465014cbb7a4e9794550a6b97c6-1024x1024.jpg"],
         "name": "BÁNH KEM MOCHA – 01",
         "price": "450,000"
       },
       {
-        "img": "../../public/imgs/SanPham/cakes/dsc02354_optimized.png",
+        "img": ["../../public/imgs/SanPham/cakes/dsc02354_optimized.png"],
         "name": "MOCHA CHOCO",
         "price": "490,000"
       }
     ],
     "cakeslices": [
       {
-        "img": "../../public/imgs/SanPham/cakeslices/dsc02389_optimized.png",
+        "img": ["../../public/imgs/SanPham/cakeslices/dsc02389_optimized.png"],
         "name": "CHOCOLATE PEANUT MOUSSE",
         "price": "59,000"
       },
       {
-        "img": "../../public/imgs/SanPham/cakeslices/dsc02388_optimized.png",
+        "img": ["../../public/imgs/SanPham/cakeslices/dsc02388_optimized.png"],
         "name": "OREO CHOCOLATE CHEESE",
         "price": "59,000"
       },
       {
-        "img": "../../public/imgs/SanPham/cakeslices/dsc02401_optimized.png",
+        "img": ["../../public/imgs/SanPham/cakeslices/dsc02401_optimized.png"],
         "name": "TIRAMISU CUP",
         "price": "59,000"
       },
       {
-        "img": "../../public/imgs/SanPham/cakes/dsc02466_optimized.png",
+        "img": ["../../public/imgs/SanPham/cakes/dsc02466_optimized.png"],
         "name": "BEARY VANILLA",
         "price": "84,000"
       },
       {
-        "img": "../../public/imgs/SanPham/cakeslices/dsc02299_optimized.png",
+        "img": ["../../public/imgs/SanPham/cakeslices/dsc02299_optimized.png"],
         "name": "BEARY BERRY",
         "price": "45,000"
       },
       {
-        "img": "../../public/imgs/SanPham/cakeslices/dsc02295_optimized.png",
+        "img": ["../../public/imgs/SanPham/cakeslices/dsc02295_optimized.png"],
         "name": "BEARY MATCHA",
         "price": "45,000"
       },
       {
-        "img": "../../public/imgs/SanPham/cakeslices/dsc02303_optimized.png",
+        "img": ["../../public/imgs/SanPham/cakeslices/dsc02303_optimized.png"],
         "name": "BEARY FOREST",
         "price": "45,000"
       },
       {
-        "img": "../../public/imgs/SanPham/cakeslices/dsc02333_optimized.png",
+        "img": ["../../public/imgs/SanPham/cakeslices/dsc02333_optimized.png"],
         "name": "RAINBOW BLISS SLICED",
         "price": "48,000"
       }
     ],
     "seasonalspecials": [
       {
-        "img": "../../public/imgs/SanPham/seasonalspecials/BUN-1024x1024.png",
+        "img": ["../../public/imgs/SanPham/seasonalspecials/BUN-1024x1024.png"],
         "name": "SET 3 BÁNH BUNS",
         "price": "80,000"
       },
       {
-        "img": "../../public/imgs/SanPham/seasonalspecials/SET-COOKIES_WEB-COVER-03-1-1024x1024.jpg",
+        "img": ["../../public/imgs/SanPham/seasonalspecials/SET-COOKIES_WEB-COVER-03-1-1024x1024.jpg"],
         "name": "SET HỒNG THỊNH",
         "price": "799,000"
       },
       {
-        "img": "../../public/imgs/SanPham/seasonalspecials/0673faa1205402bcd9d473d98ad8accc.jpg",
+        "img": ["../../public/imgs/SanPham/seasonalspecials/0673faa1205402bcd9d473d98ad8accc.jpg"],
         "name": "SET AN NHIÊN",
         "price": "399,000"
       },
       {
-        "img": "../../public/imgs/SanPham/seasonalspecials/PINE-APPLE-COOKIE-2_129k-1024x1024.jpg",
+        "img": ["../../public/imgs/SanPham/seasonalspecials/PINE-APPLE-COOKIE-2_129k-1024x1024.jpg"],
         "name": "PINEAPPLE COOKIES",
         "price": "129,000"
       },
       {
-        "img": "../../public/imgs/SanPham/seasonalspecials/GREEN-PEA-COOKIE-2-129K-1024x1024.jpg",
+        "img": ["../../public/imgs/SanPham/seasonalspecials/GREEN-PEA-COOKIE-2-129K-1024x1024.jpg"],
         "name": "GREEN PEA COOKIES",
         "price": "129,000"
       },
       {
-        "img": "../../public/imgs/SanPham/seasonalspecials/CASHEW-NUT-COOKIE-2_-129K-1024x1024.jpg",
+        "img": ["../../public/imgs/SanPham/seasonalspecials/CASHEW-NUT-COOKIE-2_-129K-1024x1024.jpg"],
         "name": "CASHEW NUT COOKIES",
         "price": "129,000"
       },
       {
-        "img": "../../public/imgs/SanPham/seasonalspecials/PANDAN-COCONUT-COOKIE-2-129K-1024x1024.jpg",
+        "img": ["../../public/imgs/SanPham/seasonalspecials/PANDAN-COCONUT-COOKIE-2-129K-1024x1024.jpg"],
         "name": "PANDAN COCONUT COOKIES",
         "price": "129,000"
       },
       {
-        "img": "../../public/imgs/SanPham/seasonalspecials/STRAWBERRY-SHORT-CAKE-490K-1024x1024.jpg",
+        "img": ["../../public/imgs/SanPham/seasonalspecials/STRAWBERRY-SHORT-CAKE-490K-1024x1024.jpg"],
         "name": "CNY STRAWBERRY SHORTCAKE",
         "price": "490,000"
       }
@@ -470,24 +470,24 @@
     "pudding": [],
     "cookies": [
       {
-        "img": "../../public/imgs/SanPham/cookies/dsc03146_optimized.png",
+        "img": ["../../public/imgs/SanPham/cookies/dsc03146_optimized.png"],
         "name": "ALMOND COOKIES",
         "price": "129,000"
       },
       {
-        "img": "../../public/imgs/SanPham/cookies/dsc03142_optimized.png",
+        "img": ["../../public/imgs/SanPham/cookies/dsc03142_optimized.png"],
         "name": "CHOCOLATE COOKIES",
         "price": "129,000"
       }
     ],
     "flossspecials": [
       {
-        "img": "../../public/imgs/SanPham/flossspecials/dsc03429_optimized.png",
+        "img": ["../../public/imgs/SanPham/flossspecials/dsc03429_optimized.png"],
         "name": "FIRE FLOSS",
         "price": "169,000"
       },
       {
-        "img": "../../public/imgs/SanPham/flossspecials/dsc03428_optimized.png",
+        "img": ["../../public/imgs/SanPham/flossspecials/dsc03428_optimized.png"],
         "name": "FLOSS",
         "price": "169,000"
       }
