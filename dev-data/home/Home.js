@@ -152,7 +152,7 @@ fetch("../../data/home-data/topProducts.json")
         <h4 class="top-product-title name-product" onclick="document.location='../ChiTietSanPham/chitietsanpham.html'">${topProducts.alt}</h4>
         <span class="top-product-price price">${topProducts.price}</span>
       </div>
-      <button class="button-product" id="more-btn-2" onclick="addToCart();" style="border: 1px solid black; color: black; width: 250px; box-sizing: border-box;"><a href="#" style="text-decoration: none; color: black;">Thêm vào giỏ hàng</a></button>
+      <button class="button-product" id="more-btn-2" onclick="addToCart();" style="border: 1px solid black; color: black; max-width: 250px; box-sizing: border-box;"><a href="#" style="text-decoration: none; color: black;">Thêm vào giỏ hàng</a></button>
     `;
       swiperWrapperTop.appendChild(swiperSlide);
     });

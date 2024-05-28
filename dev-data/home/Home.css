@@ -324,16 +324,16 @@ html body div.slection-container h1 {
   color: black;
 }
 .top-product-title {
-  text-align: start;
+  text-align: center;
   color: #000;
 }
 .top-product-price {
-  float: left;
+  /* float: left; */
   color: #e6a4b4;
 }
 .top-product-info {
   width: 250px;
-  text-align: start;
+  text-align: center;
 }
 /* user review css */
 .review-container {

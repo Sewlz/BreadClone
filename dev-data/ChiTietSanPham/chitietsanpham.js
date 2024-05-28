@@ -67,9 +67,13 @@ fetch("../../data/Product-data/product.json")
 
     const nameProduct = document.querySelector(".name-product-detail");
     const priceProduct = document.querySelector(".price-product-detail");
+    const headerTitle = document.querySelector('.section-header_title')
+    document.title = `${dataDetail[posItem].name} - Dough Re Mi`;
+    
 
     nameProduct.innerText = dataDetail[posItem].name;
     priceProduct.innerText = dataDetail[posItem].price;
+    headerTitle.innerText = dataDetail[posItem].name
 
     const imgMain = document.querySelectorAll(".img-container img");
     const imgClone = document.querySelector(".thumbnail-container");
