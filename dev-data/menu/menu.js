@@ -455,14 +455,17 @@ function HovertotalCalc() {
   var cartArray = sessionStorage.getItem("cartItems");
   if (cartArray !== null && cartArray !== "") {
     const total = JSON.parse(cartArray).reduce(
-      (total, item) => total + parseInt(item.price) * parseInt(item.quantity),
+      (total, item) =>
+        total +
+        parseInt(item.price.replace(/,/g, "")) * parseInt(item.quantity),
       0
     );
     document.querySelector(
       ".subtotal-cart-menu > span:nth-child(2)"
-    ).innerHTML = `Total: $${total},000`;
+    ).innerHTML = `Total: $${total.toLocaleString()}`;
   }
 }
+
 document.addEventListener("DOMContentLoaded", function () {
   const btnProc = document.querySelectorAll(".button-product");
   btnProc.forEach((item) => {

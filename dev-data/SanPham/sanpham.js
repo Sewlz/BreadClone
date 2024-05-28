@@ -62,7 +62,7 @@ fetch("../../data/Product-data/product.json")
               <a href="../ChiTietSanPham/chitietsanpham.html" category-product="${category.category}"
               pos-index="${index}" class="name-product uppercase">${product.name}</a>
               <span class="price">${product.price}</span>
-              <div class="button-product">
+              <div class="button-product" onclick="addToCart()">
                 <a href="?#">Thêm vào giỏ hàng</a>
               </div>
             </div>
@@ -76,8 +76,8 @@ fetch("../../data/Product-data/product.json")
         let posIndex = item.getAttribute("pos-index");
         let category = item.getAttribute("category-product");
 
-        sessionStorage.setItem('pos-index', posIndex)
-        sessionStorage.setItem('category-product', category)
+        sessionStorage.setItem("pos-index", posIndex);
+        sessionStorage.setItem("category-product", category);
       });
     });
   })
