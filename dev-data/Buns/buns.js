@@ -1,10 +1,27 @@
 fetch("../../data/Product-data/product.json")
   .then((response) => response.json())
   .then((productJson) => {
-    const title = document
+    var titleHeaderPage = document
       .querySelectorAll(".breadcrumb_item")[1]
-      .innerText.toLowerCase()
-      .trim();
+    var title = titleHeaderPage.innerText = sessionStorage.getItem('titlePageWebsite').trim()
+    title = title.toLowerCase().trim().replace(/\s/g, '')
+
+    const pageInProduct = document.querySelectorAll('.menu-sub_item a')
+    const pageMobileInProduct = document.querySelectorAll('.menu-bar_lv2 a')
+    pageInProduct.forEach(item => {
+      addAnRemoveClassActivePage(item)
+    })
+    pageMobileInProduct.forEach(item=>{
+      addAnRemoveClassActivePage(item)
+    })
+
+    function addAnRemoveClassActivePage(item){
+      item.classList.remove('active-hover-page')
+      if(item.textContent.toLowerCase().trim().replace(/\s/g, '') == title){
+        item.classList.add('active-hover-page')
+      }
+    }
+
     const dataProduct = productJson.data;
     const productCategories = Object.keys(dataProduct);
     var dataDetail;

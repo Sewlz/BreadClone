@@ -29,8 +29,8 @@ const btnCloseMenu = document.querySelector(".button-close-menu");
 function resetMenuBar() {
   menuLv1.classList.remove("active-menu-bar");
   btnShowLv1.classList.remove("rotation-icon-down");
-  menuLv2.classList.remove("active-menu-bar");
-  btnShowLv2.classList.remove("rotation-icon-down");
+  // menuLv2.classList.remove("active-menu-bar");
+  // btnShowLv2.classList.remove("rotation-icon-down");
   itemBarClose[0].style = `transform: rotate(0)`;
   itemBarClose[1].style = `transform: rotate(0)`;
 }
@@ -55,8 +55,8 @@ const menuLv1 = document.querySelector(".menu-bar-container_lv2");
 btnShowLv1.addEventListener("click", () => {
   menuLv1.classList.toggle("active-menu-bar");
   btnShowLv1.classList.toggle("rotation-icon-down");
-  menuLv2.classList.remove("active-menu-bar");
-  btnShowLv2.classList.remove("rotation-icon-down");
+  // menuLv2.classList.remove("active-menu-bar");
+  // btnShowLv2.classList.remove("rotation-icon-down");
   menuBar.style.overflow = "auto";
 });
 
@@ -205,10 +205,6 @@ document.addEventListener("DOMContentLoaded", () => {
       .then((response) => response.json())
       .then((data) => {
         const products = [];
-        // Flatten the product data
-        // for (const category in data.data) {
-        //   products.push(...data.data[category]);
-        // }
 
         for (const category in data.data) {
           data.data[category].forEach((product, index) => {
@@ -415,3 +411,19 @@ document.addEventListener("DOMContentLoaded", function () {
     ulListCart.style = 'display:none!important;'
   }
 });
+
+const pageInProduct = document.querySelectorAll('.menu-sub_item a')
+const pageMobileInProduct = document.querySelectorAll('.menu-bar_lv2 a')
+pageInProduct.forEach(item=>{
+  clickInMenuProduct(item)
+})
+
+pageMobileInProduct.forEach(item=>{
+  clickInMenuProduct(item)
+})
+
+function clickInMenuProduct(item){
+  item.addEventListener('click', ()=>{
+    sessionStorage.setItem('titlePageWebsite', item.textContent)
+  })
+}
