@@ -12,150 +12,6 @@ let startScrollLeft;
 let autoplayIntervalId;
 const autoPlayTime = 5000;
 
-//Tạo dot-item
-for (let i = 0; i <= slideItem.length - numSlides; i++) {
-  const dotItem = document.createElement("li");
-  dotItem.className = "dot-item";
-  dotItem.setAttribute("data-index", i);
-  dotsSlide.appendChild(dotItem);
-}
-
-const dotItem = document.querySelectorAll(".dot-item");
-//Set dot-item đàu tiên
-dotItem[0].classList.add("active-dot");
-
-//tạo sự kiện click cho từng dot-item
-dotItem.forEach((item) => {
-  item.addEventListener("click", () => {
-    const index = item.getAttribute("data-index");
-    removeClassActiveDot();
-    item.classList.add("active-dot");
-
-    const dotWidth = dotItem[0].offsetWidth + 15;
-    var posDotX = -index * dotWidth;
-    dotWrapper.style.left = `${posDotX}px`;
-
-    const targetPosition = slideItem[index].offsetLeft;
-    slider.scrollLeft = targetPosition;
-  });
-});
-
-//xóa class của các dot-item
-function removeClassActiveDot() {
-  dotItem.forEach((item) => {
-    item.classList.remove("active-dot");
-  });
-}
-
-const disableLinks = () => {
-  const links = slider.querySelectorAll("a");
-  links.forEach((link) => {
-    link.style.pointerEvents = "none";
-  });
-};
-
-const enableLinks = () => {
-  const links = slider.querySelectorAll("a");
-  links.forEach((link) => {
-    link.style.pointerEvents = "auto";
-  });
-};
-
-const dragStart = (e) => {
-  isDragging = true;
-  slider.classList.add("dragging");
-  startX = e.pageX || e.touches[0].pageX;
-  startScrollLeft = slider.scrollLeft;
-};
-
-const dragging = (e) => {
-  if (!isDragging) return;
-  disableLinks();
-  slider.scrollLeft =
-    startScrollLeft - ((e.pageX || e.touches[0].pageX) - startX);
-  removeClassActiveDot();
-  const currentScrollLeft = slider.scrollLeft;
-  const slideItemWidth = slideItem[0].offsetWidth;
-  const currentIndex = Math.round(currentScrollLeft / slideItemWidth);
-  if (currentIndex < dotItem.length) {
-    dotItem[currentIndex].classList.add("active-dot");
-  }
-
-  const dotWidth = dotItem[0].offsetWidth + 15;
-  const posDotX = -currentIndex * dotWidth;
-  dotWrapper.style.left = `${posDotX}px`;
-};
-
-const dragStop = (e) => {
-  isDragging = false;
-  slider.classList.remove("dragging");
-  enableLinks();
-
-  const currentScrollLeft = slider.scrollLeft;
-  const slideItemWidth = slideItem[0].offsetWidth;
-  const currentIndex = Math.round(currentScrollLeft / slideItemWidth);
-
-  const targetPosition = slideItem[currentIndex].offsetLeft;
-  slider.scrollTo({
-    left: targetPosition,
-    behavior: "smooth",
-  });
-
-  if (currentIndex < dotItem.length) {
-    removeClassActiveDot();
-    dotItem[currentIndex].classList.add("active-dot");
-  }
-
-  const dotWidth = dotItem[0].offsetWidth + 15;
-  const posDotX = -currentIndex * dotWidth;
-  dotWrapper.style.left = `${posDotX}px`;
-};
-
-function autoMoveToNextSlide() {
-  const currentScrollLeft = slider.scrollLeft;
-  const slideItemWidth = slideItem[0].offsetWidth;
-  const currentIndex = Math.round(currentScrollLeft / slideItemWidth);
-
-  let nextIndex = currentIndex + 1;
-
-  if (nextIndex >= dotItem.length) {
-    nextIndex = 0;
-  }
-
-  const targetPosition = slideItem[nextIndex].offsetLeft;
-  slider.scrollTo({
-    left: targetPosition,
-    behavior: "smooth",
-  });
-
-  removeClassActiveDot();
-  dotItem[nextIndex].classList.add("active-dot");
-
-  const dotWidth = dotItem[0].offsetWidth + 15;
-  const posDotX = -nextIndex * dotWidth;
-  dotWrapper.style.left = `${posDotX}px`;
-}
-
-function autoPlay() {
-  autoplayIntervalId = setInterval(autoMoveToNextSlide, autoPlayTime);
-}
-
-autoPlay();
-
-slider.addEventListener("touchstart", dragStart);
-slider.addEventListener("touchmove", dragging);
-slider.addEventListener("touchend", dragStop);
-slider.addEventListener("mousedown", dragStart);
-slider.addEventListener("mousemove", dragging);
-slider.addEventListener("mouseup", dragStop);
-slider.addEventListener("mouseleave", () => {
-  dragStop;
-  autoPlay();
-});
-slider.addEventListener("mouseenter", () => {
-  clearTimeout(autoplayIntervalId);
-});
-
 //code quantityinput
 const btnMinus = document.querySelector(".btn-minus");
 const btnPlus = document.querySelector(".btn-plus");
@@ -183,10 +39,10 @@ fetch("../../data/Product-data/product.json")
     const productCategories = Object.keys(dataProduct);
     var dataDetail;
 
-    const categoryProduct = sessionStorage.getItem('category-product')
+    const categoryProduct = sessionStorage.getItem("category-product");
 
     productCategories.forEach((item, index) => {
-      if (item.includes(categoryProduct)) {
+      if (item === categoryProduct) {
         const dataIndex = Object.values(dataProduct);
         dataDetail = dataIndex[index];
       }
@@ -195,12 +51,12 @@ fetch("../../data/Product-data/product.json")
     const posItem = sessionStorage.getItem("pos-index");
 
     const arrayImg = dataDetail[posItem].img;
-    
+
     const btnNext = document.querySelector(".btn-next");
     const btnPrev = document.querySelector(".btn-prev");
-    if(arrayImg.length < 2){
-      btnNext.style = 'display: none;'
-      btnPrev.style = 'display: none;'
+    if (arrayImg.length < 2) {
+      btnNext.style = "display: none;";
+      btnPrev.style = "display: none;";
     }
     var lstPic = "";
     arrayImg.forEach((item) => {
@@ -209,11 +65,11 @@ fetch("../../data/Product-data/product.json")
     });
     imgContainer.innerHTML = lstPic;
 
-    const nameProduct = document.querySelector('.name-product-detail')
-    const priceProduct = document.querySelector('.price-product-detail')
+    const nameProduct = document.querySelector(".name-product-detail");
+    const priceProduct = document.querySelector(".price-product-detail");
 
-    nameProduct.innerText = dataDetail[posItem].name
-    priceProduct.innerText = dataDetail[posItem].price
+    nameProduct.innerText = dataDetail[posItem].name;
+    priceProduct.innerText = dataDetail[posItem].price;
 
     const imgMain = document.querySelectorAll(".img-container img");
     const imgClone = document.querySelector(".thumbnail-container");
@@ -285,5 +141,216 @@ fetch("../../data/Product-data/product.json")
           console.error("Element at numImg", numImg, "is undefined");
         }
       }
+    });
+
+    // Add product for slider
+    // Function to get random items from all categories
+    function getRandomItems(data, totalItems = 11) {
+      const allItems = [];
+      for (const category in data.data) {
+        if (data.data.hasOwnProperty(category)) {
+          data.data[category].forEach((item, index) => {
+            allItems.push({ ...item, category: category, posIndex: index });
+          });
+        }
+      }
+      return shuffleArray(allItems).slice(0, totalItems);
+    }
+
+    // Function to shuffle an array
+    function shuffleArray(array) {
+      for (let i = array.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [array[i], array[j]] = [array[j], array[i]];
+      }
+      return array;
+    }
+
+    // Get random 10 items from all categories
+    const randomItems = getRandomItems(productJson);
+
+    randomItems.forEach((item) => {
+      slides.innerHTML += `
+      <li class="slide-item">
+        <a 
+          href="../ChiTietSanPham/chitietsanpham.html"
+          pos-index="${item.posIndex}"
+          category-product="${item.category}"
+          class="img-product">
+          <img
+            draggable="false"
+            src="${item.img[0]}"
+            alt="${item.name}"
+          />
+        </a>
+        <div class="content-product">
+          <a
+            href="../ChiTietSanPham/chitietsanpham.html"
+            class="name-product uppercase"
+            pos-index="${item.posIndex}"
+            category-product="${item.category}"
+            >${item.name}</a>
+          <span class="price">${item.price}</span>
+          <div class="button-product">
+            <a href="?#">Thêm vào giỏ hàng</a>
+          </div>
+        </div>
+      </li>`;
+    });
+
+    const slideItem = document.querySelectorAll(".slide-item");
+
+    //Tạo dot-item
+    for (let i = 0; i <= slideItem.length - numSlides; i++) {
+      const dotItem = document.createElement("li");
+      dotItem.className = "dot-item";
+      dotItem.setAttribute("data-index", i);
+      dotsSlide.appendChild(dotItem);
+    }
+
+    const dotItem = document.querySelectorAll(".dot-item");
+    //Set dot-item đàu tiên
+    dotItem[0].classList.add("active-dot");
+
+    //tạo sự kiện click cho từng dot-item
+    dotItem.forEach((item) => {
+      item.addEventListener("click", () => {
+        const index = item.getAttribute("data-index");
+        removeClassActiveDot();
+        item.classList.add("active-dot");
+
+        const dotWidth = dotItem[0].offsetWidth + 15;
+        var posDotX = -index * dotWidth;
+        dotWrapper.style.left = `${posDotX}px`;
+
+        const targetPosition = slideItem[index].offsetLeft;
+        slider.scrollLeft = targetPosition;
+      });
+    });
+
+    //xóa class của các dot-item
+    function removeClassActiveDot() {
+      dotItem.forEach((item) => {
+        item.classList.remove("active-dot");
+      });
+    }
+
+    const disableLinks = () => {
+      const links = slider.querySelectorAll("a");
+      links.forEach((link) => {
+        link.style.pointerEvents = "none";
+      });
+    };
+
+    const enableLinks = () => {
+      const links = slider.querySelectorAll("a");
+      links.forEach((link) => {
+        link.style.pointerEvents = "auto";
+      });
+    };
+
+    const dragStart = (e) => {
+      isDragging = true;
+      slider.classList.add("dragging");
+      startX = e.pageX || e.touches[0].pageX;
+      startScrollLeft = slider.scrollLeft;
+    };
+
+    const dragging = (e) => {
+      if (!isDragging) return;
+      disableLinks();
+      slider.scrollLeft =
+        startScrollLeft - ((e.pageX || e.touches[0].pageX) - startX);
+      removeClassActiveDot();
+      const currentScrollLeft = slider.scrollLeft;
+      const slideItemWidth = slideItem[0].offsetWidth;
+      const currentIndex = Math.round(currentScrollLeft / slideItemWidth);
+      if (currentIndex < dotItem.length) {
+        dotItem[currentIndex].classList.add("active-dot");
+      }
+
+      const dotWidth = dotItem[0].offsetWidth + 15;
+      const posDotX = -currentIndex * dotWidth;
+      dotWrapper.style.left = `${posDotX}px`;
+    };
+
+    const dragStop = (e) => {
+      isDragging = false;
+      slider.classList.remove("dragging");
+      enableLinks();
+
+      const currentScrollLeft = slider.scrollLeft;
+      const slideItemWidth = slideItem[0].offsetWidth;
+      const currentIndex = Math.round(currentScrollLeft / slideItemWidth);
+
+      const targetPosition = slideItem[currentIndex].offsetLeft;
+      slider.scrollTo({
+        left: targetPosition,
+        behavior: "smooth",
+      });
+
+      if (currentIndex < dotItem.length) {
+        removeClassActiveDot();
+        dotItem[currentIndex].classList.add("active-dot");
+      }
+
+      const dotWidth = dotItem[0].offsetWidth + 15;
+      const posDotX = -currentIndex * dotWidth;
+      dotWrapper.style.left = `${posDotX}px`;
+    };
+
+    function autoMoveToNextSlide() {
+      const currentScrollLeft = slider.scrollLeft;
+      const slideItemWidth = slideItem[0].offsetWidth;
+      const currentIndex = Math.round(currentScrollLeft / slideItemWidth);
+
+      let nextIndex = currentIndex + 1;
+
+      if (nextIndex >= dotItem.length) {
+        nextIndex = 0;
+      }
+
+      const targetPosition = slideItem[nextIndex].offsetLeft;
+      slider.scrollTo({
+        left: targetPosition,
+        behavior: "smooth",
+      });
+
+      removeClassActiveDot();
+      dotItem[nextIndex].classList.add("active-dot");
+
+      const dotWidth = dotItem[0].offsetWidth + 15;
+      const posDotX = -nextIndex * dotWidth;
+      dotWrapper.style.left = `${posDotX}px`;
+    }
+
+    function autoPlay() {
+      autoplayIntervalId = setInterval(autoMoveToNextSlide, autoPlayTime);
+    }
+
+    autoPlay();
+
+    slider.addEventListener("touchstart", dragStart);
+    slider.addEventListener("touchmove", dragging);
+    slider.addEventListener("touchend", dragStop);
+    slider.addEventListener("mousedown", dragStart);
+    slider.addEventListener("mousemove", dragging);
+    slider.addEventListener("mouseup", dragStop);
+    slider.addEventListener("mouseleave", () => {
+      dragStop;
+      autoPlay();
+    });
+    slider.addEventListener("mouseenter", () => {
+      clearTimeout(autoplayIntervalId);
+    });
+
+    const linkItemSlide = document.querySelectorAll(".slide-item a");
+    linkItemSlide.forEach((item) => {
+      item.addEventListener("click", () => {
+        let pos = item.getAttribute("pos-index");
+        let category = item.getAttribute("category-product");
+        sessionStorage.setItem("pos-index", pos);
+        sessionStorage.setItem("category-product", category);
+      });
     });
   });
