@@ -377,7 +377,6 @@ function HovertotalCalc() {
     ).innerHTML = `Total: $${total},000`;
   }
 }
-
 document.addEventListener("DOMContentLoaded", function () {
   const btnProc = document.querySelectorAll(".button-product");
   btnProc.forEach((item) => {
