@@ -302,6 +302,7 @@ document.addEventListener("DOMContentLoaded", () => {
           uniqueFilteredProducts
         );
         sessionStorage.setItem("lstSearch", uniqueFilteredProductsJSON);
+        sessionStorage.setItem("titlePageWebsite", '');
       })
       .catch((error) => console.error("Error loading product data:", error));
 
