@@ -151,7 +151,8 @@ html body div.slection-container h1 {
   letter-spacing: 0.1em;
   color: #f7f1e5;
 }
-.more-btn {
+.more-btn,
+.button-product {
   z-index: 1;
   position: relative;
   color: white;

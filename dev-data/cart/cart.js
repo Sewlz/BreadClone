@@ -61,7 +61,7 @@ document.addEventListener("DOMContentLoaded", function () {
                     >
                   </td>
                   <td class="product-price" data-title="Giá:">
-                    <p>34,000</p>
+                    <p>${item.price}</p>
                   </td>
                   <td class="product-quantity" data-title="Số lượng:">
                     <div class="btn-fun-quanity">
@@ -100,6 +100,11 @@ document.addEventListener("DOMContentLoaded", function () {
     console.log("numCart is either null or empty.");
   }
   removeItem();
+  const quantityInputs = document.querySelectorAll(".quantity");
+  quantityInputs.forEach((input) => {
+    input.addEventListener("change", totalCalc);
+  });
+  totalCalc();
 });
 function removeItem() {
   const removeButtons = document.querySelectorAll(".remove-item-cart");
@@ -123,4 +128,23 @@ function removeCartItem(index) {
   } else {
     console.log("numCart is either null or empty.");
   }
+}
+function totalCalc() {
+  const cartItems = document.querySelectorAll(".cart-item");
+  const cartSub = document.querySelector(
+    ".cart-subtotal > td:nth-child(2) > span:nth-child(1)"
+  );
+  const cartTotal = document.querySelector(
+    ".order-total > td:nth-child(2) > span:nth-child(1)"
+  );
+  cartItems.forEach((item) => {
+    const subtotal = item.querySelector(".product-subtotal > p");
+    const price = item.querySelector(".product-price > p");
+    const quantity = item.querySelector(".quantity");
+    subtotal.innerHTML =
+      parseInt(price.innerHTML) * parseInt(quantity.value) + ",000";
+    cartSub.innerHTML =
+      parseInt(price.innerHTML) + parseInt(cartSub.innerHTML) + ",000";
+    cartTotal.innerHTML = cartSub.innerHTML;
+  });
 }

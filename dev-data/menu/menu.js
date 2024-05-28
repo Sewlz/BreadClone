@@ -293,7 +293,6 @@ function convertItemToJson(item) {
 function updateCart() {
   const numCart = document.querySelector(".num-item-cart");
   const numCartValue = sessionStorage.getItem("cartItems");
-
   if (numCartValue !== null) {
     const cartArray = JSON.parse(numCartValue);
     let cartSize = cartArray.length;
@@ -366,6 +365,19 @@ function cartHover() {
   }
   removeHoverItem();
 }
+function HovertotalCalc() {
+  var cartArray = sessionStorage.getItem("cartItems");
+  if (cartArray !== null && cartArray !== "") {
+    const total = JSON.parse(cartArray).reduce(
+      (total, item) => total + parseInt(item.price),
+      0
+    );
+    document.querySelector(
+      ".subtotal-cart-menu > span:nth-child(2)"
+    ).innerHTML = `Total: $${total},000`;
+  }
+}
+
 document.addEventListener("DOMContentLoaded", function () {
   const btnProc = document.querySelectorAll(".button-product");
   btnProc.forEach((item) => {
@@ -375,4 +387,5 @@ document.addEventListener("DOMContentLoaded", function () {
   });
   updateCart();
   cartHover();
+  HovertotalCalc();
 });
