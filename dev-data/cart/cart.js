@@ -149,3 +149,4 @@ function totalCalc() {
     cartTotal.innerHTML = cartSub.innerHTML;
   });
 }
+function sendCartData() {}
