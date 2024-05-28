@@ -129,13 +129,16 @@ fetch("../../data/home-data/topProducts.json")
     topProducts.forEach((topProducts) => {
       const swiperSlide = document.createElement("div");
       swiperSlide.classList.add("swiper-slide");
+      swiperSlide.classList.add("cell");
       swiperSlide.innerHTML = `
+      <div class="img-product">
       <img src="${topProducts.src}" alt="${topProducts.alt}" onclick="document.location='../ChiTietSanPham/chitietsanpham.html'" />
-      <div class="top-product-info">
-        <h4 class="top-product-title" onclick="document.location='../ChiTietSanPham/chitietsanpham.html'">${topProducts.alt}</h4>
-        <span class="top-product-price">${topProducts.price}</span>
       </div>
-      <button class="more-btn" id="more-btn-2" onclick="document.location=''" style="border: 1px solid black; color: black; width: 250px; box-sizing: border-box;">Thêm vào giỏ hàng</button>
+      <div class="top-product-info">
+        <h4 class="top-product-title name-product" onclick="document.location='../ChiTietSanPham/chitietsanpham.html'">${topProducts.alt}</h4>
+        <span class="top-product-price price">${topProducts.price}</span>
+      </div>
+      <button class="button-product" id="more-btn-2" onclick="addToCart();" style="border: 1px solid black; color: black; width: 250px; box-sizing: border-box;"><a href="#" style="text-decoration: none; color: black;">Thêm vào giỏ hàng</a></button>
     `;
       swiperWrapperTop.appendChild(swiperSlide);
     });

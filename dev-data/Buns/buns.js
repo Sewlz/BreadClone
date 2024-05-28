@@ -203,3 +203,5 @@ fetch("../../data/Product-data/product.json")
     updateDisplay();
   })
   .catch((error) => console.error("Error importing JSON file:", error));
+  
+
