@@ -885,6 +885,9 @@
   width: 100%;
   color: black;
 }
+.result-search .product:hover{
+  color: var(--color-05);
+}
 
 .result-search .product h2{
   font-size: 13px;
@@ -893,6 +896,12 @@
 .result-search .product p{
   font-size: 13px;
   font-weight: normal;
+}
+.result-search .product p::after{
+  content: "đ";
+  margin-bottom: 10px;
+  position: relative;
+  bottom: 2px;
 }
 
 .search-main form{
