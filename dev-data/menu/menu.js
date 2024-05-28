@@ -28,8 +28,8 @@ const btnCloseMenu = document.querySelector(".button-close-menu");
 function resetMenuBar() {
   menuLv1.classList.remove("active-menu-bar");
   btnShowLv1.classList.remove("rotation-icon-down");
-  menuLv2.classList.remove("active-menu-bar");
-  btnShowLv2.classList.remove("rotation-icon-down");
+  // menuLv2.classList.remove("active-menu-bar");
+  // btnShowLv2.classList.remove("rotation-icon-down");
   itemBarClose[0].style = `transform: rotate(0)`;
   itemBarClose[1].style = `transform: rotate(0)`;
 }
@@ -54,8 +54,8 @@ const menuLv1 = document.querySelector(".menu-bar-container_lv2");
 btnShowLv1.addEventListener("click", () => {
   menuLv1.classList.toggle("active-menu-bar");
   btnShowLv1.classList.toggle("rotation-icon-down");
-  menuLv2.classList.remove("active-menu-bar");
-  btnShowLv2.classList.remove("rotation-icon-down");
+  // menuLv2.classList.remove("active-menu-bar");
+  // btnShowLv2.classList.remove("rotation-icon-down");
   menuBar.style.overflow = "auto";
 });
 
@@ -204,10 +204,6 @@ document.addEventListener("DOMContentLoaded", () => {
       .then((response) => response.json())
       .then((data) => {
         const products = [];
-        // Flatten the product data
-        // for (const category in data.data) {
-        //   products.push(...data.data[category]);
-        // }
 
         for (const category in data.data) {
           data.data[category].forEach((product, index) => {
@@ -255,7 +251,6 @@ document.addEventListener("DOMContentLoaded", () => {
         const productSearch = document.querySelectorAll(
           ".result-search .product"
         );
-        console.log("🚀 ~ .then ~ productSearch:", productSearch);
         productSearch.forEach((item) => {
           item.addEventListener("click", () => {
             let posIndex = item.getAttribute("pos-index");
@@ -270,6 +265,49 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Attach the search function to the input event
   document.getElementById("search").addEventListener("input", searchProducts);
+
+  // Xử lý khi click vào nút tìm kiếm
+  const btnSearchInput = document.querySelector(".search-main button");
+  btnSearchInput.addEventListener("click", (e) => {
+    e.preventDefault();
+    const searchTerm = document.getElementById("search").value.toLowerCase();
+    divUnderSearch.innerHTML = "";
+
+    // Load the product data
+    fetch("../../data/Product-data/product.json")
+      .then((response) => response.json())
+      .then((data) => {
+        const products = [];
+
+        for (const category in data.data) {
+          data.data[category].forEach((product, index) => {
+            products.push({ ...product, category, posIndex: index });
+          });
+        }
+
+        // Filter products based on the search term
+        const filteredProducts = products.filter((product) =>
+          product.name.toLowerCase().includes(searchTerm)
+        );
+
+        // Loại bỏ các sản phẩm trùng lặp
+        const uniqueFilteredProducts = Array.from(
+          new Set(filteredProducts.map((a) => a.name))
+        ).map((name) => {
+          return filteredProducts.find((a) => a.name === name);
+        });
+
+        // Chuyển đổi mảng uniqueFilteredProducts thành chuỗi JSON trước khi lưu vào sessionStorage
+        const uniqueFilteredProductsJSON = JSON.stringify(
+          uniqueFilteredProducts
+        );
+        sessionStorage.setItem("lstSearch", uniqueFilteredProductsJSON);
+        sessionStorage.setItem("titlePageWebsite", "");
+      })
+      .catch((error) => console.error("Error loading product data:", error));
+
+    window.location.href = "../Buns/buns.html";
+  });
 });
 
 function addToCart() {
@@ -445,3 +483,19 @@ document.addEventListener("DOMContentLoaded", function () {
     ulListCart.style = "display:none!important;";
   }
 });
+
+const pageInProduct = document.querySelectorAll(".menu-sub_item a");
+const pageMobileInProduct = document.querySelectorAll(".menu-bar_lv2 a");
+pageInProduct.forEach((item) => {
+  clickInMenuProduct(item);
+});
+
+pageMobileInProduct.forEach((item) => {
+  clickInMenuProduct(item);
+});
+
+function clickInMenuProduct(item) {
+  item.addEventListener("click", () => {
+    sessionStorage.setItem("titlePageWebsite", item.textContent);
+  });
+}
