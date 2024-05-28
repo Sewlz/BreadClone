@@ -101,7 +101,6 @@ document.addEventListener("DOMContentLoaded", function () {
   }
   removeItem();
 });
-
 function removeItem() {
   const removeButtons = document.querySelectorAll(".remove-item-cart");
   removeButtons.forEach((button) => {
@@ -113,7 +112,6 @@ function removeItem() {
     });
   });
 }
-
 function removeCartItem(index) {
   var cartArray = sessionStorage.getItem("cartItems");
   if (cartArray !== null && cartArray !== "") {
