@@ -144,17 +144,27 @@ function totalCalc() {
   const cartTotal = document.querySelector(
     ".order-total > td:nth-child(2) > span:nth-child(1)"
   );
+
+  let subtotalSum = 0;
+
   cartItems.forEach((item) => {
-    const subtotal = item.querySelector(".product-subtotal > p");
-    const price = item.querySelector(".product-price > p");
-    const quantity = item.querySelector(".quantity");
-    subtotal.innerHTML =
-      parseInt(price.innerHTML) * parseInt(quantity.value) + ",000";
-    cartSub.innerHTML =
-      parseInt(price.innerHTML) + parseInt(cartSub.innerHTML) + ",000";
-    cartTotal.innerHTML = cartSub.innerHTML;
+    const subtotalElement = item.querySelector(".product-subtotal > p");
+    const priceElement = item.querySelector(".product-price > p");
+    const quantityElement = item.querySelector(".quantity");
+
+    const price = parseInt(priceElement.innerHTML.replace(/,/g, ""));
+    const quantity = parseInt(quantityElement.value);
+    const subtotal = price * quantity;
+
+    subtotalElement.innerHTML = subtotal.toLocaleString();
+    subtotalSum += subtotal;
   });
+
+  const formattedSubtotal = subtotalSum.toLocaleString();
+  cartSub.innerHTML = formattedSubtotal;
+  cartTotal.innerHTML = formattedSubtotal;
 }
+
 function sendCartData() {
   const payBtn = document.querySelector(".process-pay");
   if (!payBtn._hasClickEvent) {

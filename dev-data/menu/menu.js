@@ -434,7 +434,9 @@ function cartHover() {
       <div class="price-quantity">
         <span class="price-item-cart-menu">${item.quantity}</span>
         x
-        <span class="quantity-item-cart-menu">${item.price}</span>
+        <span class="quantity-item-cart-menu">${
+          parseInt(item.price) * parseInt(item.quantity)
+        },000</span>
       </div>
       <a href="#remove-item-001" class="delete-item-cart-menu">
         <i class="fa-sharp fa-solid fa-xmark"></i>
@@ -453,7 +455,7 @@ function HovertotalCalc() {
   var cartArray = sessionStorage.getItem("cartItems");
   if (cartArray !== null && cartArray !== "") {
     const total = JSON.parse(cartArray).reduce(
-      (total, item) => total + parseInt(item.price),
+      (total, item) => total + parseInt(item.price) * parseInt(item.quantity),
       0
     );
     document.querySelector(
