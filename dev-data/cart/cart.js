@@ -50,7 +50,7 @@ document.addEventListener("DOMContentLoaded", function () {
                       <input
                         class="quantity"
                         type="number"
-                        value="1"
+                        value="${item.quantity}"
                         step="1"
                         min="1"
                         name="quantity-001"
@@ -78,6 +78,7 @@ document.addEventListener("DOMContentLoaded", function () {
   } else {
     console.log("numCart is either null or empty.");
   }
+  sendCartData();
   removeItem();
   //code quantityinput
   const btnMinus = document.querySelectorAll("tbody tr .btn-minus");
@@ -91,6 +92,7 @@ document.addEventListener("DOMContentLoaded", function () {
       if (currentValue > 1) {
         quantityInput[index].value = currentValue - 1;
         totalCalc();
+        sendCartData();
       }
     });
   });
@@ -99,11 +101,15 @@ document.addEventListener("DOMContentLoaded", function () {
     item.addEventListener("click", () => {
       quantityInput[index].value = parseInt(quantityInput[index].value) + 1;
       totalCalc();
+      sendCartData();
     });
   });
   const quantityInputs = document.querySelectorAll(".quantity");
   quantityInputs.forEach((input) => {
-    input.addEventListener("change", totalCalc);
+    input.addEventListener("change", () => {
+      totalCalc();
+      sendCartData();
+    });
   });
   totalCalc();
 });
@@ -149,4 +155,37 @@ function totalCalc() {
     cartTotal.innerHTML = cartSub.innerHTML;
   });
 }
-function sendCartData() {}
+function sendCartData() {
+  const payBtn = document.querySelector(".process-pay");
+  if (!payBtn._hasClickEvent) {
+    payBtn._hasClickEvent = true;
+    payBtn.addEventListener("click", (event) => {
+      const tItem = document.querySelectorAll(".cart-item");
+      var totalCartItem = [];
+      tItem.forEach((item) => {
+        var totalObj = convertTotalItemToJson(item);
+        totalCartItem.push(totalObj);
+      });
+      sessionStorage.setItem("totalCartItems", JSON.stringify(totalCartItem));
+      console.log(totalCartItem);
+    });
+  }
+}
+
+function convertTotalItemToJson(item) {
+  // Select the elements
+  const nameElement = item.querySelector(".product-name a");
+  const priceElement = item.querySelector(".product-subtotal p");
+  const quantityElement = item.querySelector(".quantity");
+  // Extract values
+  const productName = nameElement.textContent.trim();
+  const price = priceElement.textContent.trim();
+  const quantity = quantityElement.value;
+  // Create JSON object
+  const productInfo = {
+    productName: productName,
+    price: price,
+    quantity: quantity,
+  };
+  return productInfo;
+}

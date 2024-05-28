@@ -1,6 +1,5 @@
-const countItemInCart = document.querySelector('.num-item-cart')
-countItemInCart.textContent = '0'
-
+const countItemInCart = document.querySelector(".num-item-cart");
+countItemInCart.textContent = "0";
 
 const btnSearch = document.querySelector(".search-container a svg");
 const btnClose = document.querySelector(".btn-close");
@@ -230,9 +229,9 @@ document.addEventListener("DOMContentLoaded", () => {
             displayedProducts.add(product.name);
 
             const productDiv = document.createElement("a");
-            productDiv.href = '../ChiTietSanPham/chitietsanpham.html'
-            productDiv.setAttribute('pos-index', product.posIndex)
-            productDiv.setAttribute('category-product', product.category)
+            productDiv.href = "../ChiTietSanPham/chitietsanpham.html";
+            productDiv.setAttribute("pos-index", product.posIndex);
+            productDiv.setAttribute("category-product", product.category);
             productDiv.classList.add("product");
 
             const productName = document.createElement("h2");
@@ -247,22 +246,24 @@ document.addEventListener("DOMContentLoaded", () => {
             divUnderSearch.appendChild(productDiv);
           }
         });
-        
-        if(searchTerm === '' || filteredProducts.length < 1) {
-          divUnderSearch.innerHTML = ''
-          divUnderSearch.style = 'display: none;'
+
+        if (searchTerm === "" || filteredProducts.length < 1) {
+          divUnderSearch.innerHTML = "";
+          divUnderSearch.style = "display: none;";
         }
 
-        const productSearch = document.querySelectorAll('.result-search .product')
-        console.log("🚀 ~ .then ~ productSearch:", productSearch)
-        productSearch.forEach(item=>{
-          item.addEventListener('click', ()=>{
-            let posIndex = item.getAttribute('pos-index')
-            let categoryProduct = item.getAttribute('category-product')
-            sessionStorage.setItem('pos-index', posIndex)
-            sessionStorage.setItem('category-product', categoryProduct)
-          })
-        })
+        const productSearch = document.querySelectorAll(
+          ".result-search .product"
+        );
+        console.log("🚀 ~ .then ~ productSearch:", productSearch);
+        productSearch.forEach((item) => {
+          item.addEventListener("click", () => {
+            let posIndex = item.getAttribute("pos-index");
+            let categoryProduct = item.getAttribute("category-product");
+            sessionStorage.setItem("pos-index", posIndex);
+            sessionStorage.setItem("category-product", categoryProduct);
+          });
+        });
       })
       .catch((error) => console.error("Error loading product data:", error));
   }
@@ -273,43 +274,66 @@ document.addEventListener("DOMContentLoaded", () => {
 
 function addToCart() {
   event.preventDefault();
-
   const itemCell = document.querySelectorAll(".cell");
   let cartItems = sessionStorage.getItem("cartItems")
     ? JSON.parse(sessionStorage.getItem("cartItems"))
     : [];
+  if (window.location.href.includes("ChiTietSanPham")) {
+    console.log('The URL contains "ChiTietSanPham".');
+    // Select the elements
+    const imgElement = document.querySelector(".img-container img");
+    const nameElement = document.querySelector(".name-product-detail");
+    const priceElement = document.querySelector(".price-product-detail");
+    const quanityElement = document.querySelector(".quantity");
+    // Extract values
+    const imgSrc = imgElement.src;
+    const productName = nameElement.textContent.trim();
+    const price = priceElement.textContent.trim();
+    const quantity = quanityElement.value;
+    // Create JSON object
+    productInfo = {
+      imgSrc: imgSrc,
+      productName: productName,
+      price: price,
+      quantity: quantity,
+    };
+    var cartObj = productInfo;
+    cartItems.push(cartObj);
+    sessionStorage.setItem("cartItems", JSON.stringify(cartItems));
+    location.reload();
+    updateCart();
+  } else {
+    itemCell.forEach((item) => {
+      item.querySelector(".button-product a").addEventListener("click", (e) => {
+        e.preventDefault();
 
-  itemCell.forEach((item) => {
-    item.querySelector(".button-product a").addEventListener("click", (e) => {
-      e.preventDefault();
+        var cartObj = convertItemToJson(item);
+        cartItems.push(cartObj);
 
-      var cartObj = convertItemToJson(item);
-      cartItems.push(cartObj);
-
-      sessionStorage.setItem("cartItems", JSON.stringify(cartItems));
-      location.reload();
-      updateCart();
+        sessionStorage.setItem("cartItems", JSON.stringify(cartItems));
+        location.reload();
+        updateCart();
+      });
     });
-  });
+  }
 }
 function convertItemToJson(item) {
   // Select the elements
   const imgElement = item.querySelector(".img-product img");
   const nameElement = item.querySelector(".name-product");
   const priceElement = item.querySelector(".price");
-
+  const quantity = "1";
   // Extract values
   const imgSrc = imgElement.src;
   const productName = nameElement.textContent.trim();
   const price = priceElement.textContent.trim();
-
   // Create JSON object
   const productInfo = {
     imgSrc: imgSrc,
     productName: productName,
     price: price,
+    quantity: quantity,
   };
-
   return productInfo;
 }
 function updateCart() {
@@ -370,7 +394,7 @@ function cartHover() {
         </a>
       </h6>
       <div class="price-quantity">
-        <span class="price-item-cart-menu">1</span>
+        <span class="price-item-cart-menu">${item.quantity}</span>
         x
         <span class="quantity-item-cart-menu">${item.price}</span>
       </div>
@@ -406,12 +430,18 @@ document.addEventListener("DOMContentLoaded", function () {
       addToCart();
     });
   });
+  if (window.location.href.includes("ChiTietSanPham")) {
+    const btnSubmit = document.querySelector(".btn-submit");
+    btnSubmit.addEventListener("click", () => {
+      addToCart();
+    });
+  }
   updateCart();
   cartHover();
   HovertotalCalc();
-  const liItemCart = document.querySelector('.item-cart-menu')
-  if(!liItemCart) {
-    const ulListCart = document.querySelector('.cart-menu-container')
-    ulListCart.style = 'display:none!important;'
+  const liItemCart = document.querySelector(".item-cart-menu");
+  if (!liItemCart) {
+    const ulListCart = document.querySelector(".cart-menu-container");
+    ulListCart.style = "display:none!important;";
   }
 });
