@@ -10,27 +10,6 @@ btnApply.addEventListener("click", (event) => {
   }
 });
 
-//code quantityinput
-const btnMinus = document.querySelectorAll("tbody tr .btn-minus");
-const btnPlus = document.querySelectorAll("tbody tr .btn-plus");
-const quantityInput = document.querySelectorAll(".quantity");
-const btnUpdate = document.querySelector(".update-cart");
-
-btnMinus.forEach((item, index) => {
-  item.addEventListener("click", () => {
-    const currentValue = parseInt(quantityInput[index].value);
-    if (currentValue > 1) {
-      quantityInput[index].value = currentValue - 1;
-    }
-  });
-});
-
-btnPlus.forEach((item, index) => {
-  item.addEventListener("click", () => {
-    quantityInput[index].value = parseInt(quantityInput[index].value) + 1;
-  });
-});
-
 // const chooseLocation = document.querySelector('.choose-location')
 // const changeLocation = document.querySelector('.change-location')
 // changeLocation.addEventListener('click', ()=>{
@@ -100,6 +79,28 @@ document.addEventListener("DOMContentLoaded", function () {
     console.log("numCart is either null or empty.");
   }
   removeItem();
+  //code quantityinput
+  const btnMinus = document.querySelectorAll("tbody tr .btn-minus");
+  const btnPlus = document.querySelectorAll("tbody tr .btn-plus");
+  const quantityInput = document.querySelectorAll(".quantity");
+  // const btnUpdate = document.querySelector(".update-cart");
+
+  btnMinus.forEach((item, index) => {
+    item.addEventListener("click", () => {
+      const currentValue = parseInt(quantityInput[index].value);
+      if (currentValue > 1) {
+        quantityInput[index].value = currentValue - 1;
+        totalCalc();
+      }
+    });
+  });
+
+  btnPlus.forEach((item, index) => {
+    item.addEventListener("click", () => {
+      quantityInput[index].value = parseInt(quantityInput[index].value) + 1;
+      totalCalc();
+    });
+  });
   const quantityInputs = document.querySelectorAll(".quantity");
   quantityInputs.forEach((input) => {
     input.addEventListener("change", totalCalc);
