@@ -35,3 +35,8 @@ document.addEventListener("DOMContentLoaded", function () {
     radio.addEventListener("change", updateDescriptions);
   });
 });
+// function getCartItems() {
+//   var cartItems = sessionStorage.getItem("");
+//   cartItems = JSON.parse(cartItems);
+//   cartItems.forEach((items) => {});
+// }

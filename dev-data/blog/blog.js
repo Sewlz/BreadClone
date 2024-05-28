@@ -10,6 +10,9 @@ function blogTitle(title) {
   event.preventDefault();
   const blog = document.querySelector(`.blog-title h3`);
   blog.innerHTML = title;
+  //store title to sessionStorage
+  sessionStorage.setItem("blogTitle", title);
+
   if (title === "Tin tức") {
     parameter = "news";
   } else if (title === "Khuyến mại") {
@@ -21,6 +24,18 @@ function blogTitle(title) {
 }
 document.addEventListener("DOMContentLoaded", function () {
   const urlParams = new URLSearchParams(window.location.search);
+  const storedTitle = sessionStorage.getItem("blogTitle");
+  if (storedTitle) {
+    if (urlParams.has("news") || urlParams.has("promotion")) {
+      document.querySelector(".blog-title h3").innerHTML = storedTitle;
+    } else if (!urlParams.has("news") || !urlParams.has("promotion")) {
+      document.querySelector(".blog-title h3").innerHTML =
+        "Tin tức và Khuyến mại";
+    }
+  } else {
+    document.querySelector(".blog-title h3").innerHTML =
+      "Tin tức và Khuyến mại";
+  }
   if (urlParams.has("news")) {
     console.log("Loading news...");
     latestLoader("../../data/blog-data/news.json");
@@ -35,7 +50,6 @@ document.addEventListener("DOMContentLoaded", function () {
     blogLoader("../../data/blog-data/blog.json");
   }
 });
-
 function latestLoader(fileName) {
   fetch(fileName)
     .then((response) => response.json())
