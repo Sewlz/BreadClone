@@ -117,18 +117,22 @@ fetch("../../data/home-data/homeProduct.json")
       swiperWrapper.appendChild(swiperSlide);
     });
 
-    const img1 = document.querySelectorAll('.slection-container .swiper-slide img')
+    const img1 = document.querySelectorAll(
+      ".slection-container .swiper-slide img"
+    );
     img1.forEach((item, index) => {
-      item.addEventListener('click', ()=>{
-        sessionStorage.setItem('titlePageWebsite', product[index].alt)
-      })
-    })
-    const h41 = document.querySelectorAll('.slection-container .swiper-slide h4')
+      item.addEventListener("click", () => {
+        sessionStorage.setItem("titlePageWebsite", product[index].alt);
+      });
+    });
+    const h41 = document.querySelectorAll(
+      ".slection-container .swiper-slide h4"
+    );
     h41.forEach((item, index) => {
-      item.addEventListener('click', ()=>{
-        sessionStorage.setItem('titlePageWebsite', product[index].alt)
-      })
-    })
+      item.addEventListener("click", () => {
+        sessionStorage.setItem("titlePageWebsite", product[index].alt);
+      });
+    });
   });
 
 //top product swiper loader
@@ -136,7 +140,7 @@ fetch("../../data/home-data/topProducts.json")
   .then((response) => response.json())
   .then((data) => {
     const topProducts = data.topProducts;
-    console.log("🚀 ~ .then ~ topProducts:", topProducts)
+    console.log("🚀 ~ .then ~ topProducts:", topProducts);
     const swiperWrapperTop = document.querySelector(
       "div.swiper:nth-child(4) > div:nth-child(1)"
     );
@@ -157,23 +161,22 @@ fetch("../../data/home-data/topProducts.json")
       swiperWrapperTop.appendChild(swiperSlide);
     });
 
-    const imgProduct = document.querySelectorAll('.img-product')
-    const topProductInfor = document.querySelectorAll('.top-product-info')
-    imgProduct.forEach((item, index) =>{
-      clickTopProducts(item, index)
-      
-    })
+    const imgProduct = document.querySelectorAll(".img-product");
+    const topProductInfor = document.querySelectorAll(".top-product-info");
+    imgProduct.forEach((item, index) => {
+      clickTopProducts(item, index);
+    });
     topProductInfor.forEach((item, index) => {
-      clickTopProducts(item, index)
-    })
+      clickTopProducts(item, index);
+    });
 
-    function clickTopProducts(item, index){
-      item.addEventListener('click', ()=>{
-        let posIndex = topProducts[index].posIndex
-        let category = topProducts[index].category
-        sessionStorage.setItem('pos-index', posIndex)
-        sessionStorage.setItem('category-product', category)
-      })
+    function clickTopProducts(item, index) {
+      item.addEventListener("click", () => {
+        let posIndex = topProducts[index].posIndex;
+        let category = topProducts[index].category;
+        sessionStorage.setItem("pos-index", posIndex);
+        sessionStorage.setItem("category-product", category);
+      });
     }
   });
 //swiper review script
@@ -214,10 +217,6 @@ function initializeNewsSwiper() {
         el: ".swiper-pagination",
         clickable: true,
       },
-      navigation: {
-        nextEl: ".swiper-button-prev-unique",
-        prevEl: ".swiper-button-next-unique",
-      },
     });
   } else {
     swiperNews = new Swiper(".newsSwiper", {
@@ -226,10 +225,6 @@ function initializeNewsSwiper() {
       pagination: {
         el: ".swiper-pagination",
         clickable: true,
-      },
-      navigation: {
-        nextEl: ".swiper-button-prev-unique",
-        prevEl: ".swiper-button-next-unique",
       },
     });
   }
