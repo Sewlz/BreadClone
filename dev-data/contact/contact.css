@@ -200,7 +200,12 @@ textarea {
 @media only screen and (max-width: 956px) {
   .container {
     flex-direction: column;
+    box-sizing: border-box;
+    margin: 5% 5%;
   }
+}
+.home-li {
+  text-decoration: none;
 }
 .home-li > a:link {
   color: #ffffff;

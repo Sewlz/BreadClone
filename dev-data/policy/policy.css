@@ -84,3 +84,8 @@ h2 {
   list-style: disc;
   margin-left: 20px;
 }
+@media only screen and (max-width: 768px) {
+  #purchase-policy {
+    margin: 2% 5%;
+  }
+}

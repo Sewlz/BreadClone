@@ -205,97 +205,112 @@ li.profile-item:nth-child(1) {
   align-content: center;
 }
 
-
 @media (max-width: 1120px) {
-  .profile-container{
+  .profile-container {
     padding-right: 10px;
     padding-left: 10px;
   }
 }
 
 @media (max-width: 860px) {
-  .profile-container{
+  .profile-container {
     flex-direction: column;
   }
 
-  .panel-show{
+  .panel-show {
     width: 100%;
   }
 
-  .user-functionality{
+  .user-functionality {
     display: flex;
     align-items: center;
     margin-top: 10px;
     flex-wrap: wrap;
   }
 
-  .user-functionality i{
+  .user-functionality i {
     margin-top: 0;
   }
 
-  .lst-profile{
+  .lst-profile {
     flex-direction: row;
     align-items: center;
     margin-top: 0;
   }
+  .img-profile {
+    order: -1;
+    border-top: none;
+  }
 }
 
 @media (max-width: 660px) {
-  .content-profile-detail{
+  .content-profile-detail {
     flex-direction: column;
     gap: 10px;
     padding: 0;
   }
 
-  .form-profile-detail{
+  .form-profile-detail {
     margin-top: 10px;
   }
 
-  .img-profile{
+  .img-profile {
     border: none;
     border-top: 1px solid #efefef;
     padding-top: 20px;
     margin-top: 10px;
   }
 
-  .note-img{
+  .note-img {
     text-align: center;
+  }
+  .img-profile {
+    order: -1;
+    border-top: none;
   }
 }
 
 @media (max-width: 400px) {
-  .menu-profile{
+  .menu-profile {
     padding: 15px;
   }
-  .lst-profile{
-    padding-left: 0!important;
+  .lst-profile {
+    padding-left: 0 !important;
     margin-top: 10px;
+  }
+  .img-profile {
+    order: -1;
+    border-top: none;
   }
 }
 
 @media (max-width: 330px) {
-  .profile-detail-container{
+  .profile-detail-container {
     padding-bottom: 70px;
   }
-  .img-profile{
+  .img-profile {
     padding-right: 0;
     padding-left: 0;
   }
-  .form-profile-detail{
+  .form-profile-detail {
     padding-right: 0;
   }
-  .content-profile-detail .img{
+  .content-profile-detail .img {
     width: 100px;
     height: 100px;
   }
-  .input-field{
+  .input-field {
     flex-direction: column;
     gap: 5px;
   }
-  .form-profile-detail > div p{
+  .form-profile-detail > div p {
     text-align: left;
   }
-  .user-functionality{
+  .user-functionality {
     font-size: 16px;
+  }
+  .img-profile {
+    order: -1;
+    border-top: none;
   }
 }
