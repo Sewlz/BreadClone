@@ -67,13 +67,12 @@ fetch("../../data/Product-data/product.json")
 
     const nameProduct = document.querySelector(".name-product-detail");
     const priceProduct = document.querySelector(".price-product-detail");
-    const headerTitle = document.querySelector('.section-header_title')
+    const headerTitle = document.querySelector(".section-header_title");
     document.title = `${dataDetail[posItem].name} - Dough Re Mi`;
-    
 
     nameProduct.innerText = dataDetail[posItem].name;
     priceProduct.innerText = dataDetail[posItem].price;
-    headerTitle.innerText = dataDetail[posItem].name
+    headerTitle.innerText = dataDetail[posItem].name;
 
     const imgMain = document.querySelectorAll(".img-container img");
     const imgClone = document.querySelector(".thumbnail-container");
@@ -196,13 +195,51 @@ fetch("../../data/Product-data/product.json")
             >${item.name}</a>
           <span class="price-slide">${item.price}</span>
           <div class="button-product-slide">
-            <a onClick=addToCart()>Thêm vào giỏ hàng</a>
+            <a>Thêm vào giỏ hàng</a>
           </div>
         </div>
       </li>`;
     });
 
     const slideItem = document.querySelectorAll(".slide-item");
+    let lstSlideProduct = [];
+    slideItem.forEach((item) => {
+      const btn = item.querySelector(".button-product-slide a");
+      btn.addEventListener("click", (e) => {
+        e.preventDefault();
+        const imgSrc = item.querySelector(".img-product img").src;
+        const nameItem = item.querySelector(".name-product-slide").textContent;
+        const priceItem = item.querySelector(".price-slide").textContent;
+        let quantity = "1";
+
+        lstSlideProduct = {
+          imgSrc: imgSrc,
+          productName: nameItem,
+          price: priceItem,
+          quantity: quantity,
+        };
+        const dataOrigin = sessionStorage.getItem("cartItems");
+        const parsedData = JSON.parse(dataOrigin);
+        parsedData.push(lstSlideProduct)
+        if (dataOrigin) {
+        }
+        sessionStorage.setItem("cartItems", JSON.stringify(parsedData));
+        updateCart();
+      });
+    });
+
+    function updateCart() {
+      const numCart = document.querySelector(".num-item-cart");
+      const numCartValue = sessionStorage.getItem("cartItems");
+      if (numCartValue !== null) {
+        const cartArray = JSON.parse(numCartValue);
+        let cartSize = cartArray.length;
+        numCart.innerText = cartSize;
+      } else if (numCartValue === null) {
+        numCart.innerText = 0;
+      }
+      console.log(sessionStorage.getItem("cartItems"));
+    }
 
     //Tạo dot-item
     for (let i = 0; i <= slideItem.length - numSlides; i++) {
