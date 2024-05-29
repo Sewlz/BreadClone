@@ -148,6 +148,18 @@
     text-align: center;
     font-size: 14px;
   }
+  .about {
+    width: 95%;
+    height: 100%;
+  }
+  .about-2 {
+    width: 95%;
+    height: 100%;
+  }
+  .about-3 {
+    width: 95%;
+    height: 100%;
+  }
 }
 .home-li > a:link {
   color: #ffffff;

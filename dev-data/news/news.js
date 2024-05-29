@@ -19,7 +19,7 @@ function fetchData(url, index) {
       newsDiv.appendChild(headline);
 
       const author = document.createElement("p");
-      author.textContent = `By ${newsItem.author} on ${newsItem.date}`;
+      author.textContent = `- By ${newsItem.author} on ${newsItem.date} -`;
       newsDiv.appendChild(author);
 
       newsItem.paragraph.forEach((paragraph) => {

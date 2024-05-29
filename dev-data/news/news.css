@@ -147,11 +147,23 @@ body {
   margin-top: -15%;
 }
 @media only screen and (max-width: 768px) {
+  .section-header_title {
+    font-size: large;
+  }
   .news-content {
-    margin: 5% 10%;
+    margin: 2% 5%;
   }
   .sharing {
     display: none;
+  }
+  .news-wrapper {
+    width: 100%;
+  }
+  .news-item > h2:nth-child(1) {
+    text-align: center;
+  }
+  .news-item > p:nth-child(2) {
+    text-align: center;
   }
 }
 .share-icon > ul > li > a:link {
