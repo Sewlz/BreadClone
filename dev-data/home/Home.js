@@ -240,11 +240,13 @@ fetch("../../data/blog-data/blog.json")
   .then((data) => {
     const news = data.blog;
     const swiperWrapperNews = document.querySelector(".news-swiper-wrapper");
+    let index = 0;
     news.forEach((news) => {
       const swiperSlide = document.createElement("div");
       swiperSlide.classList.add("swiper-slide", "swiper-slide-news");
+      swiperSlide.setAttribute("index", index);
       swiperSlide.innerHTML = `
-      <article class="news-wrapper" onclick="window.location.href = '../news/news.html' ">
+      <article class="news-wrapper">
           <div class="news-img"><img src="${news.src}" alt=""></div>
           <div class="news-content">
               <h6>${news.headline}</h6>
@@ -255,5 +257,25 @@ fetch("../../data/blog-data/blog.json")
       </article>       
       `;
       swiperWrapperNews.appendChild(swiperSlide);
+      index++;
+      swiperSlide.addEventListener("click", () => {
+        sendParaData(
+          "../../data/blog-data/blog.json",
+          swiperSlide.getAttribute("index")
+        );
+        window.location.href = "../news/news.html";
+      });
     });
   });
+function sendParaData(fileName, index) {
+  sessionStorage.setItem("newsUrl", fileName);
+  sessionStorage.setItem("newsIndex", index);
+}
+document.addEventListener("DOMContentLoaded", function () {
+  const swiperSlide = document.querySelectorAll(".swiper-slide-news");
+  swiperSlide.forEach((item) => {
+    item.addEventListener("click", function (event) {
+      console.log("clicked");
+    });
+  });
+});
