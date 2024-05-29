@@ -384,7 +384,6 @@ function updateCart() {
   } else if (numCartValue === null) {
     numCart.innerText = 0;
   }
-  console.log(sessionStorage.getItem("cartItems"));
 }
 function removeHoverItem() {
   const removeButtons = document.querySelectorAll(".delete-item-cart-menu");

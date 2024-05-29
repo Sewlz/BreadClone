@@ -195,7 +195,7 @@ fetch("../../data/Product-data/product.json")
             >${item.name}</a>
           <span class="price-slide">${item.price}</span>
           <div class="button-product-slide">
-            <a>Thêm vào giỏ hàng</a>
+            <a >Thêm vào giỏ hàng</a>
           </div>
         </div>
       </li>`;
@@ -218,13 +218,16 @@ fetch("../../data/Product-data/product.json")
           price: priceItem,
           quantity: quantity,
         };
-        const dataOrigin = sessionStorage.getItem("cartItems");
-        const parsedData = JSON.parse(dataOrigin);
-        parsedData.push(lstSlideProduct)
+        let dataOrigin = sessionStorage.getItem("cartItems");
         if (dataOrigin) {
+          parsedData = JSON.parse(dataOrigin);
+        } else {
+          parsedData = [];
         }
+        parsedData.push(lstSlideProduct);
         sessionStorage.setItem("cartItems", JSON.stringify(parsedData));
         updateCart();
+        location.reload()
       });
     });
 
@@ -238,7 +241,6 @@ fetch("../../data/Product-data/product.json")
       } else if (numCartValue === null) {
         numCart.innerText = 0;
       }
-      console.log(sessionStorage.getItem("cartItems"));
     }
 
     //Tạo dot-item
@@ -385,7 +387,7 @@ fetch("../../data/Product-data/product.json")
       clearTimeout(autoplayIntervalId);
     });
 
-    const linkItemSlide = document.querySelectorAll(".slide-item a");
+    const linkItemSlide = document.querySelectorAll(".slide-item > a");
     linkItemSlide.forEach((item) => {
       item.addEventListener("click", () => {
         let pos = item.getAttribute("pos-index");
