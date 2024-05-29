@@ -181,3 +181,9 @@ body {
 .home-li > a:active {
   color: #ffffff;
 }
+.news-item {
+  overflow: hidden;
+}
+.news-item img {
+  width: 100%;
+}

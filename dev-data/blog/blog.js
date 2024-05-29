@@ -56,12 +56,11 @@ function latestLoader(fileName) {
     .then((data) => {
       const blog = data.blog.slice(0, 5);
       const blogWrapper = document.querySelector(".news-list");
+      let index = 0;
       blog.forEach((blogItem) => {
         const blogContent = document.createElement("div");
         blogContent.classList.add("news-container");
-        blogContent.onclick = function () {
-          window.location.href = "../news/news.html";
-        };
+        blogContent.setAttribute("index", index);
         blogContent.innerHTML = `
       <div class="news-wrapper">
       <div class="news-image">
@@ -84,6 +83,11 @@ function latestLoader(fileName) {
     </div>
       `;
         blogWrapper.appendChild(blogContent);
+        index++;
+        blogContent.onclick = function () {
+          window.location.href = "../news/news.html";
+          sendParaData(fileName, blogContent.getAttribute("index"));
+        };
       });
     })
     .catch((error) => console.error("Error fetching blog data:", error));
@@ -94,12 +98,11 @@ function blogLoader(fileName) {
     .then((data) => {
       const blog = data.blog;
       const blogWrapper = document.querySelector(".blog-list");
+      let index = 0;
       blog.forEach((blogItem) => {
         const blogContent = document.createElement("div");
         blogContent.classList.add("blog-container");
-        blogContent.onclick = function () {
-          window.location.href = "../news/news.html";
-        };
+        blogContent.setAttribute("index", index);
         blogContent.innerHTML = `
         <div class="blog-image">
           <img src="${blogItem.src}" alt="Blog Image">
@@ -119,6 +122,11 @@ function blogLoader(fileName) {
         </div>
       `;
         blogWrapper.appendChild(blogContent);
+        index++;
+        blogContent.onclick = function () {
+          window.location.href = "../news/news.html";
+          sendParaData(fileName, blogContent.getAttribute("index"));
+        };
       });
 
       const itemsPerPage = 5; // Number of items to display per page
@@ -194,4 +202,8 @@ function blogLoader(fileName) {
       }
     })
     .catch((error) => console.error("Error fetching blog data:", error));
+}
+function sendParaData(fileName, index) {
+  sessionStorage.setItem("newsUrl", fileName);
+  sessionStorage.setItem("newsIndex", index);
 }
