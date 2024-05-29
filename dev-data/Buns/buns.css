@@ -190,6 +190,7 @@
 
 .product-container .img-product {
   display: block;
+  overflow: hidden;
 }
 
 .button-product {

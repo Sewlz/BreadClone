@@ -467,7 +467,33 @@
         "price": "490,000"
       }
     ],
-    "pudding": [],
+    "pudding": [
+      {
+        "img": ["https://breadtalkvietnam.com/wp-content/uploads/2024/03/6AC686F5-3A21-4901-AEC8-43646366A994-1024x1365.jpeg"],
+        "name": "COMBO 4 LOẠI PUDDING",
+        "price": "180,000"
+      },
+      {
+        "img": ["https://breadtalkvietnam.com/wp-content/uploads/2024/03/039877AA-96A9-42B3-BE45-917F9BE71CB9-1024x1365.jpeg"],
+        "name": "Lychee Coconut Pudding",
+        "price": "48,000"
+      },
+      {
+        "img": ["https://breadtalkvietnam.com/wp-content/uploads/2024/03/A8F2B24C-5DA1-4D3D-A334-755C1A85EF94-1024x1365.jpeg"],
+        "name": "PEACH PUDDING",
+        "price": "48,000"
+      },
+      {
+        "img": ["https://breadtalkvietnam.com/wp-content/uploads/2024/03/6BCB3535-38EB-4107-A4ED-B04C3ACDA96A-1024x1365.jpeg"],
+        "name": "STRAWBERRY PUDDING",
+        "price": "48,000"
+      },
+      {
+        "img": ["https://breadtalkvietnam.com/wp-content/uploads/2024/03/D629CD6D-C05A-42D6-A412-D8501243CC8A-1024x1365.jpeg"],
+        "name": "Tiramisu Pudding",
+        "price": "48,000"
+      }
+    ],
     "cookies": [
       {
         "img": ["../../public/imgs/SanPham/cookies/dsc03146_optimized.png"],
