@@ -391,6 +391,18 @@
   overflow: hidden;
   text-overflow: ellipsis;
 }
+.name-product-slide {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 30px;
+  text-align: left;
+  color: var(--colorbody);
+  display: block;
+  margin-bottom: 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
 
 .price {
   font-size: 18px;
@@ -400,6 +412,20 @@
 }
 
 .price::after {
+  content: "đ";
+  font-size: 15px;
+  position: absolute;
+  bottom: 13px;
+  text-decoration: underline;
+}
+.price-slide {
+  font-size: 18px;
+  line-height: 1px;
+  color: var(--color-01);
+  position: relative;
+}
+
+.price-slide::after {
   content: "đ";
   font-size: 15px;
   position: absolute;
@@ -444,6 +470,46 @@
 }
 
 .button-product a:hover::before {
+  transform-origin: center left;
+  transform: scaleY(1);
+}
+.button-product-slide a {
+  margin-top: 10px;
+  color: #4f4f4f;
+  display: flex;
+  justify-content: center;
+  width: 90%;
+  border: 1px solid;
+  border-radius: 3px;
+  padding: 5px 0;
+  line-height: 20px;
+  font-weight: 500;
+  font-size: 13px;
+  text-align: center;
+
+  z-index: 1;
+  position: relative;
+  transition: all 0.25s ease-in-out;
+}
+
+.button-product-slide a::before {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  inset: 0;
+  background-color: var(--color-02);
+  transform-origin: center right;
+  transform: scaleX(0);
+  transition: transform 0.25s ease-in-out;
+  border-radius: 3px;
+}
+
+.button-product-slide a:hover {
+  cursor: pointer;
+  color: #f71853;
+}
+
+.button-product-slide a:hover::before {
   transform-origin: center left;
   transform: scaleY(1);
 }

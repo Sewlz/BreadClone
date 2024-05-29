@@ -190,13 +190,13 @@ fetch("../../data/Product-data/product.json")
         <div class="content-product">
           <a
             href="../ChiTietSanPham/chitietsanpham.html"
-            class="name-product uppercase"
+            class="name-product-slide uppercase"
             pos-index="${item.posIndex}"
             category-product="${item.category}"
             >${item.name}</a>
-          <span class="price">${item.price}</span>
-          <div class="button-product">
-            <a href="?#">Thêm vào giỏ hàng</a>
+          <span class="price-slide">${item.price}</span>
+          <div class="button-product-slide">
+            <a onClick=addToCart()>Thêm vào giỏ hàng</a>
           </div>
         </div>
       </li>`;
