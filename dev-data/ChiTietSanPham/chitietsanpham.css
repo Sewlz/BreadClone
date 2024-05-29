@@ -363,6 +363,7 @@
 
 .slide-item >a {
   overflow: hidden;
+  display: block;
 }
 
 .slide-item img {
