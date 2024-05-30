@@ -1,7 +1,7 @@
 {
   "topProducts": [
     {
-      "src": "./../../public/imgs/home/topProduct/dsc02401_optimized.png",
+      "src": "../../public/imgs/SanPham/cakeslices/dsc02401_optimized.png",
       "alt": "Tiramisu Cup",
       "price": "490,000",
       "href": "",
@@ -33,11 +33,11 @@
       "category": "flossspecials"
     },
     {
-      "src": "../../public/imgs/SanPham/cookies/dsc03146_optimized.png",
-      "alt": "ALMOND COOKIES",
+      "src": "../../public/imgs/SanPham/cookies/dsc03142_optimized.png",
+      "alt": "CHOCOLATE COOKIES",
       "price": "129,000",
       "href": "",
-      "posIndex": 0,
+      "posIndex": 1,
       "category": "cookies"
     },
     {
@@ -47,14 +47,6 @@
       "href": "",
       "posIndex": 0,
       "category": "flossspecials"
-    },
-    {
-      "src": "../../public/imgs/SanPham/cookies/dsc03142_optimized.png",
-      "alt": "CHOCOLATE COOKIES",
-      "price": "129,000",
-      "href": "",
-      "posIndex": 1,
-      "category": "cookies"
     }
   ]
 }

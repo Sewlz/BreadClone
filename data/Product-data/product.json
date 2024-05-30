@@ -301,12 +301,16 @@
     ],
     "drycakes": [
       {
-        "img": ["../../public/imgs/SanPham/drycakes/HOKKAIDO-ROLL-169K_SP-ROLL-1.jpg"],
+        "img": [
+          "../../public/imgs/SanPham/drycakes/HOKKAIDO-ROLL-169K_SP-ROLL-1.jpg"
+        ],
         "name": "HOKKAIDO ROLL",
         "price": "169,000"
       },
       {
-        "img": ["../../public/imgs/SanPham/drycakes/HOKKAIDO-SLICE-69K_SP-copy.jpg"],
+        "img": [
+          "../../public/imgs/SanPham/drycakes/HOKKAIDO-SLICE-69K_SP-copy.jpg"
+        ],
         "name": "HOKKAIDO SLICED",
         "price": "69,000"
       },
@@ -336,24 +340,32 @@
         "price": "30,000"
       },
       {
-        "img": ["../../public/imgs/SanPham/drycakes/dsc05157_optimized-1024x1024.png"],
+        "img": [
+          "../../public/imgs/SanPham/drycakes/dsc05157_optimized-1024x1024.png"
+        ],
         "name": "SR COFFEE SLICED",
         "price": "30,000"
       }
     ],
     "cakes": [
       {
-        "img": ["../../public/imgs/SanPham/cakes/dsc05141_optimized-1024x1024.png"],
+        "img": [
+          "../../public/imgs/SanPham/cakes/dsc05141_optimized-1024x1024.png"
+        ],
         "name": "LES OPERA C",
         "price": "550,000"
       },
       {
-        "img": ["../../public/imgs/SanPham/cakes/dsc05138_optimized-1024x1024.png"],
+        "img": [
+          "../../public/imgs/SanPham/cakes/dsc05138_optimized-1024x1024.png"
+        ],
         "name": "LES OPERA R",
         "price": "390,000"
       },
       {
-        "img": ["../../public/imgs/SanPham/cakes/dsc05150_optimized-1024x1024.png"],
+        "img": [
+          "../../public/imgs/SanPham/cakes/dsc05150_optimized-1024x1024.png"
+        ],
         "name": "MACHA MACHA",
         "price": "490,000"
       },
@@ -368,12 +380,16 @@
         "price": "490,000"
       },
       {
-        "img": ["../../public/imgs/SanPham/cakes/z5288998211586_514a791940410fba4916634adfcb1fbf-1024x1024.jpg"],
+        "img": [
+          "../../public/imgs/SanPham/cakes/z5288998211586_514a791940410fba4916634adfcb1fbf-1024x1024.jpg"
+        ],
         "name": "FRESH CREAM (SN01)",
         "price": "390,000"
       },
       {
-        "img": ["../../public/imgs/SanPham/cakes/z5288998208377_c2f8a465014cbb7a4e9794550a6b97c6-1024x1024.jpg"],
+        "img": [
+          "../../public/imgs/SanPham/cakes/z5288998208377_c2f8a465014cbb7a4e9794550a6b97c6-1024x1024.jpg"
+        ],
         "name": "BÁNH KEM MOCHA – 01",
         "price": "450,000"
       },
@@ -432,71 +448,87 @@
         "price": "80,000"
       },
       {
-        "img": ["../../public/imgs/SanPham/seasonalspecials/SET-COOKIES_WEB-COVER-03-1-1024x1024.jpg"],
+        "img": [
+          "../../public/imgs/SanPham/seasonalspecials/SET-COOKIES_WEB-COVER-03-1-1024x1024.jpg"
+        ],
         "name": "SET HỒNG THỊNH",
         "price": "799,000"
       },
       {
-        "img": ["../../public/imgs/SanPham/seasonalspecials/0673faa1205402bcd9d473d98ad8accc.jpg"],
+        "img": [
+          "../../public/imgs/SanPham/seasonalspecials/0673faa1205402bcd9d473d98ad8accc.jpg"
+        ],
         "name": "SET AN NHIÊN",
         "price": "399,000"
       },
       {
-        "img": ["../../public/imgs/SanPham/seasonalspecials/PINE-APPLE-COOKIE-2_129k-1024x1024.jpg"],
+        "img": [
+          "../../public/imgs/SanPham/seasonalspecials/PINE-APPLE-COOKIE-2_129k-1024x1024.jpg"
+        ],
         "name": "PINEAPPLE COOKIES",
         "price": "129,000"
       },
       {
-        "img": ["../../public/imgs/SanPham/seasonalspecials/GREEN-PEA-COOKIE-2-129K-1024x1024.jpg"],
+        "img": [
+          "../../public/imgs/SanPham/seasonalspecials/GREEN-PEA-COOKIE-2-129K-1024x1024.jpg"
+        ],
         "name": "GREEN PEA COOKIES",
         "price": "129,000"
       },
       {
-        "img": ["../../public/imgs/SanPham/seasonalspecials/CASHEW-NUT-COOKIE-2_-129K-1024x1024.jpg"],
+        "img": [
+          "../../public/imgs/SanPham/seasonalspecials/CASHEW-NUT-COOKIE-2_-129K-1024x1024.jpg"
+        ],
         "name": "CASHEW NUT COOKIES",
         "price": "129,000"
       },
       {
-        "img": ["../../public/imgs/SanPham/seasonalspecials/PANDAN-COCONUT-COOKIE-2-129K-1024x1024.jpg"],
+        "img": [
+          "../../public/imgs/SanPham/seasonalspecials/PANDAN-COCONUT-COOKIE-2-129K-1024x1024.jpg"
+        ],
         "name": "PANDAN COCONUT COOKIES",
         "price": "129,000"
       },
       {
-        "img": ["../../public/imgs/SanPham/seasonalspecials/STRAWBERRY-SHORT-CAKE-490K-1024x1024.jpg"],
+        "img": [
+          "../../public/imgs/SanPham/seasonalspecials/STRAWBERRY-SHORT-CAKE-490K-1024x1024.jpg"
+        ],
         "name": "CNY STRAWBERRY SHORTCAKE",
         "price": "490,000"
       }
     ],
     "pudding": [
       {
-        "img": ["https://breadtalkvietnam.com/wp-content/uploads/2024/03/6AC686F5-3A21-4901-AEC8-43646366A994-1024x1365.jpeg"],
+        "img": ["../../public/imgs/SanPham/puddings/combo-pudding.jpg"],
         "name": "COMBO 4 LOẠI PUDDING",
         "price": "180,000"
       },
       {
-        "img": ["https://breadtalkvietnam.com/wp-content/uploads/2024/03/039877AA-96A9-42B3-BE45-917F9BE71CB9-1024x1365.jpeg"],
+        "img": [
+          "../../public/imgs/SanPham/puddings/lychee-coconut-pudding.jpg"
+        ],
         "name": "Lychee Coconut Pudding",
         "price": "48,000"
       },
       {
-        "img": ["https://breadtalkvietnam.com/wp-content/uploads/2024/03/A8F2B24C-5DA1-4D3D-A334-755C1A85EF94-1024x1365.jpeg"],
+        "img": ["../../public/imgs/SanPham/puddings/peach-pudding.jpg"],
         "name": "PEACH PUDDING",
         "price": "48,000"
       },
       {
-        "img": ["https://breadtalkvietnam.com/wp-content/uploads/2024/03/6BCB3535-38EB-4107-A4ED-B04C3ACDA96A-1024x1365.jpeg"],
+        "img": ["../../public/imgs/SanPham/puddings/strawberry-pudding.jpg"],
         "name": "STRAWBERRY PUDDING",
         "price": "48,000"
       },
       {
-        "img": ["https://breadtalkvietnam.com/wp-content/uploads/2024/03/D629CD6D-C05A-42D6-A412-D8501243CC8A-1024x1365.jpeg"],
+        "img": ["../../public/imgs/SanPham/puddings/tiramisu-pudding.jpg"],
         "name": "Tiramisu Pudding",
         "price": "48,000"
       }
     ],
     "cookies": [
       {
-        "img": ["../../public/imgs/SanPham/cookies/dsc03146_optimized.png"],
+        "img": ["../../public/imgs/SanPham/cookies/dsc03146_optimized.jpg"],
         "name": "ALMOND COOKIES",
         "price": "129,000"
       },
@@ -508,12 +540,16 @@
     ],
     "flossspecials": [
       {
-        "img": ["../../public/imgs/SanPham/flossspecials/dsc03429_optimized.png"],
+        "img": [
+          "../../public/imgs/SanPham/flossspecials/dsc03429_optimized.png"
+        ],
         "name": "FIRE FLOSS",
         "price": "169,000"
       },
       {
-        "img": ["../../public/imgs/SanPham/flossspecials/dsc03428_optimized.png"],
+        "img": [
+          "../../public/imgs/SanPham/flossspecials/dsc03428_optimized.png"
+        ],
         "name": "FLOSS",
         "price": "169,000"
       }
