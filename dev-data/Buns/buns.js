@@ -42,7 +42,9 @@ fetch("../../data/Product-data/product.json")
     const objSearch = sessionStorage.getItem("lstSearch");
     if (objSearch) {
       dataDetail = JSON.parse(objSearch);
-      titleHeaderPage.innerText = "Search";
+      let string = 'Tìm kiếm'
+      titleHeaderPage.innerText = string;
+      document.querySelector('.section-header_title').innerText = string
     }
 
     // Thêm sự kiện beforeunload để xóa mục từ sessionStorage khi thoát trang

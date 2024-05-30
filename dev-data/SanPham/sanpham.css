@@ -129,11 +129,19 @@
   line-height: 30px;
   font-weight: 400;
   text-align: center;
-  /* animation */
   z-index: 1;
   position: relative;
   overflow: hidden;
   transition: color 0.4s ease-in-out;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+@media (max-width: 920px) {
+  .categories_item a{
+    max-width: 140px;
+  }
 }
 
 .categories_item a::before {
