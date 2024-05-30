@@ -347,6 +347,48 @@
         "price": "30,000"
       }
     ],
+    "cakeslices": [
+      {
+        "img": ["../../public/imgs/SanPham/cakeslices/dsc02389_optimized.png"],
+        "name": "CHOCOLATE PEANUT MOUSSE",
+        "price": "59,000"
+      },
+      {
+        "img": ["../../public/imgs/SanPham/cakeslices/dsc02388_optimized.png"],
+        "name": "OREO CHOCOLATE CHEESE",
+        "price": "59,000"
+      },
+      {
+        "img": ["../../public/imgs/SanPham/cakeslices/dsc02401_optimized.png"],
+        "name": "TIRAMISU CUP",
+        "price": "59,000"
+      },
+      {
+        "img": ["../../public/imgs/SanPham/cakes/dsc02466_optimized.png"],
+        "name": "BEARY VANILLA",
+        "price": "84,000"
+      },
+      {
+        "img": ["../../public/imgs/SanPham/cakeslices/dsc02299_optimized.png"],
+        "name": "BEARY BERRY",
+        "price": "45,000"
+      },
+      {
+        "img": ["../../public/imgs/SanPham/cakeslices/dsc02295_optimized.png"],
+        "name": "BEARY MATCHA",
+        "price": "45,000"
+      },
+      {
+        "img": ["../../public/imgs/SanPham/cakeslices/dsc02303_optimized.png"],
+        "name": "BEARY FOREST",
+        "price": "45,000"
+      },
+      {
+        "img": ["../../public/imgs/SanPham/cakeslices/dsc02333_optimized.png"],
+        "name": "RAINBOW BLISS SLICED",
+        "price": "48,000"
+      }
+    ],
     "cakes": [
       {
         "img": [
@@ -397,48 +439,6 @@
         "img": ["../../public/imgs/SanPham/cakes/dsc02354_optimized.png"],
         "name": "MOCHA CHOCO",
         "price": "490,000"
-      }
-    ],
-    "cakeslices": [
-      {
-        "img": ["../../public/imgs/SanPham/cakeslices/dsc02389_optimized.png"],
-        "name": "CHOCOLATE PEANUT MOUSSE",
-        "price": "59,000"
-      },
-      {
-        "img": ["../../public/imgs/SanPham/cakeslices/dsc02388_optimized.png"],
-        "name": "OREO CHOCOLATE CHEESE",
-        "price": "59,000"
-      },
-      {
-        "img": ["../../public/imgs/SanPham/cakeslices/dsc02401_optimized.png"],
-        "name": "TIRAMISU CUP",
-        "price": "59,000"
-      },
-      {
-        "img": ["../../public/imgs/SanPham/cakes/dsc02466_optimized.png"],
-        "name": "BEARY VANILLA",
-        "price": "84,000"
-      },
-      {
-        "img": ["../../public/imgs/SanPham/cakeslices/dsc02299_optimized.png"],
-        "name": "BEARY BERRY",
-        "price": "45,000"
-      },
-      {
-        "img": ["../../public/imgs/SanPham/cakeslices/dsc02295_optimized.png"],
-        "name": "BEARY MATCHA",
-        "price": "45,000"
-      },
-      {
-        "img": ["../../public/imgs/SanPham/cakeslices/dsc02303_optimized.png"],
-        "name": "BEARY FOREST",
-        "price": "45,000"
-      },
-      {
-        "img": ["../../public/imgs/SanPham/cakeslices/dsc02333_optimized.png"],
-        "name": "RAINBOW BLISS SLICED",
-        "price": "48,000"
       }
     ],
     "seasonalspecials": [
