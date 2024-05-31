@@ -107,9 +107,7 @@ function getCity() {
             option.value = data[code].name;
             option.text = data[code].name;
             citySelect.appendChild(option);
-            option.addEventListener("click", function () {
-              getProvince(data[code].code);
-            });
+            option.onclick = getProvince(data[code].code);
           }
         }
       })
@@ -131,9 +129,7 @@ function getProvince(parentCityCode) {
             option.value = data[code].name;
             option.text = data[code].name;
             provinceSelect.appendChild(option);
-            option.addEventListener("click", function () {
-              getWard(data[code].code);
-            });
+            option.onclick = getWard(data[code].code);
           }
         }
       })
