@@ -94,3 +94,76 @@ function totalOrderCalc() {
   const total = subtotal + shippingCost;
   totalElement.innerHTML = total.toLocaleString() + "₫";
 }
+function getCity() {
+  const citySelects = document.querySelectorAll(".city-selector");
+  citySelects.forEach((citySelect) => {
+    fetch("../../data/location-data/tinh_tp.json")
+      .then((response) => response.json())
+      .then((data) => {
+        // Iterate over the keys of the object
+        for (const code in data) {
+          if (data.hasOwnProperty(code)) {
+            const option = document.createElement("option");
+            option.value = data[code].name;
+            option.text = data[code].name;
+            citySelect.appendChild(option);
+            option.addEventListener("click", function () {
+              getProvince(data[code].code);
+            });
+          }
+        }
+      })
+      .catch((error) => {
+        console.error("Error fetching city data:", error);
+      });
+  });
+}
+
+function getProvince(parentCityCode) {
+  const provinceSelects = document.querySelectorAll(".province-selector");
+  provinceSelects.forEach((provinceSelect) => {
+    fetch("../../data/location-data/quan_huyen.json")
+      .then((response) => response.json())
+      .then((data) => {
+        for (const code in data) {
+          if (data[code].parent_code === parentCityCode) {
+            const option = document.createElement("option");
+            option.value = data[code].name;
+            option.text = data[code].name;
+            provinceSelect.appendChild(option);
+            option.addEventListener("click", function () {
+              getWard(data[code].code);
+            });
+          }
+        }
+      })
+      .catch((error) => {
+        console.error("Error fetching province data:", error);
+      });
+  });
+}
+
+function getWard(parentProvinceCode) {
+  const wardSelects = document.querySelectorAll(".ward-selector");
+  wardSelects.forEach((wardSelect) => {
+    fetch("../../data/location-data/xa_phuong.json")
+      .then((response) => response.json())
+      .then((data) => {
+        for (const code in data) {
+          if (data[code].parent_code === parentProvinceCode) {
+            const option = document.createElement("option");
+            option.value = data[code].name;
+            option.text = data[code].name;
+            wardSelect.appendChild(option);
+          }
+        }
+      })
+      .catch((error) => {
+        console.error("Error fetching ward data:", error);
+      });
+  });
+}
+
+document.addEventListener("DOMContentLoaded", function () {
+  getCity();
+});
