@@ -317,11 +317,11 @@ html body div.slection-container h1 {
 .swiper-button-next,
 .swiper-button-prev {
   --swiper-navigation-size: 20px;
-  background-color: rgb(255, 255, 255);
-  padding: 16px 17px;
+  padding: 10px 15px;
   border-radius: 100%;
-  border: 1px solid black;
   color: black;
+  background: #fff;
+  border: 0.5px solid #c8c8c8;
 }
 .top-product-title {
   text-align: center;
@@ -653,14 +653,81 @@ html body div.slection-container h1 {
   #swiper-wrapper {
     margin-top: 10%;
   }
+  .fab-container {
+    display: none;
+  }
 }
 @media only screen and (max-width: 956px) {
   .background-title {
+    display: none;
+  }
+  .fab-container {
     display: none;
   }
 }
 @media only screen and (max-width: 1258px) {
   .background-title {
     display: none;
+  }
+  .fab-container {
+    display: none;
+  }
+}
+
+.fab-container {
+  position: fixed;
+  bottom: 70px;
+  right: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 1;
+}
+
+.fab-cover {
+  position: relative;
+  width: 60px; /* Slightly larger to accommodate animation */
+  height: 60px;
+  margin: 10px 0;
+}
+
+.fab-item {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #007bff; /* Blue background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: absolute; /* Positioned inside the cover */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Center the FAB inside the cover */
+  z-index: 2; /* Ensure it stays above the animated cover */
+}
+
+.fab-item i {
+  color: white;
+  font-size: 24px;
+}
+
+.fab-cover::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 123, 255, 0.5);
+  border-radius: 50%;
+  animation: zoomInOut 2s infinite;
+}
+
+@keyframes zoomInOut {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
   }
 }

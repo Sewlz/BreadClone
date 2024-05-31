@@ -297,6 +297,21 @@
         "img": ["../../public/imgs/SanPham/sandwiches/dsc02900_optimized.png"],
         "name": "BACON&EGG BREAKFAST SW",
         "price": "45,000"
+      },
+      {
+        "img": ["../../public/imgs/SanPham/sandwiches/dsc03110_optimized.png"],
+        "name": "TUNA SW",
+        "price": "45,000"
+      },
+      {
+        "img": ["../../public/imgs/SanPham/sandwiches/dsc03094_optimized.png"],
+        "name": "CHICKEN SW",
+        "price": "45,000"
+      },
+      {
+        "img": ["../../public/imgs/SanPham/sandwiches/dsc02869_optimized.png"],
+        "name": "HAM&EGG BREAKFAST SW",
+        "price": "45,000"
       }
     ],
     "drycakes": [
@@ -499,30 +514,54 @@
     ],
     "pudding": [
       {
-        "img": ["../../public/imgs/SanPham/puddings/combo-pudding.jpg"],
+        "img": ["../../public/imgs/SanPham/puddings/combo-pudding.png"],
         "name": "COMBO 4 LOẠI PUDDING",
         "price": "180,000"
       },
       {
         "img": [
-          "../../public/imgs/SanPham/puddings/lychee-coconut-pudding.jpg"
+          "../../public/imgs/SanPham/puddings/lychee-coconut-pudding.png"
         ],
         "name": "Lychee Coconut Pudding",
         "price": "48,000"
       },
       {
-        "img": ["../../public/imgs/SanPham/puddings/peach-pudding.jpg"],
+        "img": ["../../public/imgs/SanPham/puddings/peach-pudding.png"],
         "name": "PEACH PUDDING",
         "price": "48,000"
       },
       {
-        "img": ["../../public/imgs/SanPham/puddings/strawberry-pudding.jpg"],
+        "img": ["../../public/imgs/SanPham/puddings/strawberry-pudding.png"],
         "name": "STRAWBERRY PUDDING",
         "price": "48,000"
       },
       {
-        "img": ["../../public/imgs/SanPham/puddings/tiramisu-pudding.jpg"],
+        "img": ["../../public/imgs/SanPham/puddings/tiramisu-pudding.png"],
         "name": "Tiramisu Pudding",
+        "price": "48,000"
+      },
+      {
+        "img": [
+          "../../public/imgs/SanPham/puddings/lychee-coconut-pudding.png"
+        ],
+        "name": "Lychee Coconut Pudding",
+        "price": "48,000"
+      },
+      {
+        "img": ["../../public/imgs/SanPham/puddings/peach-pudding.png"],
+        "name": "PEACH PUDDING",
+        "price": "48,000"
+      },
+      {
+        "img": ["../../public/imgs/SanPham/puddings/combo-pudding.png"],
+        "name": "COMBO 4 LOẠI PUDDING",
+        "price": "180,000"
+      },
+      {
+        "img": [
+          "../../public/imgs/SanPham/puddings/lychee-coconut-pudding.png"
+        ],
+        "name": "Lychee Coconut Pudding",
         "price": "48,000"
       }
     ],
@@ -536,9 +575,119 @@
         "img": ["../../public/imgs/SanPham/cookies/dsc03142_optimized.png"],
         "name": "CHOCOLATE COOKIES",
         "price": "129,000"
+      },
+      {
+        "img": ["../../public/imgs/SanPham/cookies/dsc03146_optimized.jpg"],
+        "name": "ALMOND COOKIES",
+        "price": "129,000"
+      },
+      {
+        "img": ["../../public/imgs/SanPham/cookies/dsc03142_optimized.png"],
+        "name": "CHOCOLATE COOKIES",
+        "price": "129,000"
+      },
+      {
+        "img": ["../../public/imgs/SanPham/cookies/dsc03146_optimized.jpg"],
+        "name": "ALMOND COOKIES",
+        "price": "129,000"
+      },
+      {
+        "img": ["../../public/imgs/SanPham/cookies/dsc03142_optimized.png"],
+        "name": "CHOCOLATE COOKIES",
+        "price": "129,000"
+      },
+      {
+        "img": ["../../public/imgs/SanPham/cookies/dsc03146_optimized.jpg"],
+        "name": "ALMOND COOKIES",
+        "price": "129,000"
+      },
+      {
+        "img": ["../../public/imgs/SanPham/cookies/dsc03142_optimized.png"],
+        "name": "CHOCOLATE COOKIES",
+        "price": "129,000"
+      },
+      {
+        "img": ["../../public/imgs/SanPham/cookies/dsc03146_optimized.jpg"],
+        "name": "ALMOND COOKIES",
+        "price": "129,000"
+      },
+      {
+        "img": ["../../public/imgs/SanPham/cookies/dsc03142_optimized.png"],
+        "name": "CHOCOLATE COOKIES",
+        "price": "129,000"
       }
     ],
     "flossspecials": [
+      {
+        "img": [
+          "../../public/imgs/SanPham/flossspecials/dsc03429_optimized.png"
+        ],
+        "name": "FIRE FLOSS",
+        "price": "169,000"
+      },
+      {
+        "img": [
+          "../../public/imgs/SanPham/flossspecials/dsc03428_optimized.png"
+        ],
+        "name": "FLOSS",
+        "price": "169,000"
+      },
+      {
+        "img": [
+          "../../public/imgs/SanPham/flossspecials/dsc03429_optimized.png"
+        ],
+        "name": "FIRE FLOSS",
+        "price": "169,000"
+      },
+      {
+        "img": [
+          "../../public/imgs/SanPham/flossspecials/dsc03428_optimized.png"
+        ],
+        "name": "FLOSS",
+        "price": "169,000"
+      },
+      {
+        "img": [
+          "../../public/imgs/SanPham/flossspecials/dsc03429_optimized.png"
+        ],
+        "name": "FIRE FLOSS",
+        "price": "169,000"
+      },
+      {
+        "img": [
+          "../../public/imgs/SanPham/flossspecials/dsc03428_optimized.png"
+        ],
+        "name": "FLOSS",
+        "price": "169,000"
+      },
+      {
+        "img": [
+          "../../public/imgs/SanPham/flossspecials/dsc03429_optimized.png"
+        ],
+        "name": "FIRE FLOSS",
+        "price": "169,000"
+      },
+      {
+        "img": [
+          "../../public/imgs/SanPham/flossspecials/dsc03428_optimized.png"
+        ],
+        "name": "FLOSS",
+        "price": "169,000"
+      },
+      {
+        "img": [
+          "../../public/imgs/SanPham/flossspecials/dsc03429_optimized.png"
+        ],
+        "name": "FIRE FLOSS",
+        "price": "169,000"
+      },
+      {
+        "img": [
+          "../../public/imgs/SanPham/flossspecials/dsc03428_optimized.png"
+        ],
+        "name": "FLOSS",
+        "price": "169,000"
+      },
       {
         "img": [
           "../../public/imgs/SanPham/flossspecials/dsc03429_optimized.png"

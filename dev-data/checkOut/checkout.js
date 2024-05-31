@@ -15,6 +15,9 @@ document.addEventListener("DOMContentLoaded", function () {
   checkboxAdr.addEventListener("change", function () {
     adrSlider.classList.toggle("show", this.checked);
   });
+  const random = Math.floor(Math.random() * 900000) + 100000;
+  document.querySelector("#random-num").innerHTML =
+    '<span class="bold">Nội dung chuyển khoản:</span>' + " MDH" + random;
 });
 document.addEventListener("DOMContentLoaded", function () {
   var radios = document.querySelectorAll(".radio");

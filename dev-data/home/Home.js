@@ -15,16 +15,33 @@ fetch("../../data/home-data/slide-banner.json")
   .catch((error) => console.error("Error fetching JSON:", error));
 
 // Initialize Swiper
-var swiper = new Swiper(".myBannerSwiper", {
-  loop: true,
-  autoplay: {
-    delay: 3000,
-    disableOnInteraction: false,
-  },
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
+var swiper;
+document.addEventListener("DOMContentLoaded", function () {
+  swiper = new Swiper(".myBannerSwiper", {
+    loop: true,
+    autoplay: {
+      delay: 3000,
+      disableOnInteraction: false,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
+  swiper.autoplay.start();
+  document
+    .querySelector(".swiper-button-next")
+    .addEventListener("click", function () {
+      swiper.slideNext();
+      swiper.autoplay.start();
+    });
+
+  document
+    .querySelector(".swiper-button-prev")
+    .addEventListener("click", function () {
+      swiper.slidePrev();
+      swiper.autoplay.start();
+    });
 });
 
 //animation script
