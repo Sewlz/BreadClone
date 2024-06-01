@@ -86,7 +86,10 @@ function latestLoader() {
         index++;
         blogContent.onclick = function () {
           window.location.href = "../news/news.html";
-          sendParaData(fileName, blogContent.getAttribute("index"));
+          sendParaData(
+            "../../data/blog-data/blog.json",
+            blogContent.getAttribute("index")
+          );
         };
       });
     })
