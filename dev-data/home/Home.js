@@ -11,38 +11,36 @@ fetch("../../data/home-data/slide-banner.json")
       }">`;
       slidesWrapper.appendChild(swiperSlide);
     });
+
+    // Initialize Swiper inside the fetch's then block
+    var swiper;
+    swiper = new Swiper(".myBannerSwiper", {
+      loop: true,
+      autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+    swiper.autoplay.start();
+    document
+      .querySelector(".swiper-button-next")
+      .addEventListener("click", function () {
+        swiper.slideNext();
+        swiper.autoplay.start();
+      });
+
+    document
+      .querySelector(".swiper-button-prev")
+      .addEventListener("click", function () {
+        swiper.slidePrev();
+        swiper.autoplay.start();
+      });
   })
   .catch((error) => console.error("Error fetching JSON:", error));
-
-// Initialize Swiper
-var swiper;
-document.addEventListener("DOMContentLoaded", function () {
-  swiper = new Swiper(".myBannerSwiper", {
-    loop: true,
-    autoplay: {
-      delay: 3000,
-      disableOnInteraction: false,
-    },
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
-  });
-  swiper.autoplay.start();
-  document
-    .querySelector(".swiper-button-next")
-    .addEventListener("click", function () {
-      swiper.slideNext();
-      swiper.autoplay.start();
-    });
-
-  document
-    .querySelector(".swiper-button-prev")
-    .addEventListener("click", function () {
-      swiper.slidePrev();
-      swiper.autoplay.start();
-    });
-});
 
 //animation script
 document.addEventListener("DOMContentLoaded", function () {
@@ -79,131 +77,109 @@ document.addEventListener("DOMContentLoaded", function () {
     );
   }
 });
-//swiper script
-var swiper;
-
+//swiper product script
+let swiper;
 function initializeSwiper() {
-  if (window.innerWidth.valueOf() <= 768) {
-    swiper = new Swiper(".mySwiper", {
-      slidesPerView: 1,
-      slidesPerGroup: 1,
-      // loop: true,
-      freeMode: false,
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-      },
-    });
-  } else {
-    swiper = new Swiper(".mySwiper", {
-      slidesPerView: 4,
-      slidesPerGroup: 4,
-      // loop: true,
-      freeMode: false,
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-      },
-    });
+  if (swiper) {
+    swiper.destroy(true, true);
   }
+  // Initialize Swiper based on window width
+  swiper = new Swiper(".mySwiper", {
+    slidesPerView: "auto",
+    freeMode: false,
+    breakpoints: {
+      768: {
+        slidesPerView: 1,
+        slidesPerGroup: 1,
+      },
+      1200: {
+        slidesPerView: 4,
+        slidesPerGroup: 4,
+      },
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+  });
 }
+function loadHomeProductSwiper() {
+  fetch("../../data/home-data/homeProduct.json")
+    .then((response) => response.json())
+    .then((data) => {
+      const product = data.product;
+      const swiperWrapper = document.querySelector(".mySwiper .swiper-wrapper");
+      swiperWrapper.innerHTML = "";
 
-// Call initializeSwiper on page load
-initializeSwiper();
+      product.forEach((product) => {
+        const swiperSlide = document.createElement("div");
+        swiperSlide.classList.add("swiper-slide");
+        swiperSlide.innerHTML = `
+          <img src="${product.src}" alt="${product.alt}" onclick="document.location='../Buns/buns.html'" />
+          <h4 onclick="document.location='../Buns/buns.html'">${product.alt}</h4>
+        `;
+        swiperWrapper.appendChild(swiperSlide);
+      });
 
-// Call initializeSwiper when window is resized
-window.addEventListener("resize", function () {
-  initializeSwiper();
+      document
+        .querySelectorAll(
+          ".mySwiper .swiper-slide img, .mySwiper .swiper-slide h4"
+        )
+        .forEach((item, index) => {
+          item.addEventListener("click", () => {
+            sessionStorage.setItem("titlePageWebsite", product[index].alt);
+          });
+        });
+
+      initializeSwiper();
+    });
+}
+function loadTopProductSwiper() {
+  fetch("../../data/home-data/topProducts.json")
+    .then((response) => response.json())
+    .then((data) => {
+      const topProducts = data.topProducts;
+      const swiperWrapperTop = document.querySelector(
+        "div.swiper:nth-child(4) > div.swiper-wrapper"
+      );
+      swiperWrapperTop.innerHTML = "";
+
+      topProducts.forEach((product) => {
+        const swiperSlide = document.createElement("div");
+        swiperSlide.classList.add("swiper-slide");
+        swiperSlide.classList.add("cell");
+        swiperSlide.innerHTML = `
+          <div class="img-product">
+            <img src="${product.src}" alt="${product.alt}" onclick="document.location='../ChiTietSanPham/chitietsanpham.html'" />
+          </div>
+          <div class="top-product-info">
+            <h4 class="top-product-title name-product" onclick="document.location='../ChiTietSanPham/chitietsanpham.html'">${product.alt}</h4>
+            <span class="top-product-price price">${product.price}</span>
+          </div>
+          <button class="button-product" id="more-btn-2" onclick="addToCart();" style="border: 1px solid black; color: black; max-width: 250px; box-sizing: border-box;"><a href="#" style="text-decoration: none; color: black;">Thêm vào giỏ hàng</a></button>
+        `;
+        swiperWrapperTop.appendChild(swiperSlide);
+      });
+
+      document
+        .querySelectorAll(".img-product, .top-product-info")
+        .forEach((item, index) => {
+          item.addEventListener("click", () => {
+            sessionStorage.setItem("pos-index", topProducts[index].posIndex);
+            sessionStorage.setItem(
+              "category-product",
+              topProducts[index].category
+            );
+          });
+        });
+      initializeSwiper();
+    });
+}
+window.addEventListener("load", () => {
+  loadHomeProductSwiper();
+  loadTopProductSwiper();
 });
-
-console.log(window.innerWidth);
-//product swiper loader
-fetch("../../data/home-data/homeProduct.json")
-  .then((response) => response.json())
-  .then((data) => {
-    const product = data.product;
-    const swiperWrapper = document.getElementById("swiper-wrapper");
-
-    product.forEach((product) => {
-      const swiperSlide = document.createElement("div");
-      swiperSlide.classList.add("swiper-slide");
-      swiperSlide.innerHTML = `
-    <img src="${product.src}" alt="${product.alt}" onclick="document.location='../Buns/buns.html'" />
-    <h4 onclick="document.location='../Buns/buns.html'">${product.alt}</h4>
-    `;
-      swiperWrapper.appendChild(swiperSlide);
-    });
-
-    const img1 = document.querySelectorAll(
-      ".slection-container .swiper-slide img"
-    );
-    img1.forEach((item, index) => {
-      item.addEventListener("click", () => {
-        sessionStorage.setItem("titlePageWebsite", product[index].alt);
-      });
-    });
-    const h41 = document.querySelectorAll(
-      ".slection-container .swiper-slide h4"
-    );
-    h41.forEach((item, index) => {
-      item.addEventListener("click", () => {
-        sessionStorage.setItem("titlePageWebsite", product[index].alt);
-      });
-    });
-  });
-
-//top product swiper loader
-fetch("../../data/home-data/topProducts.json")
-  .then((response) => response.json())
-  .then((data) => {
-    const topProducts = data.topProducts;
-    console.log("🚀 ~ .then ~ topProducts:", topProducts);
-    const swiperWrapperTop = document.querySelector(
-      "div.swiper:nth-child(4) > div:nth-child(1)"
-    );
-    topProducts.forEach((topProducts) => {
-      const swiperSlide = document.createElement("div");
-      swiperSlide.classList.add("swiper-slide");
-      swiperSlide.classList.add("cell");
-      swiperSlide.innerHTML = `
-      <div class="img-product">
-      <img src="${topProducts.src}" alt="${topProducts.alt}" onclick="document.location='../ChiTietSanPham/chitietsanpham.html'" />
-      </div>
-      <div class="top-product-info">
-        <h4 class="top-product-title name-product" onclick="document.location='../ChiTietSanPham/chitietsanpham.html'">${topProducts.alt}</h4>
-        <span class="top-product-price price">${topProducts.price}</span>
-      </div>
-      <button class="button-product" id="more-btn-2" onclick="addToCart();" style="border: 1px solid black; color: black; max-width: 250px; box-sizing: border-box;"><a href="#" style="text-decoration: none; color: black;">Thêm vào giỏ hàng</a></button>
-    `;
-      swiperWrapperTop.appendChild(swiperSlide);
-    });
-
-    const imgProduct = document.querySelectorAll(".img-product");
-    const topProductInfor = document.querySelectorAll(".top-product-info");
-    imgProduct.forEach((item, index) => {
-      clickTopProducts(item, index);
-    });
-    topProductInfor.forEach((item, index) => {
-      clickTopProducts(item, index);
-    });
-
-    function clickTopProducts(item, index) {
-      item.addEventListener("click", () => {
-        let posIndex = topProducts[index].posIndex;
-        let category = topProducts[index].category;
-        sessionStorage.setItem("pos-index", posIndex);
-        sessionStorage.setItem("category-product", category);
-      });
-    }
-  });
 //swiper review script
-var swiper = new Swiper(".myReviewSwiper", {
-  loop: true,
-  navigation: {
-    nextEl: ".swiper-button-prev-unique",
-    prevEl: ".swiper-button-next-unique",
-  },
-});
 fetch("../../data/home-data/review.json")
   .then((response) => response.json())
   .then((data) => {
@@ -222,36 +198,17 @@ fetch("../../data/home-data/review.json")
     </div>`;
       swiperWrapperReview.appendChild(swiperSlide);
     });
+
+    //swiper review script
+    var swiper = new Swiper(".myReviewSwiper", {
+      loop: true,
+      navigation: {
+        nextEl: ".swiper-button-prev-unique",
+        prevEl: ".swiper-button-next-unique",
+      },
+    });
   });
 //swiper news script
-var swiperNews;
-function initializeNewsSwiper() {
-  if (window.innerWidth.valueOf() <= 768) {
-    swiperNews = new Swiper(".newsSwiper", {
-      slidesPerView: 1,
-      slidesPerGroup: 1,
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-      },
-    });
-  } else {
-    swiperNews = new Swiper(".newsSwiper", {
-      slidesPerView: 3,
-      slidesPerGroup: 3,
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-      },
-    });
-  }
-}
-// Call initializeSwiper on page load
-initializeNewsSwiper();
-// Call initializeSwiper when window is resized
-window.addEventListener("resize", function () {
-  initializeNewsSwiper();
-});
 fetch("../../data/blog-data/blog.json")
   .then((response) => response.json())
   .then((data) => {
@@ -282,6 +239,34 @@ fetch("../../data/blog-data/blog.json")
         );
         window.location.href = "../news/news.html";
       });
+    });
+    var swiperNews;
+    function initializeNewsSwiper() {
+      if (window.innerWidth.valueOf() <= 768) {
+        swiperNews = new Swiper(".newsSwiper", {
+          slidesPerView: 1,
+          slidesPerGroup: 1,
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+        });
+      } else {
+        swiperNews = new Swiper(".newsSwiper", {
+          slidesPerView: 3,
+          slidesPerGroup: 3,
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+        });
+      }
+    }
+    // Call initializeSwiper on page load
+    initializeNewsSwiper();
+    // Call initializeSwiper when window is resized
+    window.addEventListener("resize", function () {
+      initializeNewsSwiper();
     });
   });
 function sendParaData(fileName, index) {

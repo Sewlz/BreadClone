@@ -1,3 +1,13 @@
+const dialog = document.getElementById("dialog");
+function closeDialog() {
+  dialog.close();
+}
+dialog.addEventListener("click", function (event) {
+  if (event.target === dialog) {
+    closeDialog();
+  }
+});
+
 document.addEventListener("DOMContentLoaded", function () {
   const sliderActive = document.querySelector(".slider-active");
   const voucherSlider = document.querySelector(".voucher-slider");
@@ -100,8 +110,6 @@ function getCity() {
     fetch("../../data/location-data/tinh_tp.json")
       .then((response) => response.json())
       .then((data) => {
-        // console.log("🚀 ~ .then ~ data:", data)
-        // Iterate over the keys of the object
         for (const code in data) {
           if (data.hasOwnProperty(code)) {
             const option = document.createElement("option");
@@ -127,8 +135,23 @@ function getCity() {
         console.error("Error fetching city data:", error);
       });
   });
-}
 
+  document.querySelector(".city-selector").addEventListener("change", () => {
+    const citySelect = document.querySelector(".city-selector");
+    const provinceSelect = document.querySelector(".province-selector");
+    const wardSelect = document.querySelector(".ward-selector");
+
+    // Clear previous options
+    provinceSelect.innerHTML = "<option value=''> Chọn Quận/Huyện </option>";
+    wardSelect.innerHTML = "<option value=''> Chọn Xã/Phường </option>";
+
+    const selectedCityCode =
+      citySelect.options[citySelect.selectedIndex].getAttribute("code-city");
+    if (selectedCityCode) {
+      getProvince(selectedCityCode);
+    }
+  });
+}
 function getProvince(parentCityCode) {
   const provinceSelects = document.querySelectorAll(".province-selector");
   provinceSelects.forEach((provinceSelect) => {
@@ -142,7 +165,6 @@ function getProvince(parentCityCode) {
             option.value = data[code].name;
             option.text = data[code].name;
             provinceSelect.appendChild(option);
-            // option.onclick = getWard(data[code].code);
           }
         }
         const optionProvince = document.querySelectorAll(".province-selector");
@@ -166,8 +188,25 @@ function getProvince(parentCityCode) {
         console.error("Error fetching province data:", error);
       });
   });
-}
 
+  document
+    .querySelector(".province-selector")
+    .addEventListener("change", () => {
+      const provinceSelect = document.querySelector(".province-selector");
+      const wardSelect = document.querySelector(".ward-selector");
+
+      // Clear previous options
+      wardSelect.innerHTML = "<option value=''> Chọn Xã/Phường </option>";
+
+      const selectedProvinceCode =
+        provinceSelect.options[provinceSelect.selectedIndex].getAttribute(
+          "code-province"
+        );
+      if (selectedProvinceCode) {
+        getWard(selectedProvinceCode);
+      }
+    });
+}
 function getWard(parentProvinceCode) {
   const wardSelects = document.querySelectorAll(".ward-selector");
   wardSelects.forEach((wardSelect) => {

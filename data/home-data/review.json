@@ -1,6 +1,11 @@
 {
   "review": [
     {
+      "src": "./../../public/imgs/home/customerProfile/profile-3.jpg",
+      "alt": "Beloved Customer",
+      "review": "Cám ơn Dough Re Mi đã cứu tuiiii. Đợt đó đặt bánh cho công ty mà chỗ đặt đầu tiên xảy ra lỗi, không giao bánh được, cuống cuồng đi kiếm chỗ khác. May có bên này chịu nhận, tui cũng lo quá trời, may người ta ráng tăng ca để xong đơn kịp giao cho tui. Từ đó, tui thành mối đặt bánh ở đây luôn, chỗ lớn người ta làm ăn uy tín, mọi người yên tâm."
+    },
+    {
       "src": "./../../public/imgs/home/customerProfile/profile-1.jpg",
       "alt": "Beloved Customer",
       "review": "Thử vì tiệm gần nhà nhưng dính tới giờ. Nhân viên thân thiện, nhiệt tình, bánh ngon. Tiệm mở rất sớm, sáng ghé mua mang đi làm luôn cũng tiện."

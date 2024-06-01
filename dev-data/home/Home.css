@@ -645,6 +645,7 @@ html body div.slection-container h1 {
   .swiper-button-next {
     display: none;
   }
+
   div.slection-container:nth-child(7) > h1:nth-child(1) {
     text-align: center;
   }
@@ -653,23 +654,14 @@ html body div.slection-container h1 {
   #swiper-wrapper {
     margin-top: 10%;
   }
-  .fab-container {
-    display: none;
-  }
 }
 @media only screen and (max-width: 956px) {
   .background-title {
     display: none;
   }
-  .fab-container {
-    display: none;
-  }
 }
 @media only screen and (max-width: 1258px) {
   .background-title {
-    display: none;
-  }
-  .fab-container {
     display: none;
   }
 }
