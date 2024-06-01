@@ -197,13 +197,6 @@ fetch("../../data/home-data/topProducts.json")
     }
   });
 //swiper review script
-var swiper = new Swiper(".myReviewSwiper", {
-  loop: true,
-  navigation: {
-    nextEl: ".swiper-button-prev-unique",
-    prevEl: ".swiper-button-next-unique",
-  },
-});
 fetch("../../data/home-data/review.json")
   .then((response) => response.json())
   .then((data) => {
@@ -223,6 +216,27 @@ fetch("../../data/home-data/review.json")
       swiperWrapperReview.appendChild(swiperSlide);
     });
   });
+var swiperReview;
+document.addEventListener("DOMContentLoaded", function () {
+  swiperReview = new Swiper(".myReviewSwiper", {
+    loop: true,
+    navigation: {
+      nextEl: ".swiper-button-prev-unique",
+      prevEl: ".swiper-button-next-unique",
+    },
+  });
+  document
+    .querySelector(".swiper-button-prev-unique")
+    .addEventListener("click", function () {
+      swiperReview.slideNext();
+    });
+
+  document
+    .querySelector(".swiper-button-next-unique")
+    .addEventListener("click", function () {
+      swiperReview.slidePrev();
+    });
+});
 //swiper news script
 var swiperNews;
 function initializeNewsSwiper() {
