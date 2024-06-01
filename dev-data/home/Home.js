@@ -11,38 +11,36 @@ fetch("../../data/home-data/slide-banner.json")
       }">`;
       slidesWrapper.appendChild(swiperSlide);
     });
+
+    // Initialize Swiper inside the fetch's then block
+    var swiper;
+    swiper = new Swiper(".myBannerSwiper", {
+      loop: true,
+      autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+    swiper.autoplay.start();
+    document
+      .querySelector(".swiper-button-next")
+      .addEventListener("click", function () {
+        swiper.slideNext();
+        swiper.autoplay.start();
+      });
+
+    document
+      .querySelector(".swiper-button-prev")
+      .addEventListener("click", function () {
+        swiper.slidePrev();
+        swiper.autoplay.start();
+      });
   })
   .catch((error) => console.error("Error fetching JSON:", error));
-
-// Initialize Swiper
-var swiper;
-document.addEventListener("DOMContentLoaded", function () {
-  swiper = new Swiper(".myBannerSwiper", {
-    loop: true,
-    autoplay: {
-      delay: 3000,
-      disableOnInteraction: false,
-    },
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
-  });
-  swiper.autoplay.start();
-  document
-    .querySelector(".swiper-button-next")
-    .addEventListener("click", function () {
-      swiper.slideNext();
-      swiper.autoplay.start();
-    });
-
-  document
-    .querySelector(".swiper-button-prev")
-    .addEventListener("click", function () {
-      swiper.slidePrev();
-      swiper.autoplay.start();
-    });
-});
 
 //animation script
 document.addEventListener("DOMContentLoaded", function () {
@@ -197,13 +195,6 @@ fetch("../../data/home-data/topProducts.json")
     }
   });
 //swiper review script
-var swiper = new Swiper(".myReviewSwiper", {
-  loop: true,
-  navigation: {
-    nextEl: ".swiper-button-prev-unique",
-    prevEl: ".swiper-button-next-unique",
-  },
-});
 fetch("../../data/home-data/review.json")
   .then((response) => response.json())
   .then((data) => {
@@ -222,36 +213,17 @@ fetch("../../data/home-data/review.json")
     </div>`;
       swiperWrapperReview.appendChild(swiperSlide);
     });
+
+    //swiper review script
+    var swiper = new Swiper(".myReviewSwiper", {
+      loop: true,
+      navigation: {
+        nextEl: ".swiper-button-prev-unique",
+        prevEl: ".swiper-button-next-unique",
+      },
+    });
   });
 //swiper news script
-var swiperNews;
-function initializeNewsSwiper() {
-  if (window.innerWidth.valueOf() <= 768) {
-    swiperNews = new Swiper(".newsSwiper", {
-      slidesPerView: 1,
-      slidesPerGroup: 1,
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-      },
-    });
-  } else {
-    swiperNews = new Swiper(".newsSwiper", {
-      slidesPerView: 3,
-      slidesPerGroup: 3,
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-      },
-    });
-  }
-}
-// Call initializeSwiper on page load
-initializeNewsSwiper();
-// Call initializeSwiper when window is resized
-window.addEventListener("resize", function () {
-  initializeNewsSwiper();
-});
 fetch("../../data/blog-data/blog.json")
   .then((response) => response.json())
   .then((data) => {
@@ -282,6 +254,34 @@ fetch("../../data/blog-data/blog.json")
         );
         window.location.href = "../news/news.html";
       });
+    });
+    var swiperNews;
+    function initializeNewsSwiper() {
+      if (window.innerWidth.valueOf() <= 768) {
+        swiperNews = new Swiper(".newsSwiper", {
+          slidesPerView: 1,
+          slidesPerGroup: 1,
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+        });
+      } else {
+        swiperNews = new Swiper(".newsSwiper", {
+          slidesPerView: 3,
+          slidesPerGroup: 3,
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+        });
+      }
+    }
+    // Call initializeSwiper on page load
+    initializeNewsSwiper();
+    // Call initializeSwiper when window is resized
+    window.addEventListener("resize", function () {
+      initializeNewsSwiper();
     });
   });
 function sendParaData(fileName, index) {

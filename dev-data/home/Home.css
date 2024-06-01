@@ -642,9 +642,7 @@ html body div.slection-container h1 {
     width: 100% !important;
   }
   .swiper-button-prev,
-  .swiper-button-next,
-  .swiper-button-prev-unique,
-  .swiper-button-next-unique {
+  .swiper-button-next {
     display: none;
   }
 
