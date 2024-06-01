@@ -100,16 +100,26 @@ function getCity() {
     fetch("../../data/location-data/tinh_tp.json")
       .then((response) => response.json())
       .then((data) => {
+        // console.log("🚀 ~ .then ~ data:", data)
         // Iterate over the keys of the object
         for (const code in data) {
           if (data.hasOwnProperty(code)) {
             const option = document.createElement("option");
             option.value = data[code].name;
             option.text = data[code].name;
+            option.setAttribute("code-city", data[code].code);
             citySelect.appendChild(option);
-            option.onclick = getProvince(data[code].code);
           }
         }
+        const optionCity = document.querySelector(".city-selector");
+        optionCity.addEventListener("change", () => {
+          const optionProvince = document.querySelector('.province-selector')
+          optionProvince.innerHTML = ''
+          const optionWard = document.querySelector('.ward-selector')
+          optionWard.innerHTML = ''
+          const option = optionCity.options[optionCity.selectedIndex];
+          getProvince(data[option.getAttribute("code-city")].code);
+        });
       })
       .catch((error) => {
         console.error("Error fetching city data:", error);
@@ -126,12 +136,27 @@ function getProvince(parentCityCode) {
         for (const code in data) {
           if (data[code].parent_code === parentCityCode) {
             const option = document.createElement("option");
+            option.setAttribute("code-province", code);
             option.value = data[code].name;
             option.text = data[code].name;
             provinceSelect.appendChild(option);
-            option.onclick = getWard(data[code].code);
+            // option.onclick = getWard(data[code].code);
           }
         }
+        const optionProvince = document.querySelector(".province-selector");
+        optionProvince.addEventListener("change", () => {
+          const optionWard = document.querySelector('.ward-selector')
+          optionWard.innerHTML = ''
+          const option = optionProvince.options[optionProvince.selectedIndex];
+          const codeProvince = option.getAttribute("code-province");
+
+          if (codeProvince) {
+            getWard(data[codeProvince].code);
+
+          } else {
+            console.error("codeProvince is undefined or null");
+          }
+        });
       })
       .catch((error) => {
         console.error("Error fetching province data:", error);
