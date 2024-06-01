@@ -35,6 +35,10 @@ DoughReMi
 │  │  ├─ blog.json
 │  │  ├─ news.json
 │  │  └─ promotion.json
+│  ├─ location-data
+│  │  ├─ quan_huyen.json
+│  │  ├─ tinh_tp.json
+│  │  └─ xa_phuong.json
 │  ├─ home-data
 │  │  ├─ homeProduct.json
 │  │  ├─ review.json
