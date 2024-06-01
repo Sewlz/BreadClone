@@ -111,15 +111,17 @@ function getCity() {
             citySelect.appendChild(option);
           }
         }
-        const optionCity = document.querySelector(".city-selector");
-        optionCity.addEventListener("change", () => {
-          const optionProvince = document.querySelector('.province-selector')
-          optionProvince.innerHTML = ''
-          const optionWard = document.querySelector('.ward-selector')
-          optionWard.innerHTML = ''
-          const option = optionCity.options[optionCity.selectedIndex];
-          getProvince(data[option.getAttribute("code-city")].code);
-        });
+        const optionCity = document.querySelectorAll(".city-selector");
+        optionCity.forEach((itemCity, index) => {
+          itemCity.addEventListener("change", () => {
+            const optionProvince = document.querySelectorAll('.province-selector')[index]
+            optionProvince.innerHTML = ''
+            const optionWard = document.querySelectorAll('.ward-selector')[index]
+            optionWard.innerHTML = ''
+            const option = itemCity.options[itemCity.selectedIndex];
+            getProvince(data[option.getAttribute("code-city")].code);
+          });
+        })
       })
       .catch((error) => {
         console.error("Error fetching city data:", error);
@@ -143,20 +145,22 @@ function getProvince(parentCityCode) {
             // option.onclick = getWard(data[code].code);
           }
         }
-        const optionProvince = document.querySelector(".province-selector");
-        optionProvince.addEventListener("change", () => {
-          const optionWard = document.querySelector('.ward-selector')
-          optionWard.innerHTML = ''
-          const option = optionProvince.options[optionProvince.selectedIndex];
-          const codeProvince = option.getAttribute("code-province");
-
-          if (codeProvince) {
-            getWard(data[codeProvince].code);
-
-          } else {
-            console.error("codeProvince is undefined or null");
-          }
-        });
+        const optionProvince = document.querySelectorAll(".province-selector");
+        optionProvince.forEach((itemProvince, index)=>{
+          itemProvince.addEventListener("change", () => {
+            const optionWard = document.querySelectorAll('.ward-selector')[index]
+            optionWard.innerHTML = ''
+            const option = itemProvince.options[itemProvince.selectedIndex];
+            const codeProvince = option.getAttribute("code-province");
+  
+            if (codeProvince) {
+              getWard(data[codeProvince].code);
+  
+            } else {
+              console.error("codeProvince is undefined or null");
+            }
+          });
+        })
       })
       .catch((error) => {
         console.error("Error fetching province data:", error);
