@@ -63,39 +63,36 @@ listItems.forEach((item) => {
   });
 });
 // swiper - script;
-
+let swiper;
 function initializeSwiper() {
-  if (window.innerWidth.valueOf() <= 768) {
-    swiper = new Swiper(".mySwiper", {
-      slidesPerView: 1,
-      slidesPerGroup: 1,
-      loop: true,
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
+  swiper = new Swiper(".mySwiper", {
+    slidesPerView: "auto",
+    spaceBetween: 30,
+    breakpoints: {
+      768: {
+        slidesPerView: 1,
+        slidesPerGroup: 1,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
       },
-    });
-  } else {
-    var swiper = new Swiper(".mySwiper", {
-      slidesPerView: 3,
-      slidesPerGroup: 3,
-      spaceBetween: 30,
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
+      1200: {
+        slidesPerView: 4,
+        slidesPerGroup: 4,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
       },
-    });
-  }
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+  });
 }
 
-// Call initializeSwiper on page load
-initializeSwiper();
-//Display full map
-
-// Call initializeSwiper when window is resized
-window.addEventListener("resize", function () {
-  initializeSwiper();
-});
 //location loader
 const swiperWrapper = document.getElementById("swiper-wrapper");
 fetch("../../data/storeLocation-data/storeLocation.json")
@@ -138,6 +135,18 @@ fetch("../../data/storeLocation-data/storeLocation.json")
       });
       swiperWrapper.appendChild(swiperSlide);
     });
+    initializeSwiper();
+    document
+      .querySelector(".swiper-button-next")
+      .addEventListener("click", function () {
+        swiper.slideNext();
+      });
+
+    document
+      .querySelector(".swiper-button-prev")
+      .addEventListener("click", function () {
+        swiper.slidePrev();
+      });
   });
 //get map at full page
 function getMap(mapUrl) {
