@@ -1,194 +1,344 @@
 {
   "blog": [
     {
-      "src": "../../public/imgs/home/news/topic1-sugar/cac-loai-duong-dung-trong-lam-banh.jpg",
-      "headline": "Phân biệt các loại đường dùng để làm bánh",
+      "src": "https://www.tastingtable.com/img/gallery/classic-swedish-princess-cake-prinsesstrta-recipe/intro-1692623089.jpg",
+      "headline": "Những Loại Bánh Ngọt Nổi Tiếng Trên Thế Giới",
       "author": "Dough Re Mi",
       "date": "20.03.2024",
-      "content": "Hôm nay Dough Re Mi sẽ hướng dẫn không cách phân biệt các loại đường dùng để làm bánh nhé! Đường là nguyên này tạo...",
+      "content": "Những loại bánh ngọt nổi tiếng trên thế giới. Nếu là một tín đồ của bánh ngọt hay chỉ đơn giản là người ưa khám phá thì chắc chắn bạn sẽ không thể nào bỏ qua cơ hội khám phá và thưởng thức những chiếc bánh ngọt ngon nhất thế giới này…",
       "paragraph": [
         {
-          "paraHeader": "1 lát bánh mì sandwich bao nhiêu calo?",
-          "img": "https://breadtalkvietnam.com/wp-content/uploads/2023/06/1-lat-banh-mi-sandwich-bao-nhieu-calo-1024x768.jpeg",
-          "paraContent": " Bánh mì sandwich được làm từ ngũ cốc, men hoặc lúa mì cùng nhiều thành phần khác. Một số loại bánh mì sandwich được bổ sung thêm các loại hạt nảy mầm hay ngũ cốc nguyên hạt có lợi cho sức khỏe.Bánh mì sandwich có thể ăn cùng với xúc xích, thịt, chả, hải sản, rau củ, phô mai tùy theo sở thích và khẩu vị của từng người."
+          "fstPara": "",
+          "paraHeader": "Những loại bánh ngọt nổi tiếng trên thế giới",
+          "img": "",
+          "paraContent": "Những loại bánh ngọt nổi tiếng trên thế giới. Nếu là một tín đồ của bánh ngọt hay chỉ đơn giản là người ưa khám phá thì chắc chắn bạn sẽ không thể nào bỏ qua cơ hội khám phá và thưởng thức những chiếc bánh ngọt ngon nhất thế giới này",
+          "paraList": []
         },
         {
-          "paraHeader": "Hàm lượng calo có trong các loại bánh mì sandwich",
-          "img": "https://breadtalkvietnam.com/wp-content/uploads/2023/06/1-lat-banh-mi-sandwich-bao-nhieu-calo-2-1024x576.jpeg",
-          "paraContent": "Hàm lượng calo và các thành phần dinh dưỡng trong bánh mì sandwich có thể cao hơn hoặc thấp hơn phụ thuộc vào từng loại bánh mì. 100g bánh mì sandwich chứa bao nhiêu calo? 200g bánh mì sandwich bao nhiêu calo?"
+          "fstPara": "",
+          "paraHeader": "Chesse Cake",
+          "img": "https://www.splenda.com/wp-content/uploads/2020/05/american-classic-cheesecake-2000x1000.jpg",
+          "paraContent": "Đây là loại bánh ngọt được làm chủ yếu từ phô mai, tạo vị béo ngậy. Phía trên người ta có thể phủ thêm mứt. Chiếc bánh pho mát kem được làm từ những năm 1800 và trở thành một trong những món bánh quen thuộc của người dân New York.",
+          "paraList": []
         },
         {
-          "paraHeader": "Bánh mì sandwich với trái bơ bao nhiêu calo?",
-          "img": "https://breadtalkvietnam.com/wp-content/uploads/2023/06/1-lat-banh-mi-sandwich-bao-nhieu-calo-3-1024x683.jpeg",
-          "paraContent": ""
+          "fstPara": "",
+          "paraHeader": "Tiramisu",
+          "img": "https://cdn.tgdd.vn/Files/2021/08/08/1373908/tiramisu-la-gi-y-nghia-cua-banh-tiramisu-202108082258460504.jpg",
+          "paraContent": "Là loại bánh ngọt vô cùng quen thuộc tại Việt Nam nhưng không phải ai cũng biết rõ về chúng. Tiramisu là loại bánh ngọt tráng miệng vị cà phê rất nổi tiếng có nguồn gốc từ Italy. Bánh gồm các lớp bánh quy Savoiardi nhúng cà phê xen kẽ với hỗn hợp trứng, đường, phô mai mascarpone đánh bông, bột cacao. Món bánh này còn có một tên gọi khác, là “thiên đường ở trong miệng”, nhằm ca ngợi độ ngon của Tiramisu.",
+          "paraList": []
+        },
+        {
+          "fstPara": "",
+          "paraHeader": "Black Forest",
+          "img": "https://cdn.tgdd.vn/Files/2021/07/26/1370922/cach-lam-banh-black-forest-gato-ngot-ngao-tang-nguoi-thuong-202201051105015915.jpg",
+          "paraContent": "Đây là một kiểu bánh có nguồn gốc từ Đức với tên gốc là Schwarzwälder Kirschtorte. Nó bao gồm nhiều lớp bánh chocolate sponge, phủ váng sữa đánh tơi, maraschino cherry và chocolate bào mỏng.",
+          "paraList": []
+        },
+        {
+          "fstPara": "",
+          "paraHeader": "Victoria Sponge",
+          "img": "https://images.food52.com/s8lzxKGmGDQU1Z4_9MxuSCcKUjE=/750x500/8caf639e-c2d2-480e-8832-980a308133d3--2021-0525_victoria-sponge-cake_3x2_rocky-luten_015.jpg",
+          "paraContent": "Đây là loại bánh được đặt theo tên của nữ hoàng Anh Victoria. Một chiếc Victoria Sponge truyền thống gồm mứt và lượng kem nhiều gấp đôi. Bánh thường được dùng trong tiệc trà chiều của người Anh.",
+          "paraList": []
+        },
+        {
+          "fstPara": "",
+          "paraHeader": "Sachertorte",
+          "img": "https://img.taste.com.au/AUE-WXuq/taste/2016/11/sachertorte-88202-1.jpeg",
+          "paraContent": "Đây là một loại bánh được tạo ra bởi chocolate tuyệt hảo nhất nước Áo. Bánh có vị ngọt dịu nhẹ, gồm nhiều lớp bánh được làm từ bánh mì và bánh sữa chocolate, xen lẫn giữa các lớp bánh là mứt mơ. Món bánh chocolate này nổi tiếng và thành phố Vienna đã ấn định tổ chức một ngày Sachertorte quốc gia, vào ngày 5/12 hàng năm.",
+          "paraList": []
+        },
+        {
+          "fstPara": "",
+          "paraHeader": "Swedish Princess",
+          "img": "https://www.tastingtable.com/img/gallery/classic-swedish-princess-cake-prinsesstrta-recipe/intro-1692623089.jpg",
+          "paraContent": "Vẻ ngoài của Swedish Princess ngọt ngào như chính tên gọi của mình. Đây là món bánh ngọt truyền thống của Thụy Điển được rất nhiều người yêu thích. Ban đầu, bánh được làm để phục vụ hoàng gia, được làm từ mứt, trứng, sữa, kem và cốt bánh bông lan, bao phủ phía trên là lớp bánh hạnh nhân (thường có màu xanh). Vete-Katten, Thụy Điển là nơi tuyệt nhất để thưởng thức món bánh mang tên đài các này.",
+          "paraList": []
+        },
+        {
+          "fstPara": "",
+          "paraHeader": "",
+          "img": "",
+          "paraContent": "Loại bánh nào trong danh sách “Những loại bánh ngọt nổi tiếng trên thế giới” mà chúng tôi vừa nêu ở trên để lại ấn tượng tốt nhất với bạn?",
+          "paraList": []
         }
       ]
     },
     {
-      "src": "https://rusticbakery.com/cdn/shop/collections/Rustic-Bakery-Summer-Cookies.jpg?v=1686076086",
-      "headline": "Phân biệt các loại đường dùng để làm bánh",
+      "src": "https://breadtalkvietnam.com/wp-content/uploads/2023/06/1-lat-banh-mi-sandwich-bao-nhieu-calo-2-1024x576.jpeg",
+      "headline": "Bánh mì sandwich là món ăn phổ biến được nhiều người lựa chọn trong bữa ăn sáng. Cùng Dough Re Mi tìm hiểu 1 lát bánh mì sandwich bao nhiêu calo, ăn có béo không? Khi ăn cần lưu ý gì?",
       "author": "Dough Re Mi",
       "date": "20.03.2024",
-      "content": "Hôm nay Dough Re Mi sẽ hướng dẫn không cách phân biệt các loại đường dùng để làm bánh nhé! Đường là nguyên này tạo...",
+      "content": "Bánh mì sandwich là món ăn phổ biến được nhiều người lựa chọn trong bữa ăn sáng. Cùng Dough Re Mi tìm hiểu 1 lát bánh mì sandwich bao nhiêu calo, ăn có béo không? Khi ăn cần lưu ý gì?",
       "paragraph": [
         {
+          "fstPara": "",
           "paraHeader": "1 lát bánh mì sandwich bao nhiêu calo?",
-          "img": "https://breadtalkvietnam.com/wp-content/uploads/2023/06/1-lat-banh-mi-sandwich-bao-nhieu-calo-1024x768.jpeg",
-          "paraContent": " Bánh mì sandwich được làm từ ngũ cốc, men hoặc lúa mì cùng nhiều thành phần khác. Một số loại bánh mì sandwich được bổ sung thêm các loại hạt nảy mầm hay ngũ cốc nguyên hạt có lợi cho sức khỏe.Bánh mì sandwich có thể ăn cùng với xúc xích, thịt, chả, hải sản, rau củ, phô mai tùy theo sở thích và khẩu vị của từng người."
-        },
-        {
-          "paraHeader": "Hàm lượng calo có trong các loại bánh mì sandwich",
           "img": "https://breadtalkvietnam.com/wp-content/uploads/2023/06/1-lat-banh-mi-sandwich-bao-nhieu-calo-2-1024x576.jpeg",
-          "paraContent": "Hàm lượng calo và các thành phần dinh dưỡng trong bánh mì sandwich có thể cao hơn hoặc thấp hơn phụ thuộc vào từng loại bánh mì. 100g bánh mì sandwich chứa bao nhiêu calo? 200g bánh mì sandwich bao nhiêu calo?"
+          "paraContent": "Bánh mì sandwich được làm từ ngũ cốc, men hoặc lúa mì cùng nhiều thành phần khác. Một số loại bánh mì sandwich được bổ sung thêm các loại hạt nảy mầm hay ngũ cốc nguyên hạt có lợi cho sức khỏe.Bánh mì sandwich có thể ăn cùng với xúc xích, thịt, chả, hải sản, rau củ, phô mai tùy theo sở thích và khẩu vị của từng người.",
+          "paraList": []
         },
         {
-          "paraHeader": "Bánh mì sandwich với trái bơ bao nhiêu calo?",
-          "img": "https://breadtalkvietnam.com/wp-content/uploads/2023/06/1-lat-banh-mi-sandwich-bao-nhieu-calo-3-1024x683.jpeg",
-          "paraContent": ""
-        }
-      ]
-    },
-    {
-      "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_x_E1xggVgCVsoQu8UpcQty6u5r8qNBhdpA&s",
-      "headline": "Phân biệt các loại đường dùng để làm bánh",
-      "author": "Dough Re Mi",
-      "date": "20.03.2024",
-      "content": "Hôm nay Dough Re Mi sẽ hướng dẫn không cách phân biệt các loại đường dùng để làm bánh nhé! Đường là nguyên này tạo...",
-      "paragraph": [
-        {
-          "paraHeader": "1 lát bánh mì sandwich bao nhiêu calo?",
-          "img": "https://breadtalkvietnam.com/wp-content/uploads/2023/06/1-lat-banh-mi-sandwich-bao-nhieu-calo-1024x768.jpeg",
-          "paraContent": " Bánh mì sandwich được làm từ ngũ cốc, men hoặc lúa mì cùng nhiều thành phần khác. Một số loại bánh mì sandwich được bổ sung thêm các loại hạt nảy mầm hay ngũ cốc nguyên hạt có lợi cho sức khỏe.Bánh mì sandwich có thể ăn cùng với xúc xích, thịt, chả, hải sản, rau củ, phô mai tùy theo sở thích và khẩu vị của từng người."
+          "fstPara": "1 lát bánh mì sandwich có bao nhiêu calo? 1 lát bánh mì sandwich trắng 25g chứa khoảng 67 calo và các chất dinh dưỡng sau:",
+          "paraHeader": "",
+          "img": "",
+          "paraContent": "",
+          "paraList": [
+            "13g carbs",
+            "2g chất đạm",
+            "1g chất béo",
+            "0,6g chất xơ",
+            "8% RDI vitamin B1 – RDI là giá trị dinh dưỡng được khuyên dùng mỗi ngày",
+            "5% RDI vitamin B2",
+            "5% RDI vitamin B3",
+            "7% vitamin B9",
+            "7% RDI natri",
+            "6% RDI mangan",
+            "6% RDI selen",
+            "5% RDI sắt"
+          ]
         },
         {
-          "paraHeader": "Hàm lượng calo có trong các loại bánh mì sandwich",
-          "img": "https://breadtalkvietnam.com/wp-content/uploads/2023/06/1-lat-banh-mi-sandwich-bao-nhieu-calo-2-1024x576.jpeg",
-          "paraContent": "Hàm lượng calo và các thành phần dinh dưỡng trong bánh mì sandwich có thể cao hơn hoặc thấp hơn phụ thuộc vào từng loại bánh mì. 100g bánh mì sandwich chứa bao nhiêu calo? 200g bánh mì sandwich bao nhiêu calo?"
+          "fstPara": "Khi đã biết một lát bánh mì sandwich bao nhiêu calo, bạn cũng dễ dàng tính được 4 lát bánh mì sandwich bao nhiêu calo? 5 lát bánh mì sandwich bao nhiêu calo?",
+          "paraHeader": "",
+          "img": "",
+          "paraContent": "Theo đó, 4 lát bánh mì sandwich chứa 268 calo; 5 lát bánh mì sandwich có 335 calo.",
+          "paraList": []
         },
         {
-          "paraHeader": "Bánh mì sandwich với trái bơ bao nhiêu calo?",
-          "img": "https://breadtalkvietnam.com/wp-content/uploads/2023/06/1-lat-banh-mi-sandwich-bao-nhieu-calo-3-1024x683.jpeg",
-          "paraContent": ""
+          "fstPara": "Như vậy, 1 bịch bánh mì sandwich bao nhiêu calo? 1 bịch bánh mì sandwich trắng có khoảng 10 – 12 lát bánh mì, hàm lượng calo dao động từ 670 – 800.",
+          "paraHeader": "",
+          "img": "",
+          "paraContent": "Với những thông tin cung cấp ở trên, hy vọng bạn đã biết 1 lát bánh mì sandwich bao nhiêu calo. Bên cạnh chế độ ăn uống khoa học, bạn nên có kế hoạch rèn luyện thể thao phù hợp để cơ thể khỏe mạnh, vóc dáng được cân đối hơn.",
+          "paraList": []
         }
       ]
     },
     {
       "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2k76lCdXiZa4CAyuq5w4qzWI22V2R27u_KA&s",
-      "headline": "Phân biệt các loại đường dùng để làm bánh",
+      "headline": "Tuyệt Chiêu Bảo Quản Bánh Kem Cực Hay Bạn Đã Biết Chưa?",
       "author": "Dough Re Mi",
       "date": "20.03.2024",
-      "content": "Hôm nay Dough Re Mi sẽ hướng dẫn không cách phân biệt các loại đường dùng để làm bánh nhé! Đường là nguyên này tạo...",
+      "content": "Bánh kem là món đặc biệt không thể thiếu trong mỗi dịp sinh nhật, đám cưới, thôi nôi… và được rất nhiều người yêu thích.",
       "paragraph": [
         {
-          "paraHeader": "1 lát bánh mì sandwich bao nhiêu calo?",
-          "img": "https://breadtalkvietnam.com/wp-content/uploads/2023/06/1-lat-banh-mi-sandwich-bao-nhieu-calo-1024x768.jpeg",
-          "paraContent": " Bánh mì sandwich được làm từ ngũ cốc, men hoặc lúa mì cùng nhiều thành phần khác. Một số loại bánh mì sandwich được bổ sung thêm các loại hạt nảy mầm hay ngũ cốc nguyên hạt có lợi cho sức khỏe.Bánh mì sandwich có thể ăn cùng với xúc xích, thịt, chả, hải sản, rau củ, phô mai tùy theo sở thích và khẩu vị của từng người."
+          "fstPara": "Bánh kem là món đặc biệt không thể thiếu trong mỗi dịp sinh nhật, đám cưới, thôi nôi… và được rất nhiều người yêu thích. Thế nhưng chúng ta thường không biết cách bảo quản bánh kem khi không có tủ lạnh nên khiến chúng nhanh bị hư hoặc không để được lâu ngay cả bảo quản bằng tủ lạnh nhưng không đúng cách.",
+          "paraHeader": "",
+          "img": "",
+          "paraContent": "Bài viết này sẽ chia sẻ những tuyệt chiêu hay ho nhất để bạn dễ dàng bảo quản bánh kem bằng tủ lạnh hoặc ngay cả khi không có tủ lạnh tốt nhất. Bạn chỉ cần lưu lại để áp dụng thôi và sẽ không cần phải hỏi bánh kem để ngăn đá được không hay bánh kem sinh nhật bảo quản được bao lâu… Cùng Dough Re Mi xem ngay để biết đó là những cách thú vị nào nhé!",
+          "paraList": []
         },
         {
-          "paraHeader": "Hàm lượng calo có trong các loại bánh mì sandwich",
-          "img": "https://breadtalkvietnam.com/wp-content/uploads/2023/06/1-lat-banh-mi-sandwich-bao-nhieu-calo-2-1024x576.jpeg",
-          "paraContent": "Hàm lượng calo và các thành phần dinh dưỡng trong bánh mì sandwich có thể cao hơn hoặc thấp hơn phụ thuộc vào từng loại bánh mì. 100g bánh mì sandwich chứa bao nhiêu calo? 200g bánh mì sandwich bao nhiêu calo?"
+          "fstPara": "Bánh kem khi để trong nhiệt độ thường lâu rất dễ bị chảy và biến dạng. Do đó người ta thường bảo quản chúng bằng tủ lạnh. Đây cũng là cách dễ và phổ biến nhất mà nhiều người hay áp dụng. Nếu để trong môi trường với nhiệt độ thông thường, bánh kem chỉ đảm bảo ngon nhất và giữ được hương vị chuẩn nhất trong vòng từ 2- 5 tiếng. Nhưng nếu bảo quản ở nhiệt độ ngăn mát của tủ lạnh, bánh kem có thể để được khoảng 2-3 ngày song vẫn sẽ bị khô hơn và không giữ được độ mềm mịn như ban đầu.",
+          "paraHeader": "Cách bảo quản bánh kem trong tủ lạnh",
+          "img": "https://hoamattroi247.vn/wp-content/uploads/2018/07/tu-banh-kinh-cong.jpg",
+          "paraContent": "Tuy nhiên, khi bảo quản bánh kem trong tủ lạnh, bạn cần đảm bảo được các yếu tố sau:",
+          "paraList": [
+            "Mức nhiệt độ thích hợp nhất để bảo quản bánh kem là từ 2 – 8 độ C. Ở nhiệt độ lạnh, vi khuẩn không thể sinh sôi ảnh hưởng xấu đến chất lượng bánh. Bên cạnh đó bánh sẽ đứng form, không có hiện tượng “toát mồ hôi” gây mất thẩm mỹ.",
+            "Bánh phải được bọc thật kín cẩn thận nếu không sẽ rất dễ bị lên men và nhanh hỏng.",
+            "Không nên để bánh kem ở cạnh những thực phẩm khác, đặc biệt là những thực phẩm có mùi, tươi sống như: thịt, cá, trứng… Vì bánh kem là loại bánh ăn ngay nên nếu để ở gần các thực phẩm này sẽ bị ảnh hưởng mùi dẫn đến không ngon, kém hương vị. Bánh kem có thể được bảo quản lên tới một tháng theo cách này. Tuy nhiên cũng không nên để quá lâu sẽ làm bánh mất ngon, bị cứng lại…"
+          ]
         },
         {
-          "paraHeader": "Bánh mì sandwich với trái bơ bao nhiêu calo?",
-          "img": "https://breadtalkvietnam.com/wp-content/uploads/2023/06/1-lat-banh-mi-sandwich-bao-nhieu-calo-3-1024x683.jpeg",
-          "paraContent": ""
+          "fstPara": "Mặc dù bảo quản bánh kem bằng tủ lạnh là cách đơn giản nhất nhưng bạn vẫn có thể để bánh kem được lâu hơn ở nhiệt độ thường nếu áp dụng đúng cách.",
+          "paraHeader": "Cách bảo quản bánh kem không cần tủ lạnh thế nào?",
+          "img": "",
+          "paraContent": "Rất nhiều người lẫn lộn giữa việc bảo quản bánh kem và bánh mì. Với bánh mì, nếu muốn giữ cho lớp vỏ bánh được giòn và thơm trong nhiều ngày, bạn nên ủ bánh nóng ngay sau khi vừa ra lò. Còn với các dòng bánh ngọt hay bánh kem thì thì hoàn toàn ngược lại.",
+          "paraList": []
+        },
+        {
+          "fstPara": "Để bảo quản bánh kem trong nhiệt độ thường không có tủ lạnh, bạn cắt miếng bánh mì sandwich hoặc bánh bông lan, bánh mì thông thường, ép dẹt lại rồi chèn chúng vào phần miếng bánh kem đã cắt dở. Tác dụng của việc này là ngăn cản sự ảnh hưởng trực tiếp của vi khuẩn lên cấu trúc bánh. Sau đó cẩn thận bọc kín lại bằng túi nilon hoặc màng bọc thực phẩm.",
+          "paraHeader": "",
+          "img": "https://banhbaobihop.com/wp-content/uploads/2021/04/28-35.jpg",
+          "paraContent": "Bọc bánh kem trong hộp hoặc sử dụng túi bóng, màng bọc thực phẩm để bọc bánh lại thật kín, không để bất cứ khe hở nào vì chỉ cần một chút không khí từ bên ngoài xâm nhập vào thôi cũng đủ để có thể khiến bánh nhanh hỏng hơn.",
+          "paraList": []
+        },
+        {
+          "fstPara": "Khi bánh mới ra lò, bạn nên để bánh nguội hẳn rồi mới lấy túi nilon bọc chúng lại thật kín, để ở nơi thoáng khí và mát mẻ, có nhiệt độ thấp thì sẽ bảo quản bánh được lâu hơn.",
+          "paraHeader": "",
+          "img": "",
+          "paraContent": "Trên đây là những cách bảo quản bánh kem bằng tủ lạnh và cả khi không có tủ lạnh khá đơn giản nhưng cũng rất hiệu quả mà bạn có thể áp dụng. Hy vọng bài viết đã mang đến cho bạn những thông tin thú vị, hữu ích.",
+          "paraList": []
         }
       ]
     },
     {
-      "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTa4owg-rjTkvVw34PxUySWEnvr9cWwt1oEkw&s",
-      "headline": "Phân biệt các loại đường dùng để làm bánh",
+      "src": "https://static.vecteezy.com/system/resources/previews/009/223/299/large_2x/bread-and-bakery-products-for-sale-in-a-shop-in-israel-photo.JPG",
+      "headline": "SALE NGAY 20% ĂN MỪNG KỶ NIỆM DOUGH RE MI 10 NĂM",
       "author": "Dough Re Mi",
       "date": "20.03.2024",
-      "content": "Hôm nay Dough Re Mi sẽ hướng dẫn không cách phân biệt các loại đường dùng để làm bánh nhé! Đường là nguyên này tạo...",
+      "content": "Nhân dịp kỷ niệm 20 năm ngày thành lập thương hiệu Dough Re Mi (20/04/2004 - 20/04/2024), để tri ân cũng như gửi lời cảm ơn sâu sắc tới tất cả khách hàng đã yêu thương và ủng hộ, Dough Re Mi xin gửi tặng Quý khách ưu đãi sốc chưa từng có",
       "paragraph": [
         {
-          "paraHeader": "1 lát bánh mì sandwich bao nhiêu calo?",
-          "img": "https://breadtalkvietnam.com/wp-content/uploads/2023/06/1-lat-banh-mi-sandwich-bao-nhieu-calo-1024x768.jpeg",
-          "paraContent": " Bánh mì sandwich được làm từ ngũ cốc, men hoặc lúa mì cùng nhiều thành phần khác. Một số loại bánh mì sandwich được bổ sung thêm các loại hạt nảy mầm hay ngũ cốc nguyên hạt có lợi cho sức khỏe.Bánh mì sandwich có thể ăn cùng với xúc xích, thịt, chả, hải sản, rau củ, phô mai tùy theo sở thích và khẩu vị của từng người."
+          "fstPara": "Nhân dịp kỷ niệm 20 năm ngày thành lập thương hiệu Dough Re Mi (20/04/2004 - 20/04/2024), để tri ân cũng như gửi lời cảm ơn sâu sắc tới tất cả khách hàng đã yêu thương và ủng hộ, Dough Re Mi xin gửi tặng Quý khách ưu đãi sốc chưa từng có.",
+          "paraHeader": "",
+          "img": "https://cdn.create.vista.com/downloads/27ae0f3e-d0cd-4ec1-8d50-e366893bfdbc_640.jpeg",
+          "paraContent": "",
+          "paraList": []
         },
         {
-          "paraHeader": "Hàm lượng calo có trong các loại bánh mì sandwich",
-          "img": "https://breadtalkvietnam.com/wp-content/uploads/2023/06/1-lat-banh-mi-sandwich-bao-nhieu-calo-2-1024x576.jpeg",
-          "paraContent": "Hàm lượng calo và các thành phần dinh dưỡng trong bánh mì sandwich có thể cao hơn hoặc thấp hơn phụ thuộc vào từng loại bánh mì. 100g bánh mì sandwich chứa bao nhiêu calo? 200g bánh mì sandwich bao nhiêu calo?"
+          "fstPara": "Giảm 20% toàn bộ các sản phẩm đang bày bán tại hệ thống cửa hàng Dough Re Mi (Không áp dụng với hàng hoá siêu thị, các sản phẩm thuộc chương trình khuyến mại khác và không áp dụng đối với đơn hàng giao đi).",
+          "paraHeader": "",
+          "img": "https://www.shutterstock.com/image-photo/sales-assistant-bakery-putting-gluten-600nw-1911997906.jpg",
+          "paraContent": "",
+          "paraList": []
         },
         {
-          "paraHeader": "Bánh mì sandwich với trái bơ bao nhiêu calo?",
-          "img": "https://breadtalkvietnam.com/wp-content/uploads/2023/06/1-lat-banh-mi-sandwich-bao-nhieu-calo-3-1024x683.jpeg",
-          "paraContent": ""
+          "fstPara": "Hãy nhanh chân tới các cơ sở của Dough Re Mi để tận hưởng ưu đãi đặc biệt giảm 20% cũng như chung vui nhân kỷ niệm 20 năm ngày thành lập cùng Doug Re Mi bạn nhé!",
+          "paraHeader": "",
+          "img": "https://static.vecteezy.com/system/resources/previews/009/223/299/large_2x/bread-and-bakery-products-for-sale-in-a-shop-in-israel-photo.JPG",
+          "paraContent": "",
+          "paraList": []
         }
       ]
     },
     {
-      "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8Hf6CVfXXhBuRLaRbSlu2-0c-N-EDtII5Lg&s",
-      "headline": "Phân biệt các loại đường dùng để làm bánh",
+      "src": "https://www.cantoromarket.com/wp-content/uploads/2022/05/PXL_20201016_122908436.jpg",
+      "headline": "Thỏa Mãn Nụ Hôn Với Vô Vàn Ưu Đãi Siêu Hấp Dẫn Tại Dough Re Mi",
       "author": "Dough Re Mi",
       "date": "20.03.2024",
-      "content": "Hôm nay Dough Re Mi sẽ hướng dẫn không cách phân biệt các loại đường dùng để làm bánh nhé! Đường là nguyên này tạo...",
+      "content": "Bạn đang tìm kiếm những chiếc bánh ngọt thơm ngon để dành tặng cho người thân yêu trong những dịp đặc biệt? Hãy đến với Dough Re Mi ngay hôm nay để khám phá thế giới bánh ngọt đa dạng và hấp dẫn của chúng tôi!",
       "paragraph": [
         {
-          "paraHeader": "1 lát bánh mì sandwich bao nhiêu calo?",
-          "img": "https://breadtalkvietnam.com/wp-content/uploads/2023/06/1-lat-banh-mi-sandwich-bao-nhieu-calo-1024x768.jpeg",
-          "paraContent": " Bánh mì sandwich được làm từ ngũ cốc, men hoặc lúa mì cùng nhiều thành phần khác. Một số loại bánh mì sandwich được bổ sung thêm các loại hạt nảy mầm hay ngũ cốc nguyên hạt có lợi cho sức khỏe.Bánh mì sandwich có thể ăn cùng với xúc xích, thịt, chả, hải sản, rau củ, phô mai tùy theo sở thích và khẩu vị của từng người."
+          "fstPara": "Bạn đang tìm kiếm những chiếc bánh ngọt thơm ngon để dành tặng cho người thân yêu trong những dịp đặc biệt? Hãy đến với Dough Re Mi ngay hôm nay để khám phá thế giới bánh ngọt đa dạng và hấp dẫn của chúng tôi!",
+          "paraHeader": "",
+          "img": "https://www.cantoromarket.com/wp-content/uploads/2022/05/PXL_20201016_122908436.jpg",
+          "paraContent": "",
+          "paraList": []
         },
         {
-          "paraHeader": "Hàm lượng calo có trong các loại bánh mì sandwich",
-          "img": "https://breadtalkvietnam.com/wp-content/uploads/2023/06/1-lat-banh-mi-sandwich-bao-nhieu-calo-2-1024x576.jpeg",
-          "paraContent": "Hàm lượng calo và các thành phần dinh dưỡng trong bánh mì sandwich có thể cao hơn hoặc thấp hơn phụ thuộc vào từng loại bánh mì. 100g bánh mì sandwich chứa bao nhiêu calo? 200g bánh mì sandwich bao nhiêu calo?"
+          "fstPara": "Giảm 20% toàn bộ các sản phẩm đang bày bán tại hệ thống cửa hàng Dough Re Mi (Không áp dụng với hàng hoá siêu thị, các sản phẩm thuộc chương trình khuyến mại khác và không áp dụng đối với đơn hàng giao đi).",
+          "paraHeader": "",
+          "img": "",
+          "paraContent": "",
+          "paraList": []
         },
         {
-          "paraHeader": "Bánh mì sandwich với trái bơ bao nhiêu calo?",
-          "img": "https://breadtalkvietnam.com/wp-content/uploads/2023/06/1-lat-banh-mi-sandwich-bao-nhieu-calo-3-1024x683.jpeg",
-          "paraContent": ""
+          "fstPara": "",
+          "paraHeader": "Ưu đãi đặc biệt dành cho bạn:",
+          "img": "",
+          "paraContent": "",
+          "paraList": [
+            "Giảm giá 10% cho tất cả các loại bánh kem sinh nhật đặt trước 2 ngày.",
+            "Tặng kèm 1 hộp bánh quy miễn phí cho đơn hàng trị giá từ 500.000 VNĐ.",
+            "Miễn phí giao hàng tận nơi trong nội thành TP.HCM.",
+            "Ưu đãi mua 1 tặng 1 cho tất cả các loại bánh ngọt vào thứ Tư hàng tuần."
+          ]
+        },
+        {
+          "fstPara": "",
+          "paraHeader": "",
+          "img": "https://www.shoptadychs.com///wp-content/uploads/2020/01/cakes.jpg",
+          "paraContent": "",
+          "paraList": []
+        },
+        {
+          "fstPara": "",
+          "paraHeader": "Tại Dough Re Mi, chúng tôi cam kết:",
+          "img": "",
+          "paraContent": "",
+          "paraList": [
+            "Sử dụng nguyên liệu cao cấp, đảm bảo an toàn vệ sinh thực phẩm.",
+            "Bánh được làm mới mỗi ngày với hương vị thơm ngon, độc đáo.",
+            "Trang trí bánh đẹp mắt, tỉ mỉ theo yêu cầu của khách hàng.",
+            "Giá cả cạnh tranh, phù hợp với mọi đối tượng.",
+            "Dịch vụ khách hàng chuyên nghiệp, tận tâm."
+          ]
+        },
+        {
+          "fstPara": "",
+          "paraHeader": "",
+          "img": "https://d1yfn1dfres2va.cloudfront.net/007/3b/d6/3bd66f0b335f3ef7f794f69bd56c07b2_640m.jpg",
+          "paraContent": "",
+          "paraList": []
+        },
+        {
+          "fstPara": "",
+          "paraHeader": "Đừng bỏ lỡ cơ hội thưởng thức những chiếc bánh ngọt ngon tuyệt vời tại Dough Re Mi!",
+          "img": "",
+          "paraContent": "",
+          "paraList": []
         }
       ]
     },
     {
-      "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8kwoOGTRFSAv4-LOJPkmf4QC9nY5yt2QYVw&s",
-      "headline": "Phân biệt các loại đường dùng để làm bánh",
+      "src": "https://www.worldbakers.com/wp-content/uploads/2017/03/images_WBSpecialFeature_BakeryforKidsResearch.jpg",
+      "headline": "Ngày Quốc Tế Thiếu Nhi 1/6 - Bùng B nổ Ưu Đãi Siêu Hấp Dẫn!",
       "author": "Dough Re Mi",
       "date": "20.03.2024",
-      "content": "Hôm nay Dough Re Mi sẽ hướng dẫn không cách phân biệt các loại đường dùng để làm bánh nhé! Đường là nguyên này tạo...",
+      "content": "Chào mừng Ngày Quốc Tế Thiếu Nhi 1/6! Nhân dịp này, DoughReMi mang đến cho bạn chương trình khuyến mãi cực kỳ hấp dẫn với vô vàn ưu đãi dành cho các bé yêu và cả gia đình.",
       "paragraph": [
         {
-          "paraHeader": "1 lát bánh mì sandwich bao nhiêu calo?",
-          "img": "https://breadtalkvietnam.com/wp-content/uploads/2023/06/1-lat-banh-mi-sandwich-bao-nhieu-calo-1024x768.jpeg",
-          "paraContent": " Bánh mì sandwich được làm từ ngũ cốc, men hoặc lúa mì cùng nhiều thành phần khác. Một số loại bánh mì sandwich được bổ sung thêm các loại hạt nảy mầm hay ngũ cốc nguyên hạt có lợi cho sức khỏe.Bánh mì sandwich có thể ăn cùng với xúc xích, thịt, chả, hải sản, rau củ, phô mai tùy theo sở thích và khẩu vị của từng người."
+          "fstPara": "Chào mừng Ngày Quốc Tế Thiếu Nhi 1/6! Nhân dịp này, DoughReMi mang đến cho bạn chương trình khuyến mãi cực kỳ hấp dẫn với vô vàn ưu đãi dành cho các bé yêu và cả gia đình.",
+          "paraHeader": "Hãy cùng khám phá những ưu đãi 'siêu to khổng lồ' dành riêng cho bạn:",
+          "img": "",
+          "paraContent": ". Giảm giá đến 50% cho tất cả các loại bánh ngọt, bánh kem, bánh macaron,...2. Tặng kèm 1 phần quà miễn phí cho đơn hàng từ 300.000 VNĐ.3. Miễn phí giao hàng tận nơi trong nội thành TP.HCM.4. Ưu đãi mua 2 tặng 1 cho tất cả các loại đồ chơi, sách truyện dành cho bé.5. Flashsale giảm giá 70% cho một số sản phẩm bánh kẹo, nước ngọt vào khung giờ 10h-12h mỗi ngày.",
+          "paraList": []
         },
         {
-          "paraHeader": "Hàm lượng calo có trong các loại bánh mì sandwich",
-          "img": "https://breadtalkvietnam.com/wp-content/uploads/2023/06/1-lat-banh-mi-sandwich-bao-nhieu-calo-2-1024x576.jpeg",
-          "paraContent": "Hàm lượng calo và các thành phần dinh dưỡng trong bánh mì sandwich có thể cao hơn hoặc thấp hơn phụ thuộc vào từng loại bánh mì. 100g bánh mì sandwich chứa bao nhiêu calo? 200g bánh mì sandwich bao nhiêu calo?"
+          "fstPara": "",
+          "paraHeader": "Và còn rất nhiều ưu đãi hấp dẫn khác đang chờ bạn khám phá!",
+          "img": "https://www.worldbakers.com/wp-content/uploads/2017/03/images_WBSpecialFeature_BakeryforKidsResearch.jpg",
+          "paraContent": "",
+          "paraList": []
         },
         {
-          "paraHeader": "Bánh mì sandwich với trái bơ bao nhiêu calo?",
-          "img": "https://breadtalkvietnam.com/wp-content/uploads/2023/06/1-lat-banh-mi-sandwich-bao-nhieu-calo-3-1024x683.jpeg",
-          "paraContent": ""
+          "fstPara": "Hãy dành tặng cho bé yêu những món quà ngọt ngào và ý nghĩa nhất trong ngày Quốc Tế Thiếu Nhi này nhé!",
+          "paraHeader": "Ưu đãi đặc biệt dành cho bạn:",
+          "img": "https://justbakeit.wordpress.com/wp-content/uploads/2011/10/dsc08836.jpg",
+          "paraContent": "Dough Re Mi - Nơi mang đến niềm vui cho bé và hạnh phúc cho gia đình!",
+          "paraList": []
+        },
+        {
+          "fstPara": "",
+          "paraHeader": "Dough Re Mi - Nơi mang đến niềm vui cho bé và hạnh phúc cho gia đình!",
+          "img": "",
+          "paraContent": "",
+          "paraList": []
         }
       ]
     },
     {
-      "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5vufaSR8sdS-Ob_Q6LKlUO_mS1TbY-IreDA&s",
-      "headline": "Phân biệt các loại đường dùng để làm bánh",
+      "src": "https://i.ytimg.com/vi/pMYV1-yZsdo/maxresdefault.jpg",
+      "headline": "Khuyến mãi 'Siêu Bão' - Ưu đãi 'Cực Khủng' chào đón Hè 2024!",
       "author": "Dough Re Mi",
       "date": "20.03.2024",
-      "content": "Hôm nay Dough Re Mi sẽ hướng dẫn không cách phân biệt các loại đường dùng để làm bánh nhé! Đường là nguyên này tạo...",
+      "content": "Mùa hè rực rỡ đã đến rồi! Hãy cùng Dough Re Mi tận hưởng mùa hè sôi động với chương trình khuyến mãi 'Siêu Bão' vô cùng hấp dẫn!",
       "paragraph": [
         {
-          "paraHeader": "1 lát bánh mì sandwich bao nhiêu calo?",
-          "img": "https://breadtalkvietnam.com/wp-content/uploads/2023/06/1-lat-banh-mi-sandwich-bao-nhieu-calo-1024x768.jpeg",
-          "paraContent": " Bánh mì sandwich được làm từ ngũ cốc, men hoặc lúa mì cùng nhiều thành phần khác. Một số loại bánh mì sandwich được bổ sung thêm các loại hạt nảy mầm hay ngũ cốc nguyên hạt có lợi cho sức khỏe.Bánh mì sandwich có thể ăn cùng với xúc xích, thịt, chả, hải sản, rau củ, phô mai tùy theo sở thích và khẩu vị của từng người."
+          "fstPara": "Mùa hè rực rỡ đã đến rồi! Hãy cùng Dough Re Mi tận hưởng mùa hè sôi động với chương trình khuyến mãi 'Siêu Bão' vô cùng hấp dẫn!",
+          "paraHeader": "Từ ngày 30/05 đến ngày20/06, Dough Re Mi mang đến cho bạn:",
+          "img": "https://i.ytimg.com/vi/pMYV1-yZsdo/maxresdefault.jpg",
+          "paraContent": "",
+          "paraList": [
+            "Giảm giá đến 70% cho tất cả các loại kem, sữa chua, đồ uống giải khát.",
+            "Mua 1 tặng 1 cho tất cả các loại bánh kem lạnh, bánh flan.",
+            "Flashsale giảm giá 50% cho tất cả các loại bánh mì, bánh sandwich vào khung giờ 14h-16h mỗi ngày.",
+            "Miễn phí ship cho đơn hàng từ 500.000 VNĐ trở lên.",
+            "Và vô vàn quà tặng hấp dẫn dành cho khách hàng may mắn."
+          ]
         },
         {
-          "paraHeader": "Hàm lượng calo có trong các loại bánh mì sandwich",
-          "img": "https://breadtalkvietnam.com/wp-content/uploads/2023/06/1-lat-banh-mi-sandwich-bao-nhieu-calo-2-1024x576.jpeg",
-          "paraContent": "Hàm lượng calo và các thành phần dinh dưỡng trong bánh mì sandwich có thể cao hơn hoặc thấp hơn phụ thuộc vào từng loại bánh mì. 100g bánh mì sandwich chứa bao nhiêu calo? 200g bánh mì sandwich bao nhiêu calo?"
+          "fstPara": "",
+          "paraHeader": "Và còn rất nhiều ưu đãi hấp dẫn khác đang chờ bạn khám phá!",
+          "img": "https://tapcom-live.ams3.cdn.digitaloceanspaces.com/media/cake-boutique/products/662977-11_copy6597.jpg",
+          "paraContent": "",
+          "paraList": []
         },
         {
-          "paraHeader": "Bánh mì sandwich với trái bơ bao nhiêu calo?",
-          "img": "https://breadtalkvietnam.com/wp-content/uploads/2023/06/1-lat-banh-mi-sandwich-bao-nhieu-calo-3-1024x683.jpeg",
-          "paraContent": ""
+          "fstPara": "",
+          "paraHeader": "",
+          "img": "",
+          "paraContent": "Cơ hội vàng để bạn thỏa sức giải nhiệt mùa hè với những món ngon mát lạnh và tiết kiệm chi phí tối đa!",
+          "paraList": []
+        },
+        {
+          "fstPara": "",
+          "paraHeader": "Dough Re Mi - Nơi mang đến cho bạn những trải nghiệm mua sắm tuyệt vời nhất!",
+          "img": "",
+          "paraContent": "",
+          "paraList": []
         }
       ]
     }

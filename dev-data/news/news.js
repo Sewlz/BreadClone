@@ -23,17 +23,37 @@ function fetchData(url, index) {
       newsDiv.appendChild(author);
 
       newsItem.paragraph.forEach((paragraph) => {
+        if (paragraph.fstPara) {
+          const paraContent = document.createElement("p");
+          paraContent.textContent = paragraph.fstPara;
+          newsDiv.appendChild(paraContent);
+        }
         const paraHeader = document.createElement("h3");
         paraHeader.textContent = paragraph.paraHeader;
         newsDiv.appendChild(paraHeader);
-
-        const paraImg = document.createElement("img");
-        paraImg.src = paragraph.img;
-        newsDiv.appendChild(paraImg);
-
-        const paraContent = document.createElement("p");
-        paraContent.textContent = paragraph.paraContent;
-        newsDiv.appendChild(paraContent);
+        if (paragraph.img) {
+          const paraImg = document.createElement("img");
+          paraImg.src = paragraph.img;
+          newsDiv.appendChild(paraImg);
+        }
+        if (paragraph.paraContent) {
+          const paraContent = document.createElement("p");
+          paraContent.textContent = paragraph.paraContent;
+          newsDiv.appendChild(paraContent);
+        }
+        if (paragraph.paraList) {
+          const paraList = document.createElement("ul");
+          paraList.className = "dynamic-list";
+          paraList.style = "list-style: disc !important;";
+          paraList.style = "padding-left: 4%";
+          paragraph.paraList.forEach((item) => {
+            const listItem = document.createElement("li");
+            listItem.style = "list-style: disc !important;";
+            listItem.textContent = item;
+            paraList.appendChild(listItem);
+          });
+          newsDiv.appendChild(paraList);
+        }
       });
 
       newsContainer.appendChild(newsDiv);

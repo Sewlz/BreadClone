@@ -96,9 +96,6 @@ body {
   justify-content: center;
   align-items: center;
 }
-.news-wrapper > ul {
-  padding-left: 2%;
-}
 .news-wrapper > h1 {
   font-size: x-large;
 }
