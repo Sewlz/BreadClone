@@ -283,3 +283,10 @@
     font-size: 30px;
   }
 }
+.news-headline {
+  box-sizing: border-box;
+  overflow: hidden;
+  max-width: 200px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
