@@ -339,7 +339,7 @@
     font-size: 13px;
   }
 
-  .name-product{
+  .name-product {
     max-width: 180px;
   }
 }
@@ -385,7 +385,7 @@
 }
 
 @media (max-width: 470px) {
-  .content-product .name-product{
+  .content-product .name-product {
     font-size: 13px;
     max-width: 130px;
   }
@@ -394,7 +394,7 @@
   .product-grid {
     gap: 10px;
   }
-  .content-product .name-product{
+  .content-product .name-product {
     font-size: 10px;
     max-width: 110px;
   }
