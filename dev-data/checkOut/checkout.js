@@ -1,3 +1,13 @@
+const dialog = document.getElementById("dialog");
+function closeDialog() {
+  dialog.close();
+}
+dialog.addEventListener("click", function (event) {
+  if (event.target === dialog) {
+    closeDialog();
+  }
+});
+
 document.addEventListener("DOMContentLoaded", function () {
   const sliderActive = document.querySelector(".slider-active");
   const voucherSlider = document.querySelector(".voucher-slider");
