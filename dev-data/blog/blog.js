@@ -38,20 +38,20 @@ document.addEventListener("DOMContentLoaded", function () {
   }
   if (urlParams.has("news")) {
     console.log("Loading news...");
-    latestLoader("../../data/blog-data/news.json");
+    latestLoader();
     blogLoader("../../data/blog-data/news.json");
   } else if (urlParams.has("promotion")) {
     console.log("Loading promotion...");
-    latestLoader("../../data/blog-data/promotion.json");
+    latestLoader();
     blogLoader("../../data/blog-data/promotion.json");
   } else {
     console.log("Loading default...");
-    latestLoader("../../data/blog-data/blog.json");
+    latestLoader();
     blogLoader("../../data/blog-data/blog.json");
   }
 });
-function latestLoader(fileName) {
-  fetch(fileName)
+function latestLoader() {
+  fetch("../../data/blog-data/blog.json")
     .then((response) => response.json())
     .then((data) => {
       const blog = data.blog.slice(0, 5);
