@@ -616,7 +616,7 @@ html body div.slection-container h1 {
     display: none;
   }
   #news-pagination {
-    margin-top: 40px;
+    margin-top: 70px;
   }
   .swiper-slide-news {
     margin: 0;
@@ -722,4 +722,21 @@ html body div.slection-container h1 {
   50% {
     transform: scale(1.2);
   }
+}
+.news-content > h6 {
+  box-sizing: border-box;
+  overflow: hidden;
+  max-width: 300px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.news-content > p {
+  box-sizing: border-box;
+  overflow: hidden;
+  max-width: 300px;
+  text-overflow: ellipsis;
+  white-space: normal;
+  display: block;
+  line-height: 1.5em;
+  max-height: 3em;
 }
