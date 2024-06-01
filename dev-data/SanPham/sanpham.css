@@ -139,7 +139,7 @@
 }
 
 @media (max-width: 920px) {
-  .categories_item a{
+  .categories_item a {
     max-width: 140px;
   }
 }
@@ -347,7 +347,7 @@
   .sub-title span::after {
     width: 15%;
   }
-  .name-product{
+  .name-product {
     max-width: calc(var(--width-text) - 50px);
     font-size: 14px;
   }
@@ -385,8 +385,11 @@
   .sub-title span::after {
     width: 10%;
   }
-  .name-product{
+  .name-product {
     max-width: calc(var(--width-text) - 100px);
     font-size: 12px;
+  }
+  .price::after {
+    bottom: 9px;
   }
 }

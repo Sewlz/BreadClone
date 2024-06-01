@@ -178,7 +178,7 @@
 
 .adr-slider.show {
   opacity: 1;
-  max-height: 330px;
+  max-height: 1000px;
   margin-top: 0; /* Move the voucher slider down smoothly */
 }
 /*-------*/
