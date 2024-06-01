@@ -88,11 +88,15 @@ function initializeSwiper() {
     slidesPerView: "auto",
     freeMode: false,
     breakpoints: {
-      768: {
+      500: {
         slidesPerView: 1,
         slidesPerGroup: 1,
       },
-      1200: {
+      700:{
+        slidesPerView: 2,
+        slidesPerGroup: 2,
+      },
+      900: {
         slidesPerView: 4,
         slidesPerGroup: 4,
       },
