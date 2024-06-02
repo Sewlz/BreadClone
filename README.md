@@ -12,10 +12,6 @@ The purpose of this project is to demonstrate frontend development skills in cre
 - CSS3
 - JavaScript
 
-## Usage
-
-To view the website, simply navigate to the `dev-data` directory, then open the `home` folder, and finally, open the `home.html` file in a web browser. Since this is a frontend-only project, no backend server is required.
-
 ## Disclaimer
 
 This project is created solely for educational purposes. It is not associated with any real bakery business, and the products and information provided are fictional. Any resemblance to real businesses is purely coincidental.
