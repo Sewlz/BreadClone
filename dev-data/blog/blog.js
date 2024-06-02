@@ -132,7 +132,7 @@ function blogLoader(fileName) {
         };
       });
 
-      const itemsPerPage = 5; // Number of items to display per page
+      const itemsPerPage = 4; // Number of items to display per page
       const blogContainers = document.querySelectorAll(".blog-container");
       const totalPages = Math.ceil(blogContainers.length / itemsPerPage); // Calculate total pages
 
