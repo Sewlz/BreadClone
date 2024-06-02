@@ -74,20 +74,25 @@ function initializeSwiper() {
     },
     breakpoints: {
       768: {
-        slidesPerView: 3,
-        slidesPerGroup: 3,
+        slidesPerView: 2,
+        slidesPerGroup: 2,
       },
       500: {
         slidesPerView: 1,
         slidesPerGroup: 1,
+        loop: true,
       },
       700: {
         slidesPerView: 2,
         slidesPerGroup: 2,
       },
       900: {
-        slidesPerView: 4,
-        slidesPerGroup: 4,
+        slidesPerView: 2,
+        slidesPerGroup: 2,
+      },
+      950: {
+        slidesPerView: 3,
+        slidesPerGroup: 3,
       },
       1200: {
         slidesPerView: 4,
