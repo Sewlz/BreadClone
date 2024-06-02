@@ -92,7 +92,7 @@ function initializeSwiper() {
         slidesPerView: 1,
         slidesPerGroup: 1,
       },
-      700:{
+      700: {
         slidesPerView: 2,
         slidesPerGroup: 2,
       },
@@ -114,71 +114,98 @@ function loadHomeProductSwiper() {
       const product = data.product;
       const swiperWrapper = document.querySelector(".mySwiper .swiper-wrapper");
       swiperWrapper.innerHTML = "";
-
+      let index = 0;
       product.forEach((product) => {
         const swiperSlide = document.createElement("div");
         swiperSlide.classList.add("swiper-slide");
         swiperSlide.innerHTML = `
-          <img src="${product.src}" alt="${product.alt}" onclick="document.location='../Buns/buns.html'" />
-          <h4 onclick="document.location='../Buns/buns.html'">${product.alt}</h4>
+          <img src="${product.src}" alt="${product.alt}" data-index="${index}" onclick="document.location='../Buns/buns.html'" />
+          <h4 data-index="${index}" onclick="document.location='../Buns/buns.html'">${product.alt}</h4>
         `;
         swiperWrapper.appendChild(swiperSlide);
+        index++;
       });
 
       document
         .querySelectorAll(
           ".mySwiper .swiper-slide img, .mySwiper .swiper-slide h4"
         )
-        .forEach((item, index) => {
-          item.addEventListener("click", () => {
-            sessionStorage.setItem("titlePageWebsite", product[index].alt);
+        .forEach((item) => {
+          item.addEventListener("click", (event) => {
+            const procIndex = event.target.dataset.index;
+            sessionStorage.setItem(
+              "titlePageWebsite",
+              product[parseInt(procIndex)].alt
+            );
           });
         });
 
       initializeSwiper();
     });
 }
+
 function loadTopProductSwiper() {
   fetch("../../data/home-data/topProducts.json")
-    .then((response) => response.json())
+    .then((response) => {
+      if (!response.ok) {
+        throw new Error("Network response was not ok " + response.statusText);
+      }
+      return response.json();
+    })
     .then((data) => {
       const topProducts = data.topProducts;
       const swiperWrapperTop = document.querySelector(
         "div.swiper:nth-child(4) > div.swiper-wrapper"
       );
-      swiperWrapperTop.innerHTML = "";
 
-      topProducts.forEach((product) => {
+      swiperWrapperTop.innerHTML = "";
+      topProducts.forEach((product, index) => {
         const swiperSlide = document.createElement("div");
-        swiperSlide.classList.add("swiper-slide");
-        swiperSlide.classList.add("cell");
+        swiperSlide.classList.add("swiper-slide", "cell");
         swiperSlide.innerHTML = `
-          <div class="img-product">
-            <img src="${product.src}" alt="${product.alt}" onclick="document.location='../ChiTietSanPham/chitietsanpham.html'" />
+          <div data-index="${index}" class="img-product">
+            <img src="${product.src}" alt="${product.alt}" />
           </div>
-          <div class="top-product-info">
-            <h4 class="top-product-title name-product" onclick="document.location='../ChiTietSanPham/chitietsanpham.html'">${product.alt}</h4>
+          <div data-index="${index}" class="top-product-info">
+            <h4 class="top-product-title name-product">${product.alt}</h4>
             <span class="top-product-price price">${product.price}</span>
           </div>
-          <button class="button-product" id="more-btn-2" onclick="addToCart();" style="border: 1px solid black; color: black; max-width: 250px; box-sizing: border-box;"><a href="#" style="text-decoration: none; color: black;">Thêm vào giỏ hàng</a></button>
+          <button class="button-product" id="more-btn-2" style="border: 1px solid black; color: black; max-width: 250px; box-sizing: border-box;">
+            <a href="#" style="text-decoration: none; color: black;">Thêm vào giỏ hàng</a>
+          </button>
         `;
         swiperWrapperTop.appendChild(swiperSlide);
       });
 
       document
         .querySelectorAll(".img-product, .top-product-info")
-        .forEach((item, index) => {
-          item.addEventListener("click", () => {
-            sessionStorage.setItem("pos-index", topProducts[index].posIndex);
-            sessionStorage.setItem(
-              "category-product",
-              topProducts[index].category
-            );
+        .forEach((item) => {
+          item.addEventListener("click", (event) => {
+            const procIndex =
+              event.target.closest("[data-index]").dataset.index;
+            if (procIndex !== undefined) {
+              sessionStorage.setItem(
+                "pos-index",
+                topProducts[parseInt(procIndex)].posIndex
+              );
+              sessionStorage.setItem(
+                "category-product",
+                topProducts[parseInt(procIndex)].category
+              );
+              document.location = "../ChiTietSanPham/chitietsanpham.html";
+            } else {
+              console.error("Error: data-index attribute not found.");
+            }
           });
         });
+
       initializeSwiper();
+    })
+    .catch((error) => {
+      console.error("Error loading top products:", error);
     });
 }
+
 window.addEventListener("load", () => {
   loadHomeProductSwiper();
   loadTopProductSwiper();
