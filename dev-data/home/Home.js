@@ -170,7 +170,7 @@ function loadTopProductSwiper() {
             <h4 class="top-product-title name-product">${product.alt}</h4>
             <span class="top-product-price price">${product.price}</span>
           </div>
-          <button class="button-product" id="more-btn-2" style="border: 1px solid black; color: black; max-width: 250px; box-sizing: border-box;">
+          <button onclick="addToCart();" class="button-product" id="more-btn-2" style="border: 1px solid black; color: black; max-width: 250px; box-sizing: border-box;">
             <a href="#" style="text-decoration: none; color: black;">Thêm vào giỏ hàng</a>
           </button>
         `;
