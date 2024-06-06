@@ -309,17 +309,11 @@
 }
 
 .btn-view-more a {
-  color: var(--colorbody);
-  font-family: "Barlow Condensed", sans-serif;
-  font-size: 17px;
-  line-height: 22px;
-  font-weight: 700;
-  padding: 10px 30px;
-  border: 1px solid #c2c2c2;
-  background: transparent;
-  position: relative;
-  overflow: hidden;
-  border-radius: 3px;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  width: fit-content;
 }
 
 /* css reponsive */
@@ -444,17 +438,22 @@
   transform: translate3d(50%, 50%, 0) scale3d(35, 35, 35);
 }
 
-/**/
 .btn-view-more > a {
   z-index: 1;
   position: absolute;
-  color: #4f4f4f;
   padding: 8px 16px;
   outline: none;
-  border: 1px solid #4f4f4f;
-  background-color: transparent;
-  overflow: hidden;
   transition: color 0.4s ease-in-out;
+  color: var(--colorbody);
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 17px;
+  line-height: 22px;
+  font-weight: 700;
+  padding: 10px 30px;
+  border: 1px solid #c2c2c2;
+  background: transparent;
+  overflow: hidden;
+  border-radius: 3px;
 }
 
 .btn-view-more > a::before {
@@ -467,7 +466,6 @@
   height: 16px;
   border-radius: 50%;
   background-color: #e6a4b4;
-
   transform-origin: center;
   transform: translate3d(50%, 50%, 0) scale3d(0, 0, 0);
   transition: transform 0.45s ease-in-out;
@@ -481,5 +479,5 @@
 }
 
 .btn-view-more > a:hover::before {
-  transform: translate3d(50%, 50%, 0) scale3d(15, 15, 15);
+  transform: translate3d(50%, 50%, 0) scale3d(20, 15, 15);
 }
