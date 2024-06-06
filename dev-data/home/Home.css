@@ -242,6 +242,10 @@ html body div.slection-container h1 {
 }
 .top-product-title {
   margin: 2%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: var(--width-text);
+  white-space: nowrap;
 }
 /* swiper css */
 .swiper {

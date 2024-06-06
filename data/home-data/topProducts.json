@@ -9,20 +9,18 @@
       "category": "cakeslices"
     },
     {
-      "src": "./../../public/imgs/home/topProduct/dsc02494_optimized.png",
-      "alt": "Passion Cheese C",
-      "price": "490,000",
-      "href": "",
-      "posIndex": 4,
-      "category": "cakes"
+      "src": "../../public/imgs/SanPham/cakeslices/dsc02389_optimized.png",
+      "alt": "CHOCOLATE PEANUT MOUSSE",
+      "price": "59,000",
+      "posIndex": 0,
+      "category": "cakeslices"
     },
     {
-      "src": "../../public/imgs/SanPham/sandwiches/dsc03110_optimized.png",
-      "alt": "TUNA SandWiches",
-      "price": "45,000",
-      "href": "",
-      "posIndex": 0,
-      "category": "sandwiches"
+      "src": "../../public/imgs/SanPham/cakeslices/dsc02388_optimized.png",
+      "alt": "OREO CHOCOLATE CHEESE",
+      "price": "59,000",
+      "posIndex": 1,
+      "category": "cakeslices"
     },
     {
       "src": "../../public/imgs/SanPham/flossspecials/dsc03428_optimized.png",
