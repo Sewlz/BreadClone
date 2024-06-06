@@ -183,7 +183,7 @@ html body div.slection-container h1 {
 
 .more-btn:hover {
   cursor: pointer;
-  color: #fff;
+  color: #fff !important;
 }
 
 .more-btn:hover::before {
@@ -739,4 +739,54 @@ html body div.slection-container h1 {
   display: block;
   line-height: 1.5em;
   max-height: 3em;
+}
+
+.button-product a {
+  z-index: 1;
+  position: relative;
+  outline: none;
+  background-color: transparent;
+  overflow: hidden;
+  transition: color 0.4s ease-in-out;
+}
+
+.button-product a:hover {
+  cursor: pointer;
+  color: #fff !important;
+  animation: jelly 0.5s;
+}
+
+@keyframes jelly {
+  0%,
+  100% {
+    transform: scale(1, 1);
+  }
+  25% {
+    transform: scale(0.9, 1.1);
+  }
+  50% {
+    transform: scale(1.1, 0.9);
+  }
+  75% {
+    transform: scale(0.95, 1.05);
+  }
+}
+
+.button-product a::before {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  bottom: 100%;
+  right: 100%;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #e6a4b4;
+  transform-origin: center;
+  transform: translate3d(50%, 50%, 0) scale3d(0, 0, 0);
+  transition: transform 0.7s ease-in-out;
+}
+
+.button-product a:hover::before {
+  transform: translate3d(50%, 50%, 0) scale3d(15, 15, 15);
 }
