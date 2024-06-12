@@ -309,17 +309,11 @@
 }
 
 .btn-view-more a {
-  color: var(--colorbody);
-  font-family: "Barlow Condensed", sans-serif;
-  font-size: 17px;
-  line-height: 22px;
-  font-weight: 700;
-  padding: 10px 30px;
-  border: 1px solid #c2c2c2;
-  background: transparent;
-  position: relative;
-  overflow: hidden;
-  border-radius: 3px;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  width: fit-content;
 }
 
 /* css reponsive */
@@ -392,4 +386,98 @@
   .price::after {
     bottom: 9px;
   }
+}
+
+.button-product a {
+  z-index: 1;
+  position: relative;
+  outline: none;
+  background-color: transparent;
+  overflow: hidden;
+  transition: color 0.4s ease-in-out;
+}
+
+.button-product a:hover {
+  cursor: pointer;
+  color: #fff;
+  animation: jelly 0.5s;
+}
+
+@keyframes jelly {
+  0%,
+  100% {
+    transform: scale(1, 1);
+  }
+  25% {
+    transform: scale(0.9, 1.1);
+  }
+  50% {
+    transform: scale(1.1, 0.9);
+  }
+  75% {
+    transform: scale(0.95, 1.05);
+  }
+}
+
+.button-product a::before {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  bottom: 100%;
+  right: 100%;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: var(--color-05);
+  transform-origin: center;
+  transform: translate3d(50%, 50%, 0) scale3d(0, 0, 0);
+  transition: transform 0.45s ease-in-out;
+}
+
+.button-product a:hover::before {
+  transform: translate3d(50%, 50%, 0) scale3d(35, 35, 35);
+}
+
+.btn-view-more > a {
+  z-index: 1;
+  position: absolute;
+  padding: 8px 16px;
+  outline: none;
+  transition: color 0.4s ease-in-out;
+  color: var(--colorbody);
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 17px;
+  line-height: 22px;
+  font-weight: 700;
+  padding: 10px 30px;
+  border: 1px solid #c2c2c2;
+  background: transparent;
+  overflow: hidden;
+  border-radius: 3px;
+}
+
+.btn-view-more > a::before {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  bottom: 100%;
+  right: 100%;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: #e6a4b4;
+  transform-origin: center;
+  transform: translate3d(50%, 50%, 0) scale3d(0, 0, 0);
+  transition: transform 0.45s ease-in-out;
+}
+
+.btn-view-more > a:hover {
+  cursor: pointer;
+  color: #fff;
+  animation: jelly 0.5s;
+  border: 1px solid #e6a4b4 !important;
+}
+
+.btn-view-more > a:hover::before {
+  transform: translate3d(50%, 50%, 0) scale3d(20, 15, 15);
 }
