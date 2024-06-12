@@ -130,9 +130,8 @@
 .submit-input {
   /* position: relative; */
   cursor: pointer;
-  background-color:#ffffff;
-  font-weight: 800;
-  color:  #FFC0CB;
+  background-color: var(--color-07);
+  color: #ffffff;
   border-top-right-radius: 30px;
   border-bottom-right-radius: 30px;
   height: 50px;
@@ -142,7 +141,7 @@
   appearance: none;
   border: 0;
   transition: all 0.1s linear;
-  border-left: 2px solid #FFC0CB;
+  border-left: 2px solid green;
 }
 .submit-input:hover {
   background-color: #ffffff;

@@ -140,12 +140,12 @@ document.addEventListener("DOMContentLoaded", () => {
     if (isLoggedIn) {
       iconLogin.innerHTML = '<i class="fa-solid fa-user"></i>';
       iconLogin.href = "../profile/profile.html";
-      // elementUsername.innerText = sessionStorage.getItem("username");
+      elementUsername.innerText = sessionStorage.getItem("username");
       menuAccount.classList.add("show-menu-account");
     } else {
       iconLogin.innerHTML = '<i class="fa-solid fa-right-to-bracket"></i>';
       iconLogin.href = "../login/login.html";
-      elementUsername.innerText = "";
+      elementUsername.innerText = "Login";
       menuAccount.classList.remove("show-menu-account");
     }
   }
@@ -500,7 +500,6 @@ pageMobileInProduct.forEach((item) => {
 
 function clickInMenuProduct(item) {
   item.addEventListener("click", () => {
-    const itemId = item.id;
-    sessionStorage.setItem("titlePageWebsite",itemId);
+    sessionStorage.setItem("titlePageWebsite", item.textContent);
   });
 }

@@ -484,8 +484,8 @@ html body div.slection-container h1 {
   justify-self: center;
   width: 50%;
   font-size: 16px;
-  font-weight: 400;
-  color: #3e3e3e;
+  font-weight: 300;
+  color: #5c5c5c;
 }
 .btn-wraper {
   display: flex;
@@ -522,10 +522,10 @@ html body div.slection-container h1 {
   font-size: large;
 }
 .news-content > p {
-  font-weight: 400;
+  font-weight: 300;
   font-size: 15px;
   line-height: 21px;
-  color: #3e3e3e;
+  color: #5c5c5c;
 }
 .outline {
   position: absolute;
