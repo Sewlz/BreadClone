@@ -1,6 +1,6 @@
-# DoughReMi FrontEnd Bakery Site
+# BreadClone FrontEnd Bakery Site
 
-Welcome to DoughReMi FrontEnd Bakery Site! Based on BreadTalkVietNam Bakery Site. This project serves as an educational resource, providing a sample frontend design for a bakery website. Please note that this project is intended for educational purposes only.
+Welcome to BreadClone FrontEnd Bakery Site! Based on BreadTalkVietNam Bakery Site. This project serves as an educational resource, providing a sample frontend design for a bakery website. Please note that this project is intended for educational purposes only.
 
 ## Purpose
 
@@ -23,7 +23,7 @@ Feel free to use and modify the code for learning and educational purposes.
 ## Project Tree
 
 ```
-DoughReMi
+BreadClone
 ├─ .vscode
 │  └─ settings.json
 ├─ data
