@@ -14,7 +14,7 @@
   --color-02: #f3d7ca;
   --color-03: #fff8e3;
   --color-04: #f5eee6;
-  --color-05: #f56c8e;
+  --color-05: #f6780a;
   --num-slide: 4;
 }
 
@@ -306,7 +306,7 @@
 .product-pagination button:hover,
 .btn-pagination i:hover {
   border: 1px solid transparent !important;
-  background: linear-gradient(135deg, #f34974 0%, #ff98b2 100%);
+  background: linear-gradient(135deg, #f6780a 0%, #f1af76 100%);
   color: white;
 }
 
