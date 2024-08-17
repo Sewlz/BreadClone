@@ -145,7 +145,7 @@
   position: relative;
   left: -1em;
   font-size: 1.5em;
-  color: #ffc0cb;
+  color: #2e8b57;
 }
 /* input voucher */
 .voucher-field {
@@ -196,7 +196,7 @@
 #submit-voucher input {
   width: 50%;
   height: 100%;
-  background-color: #ffc0cb;
+  background-color: #f9a747;
   color: white;
   border: 0;
   border-radius: 5px;
@@ -273,14 +273,14 @@
   float: right;
   width: 110px;
   height: 40px;
-  background-color: #ffc0cb;
+  background-color: #f9a747;
   color: white;
   border: 0;
   border-radius: 5px;
 }
 
 #color {
-  color: #ffc0cb;
+  color: #f9a747;
 }
 @media only screen and (max-width: 768px) {
   .voucher-slider.show {

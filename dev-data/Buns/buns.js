@@ -9,7 +9,7 @@ fetch("../../data/Product-data/product.json")
 
     document.title = `${titleHeaderPage.innerText} - Dough Re Mi`;
     const headerTitle = document.querySelector(".section-header_title");
-    headerTitle.innerText = titleHeaderPage.innerText;
+    headerTitle.innerText = sessionStorage.getItem("headerTitle");
     const pageInProduct = document.querySelectorAll(".menu-sub_item a");
     const pageMobileInProduct = document.querySelectorAll(".menu-bar_lv2 a");
     pageInProduct.forEach((item) => {
@@ -42,9 +42,9 @@ fetch("../../data/Product-data/product.json")
     const objSearch = sessionStorage.getItem("lstSearch");
     if (objSearch) {
       dataDetail = JSON.parse(objSearch);
-      let string = 'Tìm kiếm'
+      let string = "Tìm kiếm";
       titleHeaderPage.innerText = string;
-      document.querySelector('.section-header_title').innerText = string
+      document.querySelector(".section-header_title").innerText = string;
     }
 
     // Thêm sự kiện beforeunload để xóa mục từ sessionStorage khi thoát trang

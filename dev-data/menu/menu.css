@@ -10,13 +10,13 @@
 
 :root {
   --colorbody: #000000;
-  --color-01: #e6a4b4;
+  --color-01: #f79945;
   --color-02: #f3d7ca;
   --color-03: #fff8e3;
   --color-04: #f5eee6;
-  --color-05: #f3547c;
+  --color-05: #f79945;
   --color-07: #2e9969;
-  --color-08: #ffc0cb;
+  --color-08: #f79945;
 }
 
 ::-webkit-scrollbar {
@@ -79,12 +79,13 @@
   justify-content: space-between;
   max-width: 100%;
   padding: 0 20px;
-  background-color: #f58699;
-  font-weight: 700;
+  background-color: #fcf8f0;
+  font-weight: 500;
 }
 
 .menu-logo img {
-  height: 100px;
+  height: 52px;
+  width: 256px;
 }
 
 .menus {
@@ -110,12 +111,12 @@
 }
 
 .menus .menu-item > a {
-  color: white;
+  color: #1a1a19;
 }
 
 .active-page,
 .menus .menu-item a:hover {
-  color: rgb(255, 25, 94);
+  color: #f79945;
 }
 
 .menu-item a i {
@@ -136,6 +137,7 @@
   border: 1px solid rgb(209, 209, 209);
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
   display: none;
+  font-weight: 400;
 }
 
 .menu-sub_item,
@@ -517,7 +519,8 @@
   width: 50%;
   height: 100%;
   z-index: 14;
-  background-color: var(--color-01);
+  background-color: #fcf8f0;
+  font-weight: 500;
   transition: all 0.3s linear;
   transform: translateX(-100%);
 }
@@ -566,7 +569,7 @@
 .menu-bar-wrapper_lv1 a {
   display: block;
   padding: 10px 20px;
-  color: white;
+  color: black;
   transition: all 0.1s linear;
 }
 
@@ -629,7 +632,7 @@
 }
 
 .active-hover-page {
-  color: var(--color-05) !important;
+  color: var(--color-01) !important;
 }
 
 @media (max-width: 1225px) {
@@ -651,6 +654,7 @@
 
   .menu-logo img {
     height: 50px;
+    width: 156px;
   }
 
   .menus .menu-item a {

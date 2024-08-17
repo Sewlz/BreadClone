@@ -1,5 +1,5 @@
 document.querySelectorAll(".heading-title").forEach((item) => {
-  const titleHeadingPage = item.textContent.trim();
+  const titleHeadingPage = item.id.trim();
   const titleHeadingPageFormatted =
     titleHeadingPage.charAt(0).toUpperCase() +
     titleHeadingPage.slice(1).toLowerCase();
@@ -11,6 +11,7 @@ document.querySelectorAll(".heading-title").forEach((item) => {
       btn.addEventListener("click", () => {
         sessionStorage.setItem("titlePageWebsite", titleHeadingPageFormatted);
         sessionStorage.setItem("category-product", textItem);
+        sessionStorage.setItem("headerTitle", item.textContent);
       });
     });
 });
@@ -37,14 +38,15 @@ fetch("../../data/Product-data/product.json")
     const productContentArray = [];
 
     document.querySelectorAll(".heading-title").forEach((item, index) => {
-      const textItem = item.textContent.trim().toLowerCase().replace(/\s/g, "");
-
+      const textItem = item.id.trim().toLowerCase().replace(/\s/g, "");
+      console.log(textItem);
       const categoryData = first8Items.find(
         (category) => category.category === textItem
       );
 
       if (categoryData) {
         productContentArray.push(categoryData);
+        console.log(productContentArray);
       }
     });
 

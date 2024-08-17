@@ -60,7 +60,7 @@ function fetchData(url, index) {
 
       const header = document.querySelector(".section-header_title");
       header.textContent = newsItem.headline;
-      window.document.title = newsItem.headline + " - Dough Re Mi";
+      window.document.title = newsItem.headline + " - Breadtalk";
     })
     .catch((error) => console.error("Error fetching the JSON:", error));
 }

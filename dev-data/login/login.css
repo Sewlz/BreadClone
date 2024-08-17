@@ -9,7 +9,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url(../../public/imgs/SanPham/Rectangle-825-min.jpeg);
+  background-image: url(../../public/imgs/cake-on-colorful-background-tasty-dessert-bakery-shop-banner-vector.jpg);
   background-position: right center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -119,7 +119,7 @@
 
 .btn-Login {
   width: 100%;
-  background-color: #ffc0cb;
+  background-color: #f6780a;
   color: white;
   height: 31px;
   padding: 3px 7px;
@@ -132,7 +132,7 @@
 }
 
 .btn-Login:hover {
-  background-color: #ff617c;
+  background-color: #2e8b57;
 }
 
 .link-create-account {

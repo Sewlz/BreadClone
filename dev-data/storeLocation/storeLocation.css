@@ -81,7 +81,7 @@
 }
 #citySelect {
   width: 100%;
-  background-color: #ffc0cb;
+  background-color: #f9a747;
   border: 0;
   margin-bottom: 10px;
   box-sizing: border-box;
@@ -104,7 +104,7 @@
 
 .heading-title {
   text-transform: uppercase;
-  color: #2e9969;
+  color: #f9a747;
   text-align: center;
   margin: 20px 0;
 }
@@ -141,7 +141,7 @@
 }
 .cell-content-loc:hover {
   color: #f8f8f8;
-  background-color: #ffc0cb;
+  background-color: #f9a747;
 }
 .cell-content-loc {
   background-color: #fff;
@@ -156,14 +156,14 @@
   white-space: nowrap;
 }
 .header-id {
-  background-color: #2e9969;
+  background-color: #f9a747;
   align-content: center;
   text-align: center;
   color: #fff;
   width: 10%;
 }
 .header-name {
-  background-color: #f3bec7;
+  background-color: #2e425d;
   align-content: center;
   color: #fff;
   width: 90%;
@@ -214,7 +214,7 @@
 }
 @media only screen and (max-width: 768px) {
   #iframe-container {
-    width: 90%!important;
+    width: 90% !important;
   }
   .loaction-wrapper {
     display: flex;
@@ -273,7 +273,7 @@
     position: relative;
   }
 
-  .container{
+  .container {
     display: block;
   }
 }
@@ -337,7 +337,7 @@
 .swiper-pagination-bullet::before {
   width: 10px;
   height: 10px;
-  background-color: #f3bec7;
+  background-color: #2e425d;
   border-radius: 50%;
 }
 
@@ -349,5 +349,5 @@
 }
 
 .swiper-pagination-bullet-active::after {
-  border-color: #f77e92; /* Show border for active bullet */
+  border-color: #2e425d; /* Show border for active bullet */
 }

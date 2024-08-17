@@ -8,8 +8,10 @@
 }
 body {
   background: rgba(0, 0, 0, 0.6);
-  background-image: url(../../public/imgs/SanPham/Rectangle-825-min.jpeg);
+  background-image: url(../../public/imgs/cake-on-colorful-background-tasty-dessert-bakery-shop-banner-vector.jpg);
   background-blend-mode: multiply;
+  background-repeat: no-repeat;
+  background-size: auto;
 }
 .wrapper {
   min-height: 100%;
@@ -44,7 +46,7 @@ body {
 }
 .submit-btn {
   width: 100%;
-  background-color: #ffc0cb;
+  background-color: #f6780a;
   color: white;
   height: 31px;
   padding: 3px 7px;
@@ -53,7 +55,7 @@ body {
   border: none;
 }
 .submit-btn:hover {
-  background-color: #deaab3;
+  background-color: #2e8b57;
 }
 .content-wrapper h1 {
   font-weight: 600;

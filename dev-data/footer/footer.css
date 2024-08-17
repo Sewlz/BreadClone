@@ -10,7 +10,8 @@
   color: white;
   padding-top: 30px;
   height: fit-content;
-  background: #ffb2c5;
+  background: url("../../public/Group-1015-min.jpeg");
+  background-size: cover;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-column-gap: 5%;
@@ -18,10 +19,10 @@
   height: 350px;
 }
 .footer-logo {
-  width: 150px;
+  width: 250px;
   margin-bottom: 15px;
-  /* -webkit-filter: brightness(0) invert(1);
-  filter: brightness(0) invert(1); */
+  -webkit-filter: brightness(0) invert(1);
+  filter: brightness(0) invert(1);
 }
 .first-wrapper,
 .second-wrapper,
@@ -96,7 +97,7 @@
   display: block;
   justify-self: center;
   text-align: center;
-  background-color: rgb(255, 144, 162);
+  background-color: #f6780a;
   font-weight: 100;
   font-size: 15px;
   line-height: 26px;
@@ -130,9 +131,9 @@
 .submit-input {
   /* position: relative; */
   cursor: pointer;
-  background-color:#ffffff;
-  font-weight: 800;
-  color:  #FFC0CB;
+  background-color: #fd963d;
+  font-weight: 600;
+  color: #ffffff;
   border-top-right-radius: 30px;
   border-bottom-right-radius: 30px;
   height: 50px;
@@ -142,7 +143,7 @@
   appearance: none;
   border: 0;
   transition: all 0.1s linear;
-  border-left: 2px solid #FFC0CB;
+  border-left: 2px solid #008025;
 }
 .submit-input:hover {
   background-color: #ffffff;

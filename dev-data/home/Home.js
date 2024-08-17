@@ -134,8 +134,12 @@ function loadHomeProductSwiper() {
           item.addEventListener("click", (event) => {
             const procIndex = event.target.dataset.index;
             sessionStorage.setItem(
-              "titlePageWebsite",
+              "headerTitle",
               product[parseInt(procIndex)].alt
+            );
+            sessionStorage.setItem(
+              "titlePageWebsite",
+              product[parseInt(procIndex)].id
             );
           });
         });

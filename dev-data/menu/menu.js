@@ -501,6 +501,7 @@ pageMobileInProduct.forEach((item) => {
 function clickInMenuProduct(item) {
   item.addEventListener("click", () => {
     const itemId = item.id;
-    sessionStorage.setItem("titlePageWebsite",itemId);
+    sessionStorage.setItem("titlePageWebsite", itemId);
+    sessionStorage.setItem("headerTitle", item.textContent.trim());
   });
 }

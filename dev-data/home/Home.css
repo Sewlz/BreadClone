@@ -42,14 +42,14 @@
   text-align: left;
   font-weight: 400;
   font-size: 85px;
-  color: #e6a4b4;
+  color: #f79945;
   font-family: "Great Vibes", cursive;
 }
 .story-content > h1 {
   text-align: left;
   font-weight: 700;
   font-size: 50px;
-  color: #e6a4b4;
+  color: #f79945;
   text-transform: uppercase;
 }
 body > section > div > div.right-cell > figure {
@@ -175,7 +175,7 @@ html body div.slection-container h1 {
   width: 16px;
   height: 16px;
   border-radius: 50%;
-  background-color: #e6a4b4;
+  background-color: #f79945;
   transform-origin: center;
   transform: translate3d(50%, 50%, 0) scale3d(0, 0, 0);
   transition: transform 0.45s ease-in-out;
@@ -298,7 +298,7 @@ html body div.slection-container h1 {
 .swiper-pagination-bullet::before {
   width: 10px;
   height: 10px;
-  background-color: #f3bec7;
+  background-color: #f5b984;
   border-radius: 50%;
 }
 
@@ -310,7 +310,7 @@ html body div.slection-container h1 {
 }
 
 .swiper-pagination-bullet-active::after {
-  border-color: #f77e92; /* Show border for active bullet */
+  border-color: #f79945; /* Show border for active bullet */
 }
 
 /*----------------*/
@@ -333,7 +333,7 @@ html body div.slection-container h1 {
 }
 .top-product-price {
   /* float: left; */
-  color: #e6a4b4;
+  color: #f79945;
 }
 .top-product-info {
   width: 250px;
@@ -360,7 +360,7 @@ html body div.slection-container h1 {
   margin-bottom: 15px;
   font-family: "Work Sans", sans-serif;
   text-transform: uppercase;
-  color: #e6a4b4;
+  color: #f79945;
 }
 .review-wrapper figure img {
   object-fit: cover;
@@ -375,7 +375,7 @@ html body div.slection-container h1 {
   border-radius: 50%;
   width: 60px;
   height: 60px;
-  background-color: #e6a4b4;
+  background-color: #f79945;
   text-align: center;
 }
 
@@ -478,7 +478,7 @@ html body div.slection-container h1 {
   font-size: 40px;
   line-height: 47px;
   text-transform: uppercase;
-  color: #e6a4b4;
+  color: #f79945;
 }
 .title-container > p {
   justify-self: center;
@@ -552,7 +552,7 @@ html body div.slection-container h1 {
   left: 50px;
 }
 .view-more:hover {
-  background-color: #e6a4b4;
+  background-color: #f79945;
   color: white;
 }
 /* responsive */
@@ -785,7 +785,7 @@ html body div.slection-container h1 {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  background-color: #e6a4b4;
+  background-color: #f79945;
   transform-origin: center;
   transform: translate3d(50%, 50%, 0) scale3d(0, 0, 0);
   transition: transform 0.7s ease-in-out;

@@ -40,7 +40,9 @@ fetch("../../data/Product-data/product.json")
     var dataDetail;
 
     const categoryProduct = sessionStorage.getItem("category-product");
-
+    const categoryText = document.querySelector(".category-product");
+    categoryText.textContent = "Danh Mục: " + categoryProduct;
+    categoryText.style = "text-transform: capitalize;";
     productCategories.forEach((item, index) => {
       if (item === categoryProduct) {
         const dataIndex = Object.values(dataProduct);
@@ -227,7 +229,7 @@ fetch("../../data/Product-data/product.json")
         parsedData.push(lstSlideProduct);
         sessionStorage.setItem("cartItems", JSON.stringify(parsedData));
         updateCart();
-        location.reload()
+        location.reload();
       });
     });
 

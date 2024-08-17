@@ -10,11 +10,11 @@
 
 :root {
   --colorbody: #000000;
-  --color-01: #e6a4b4;
+  --color-01: #f79945;
   --color-02: #f3d7ca;
   --color-03: #fff8e3;
   --color-04: #f5eee6;
-  --color-05: #f56c8e;
+  --color-05: #f79945;
   --color-06: rgb(32, 155, 83);
 }
 
@@ -268,8 +268,8 @@ tbody {
 .coupon-code button {
   outline: none;
   height: 39px;
-  background-color: #ff2a5f;
-  border: 1px solid #ff2a5f;
+  background-color: #f79945;
+  border: 1px solid #f79945;
   padding: 0 15px;
   color: white;
   font-weight: 500;
@@ -280,7 +280,8 @@ tbody {
 }
 
 .coupon-code button:hover {
-  background-color: #c72d54;
+  background-color: #2e8b57;
+  border: 1px solid #2e8b57;
 }
 
 .update-cart {
@@ -291,8 +292,8 @@ tbody {
   outline: none;
   font-weight: 500;
   color: white;
-  background-color: #f8698d;
-  border: 1px solid #f8698d;
+  background-color: #f79945;
+  border: 1px solid #f79945;
   padding: 0 15px;
   height: 40px;
   cursor: not-allowed;
@@ -473,7 +474,7 @@ tbody {
 }
 
 .process-pay a:hover {
-  background-color: #cc1845;
+  background-color: #2e8b57;
 }
 
 .product-img {
