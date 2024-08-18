@@ -52,7 +52,7 @@
 }
 .social-icon-wrapper i:hover {
   background-color: white;
-  color: var(--color-01);
+  color: #fd9e4e;
 }
 .subscription-wrapper {
   display: flex;
@@ -147,7 +147,7 @@
 }
 .submit-input:hover {
   background-color: #ffffff;
-  color: var(--color-01);
+  color: #fd9e4e;
   border-left: 2px solid black;
 }
 /* responsive */
