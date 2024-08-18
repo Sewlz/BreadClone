@@ -867,7 +867,8 @@
 }
 
 .element-login p {
-  color: white;
+  color: black;
+  font-weight: 500;
 }
 /* .account-detail{
   float: right;
