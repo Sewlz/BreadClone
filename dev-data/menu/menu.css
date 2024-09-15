@@ -81,11 +81,11 @@
   padding: 0 20px;
   background-color: #fcf8f0;
   font-weight: 500;
+  font-size: small;
 }
 
 .menu-logo img {
   height: 52px;
-  width: 256px;
 }
 
 .menus {
