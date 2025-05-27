@@ -98,6 +98,7 @@
 .menu-item {
   display: flex;
   align-items: center;
+  font-size: larger;
 }
 
 .menus .menu-item a {

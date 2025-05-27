@@ -92,6 +92,7 @@
   height: 70px;
 }
 .copyright-wrapper {
+  width: 100%;
   color: white;
   border-top: 0.7px solid #ffffff;
   display: block;
